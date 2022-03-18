@@ -1,0 +1,5930 @@
+Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_legadoontologico).
+
+Arquivo de anotações públicas #5.
+____________________
+
+17-03-2022
+__
+
+A internet à noite é uma festa...
+_____
+
+17-03-2022
+__
+
+Amando mais a Matemática, sentindo melhor os efeitos anestésicos do amor...
+_____
+
+17-03-2022
+__
+
+Sempre bem intencionado, não temendo os males que vem; e, se vierem, serão por outras razões.
+_____
+
+17-03-2022
+__
+
+Se não pensarmos em crescer, já estamos mortos...
+_____
+
+17-03-2022
+__
+
+Hoje também corrigi dois bugs que estavam no layout do meu blog, dos widgets "Mensagem de Antonio Vandré" e "Postagem em destaque"; não estavam atualizando automaticamente; agora estão.
+_____
+
+17-03-2022
+__
+
+Tudo bem alguém mau roubar minhas energias espirituais, estou sempre produzindo mais e é bom sentir-se útil.
+_____
+
+17-03-2022
+__
+
+Com o quê vou me preocupar agora? Nada; praticamente tudo já está perfeitamente organizado e é bom descansar um pouco.
+_____
+
+17-03-2022
+__
+
+É saborosíssimo saber que é capaz de desenvolver softwares com certa complexidade e qualidade.
+_____
+
+17-03-2022
+__
+
+Quanto ao restante de minha vida, tenho muitos danos sofridos, mas estou sempre me construindo.
+
+Com relação à maioria das outras pessoas, acho que estou muito bem...
+_____
+
+17-03-2022
+__
+
+Vejo agora que me preocupei demais, um pouco inutilmente, quanto à existência do repositório defazado do MathematicalRamblings.js; pus avisos anexos em vários lugares quanto à sua condição, tendo um novo atualizado.
+
+Posso considerar o MR praticamente perfeito.
+_____
+
+17-03-2022
+__
+
+Ter a mente veloz como um processador...
+_____
+
+17-03-2022
+__
+
+Escrever no VS Code é estimulante, os textos ficam tão bonitinhos. =)
+_____
+
+17-03-2022
+__
+
+Valorizando os escritos de pensamentos pessoais com zelo também, sendo rigoroso com backups tal como já sou com meus escritos de Matemática.
+_____
+
+17-03-2022
+__
+
+Mais algumas ideias de softwares matemáticos, mas deixando para depois, sem pressa; agora preciso descansar um pouco, e já provei a mim meso que sou capaz de muito...
+_____
+
+17-03-2022
+__
+
+Todos os dias fazer as barrinhas.
+_____
+
+17-03-2022
+__
+
+Programação e, em menor escala, estudos, além de desenvolverem a inteligência, tem ilustre utilidade de desenvolver a força psíquica, pois há estresses, às vezes intensos.
+_____
+
+17-03-2022
+__
+
+"setInterval" também para exibir arquivos de conteúdos dinâmicos, que se alteram na fonte.
+_____
+
+17-03-2022
+__
+
+É com dor que se cresce...
+_____
+
+17-03-2022
+__
+
+Andando pelo caminho dos pensamentos, e também pelo caminho das emoções, isto é, habitando em lugares diferences, quase sempre melhores, dependendo de minha conduta...
+_____
+
+17-03-2022
+__
+
+Já tendo estudado a Matemática do dia, em outras coisas, evoluindo muito ou pouco, não importa muito.
+_____
+
+17-03-2022
+__
+
+Enviei, para um um comentário, para outro informar erro, sobre, atualmente, a geração de gifs animados não funcionar nestes dois navegadores: Microsoft Edge e Google Chrome.
+
+Seria muito bom que funcionasse, assim meu blog ficará mais compatível e funcionando perfeitamente para mais pessoas.
+_____
+
+17-03-2022
+__
+
+Pouco material, porém ainda mantendo o perfeccionismo quanto a computadores, em especial ao escrever Matemática.
+
+Como linguagem, muito da Matemática é escrever.
+_____
+
+17-03-2022
+__
+
+Quero ser mais perfeccionista, logo devo ser ainda menos material.
+_____
+
+17-03-2022
+__
+
+Pedi mais uma vez aos administradores do GitHub para apagarem o repositório do meu defasado MathematicalRamblings.js. Na primeira vez me foi recusado; tomara que o façam agora...
+_____
+
+17-03-2022
+__
+
+Como já sofri intensas dores morais (acho que posso comparar, no cristianismo, o ferimento do cordeiro), valorizo o simples bem-estar...
+_____
+
+17-03-2022
+__
+
+Às vezes comparo esta impossibilidade de deletação do meu respositório defasado a um erro / pecado que cometa e que não há como apagar da biografia... Algo com o qual temos de conviver...
+_____
+
+17-03-2022
+__
+
+Ainda bem que em meu defasado MathematicalRamblings.js há, no cabeçalho, a data da última atualização, o que induz a quem for utilizar procurar versões mais recentes.
+_____
+
+17-03-2022
+__
+
+Degustando a ansiedade como alimento para o fortalecimento e o desenvolvimento psíquico...
+_____
+
+17-03-2022
+__
+
+Se um programador experiente for utilizar meu defasado MathematicalRamblings.js no GitHub, provavelmente vai olhar os forks, então posso ficar tranquilo.
+
+Aliado a isto também aparece em sites de busca o MathematicalRamblings.js 2; e é notório que, em softwares em geral, todas as funcionalidades trabalham perfeitamente nas últimas versões, as quais um inteligente vai buscar.
+_____
+
+17-03-2022
+__
+
+Para as imperfeições, avisos informativos. E fica tudo bem.
+_____
+
+17-03-2022
+__
+
+Gostoso alimentar meu blog com mais dados e informações estando ele, mediante avisos sobre peculiaridades, perfeito.
+_____
+
+17-03-2022
+__
+
+Era algo que, chegando a sua vez de resolver, preocupava-me bastante: ter um repositório do MathematicalRamblings.js defasado por eu não ter mais acesso. Resolvi simplesmente ponto um fork.
+
+Estou me sentindo bastante aliviado agora.
+_____
+
+17-03-2022
+__
+
+Trabalhar, e depois valorizar a consequente paz...
+_____
+
+17-03-2022
+__
+
+Se não tenho mais acesso a um repositório no GitHub, adiciono um fork.
+_____
+
+17-03-2022
+__
+
+Tranquilizei-me um pouco quanto ao primeiro repositório do MathematicalRamblings.js adicionando um fork para o atual repositório.
+_____
+
+17-03-2022
+__
+
+Ajuda-me a descansar / repousar ter resolvido um grande conjunto de problemas que estavam pendentes, assim desligo-me deles; dar atenção exige esforço e estressa.
+
+Procuro um misto de progresso e descanso danto atenção quase unicamente à Matemática.
+_____
+
+17-03-2022
+__
+
+De todo modo, mesmo desapegado de computadores, pode ser bom continuar os utilizando para escrever Matemática por ser um tipo de trabalho.
+_____
+
+17-03-2022
+__
+
+Não importa muito o que acontece lá fora, e sim o que acontece aqui dentro...
+_____
+
+17-03-2022
+__
+
+Acho que vale a pena ser apegado aos livros e desapegado de computadores quanto a estudar; com computadores podemos escrever, o que ajuda bastante no aprendizado, mas com livros também aprendemos, porém sem as experiências de prática.
+
+Vale a pena porque livros exigem menos materialismo.
+_____
+
+17-03-2022
+__
+
+Deixando tudo praticamente em perfeita ordem, vivenciando melhor a evolução em contato com a ansiedade, tratando-a.
+
+Interiorizando as emoções, podemos viver muitas, porém, exteriormente, aparentamo-nos calminhos.
+_____
+
+17-03-2022
+__
+
+Organizando as informações nos computadores, e, como a "cereja do bolo", organizando-me também como independente de computadores.
+_____
+
+17-03-2022
+__
+
+Agradeço por poder utilizar computadores, e usufruí muito, mas, se desejo chegar perto da perfeição espiritual, devo ser independente deles e mais apegado aos livros, pois livros são mais livres de procedimentos materiais.
+_____
+
+16-03-2022
+__
+
+Como trabalho em um blog, tenho vários navegadores instalados aqui neste computador; dentre outras razões, para ver e corrigir problemas de compatibilidade.
+_____
+
+16-03-2022
+__
+
+No interminável processo de se organizar, customizando até a aparência e os efeitos do mouse no Windows.
+
+Também pus um aplicativo eyes para acompanhar o cursor. =)
+...
+
+Seguindo assim, talvez procure, desde que não cause danos espirituais em mim, organizar-me segundo os olhos do mundo materialista, como buscar diplomas e certificados e ter uma boa documentação.
+_____
+
+16-03-2022
+__
+
+Implementando scripts BASH para automatizar a maioria dos procedimentos de escrita de pensamentos privados, o que facilita escrever e tem o consequente efeito de promover em mim um melhor e mais veloz amadurecimento.
+_____
+
+16-03-2022
+__
+
+Meditar / orar também para ser mais dono de si e menos dependente de outros alimentos espirituais.
+_____
+
+16-03-2022
+__
+
+É muito gostoso programar em BASH.
+_____
+
+16-03-2022
+__
+
+Mais resolvido comigo mesmo, com a cabeça mais organizada, abrindo-me um pouco mais para relacionamentos conjugais...
+_____
+
+16-03-2022
+__
+
+Evoluindo em intelecto e em paz interior...
+_____
+
+16-03-2022
+__
+
+O amanhã pode não mais existir para mim (no sentido de desencarnar), logo não me preocupo muito com privacidade e também não deixo para depois comer coisas gostosas.
+_____
+
+16-03-2022
+__
+
+Dou atenção e escrevo sobre todos os ramos da Matemática os quais já estudei, além de deter amplos conhecimentos gerais, quero ser um matemático pleno.
+_____
+
+16-03-2022
+__
+
+Ver os bons resultados estimula-me a manter a caminhada.
+_____
+
+16-03-2022
+__
+
+Acho que acho que é de suma importância é ter autoestima elevada; se por um momento sinto-me um pouco rebaixado, lembro-me da Matemática, do que já escrevi e do quanto progredi nela.
+
+Tenho outras fontes de autoestima, porém a principal é a M.
+_____
+
+16-03-2022
+__
+
+Instalando extensões do Firefox sem me preocupar muito com privacidade; como já disse antes, não tenho muito zelo quanto a isto, e também não tenho medo porque dinheiro não possuo.
+_____
+
+16-03-2022
+__
+
+Por, principalmente devido à programação, estou perdendo o medo de me estressar, estou aprendendo a viver melhor em situações tensas.
+_____
+
+16-03-2022
+__
+
+Assim como faço revisões de Matemática, também faço revisões sobre pensamentos de natureza pessoal que escrevo, o que me deixa globalmente mais hábil por já ter processado muitas informações adquiridas.
+_____
+
+16-03-2022
+__
+
+Matemática, e com mais peso, a programação, desenvolvem a inteligência e a necessidade de organizar melhor a mente alimentada com mais informações e capacidade cognitiva.
+_____
+
+16-03-2022
+__
+
+Deu vontade de instalar o CorelDRAW, mas já tenho o Gimp e não mexo muito com edição de imagens.
+_____
+
+16-03-2022
+__
+
+Ainda dependente de computadores, mas, à medida que vou escrevendo e implementando tudo que tenho em mente, mais independente me torno.
+_____
+
+16-03-2022
+__
+
+Algumas tentativas de softwares falharam, no entanto cresci em inteligência e em paciência.
+_____
+
+16-03-2022
+__
+
+Se em todos os dias exijo de mim progressos em Matemática, pouco espaço sobra para outras coisas.
+
+Sei que devo me desenvolver globalmente, porém, fixado em meus objetivos, o desenvolvimento global é lento e os relacionados à Matemática são rápidos.
+
+Como já disse anteriormente, apegado à Matemática, vivo em amor, e amor é saúde para o espírito, o que já pode ser razão suficiente.
+_____
+
+16-03-2022
+__
+
+Como programação não é o meu foco, e a geração de gifs às vezes falha em detalhes, deixo as correções a cargo dos autores das bibliotecas JS utilizadas; o que faço é apenas utilizar os comandos corretos.
+
+No início do meu blog há um aviso de que 3rd parties podem apresentar falhas, e isento-me.
+_____
+
+16-03-2022
+__
+
+Quando estiver vivenciando experiências novas, é muito bom ter um meio de escrever as sensações. Assim os registros ficam mais ricos, e melhor tiramos as lições para nós.
+_____
+
+16-03-2022
+__
+
+Produção intelectual...
+_____
+
+16-03-2022
+__
+
+Escrevendo Matemática, ela se faz mais substancial, mais sólida, mais existente, e isto facilita o apego emocional.
+_____
+
+16-03-2022
+__
+
+Talvez já com bastantes independências, porém ainda dependente de computadores por suas utilidades, já posso me dar por satisfeito quanto a este aspecto, de ser independente, pois, com computadores, escrevo Matemática e softwares, e evoluo bastante em outras coisas também.
+_____
+
+16-03-2022
+__
+
+Escrevo muito no meu blog de Matemática; dentre outras razões, é uma forma de me exibir. =)
+_____
+
+16-03-2022
+__
+
+Só me sinto tranquilo em encerrar uma sessão de estudos com um acerto.
+
+É uma técnica muito boa para se sentir de bem consigo mesmo: pecar (o que pode acontecer muito), e depois fazer uma boa ação.
+_____
+
+16-03-2022
+__
+
+Ócio e diversões são bons, mas só depois de suar um pouco com trabalhos e estudos. Assim são vistos como recompensas, e realmente são.
+_____
+
+15-03-2022
+__
+
+Antes de começar a programar, é bom saber que, uma vez iniciando, vai ter muitas preocupações que só vão cessar depois de ter concluído todos os projetos.
+_____
+
+15-03-2022
+__
+
+É um método de estudos de Matemática muito bom ir resolvendo questões publicando na internet.
+
+Assim, vamos aprendendo e, ao mesmo tempo, construindo algo na prática, o que ajuda a aprender melhor.
+
+Não se estuda Matemática com pressa, o importante é compreender e incorporar na mente as sutilezas lógicas. E Matemática também é uma arte que se aprecia e se degusta...
+_____
+
+15-03-2022
+__
+
+Devemos nos tratar como irmãos, iguais, e não como senhores e escravos...
+_____
+
+15-03-2022
+__
+
+Matemática com programação satisfazem-me bastante. Deixam-me com pouca vontade de experimentar outras coisas, inclusive games.
+_____
+
+15-03-2022
+__
+
+Bugs corrigidos, necessário fazer novos backups.
+_____
+
+15-03-2022
+__
+
+Organizando até as teclas de atalho para programas e jogos no Windows.
+_____
+
+15-03-2022
+__
+
+A vida é difícil para os que não gostam de estudar...
+_____
+
+15-03-2022
+__
+
+Precisamos de algo para aplicar o perfeccionismo e nos sentirmos vivos...
+_____
+
+15-03-2022
+__
+
+Se não é o foco / vocação, tudo bem deixar um pouco desorganizado. Apenas um pouco.
+_____
+
+15-03-2022
+__
+
+Depois de tudo o que fiz, descanso muitíssimo merecido.
+_____
+
+14-03-2022
+__
+
+Antes de se demitir, seja dono de si...
+_____
+
+14-03-2022
+__
+
+O Avast acusa alguns executáveis de sistema de serem ameaças, mas deixo de boa, não sou muito preocupado quanto à privacidade.
+_____
+
+14-03-2022
+__
+
+É melhor estudar e aprender a fazer sozinho que negociar, o que quase sempre causa danos morais...
+_____
+
+14-03-2022
+__
+
+Quem gosta de evoluir também gosta dos estresses, deixam a mente mais forte.
+_____
+
+14-03-2022
+__
+
+Em "MR - Artes cartesianas", pondo no início das plotagens os gifs animados afim de causar uma boa impressão nos novos visitantes.
+_____
+
+14-03-2022
+__
+
+Tudo bem ter cometido poucos erros morais, minha vocação escolhida é Matemática, não alguma religião (no sentido tradicional da palavra).
+_____
+
+14-03-2022
+__
+
+Repousando na realização pessoal...
+_____
+
+14-03-2022
+__
+
+Amadurecendo em Matemática e em programação.
+
+Os dois campos do conhecimento que mais exigem do intelecto.
+_____
+
+14-03-2022
+__
+
+Tudo é estresses, cabe a nós fazer deles prazer ou dor.
+_____
+
+14-03-2022
+__
+
+Se no dia há muito a programar ou muitos desafios morais e sociais, posso estudar pouco ou deixar para estudar outro dia.
+_____
+
+14-03-2022
+__
+
+Os estresses de contextos sociais também como ferramentas de evolução, não somente estudar e escrever Matemática ou softwares.
+_____
+
+14-03-2022
+__
+
+Hoje tive que externar algumas palavras ofensivas e logo depois pedir desculpas.
+
+Ambas ações me pareceram boas, pois, sem me expressar, sinto-me mal, e também me sinto mal se não pedir desculpas...
+_____
+
+14-03-2022
+__
+
+Se erro, peço desculpas o mais rapidamente possível, pois é assim que o espiritismo aconselha, e também porque tenho pressa em meus projetos.
+_____
+
+14-03-2022
+__
+
+Queria deixar de parcial quanto a browsers, mas, em meu blog, tive que deixar a mensagem de que foi construído para ser utilizado com Firefox, pois somente nele é que todas as funcionalidades trabalham sem erros.
+_____
+
+14-03-2022
+__
+
+Para o currículo, também vivendo experiências de ter que dormir tendo trabalhos inacabados.
+
+Hoje, acordei, e com pressa me levantei para vir ao computador terminar algumas construções.
+_____
+
+14-03-2022
+__
+
+Crio invenções minhas e, sobre elas, construo castelos.
+_____
+
+14-03-2022
+__
+
+É preciso estudar e trabalhar; mas também é preciso ter tempo para si e para diversões, ou não se vive.
+_____
+
+14-03-2022
+__
+
+Como o blog Mathematical Ramblings funciona perfeitamente somente, de acordo com o que observei até o momento, voltei a o utilizar por padrão. No entanto o Opera GX me deixou "mal acoscumado" com suas funcionalidades interessantes.
+_____
+
+14-03-2022
+__
+
+É com tudo pronto: estudos realizados, pensamentos escritos e ausência de bugs, que repouso; é o preço a pagar pela paz, por minha paz...
+_____
+
+14-03-2022
+__
+
+Nos dois últimos dias "suei" um pouquinho para implementar a geração de gifs animados quando a rotação automática de gráficos 3D estiver ativa, tanto que nem escrevi pensamentos por aqui; estou escrevendo agora, depois de tudo pronto.
+
+Aproveitei e criei uma nova página no site do Mathematical Ramblings chamada de "MR - Artes cartesianas", onde pretendo por coleções de imagens e gifs animados de gráficos, imagens e gifs bonitos e interessantes.
+_____
+
+12-03-2022
+__
+
+Agora permitindo-me caminhar devagar; tinha que, para meus objetivos, construir algumas coisas, e, logo cedo terminando, desfruto de mais paz e sossego.
+_____
+
+12-03-2022
+__
+
+Para mim parece um bug o navegador compartilhar variáveis em abas diferentes.
+_____
+
+12-03-2022
+__
+
+Informações demais para todas serem assimiladas em uma só encarnação. Basta se dedicar a alguns poucos campos por vez.
+_____
+
+12-03-2022
+__
+
+O ruim de trabalhar por dinheiro, é que, para ganharmos, temos que tirar das outras pessoas...
+_____
+
+12-03-2022
+__
+
+Estar de bem com a Matemática influencia bastante, pesa bastante, em meu bem-estar emocional.
+_____
+
+12-03-2022
+__
+
+Alguns servem cafezinho, outros são recepcionistas; semelhantemente escrevo Matemática em meu blog, mesmo com poucos visitantes.
+
+E levo isto bastante a sério.
+_____
+
+12-03-2022
+__
+
+Trabalhando como programador ajudando voluntariamente em alguns projetos na internet, não somente nos os meus.
+
+Dinheiro não é o meu foco, mas realização pessoal.
+_____
+
+12-03-2022
+__
+
+Computadores muito mais velozes podem surgir no futuro, logo pus um setTimeout de 10 milissegundos para cada frame na rotação automática de gráficos 3D. Assim, no máximo, o fps será de 100 Hz.
+_____
+
+12-03-2022
+__
+
+Estou gostando do formato JSON.
+_____
+
+12-03-2022
+__
+
+Mudei de ideia e decidi programar mais um pouquinho, e tive sucesso. Saboroso para o ego...
+_____
+
+12-03-2022
+__
+
+Poderia agora programar mais, mas a prioridade, agora, parece que é experimentar outras coisas. Não se trata de programar algoritmos que são urgentes / críticos, mas opcionais e não muito relevantes.
+_____
+
+12-03-2022
+__
+
+Ignorando algumas coisas de programação sabendo que, com um pouco de esforço, posso fazer; não se trata de algo para provar a si mesmo que é capaz; já muitas vezes provei a mim mesmo que sou capaz de fazer bastantes coisas.
+_____
+
+12-03-2022
+__
+
+Matemática exige um certo conhecimento de programação, mas acho que já aprendi e implementei o bastante para quem não tem desenolvimento de softwares como foco. Meu foco é Matemática.
+
+Agora, ignorando mais de programação assim como faço com outras coisas, como quanto a jornais e outros campos do conhecimento.
+_____
+
+11-03-2022
+__
+
+Aproveitando / empregando bem o tempo em simplesmente estar me sentindo bem, em mundos espirituais celestes...
+_____
+
+11-03-2022
+__
+
+Aproveitando o ócio para recarregar as baterias, evitando inclusive games. A qualquer momento mais demandas podem me chamar, e, quando ocorrerem, quero estar com energias e disposição.
+_____
+
+11-03-2022
+__
+
+Com tudo perfeitamente organizado, agora o caminho me parece mais livre para melhor desfrutar de games, filmes e séries. Também se evolui com eles.
+_____
+
+11-03-2022
+__
+
+Atualizações pendentes, mas deixando logo tudo preparado offline para, quando a internet voltar, simplesmente fazer os uploads.
+_____
+
+11-03-2022
+__
+
+Repousando nesta sensação de ter finalizado com acertos...
+_____
+
+11-03-2022
+__
+
+Deixando para estudar Matemática quando a internet voltar, pois, deste modo, ao resolver exercícios, aproveito e publico em meu blog. Os estudos ficam mais úteis.
+_____
+
+11-03-2022
+__
+
+Olhando para o passado, muitos erros que me incomodam recordar, mas tranquilizado porque finalizei com acertos.
+_____
+
+10-03-2022
+__
+
+Ser programador por ser programador me parece um pouco infrutífero, mas, eu, como exemplo, tendo como foco outra coisas, no meu caso Matemática, tenho um extenso menu de aplicações a serem desenvolvidas.
+_____
+
+10-03-2022
+__
+
+Bastantes coisas em minha vida ficando perfeitamente organizadas; estou pensando aqui o que vou fazer após...
+_____
+
+10-03-2022
+__
+
+Que bom que, de algumas experiências ruins, ao invés de serem infrutíferas, delas extraí e escrevi bastantes pensamentos...
+_____
+
+10-03-2022
+__
+
+Neste tempo sem internet, pretendia jogar games, mas foi bem mais proveitoso escrever pensamentos.
+_____
+
+10-03-2022
+__
+
+Um alívio ter já registrado minha anotação privada; encontrei um meio aqui, não 100% seguro, mas parcialmente seguro de escrever.
+_____
+
+10-03-2022
+__
+
+Há uma moça bonita aqui na rua que me atrai um pouco, e ela, aparentemente, também sente-se ao menos um pouco atraída por mim, mas me pergunto: o que vou fazer se estivermos juntos?... Mal tenho tempo para mim, tenho tantas prioridades...
+
+Por esta mesma razão também acho demais a forma com que algumas pessoas tentam interagir comigo na internet.
+
+Acho que meu tempo de grande sociabilidade já passou com a juventude, vejo coisas mais importantes...
+_____
+
+10-03-2022
+__
+
+Escrevendo, também vou, gradativamente, sentindo-me mais organizado, o que contribui para a paz interior e as boas consequências.
+_____
+
+10-03-2022
+__
+
+Meus escritos pessoais como uma extensão dos escritos e softwares matemáticos.
+
+Para algumas pessoas o sentido é o inverso.
+_____
+
+10-03-2022
+__
+
+Mesmo com, talvez, algumas anotações privadas minhas terem vazado, continuo, na medida do possível, zela pelos sigilos, mesmo que sejam sigilos historicamente temporários.
+
+Tenho mais algumas anotações privadas para escrever, mas, por problemas técnicos, não estou no momento podendo, logo devo me conformar com o não me expressar totalmente. Já me expressei muito...
+_____
+
+10-03-2022
+__
+
+No silêncio e sozinho penso e escrevo melhor...
+_____
+
+10-03-2022
+__
+
+Passei muitas horas nos últimos dias programando / desenvolvendo softwares, agora, sem internet, o trabalho me parece ser escrever pensamentos, voltar a escrever pensamentos de natureza intrapessoal.
+
+Quanto mais escrevo, mais rico me torno para a História, e também me desenvolvo mais.
+_____
+
+10-03-2022
+__
+
+Sem internet, estou procurando meios alternativos de empregar bem o tempo, e estou me descobrindo mais...
+_____
+
+10-03-2022
+__
+
+Usufruir bem do tempo também com prazeres, mesmo com pequenos, como comer ou beber algo saboroso.
+_____
+
+10-03-2022
+__
+
+Por me ver como mau em minha infância, e também por outras razões nas quais me vejo inserido nesta atual encarnação, acho que talvez fui um mau membro familiar em encarnações passadas, e talvez uma de minhas missões aqui seja ser um bom familiar, ser um bom cônjuge, no entanto, vejo relacionamentos conjugais como maus, pois exigem certa dose de materialismo, o que pode ocasionar muitos outros males...
+
+Acho que, se desejo ser um espírito livre, devo ser solitário...
+_____
+
+10-03-2022
+__
+
+Além de meus softwares estarem funcionando perfeitamente, em razão de eu ser perfeccionista, os fontes também tem de estar elegantemente escritos, com cada trecho bem compreendido.
+_____
+
+10-03-2022
+__
+
+Escrevo muito também pela facilidade com que é tendo um computador, muito melhor que escrever à mão.
+_____
+
+10-03-2022
+__
+
+Comparo muito o escrever pensamentos a estar em um divã consultando-me com um(a) psicólogo(a).
+_____
+
+10-03-2022
+__
+
+Há atualizações pendentes para o Mathematical Ramblings, mas nada crítico / urgente, pausei o CloudHQ com um dispositivo móvel, e, quando a internet voltar, talvez amanhã, realizo as atualizações.
+_____
+
+10-03-2022
+__
+
+Hoje à tarde a internet voltou a cair, mas mantive o hábito de me ocupar com algo útil qualquer. Primeiro, fiquei na varanda observando o movimento da rua, o que gostei, pois ultimamente passei muito tempo em frente à tela do computador; segundo, fui caminhar; terceiro, fui realizar mais tarefas domésticas; e quarto, estou aqui escrevendo pensamentos, e talvez, depois, vou jogar games.
+_____
+
+10-03-2022
+__
+
+Que bom artifício mental / psicológico! De, após um erro ou ação qualquer que cause-me mal-estar, compensar o erro ou outra coisa qualquer resolvendo um problema de Matemática, na magnitude que melhor achar.
+
+Volto a me sentir bem...
+_____
+
+10-03-2022
+__
+
+Sempre estudando e deixando meu blog de Matemática (atualmente "mathematicalramblings.blogspot.com") o mais perfeito possível porque assim tenho minha autoestima preservadamente elevada, o que me proporciona paz e felicidade...
+_____
+
+10-03-2022
+__
+
+Gosto de adicionar em redes sociais mulheres religiosas, por uma particular razão: como geralmente reprimem "certos desejos", provavelmente sentem a necessidade de os exprimir...
+_____
+
+10-03-2022
+__
+
+Já bem mais independente de sociabilidade, por algumas vezes não respondo aos que iniciam conversas comigo na internet.
+_____
+
+10-03-2022
+__
+
+Depois de passar dias programando ininterruptamente, agora, com tudo pronto, relaxado, é que voltei a conversar comigo mesmo...
+_____
+
+09-03-2022
+__
+
+Só sossego depois que tento e vejo se é possível ou não...
+_____
+
+07-03-2022
+__
+
+No Facebook, desfazendo-me dos contatos que me parecem fakes.
+_____
+
+07-03-2022
+__
+
+Administrando o bem-estar...
+_____
+
+07-03-2022
+__
+
+Aquela fase em que escutamos as músicas dos Racionais Mc's...
+_____
+
+07-03-2022
+__
+
+Em tempos bons, ergo as estruturas, e, em tempos ruins, as estruturas me servem de apoio...
+_____
+
+07-03-2022
+__
+
+Ousadia, mas com prudência...
+_____
+
+07-03-2022
+__
+
+Do ponto de vista de ser muito apegado a computadores, pode isto ser ruim, mas o lado bom é que tem muitos, muitos objetos de afeto, para os quais fluem o saudável amor, objetos que são constituídos de informação.
+
+Quanto mais amor, mais vida...
+_____
+
+07-03-2022
+__
+
+No meu blog há muita programação para ser um blog com foco em Matemática, mas gosto muito disto.
+_____
+
+07-03-2022
+__
+
+Com clientes, é bom falar o mínimo necessário.
+_____
+
+07-03-2022
+__
+
+Quanta realização pessoal ao alguém vir pedir meu código sobre um software que publiquei...
+_____
+
+06-03-2022
+__
+
+Para mais facilmente apegar-me aos livros, considerá-los sagrados...
+
+Talvez este seja o único meio.
+_____
+
+06-03-2022
+__
+
+Talvez futuramente, apegado quase unicamente aos livros, eu olhe para este passado, e diga: como processo de formação de um Matemático, precisava passar por isto, por este apego aos registros, pois muito da Matemática é escrever.
+_____
+
+06-03-2022
+__
+
+Despedindo-me de computadores tendo feito, com sucesso, praticamente todos os softwares nos quais investi trabalho, saindo com uma elevadíssima autoestima.
+_____
+
+06-03-2022
+__
+
+Mentalizando mais os livros e menos os computadores como um processo de apego aos livros e desapego dos computadores.
+
+Quanto a isto, ainda não resolvi, mas já tenho bons progressos.
+_____
+
+06-03-2022
+__
+
+O que vou fazer com esta ausência de problemas?...
+_____
+
+06-03-2022
+__
+
+Programação de computadores, cirar softwares, alimenta muito o ego...
+
+Ao meu ver é a atividade humana que mais exige da inteligência.
+_____
+
+06-03-2022
+__
+
+Tudo organizado; restou apenas um pouco de ansiedade por viver muitos momentos de ansiedade, algumas vezes agudas, para que pudesse construir.
+_____
+
+06-03-2022
+__
+
+Feliz por agora estar com fome, assim os pães assados ficarão ainda mais saborosos.
+_____
+
+06-03-2022
+__
+
+A internet é um imenso oceano de informações para brincar de mergulhar e nadar.
+_____
+
+06-03-2022
+__
+
+Com, até o momento, tudo em ordem, dizendo a mim mesmo: relaxa e acumula energias para gastar em futuros problemas.
+_____
+
+06-03-2022
+__
+
+Converto os ataques a mim em exercícios para ficar mais forte espiritualmente.
+_____
+
+06-03-2022
+__
+
+Fiz um software que pode ser considerado um "AutoCAD" rudimentar. Dá até para criar um site com pré-moldados digitais.
+_____
+
+06-03-2022
+__
+
+Apaixonado por estudar, logo apaixonado por informação, logo apaixonado por bytes e bits.
+_____
+
+05-03-2022
+__
+
+Acho que já está na hora de deixar computadores mais de lado e dar mais atenção aos livros.
+
+Meus arquivos e dados já estão muito bem organizados por aqui.
+
+Bom exercitar isto também para adquirir mais independência de computadores, tendo mais paz e sendo mais feliz.
+_____
+
+05-03-2022
+__
+
+A Matemática é tão universal que posso me preocupar unicamente com ela e esquecer o resto do mundo...
+_____
+
+05-03-2022
+__
+
+Também já não tenho tanta pressa em fazer backups, os já realizados estão bem completos.
+_____
+
+05-03-2022
+__
+
+Escrevi muito sobre pensamentos intrapessoais, e tinha que ser muito mesmo diante da inteligência e complexidade.
+_____
+
+05-03-2022
+__
+
+O Facebook me serviu também como um "propulsor" para que eu escrevesse tanto e tão detalhadamente.
+_____
+
+05-03-2022
+__
+
+Aqui, em paz e em felicidade, dizendo a mim mesmo: desfruta, desfruta...
+_____
+
+05-03-2022
+__
+
+Também já estou bem mais tranquilo quando não tendo acesso à internet, pois já muito organizei meus dados online e backups.
+_____
+
+05-03-2022
+__
+
+Todo sacrifício vale a pensa para desfrutar desta paz que sinto agora, e, talvez, futuramente, a paz será ainda maior...
+_____
+
+05-03-2022
+__
+
+Não tenho o Forza Horizon 5, mas tenho o Gran Turismo 2, que me satisfaz bastante. =)
+_____
+
+05-03-2022
+__
+
+Não tem muito de físico, mas algo que me faz sentir-me muito livre, muito a liberdade, é já ter escrito uma boa gama de artigos e softwares matemáticos. Deixa-me menos preocupado quanto a isto.
+_____
+
+05-03-2022
+__
+
+Comemorando a organização dos meus arquivos e de minha mente.
+_____
+
+05-03-2022
+__
+
+Como admiro inteligência, gosto de me aproximar de mulheres gamers e devs.
+_____
+
+05-03-2022
+__
+
+Escrever para por em ordem o caos dos pensamentos...
+_____
+
+05-03-2022
+__
+
+Novas redes sociais, devo fazer novas amizades...
+_____
+
+05-03-2022
+__
+
+Feliz e satisfeito com backups atualizados.
+_____
+
+05-03-2022
+__
+
+Sem a mesma mania de limpeza, porém fiz uma faxina aqui; não custou muito.
+_____
+
+05-03-2022
+__
+
+A realização pessoal também é uma espécie de salário, tomo isto para mim, e permito aos outros desfrutarem quando vejo que gostam de fazer favores.
+_____
+
+05-03-2022
+__
+
+A exclusão do meu antigo Facebook, no qual tinha quase 5000 contatos, não afetou muito minha produção intelectual, pois procuro escrever principalmente em arquivos que mantenho comigo e hospedo no Dropbox.
+_____
+
+05-03-2022
+__
+
+Muitas vezes o passado me serve como referência sobre como é viver sem sofrer de males espirituais, tendo-o como foco, porém ciente de que pode ser melhor.
+_____
+
+05-03-2022
+__
+
+Adaptando-me à realidade de escrever Matemática e ter praticamente eu unicamente como espectador.
+
+Com ou sem audiência, preciso ocupar-me com algo construtivo afim de sobreviver espiritalmente...
+_____
+
+05-03-2022
+__
+
+Sem internet, é uma excelente opção de ocupação do tempo escrever pensamentos aleatórios tal como estou fazendo agora.
+_____
+
+05-03-2022
+__
+
+Sendo um melhor Matemático sendo solteiro, para ter o mínimo de preocupações outras, como quanto a coisas materiais.
+_____
+
+05-03-2022
+__
+
+Ontem passei quase o dia inteiro desenvolvendo a calculadora de mmc (mínimo múltiplo comum) passo a passo, mas, como um aspirante a Matemático, se já não Matemático, precisava ter.
+_____
+
+05-03-2022
+__
+
+Ainda sem internet, aqui, escrevendo offline, já preparei as publicações de Matemática a disponibilizar online.
+_____
+
+05-03-2022
+__
+
+A Matemática está cada vez mais, se já não está, assumindo o posto de objeto amado tal como games foram no meu passado.
+
+Como uma consequência, desfruto dos sentimentos afetivos livrando-me de males espirituais tais como mania de limpeza e outros.
+_____
+
+05-03-2022
+__
+
+Às vezes a Matemática e as cobranças sociais exigem muito tempo e energias de mim, logo é bom dedicar os restantes para o contato íntimo com meditações, e não com entretenimentos.
+
+A Matemática já é um entretenimento.
+_____
+
+05-03-2022
+__
+
+Tenho dúvidas se é algo bom ou ruim: se uma experiência me incomoda, eu falo dela, desabafo, ou reclamo se assim for interpretado; eu me sinto bem, porém temo pelos conselhos espíritas de que devemos ser resignados.
+_____
+
+05-03-2022
+__
+
+Como várias vezes ocorre aqui em casa, estou deixando para estudar mais tarde, quando houver silêncio...
+_____
+
+05-03-2022
+__
+
+Outro marco em minha vida: conhecer o JavaScript. Poderia também dividir minha vida em "aJ" (antes do JavaScript) e "dJ" (depois do JavaScript). =)
+_____
+
+05-03-2022
+__
+
+Estou pensando aqui se engordei um pouquinho por ter comido demais ontem, mas estou tranquilo, estou mais apegado ao intelecto.
+
+Se as comidas são muito gostosas, acho que vale a pena comer com vontade, assim desfruto da vida.
+_____
+
+05-03-2022
+__
+
+O pensar analítico herdado da Matemática ajuda no cotidiano.
+_____
+
+05-03-2022
+__
+
+Poderia estar jogando games, mas já tenho a Matemática para amar e me apegar, e ela me satisfaz bastante, alimentando meu ego inclusive.
+
+Matemática e independência de games...
+_____
+
+05-03-2022
+__
+
+Mesmo no momento sem internet no desktop, gosto de ficar aqui sentado em frente a ele, acho que criei um condicionamento psicológico.
+_____
+
+05-03-2022
+__
+
+Herdando o pensamento analítico da Matemática, talvez fosse inevitável também pensar analiticamente sobre a intrapessoalidade e a sociabilidade.
+_____
+
+05-03-2022
+__
+
+Assim como levo a Matemática a sério e outros estudos nem tanto, também me permito não ser totalmente perfeccionista quanto a relações sociais.
+_____
+
+04-03-2022
+__
+
+O desconforto / sofrimento que mais devo temer é me sentir inferior...
+
+Procuro me previnir dele, dentre outras coisas, estudando regularmente.
+_____
+
+03-03-2022
+__
+
+O Facebook agora, nas últimas horas, bem mais tranquilo; estou mais calmo quanto a isto.
+_____
+
+03-03-2022
+__
+
+Caso esteja impossibilitado de escrever Matemática em computadores, pretendo investir as energias, que hoje são utilizadas para este fim, em estudar mais.
+_____
+
+03-03-2022
+__
+
+Já tenho panturrilhas moderadamente desenvolvidas, e, caminhando, pretendo, além de outros objetivos, desenvolvê-las mais.
+_____
+
+03-03-2022
+__
+
+Estudar é tão benéfico que acho que é impossível caminhar pelos paraísos sem ter o hábito.
+
+Não estudar pode ser um pecado mortal...
+_____
+
+03-03-2022
+__
+
+Com o Google Translate, nem é tão elogiável assim conversar em vários idiomas com diversas pessoas pela internet.
+_____
+
+03-03-2022
+__
+
+Muitos sofrimentos com as crises de estresses no início da vida adulta, no entanto medalhas valiosíssimas quando considerado o conjunto de experiências espirituais.
+_____
+
+03-03-2022
+__
+
+Levar Matemática a sério porque é o ofício que me ocupa afim de sobreviver espiritualmente; daí tamanha seriedade...
+_____
+
+03-03-2022
+__
+
+Sempre escrever Matemática para ficar sempre fixada na mente, além de me dar mais bases para conceitos mais avançados.
+_____
+
+03-03-2022
+__
+
+Valeu e vale muito a pena cuidar da estética do corpo com exercícios físicos ao sair sem camisa para caminhar pelas ruas; entre alguns olhares e outros, sinto que estou bem.
+
+Talvez as pessoas não olhem unicamente meu corpo, mas também minha alma, que também está bem.
+...
+
+Se um dia eu não tiver mais o privilégio da beleza física, estarei tranquilo pensando: enquanto tive, aproveitei.
+_____
+
+03-03-2022
+__
+
+Residimos em um espaço, mas, como o tempo existe, também residimos no que nos ocupamos...
+_____
+
+03-03-2022
+__
+
+Minha alma reside no escrever Matemática...
+_____
+
+03-03-2022
+__
+
+Construir sempre para viver, ou sobreviver...
+_____
+
+03-03-2022
+__
+
+Construir um pouquinho, dar um tempo, e depois construir mais um pouco, repetidamente...
+_____
+
+03-03-2022
+__
+
+Estar construindo algo como se estivesse respirando...
+_____
+
+03-03-2022
+__
+
+Em um trecho de uma música do grupo musical Legião Urbana, "(...) é preciso amar as pessoas como se não houvesse amanhã (...)", eu substituiria por "(...) é preciso construir como se fosse impossível viver sem o fazer (...)".
+
+Sim, parece-me que, para a boa saúde emocional / psicológica / espiritual, é preciso estar sempre apegado à construção de algo, prioritariamente algo o mais próximo possível da própria alma para que seja uma posse que não possa ser arrancada...
+_____
+
+03-03-2022
+__
+
+Tudo bem escrever algo do qual vou discordar futuramente, meus registros ficam mais ricos.
+_____
+
+03-03-2022
+__
+
+Hoje fiz os exercícios físicos mais pesados, e devo comer, no entanto estou esperando dar mais fome para me alimentar com maior prazer, valorizando mais os alimentos e desfrutando melhor da vida.
+_____
+
+03-03-2022
+__
+
+Adaptando-me a uma mais reduzida sociabilidade ao ponto de comunicar-me unicamente, embora possa ter mais meios, em escrever no meu blog.
+_____
+
+03-03-2022
+__
+
+O computador com internet é um aparelho que fica em um recinto da casa, no entanto acho que é melhor o comparar com uma grande universidade, da qual não consigo dar conta, logo devo escolher apenas um ou poucos departamentos.
+_____
+
+03-03-2022
+__
+
+Talvez, atualmente, eu esteja passando por alguns males sob os quais já passei anteriormente, só que hoje bem mais preparado; não me desespero, aprendo a lidar com eles mantendo minha vida construtiva.
+_____
+
+03-03-2022
+__
+
+Solidão...
+
+Talvez a melhor companhia seja um trabalho. E ainda bem que o trabalho que mais levo a sério é escrever Matemática.
+
+Escrevo M, no entanto também escrevo outras coisas, o que ajuda bastante.
+
+A essência parece ser manter o ânimo de estar construindo algo qualquer.
+_____
+
+03-03-2022
+__
+
+Muitas vezes assistir a partidas de games é mais divertido que jogar os games.
+_____
+
+03-03-2022
+__
+
+Ao cometer erros, logo pensar: vou me reconciliar (o que quase sempre significa reconciliar-me comigo mesmo), e logo parar de errar, pois, como já disse antes: todos erram, o importante é errar pouco...
+_____
+
+03-03-2022
+__
+
+Talvez já tenha esgotado muitos assuntos sobre mim mesmo, e, daqui em diante, deva me ocupar mais com outras coisas, como com estudos e games.
+_____
+
+03-03-2022
+__
+
+Às vezes algo ruim me acontece, mas depois penso: se desejo preocupar-me apenas com Matemática, devo saber como lidar com isto também, já tendo as soluções para uma grande diversidade de adversidades.
+_____
+
+03-03-2022
+__
+
+Muitos problemas hoje pela manhã que, agora, estando eu tranquilo e sozinho no silêncio, escrevendo pensamentos, servem de "fertilizantes" para o crescimento pessoal, amadurecimento.
+_____
+
+03-03-2022
+__
+
+14:14, depois de já ter cumprido todos os deveres do dia, estou aqui em contato comigo mesmo, em meditação / oração; e o bom é que ainda há muito dia pela frente.
+_____
+
+03-03-2022
+__
+
+Apesar das conquistas, alguns podem sentir "pena" de mim, o que é bastante incômodo para alguns serem objetos desta visão. Procuro conquistar muitas e nobres coisas para que isto não me ocorra, ou ocorra pouco; os registros escritos fazem parte delas.
+_____
+
+03-03-2022
+__
+
+Talvez ser chamado de "burro" seja a pior ofença a um programador, pois o que mais importa neste ramo é a inteligência.
+_____
+
+03-03-2022
+__
+
+Ao que parece, matemáticos admiram programadores, e programadores admiram matemáticos.
+_____
+
+03-03-2022
+__
+
+Não sou um Dalai-lama, acho que posso me permitir ser um pouco intolerante, intolerante quanto à falta de conhecimentos elementares sobre o que se manipula.
+
+Esta me parece a postura mais adequada ao abraçar a vocação matemática.
+
+Esta intolerância pode, inclusive, ajudar a mim mesmo, por cobrar de mim o progresso que exijo dos outros.
+_____
+
+03-03-2022
+__
+
+Por não conhecer de Informática, o cliente pede algo, faço exatamente como me pediu, e depois me chama de burro porque não saiu como ele desejava...
+_____
+
+02-03-2022
+__
+
+Acho que meditar era o que, segundo a Bíblia, Jesus desejava dizer ao falar "encher as candeias com azeite"...
+_____
+
+02-03-2022
+__
+
+Com mulheres e também com pessoas em geral, é melhor não interagir que interagir mau.
+_____
+
+02-03-2022
+__
+
+Por um lado foi ruim eu ser impedido de usar meu perfil de mais de 10 anos no Facebook; por outro foi muito bom porque vivi experiências muito construtivas.
+_____
+
+02-03-2022
+__
+
+Em razão do VSCode, que está bem "bonitinho", do próprio e de algumas extensões, também sinto-me mais estimulado a escrever; estou o utilizando também para este fim.
+_____
+
+02-03-2022
+__
+
+Gosto por, em meus escritos, haver referências a várias personalidades, eles ficam mais ricos.
+_____
+
+02-03-2022
+__
+
+Afim de ser ainda mais organizado, mesmo sem ainda utilizar, procuro ter vários softwares de programação instalados aqui neste desktop. Futuramente posso precisar, e eles não ocupam muito espaço em disco.
+
+Procurando ser mais organizado, cuido até dos temas e aparências dos sistemas. As coisas mais importantes já estão em boa ordem.
+_____
+
+02-03-2022
+__
+
+Não acho o Joe Biden maduro, pois também parece ao menos um pouco belicoso.
+
+Em geral, em um mundo material, postos altos exigem certa agressividade para serem tomados. Em razão disto, evito, pois desejo preservar minha saúde espiritual, ao menos o que resta dela...
+_____
+
+02-03-2022
+__
+
+Também tudo bem repetir pensamentos de quaisquer naturezas, embora com palavras distintas; meus registros ficam mais ricos.
+_____
+
+02-03-2022
+__
+
+Profundamente relaxado com, além de estar tendo um bom dia, ter meus arquivos perfeitamente organizados.
+_____
+
+02-03-2022
+__
+
+Dizem que é ruim ficar sozinho, mas acho que o ruim mesmo é não ter contato consigo mesmo...
+
+Talvez seja este o mal muito alertado pelo cristianismo...
+_____
+
+02-03-2022
+__
+
+Talvez muitos, assim como eu, tiveram que criar outras contas no Facebook porque tiveram problemas com as anteriores; então podem ser genuínos os perfis que tem poucos dados, assim como o meu atual.
+_____
+
+02-03-2022
+__
+
+Todo o restante organizado; esperando apenas mais tarde ficar para poder incluir meu atual arquivo de anotações no pacote de backup dos arquivos mais importantes. Posso conceber mais pensamentos, e estou.
+_____
+
+02-03-2022
+__
+
+Agora, mais livre e com tempo, vou dar uma visitadinha em meu Facebook, e se alguém conversar um pouco comigo, tudo bem; foi algo que me traumatizou um pouco, ontem muitos, muitos puxaram conversas comigo.
+_____
+
+02-03-2022
+__
+
+Gosto de escutar músicas em som forte (alto no vulgar), mas, às vezes, prefiro o silêncio quando desejo me acalmar ou organizar melhor minha mente.
+_____
+
+02-03-2022
+__
+
+Dormi perfeitamente bem, no entanto, para poder desfrutar do dia, precisava, primeiro, cumprir com meus deveres autoimpostos de Matemática, estudar e escrever, o que durou até cerca das 12:00.
+_____
+
+02-03-2022
+__
+
+Já evitando entrar no Facebook para não interagir socialmente, o que já fiz bastante, e, hoje, prefiro me concentrar em outras coisas, como em Matemática ou em games.
+_____
+
+01-03-2022
+__
+
+Apenas 107 contatos no Facebook, mas já bastante satisfeito.
+_____
+
+01-03-2022
+__
+
+Às vezes gosto de deixar o navegador aberto em meu blog, para eu ficar olhando as expressões matemáticas, contemplando, admirando, e me inspirando...
+_____
+
+01-03-2022
+__
+
+Sobre design, gosto bastante do canal alfa, ou seja, da transparência. Aplico muito no que faço.
+_____
+
+01-03-2022
+__
+
+Hoje, conversando com um, acho que posso considerar amigo, sobre meu blog, disse que era cheio de efeitos gráficos porque era meu "parque de diversões", e realmente é; ignoro alguns conselhos sobre modificações a fazer para deixar do jeito que mais gosto, e, gostando do meu blog, sinto-me bastante estimulado a escrever mais Matemática nele e a estudar mais M.
+_____
+
+01-03-2022
+__
+
+Sociabilidade, porém estou em um nível de tal independência que, mesmo solteiro, já me sinto satisfeito.
+
+E ainda bem que o estado civil de solteiro já me satisfaz, assim evito muitos problemas que surgem com relacionamentos...
+_____
+
+01-03-2022
+__
+
+Como pode ser algo que me toma muito os pensamentos, tudo bem repetir, embora com palavras diferentes, reflexões sobre o não dormir bem; meus registros ficam mais ricos.
+_____
+
+01-03-2022
+__
+
+Hoje foi um dia especial; não pelo conforto, mas por ter um conjunto de experiências que me fizeram evoluir bastante significativamente.
+_____
+
+01-03-2022
+__
+
+Acho que, se tiver alguma questão de natureza moral / jurídica contra alguém, sempre terá questões sociais a resolver, questões que podem nos consumir muito psiquicamente...
+_____
+
+01-03-2022
+__
+
+Realmente deixar a casa perfeitamente limpa e organizada proporciona profunda paz... Ao menos em mim.
+_____
+
+01-03-2022
+__
+
+Não sou muito de guardar bens de consumo porque penso: amanhã posso não estar mais aqui... No sentido de não estar mais encarnado.
+_____
+
+01-03-2022
+__
+
+Profundamente satisfeito com meus escritos, mas pensei: estou aqui, sem fazer nada, evoluir mais é sempre bom. Vou escrever mais.
+_____
+
+01-03-2022
+__
+
+Um alívio ter todos estes registros de pensamentos que me proporcionam organização pessoal e social, livrando-me, ao menos em parte, das preocupações quanto a estes aspectos.
+_____
+
+01-03-2022
+__
+
+Quanto mais organização intrapessoal, menos loucura e mais paz. No entanto acho que a perfeita organizaão é inatingível, logo devo ter ciência de que sempre serei um pouco louco e sempre terei um pouco de perturbação, mas, quanto mais me organizar, menores serão.
+_____
+
+01-03-2022
+__
+
+Esta novela da rede Globo de televisão, "Quanto mais vida, melhor." é bem musical.
+_____
+
+01-03-2022
+__
+
+Um vizinho aqui de casa que, não entendo bem os porquês, tem muita antipatia por mim; faz anos que nos conhecemos e ele, com toda força, tenta me ferir e me provocar, procurando vulnerabilidades e atacando-me nelas sem piedade...
+
+Em nome de meu bem-estar, não me defendo; deixo-me atingir e fico me recuperando através de meditações; assim fortaleço-me e desfaço-me das flechas sem danos.
+_____
+
+01-03-2022
+__
+
+Às vezes sinto que estou em meus limites, então abraço com força a meditação; é o mais aconselhável por religiões e pela psicologia.
+_____
+
+01-03-2022
+__
+
+Também, gradativamente, ao escrever mais e mais, vou me tornando mais independente do social, o que contribui para minha paz interior e faz mais brando o desconforto de, eventualmente, não ter tido uma boa noite de sono.
+
+O mesmo também com já estar bastante satisfeito com o meu atual progresso na Matemática.
+_____
+
+01-03-2022
+__
+
+Tranquilizei-me mais ao fazer mais uma faxina na casa; sempre me sinto bem após elas.
+_____
+
+01-03-2022
+__
+
+Ser absolutamente sincero com meus escritos para que mais eficientemente eles contribuam para minha evolução pessoal.
+
+Devo aproveitar a oportunidade e dizer aqui que, em poucos, disse meias verdades.
+_____
+
+01-03-2022
+__
+
+Boas estas diversidades de experiências para logo me enriquecer com os fundamentos afim de, posteriormente, preocupar-me quase unicamente com Matemática.
+_____
+
+01-03-2022
+__
+
+Arrependi-me de ter adicionado tantas pessoas em meu Facebook.
+
+Não tenho nada contra ninguém, influenciado também porque, se eu tiver, estarei espiritualmente mal; no entanto, para os meus objetivos de vida, muita sociabilidade não convém. Ter uma boa sociabilidade, mas com moderação.
+
+Estou fazendo uma seleção dos meus contatos.
+
+Já espirutalmente consideravelmente evoluído, tomo como normais arrependimentos.
+_____
+
+01-03-2022
+__
+
+Esperando as coisas se estabilizarem novamente para poder me tranquilizar...
+_____
+
+01-03-2022
+__
+
+Os estudos combinam com a solidão; sozinhos, pensamos melhor.
+
+Há uma frase atribuída a Nikola Tesla que diz para ficarmos sozinhos para que ideias surjam.
+_____
+
+01-03-2022
+__
+
+Às vezes não durmo bem porque, deitado, fico pensando em problemas de Matemática ou de programação.
+_____
+
+01-03-2022
+__
+
+Sociabilidade demais pode assustar, mas é uma das etapas do processo evolutivo; precisamos saber como lidar.
+
+Imagino que no mundo espiritual a sociabilidade seja gigantesca...
+_____
+
+01-03-2022
+__
+
+Deixando em meu blog, quanto à parte de programação, algumas funções já implementadas, porém ainda não ativas porque os atuais computadores não são tão velozes.
+_____
+
+01-03-2022
+__
+
+Agora a pouco fechei a aba do Facebook porque, depois de aceitar muitos convites de contato (prefiro chamar "contato" que "amizade"), muitos iniciaram conversas comigo de modo a eu não ter tempo livre...
+
+Depois reabro.
+_____
+
+01-03-2022
+__
+
+Escuto conselhos sobre como melhorar meu blog, mas avalio se aceito ou não, pois construir ele está sendo minha maior diversão.
+_____
+
+01-03-2022
+__
+
+Reconhecendo a importância da sociabilidade, estou aceitando praticamente todos os convites de contato no Facebook, não quase unicamente de mulheres como fazia antes.
+_____
+
+01-03-2022
+__
+
+De semelhante forma como sou perfeccionista quanto à Matemática, e menos quanto aos demais estudos, também posso adotar a postura de não ser igualmente perfeccionista quanto à limpeza e à boa noite de sono - e, consequentemente, à beleza e saúde físicas -, dando o assunto, ao menos por enquanto, encerrado.
+
+Assim volto a me sentir organizado.
+_____
+
+01-03-2022
+__
+
+Um dos fatores que contribuíram para a minha grande crise de estresse foi o pensar quase unicamente na Matemática e ciências relacionadas, no entanto hoje tenho a mesma postura, porém mais ou menos seguro porque nos últimos anos desenvolvi bastante a intrapessoalidade, algo que não tinha na época.
+
+A mesma postura de amor porque amar é necessário...
+_____
+
+01-03-2022
+__
+
+Por enquanto meu ego está satisfeito com o até onde cheguei na Matemática. Futuramente mais poderá ser exigido.
+
+Estando com o ego satisfeito, tenho paz...
+_____
+
+01-03-2022
+__
+
+Estando bem com a Matemática, não me preocupo muito com as demais coisas.
+_____
+
+01-03-2022
+__
+
+Muito do bem-estar é relacionado ao quanto damos atenção às coisas, a que coisas.
+_____
+
+01-03-2022
+__
+
+Também menos rigoroso quanto ao exigir silêncio para estudar. Estudando mesmo em ambientes com até certo grau tolerável de barulhos.
+_____
+
+01-03-2022
+__
+
+Talvez, se eu não fosse tão apegado aos estudos, seria um fofoqueiro...
+_____
+
+01-03-2022
+__
+
+Sendo chulo, acho que devo ser "rabugento" no sentido de não ser tão rigoroso quanto às limpezas físicas, no entanto perfeccionista quanto às limpezas espirituais.
+_____
+
+01-03-2022
+__
+
+Talvez o processo mais importante, no entanto um dos mais morosos, é deixar o materialismo e ser espiritualista.
+_____
+
+01-03-2022
+__
+
+Livrar-me o que puder das preocupações materiais porque são angustiantes, principalmente pelo fato de que pouco podemos controlar o que é material.
+_____
+
+01-03-2022
+__
+
+Às vezes fisicamente mais preocupado com os registros que com o próprio corpo, o que pode ser justificável, pois os registros são de natureza mais espiritual.
+_____
+
+01-03-2022
+__
+
+Reconhecendo também que ainda não tenho inteligência suficiente para fazer algumas coisas na própria Matemática, futuramente pode ser possível tendo eu mais inteligência e maturidade.
+_____
+
+01-03-2022
+__
+
+Hoje mais uma vez não dormi bem, no entanto estou cada vez mais tranquilo quando isto ocorre, pouco me importando com as consequências físicas focado na espiritualidade.
+
+Também tendo a mesma postura quanto à mania de limpeza, cada vez menos preocupado com a limpeza física.
+_____
+
+28-02-2022
+__
+
+Meu blog é cheio de efeitos gráficos, e, se puder adicionar mais, ponho, pois sou gamer também, e em games, quanto mais efeitos gráficos, melhor.
+_____
+
+28-02-2022
+__
+
+Por outro lado, resolver-me com a Matemática do dia para me sentir mais livre para o pensar interiormente.
+_____
+
+28-02-2022
+__
+
+Talvez a palavra mais importante de todas as religiões seja "esperança"...
+_____
+
+28-02-2022
+__
+
+Se não simpatizo com alguém, já não me afasto, utilizo o convívio para evoluir mais.
+
+Sem evoluir, estamos espiritualmente mortos...
+_____
+
+28-02-2022
+__
+
+Muito boa a técnica de punição de resolver mais uma questão de Matemática após um erro, inclusive de erros não relacionados à M. Cresço bastante nela.
+_____
+
+28-02-2022
+__
+
+Evito considerar alguém tão importante para mim ao ponto de a atacar...
+_____
+
+28-02-2022
+__
+
+Também resolvendo, principalmente por meio da escrita, o máximo que puder de questões intrapessoais / morais afim de me sentir mais livre para a Matemática.
+_____
+
+28-02-2022
+__
+
+Já faz um tempinho que fiquei sem contato com a Matemática, a última vez foi hoje no início da tarde; vou resolver um probleminha para me sentir bem (será que sou dependente?...). =)
+_____
+
+28-02-2022
+__
+
+Dentre os de esquerda (posição política) no Brasil, há um número suficiente de sensatos que não desejam guerra; provocados foram, e muito, mas são inteligentes. Quanto ao restante, principalmente quanto aos provocadores, não sei o que se passam com ele, talvez o Diabo possa dizer...
+_____
+
+28-02-2022
+__
+
+Ser bom não é só uma questão de ser bom, mas também de ser inteligente, visando o que virá em consequência...
+_____
+
+28-02-2022
+__
+
+Concretizando alguns sonhos de infância ao jogar games que, na época, a mim eram privados porque dinheiro era exigido, e hoje estão disponíveis gratuitamente.
+_____
+
+28-02-2022
+__
+
+Para algumas pessoas eu posso parecer desorganizado quanto a alguns aspectos, no entanto, segundo minha própria visão, estou organizado.
+
+Meu modo de pensar pode ser diferente do alheio no tocante a prioridades.
+_____
+
+28-02-2022
+__
+
+Não dá para relaxar deixando pendências desorganizadas...
+_____
+
+28-02-2022
+__
+
+Resolvendo todos os problemas de infraestrutura do blog, incluindo design e programação, para me preocupar unicamente com a Matemática.
+_____
+
+28-02-2022
+__
+
+Bem que agi bem ao, quando tinha a bicicleta, ir passear com ela mesmo sem muita vontade, tendo em mente: se tenho o privilégio de a ter, devo aproveitar. Hoje ela está quebrada, no entanto estou feliz e satisfeito por ter a usufruído quando podia, prevendo este possível futuro.
+
+Ajo semelhantemente quanto a outras coisas as quais tenho, hoje, o privilégio de usufruir...
+_____
+
+28-02-2022
+__
+
+Posso por alguns momentos não estar produzindo nada, mas o simples fato de estar psicologicamente / emocionalmente bem, já são bons momentos, pois, para atingir tais estados, são necessários muitos trabalhos e sacrifícios...
+_____
+
+28-02-2022
+__
+
+Talvez o espiritismo aconselhe o casamento para que aprendamos a amar e a nos relacionarmos melhor socialmente.
+
+No entanto encontrei meios alternativos, como amar objetos de estudo, e a me relacionar socialmente com contatos e amigos, em especial pela internet, evitando assim o nocivo materialismo.
+_____
+
+28-02-2022
+__
+
+Mudanças significativas em minha personalidade, preciso fazer novos backups.
+_____
+
+28-02-2022
+__
+
+É com muito estresse que a inteligência se desenvolve...
+
+Vejo diferenças em mim com o passar do tempo.
+_____
+
+28-02-2022
+__
+
+Com saudades de jogar um game aqui, o Real Bout Fatal Fury 2, mas sem muita disposição para aprender os movimentos do Duck King, com o qual pretendo jogar, pensando: posso deixar para lá, já estou compromissado com a também divertida Matemática.
+_____
+
+28-02-2022
+__
+
+É prudente primeiro fazer o download local dos dados do Mathematical Ramblings para, só depois, ativar a sincronização do CloudHQ; eles podem ter algum problema fatal por lá que modifiquem ou deletem os arquivos de origem.
+_____
+
+28-02-2022
+__
+
+Hoje um dia perfeito, aproveitando para meditar mais profundamente e me organizar mais profundamente como preparação para os futuros dias ruins.
+_____
+
+28-02-2022
+__
+
+Não me preocupo exageradamente com a segurança de meus dados na internet, pois não tenho muito a esconder, e também raramente mexo com finanças.
+_____
+
+28-02-2022
+__
+
+Tranquilamente me dedico a escrever Matemática já tendo um bom conjunto completo de softwares relacionados a ela.
+_____
+
+28-02-2022
+__
+
+Amar para ser espiritualmente salvo, então amo intensamente, porém algo seguro para se apegar: a Matemática.
+_____
+
+28-02-2022
+__
+
+No Blogger as postagens não ficam no main, então criei uma imagem de um único pixel transparente com o nome "trigger.png" para o addEventListener e attachEvent.
+_____
+
+28-02-2022
+__
+
+Cuidar de si pode ser uma ofença para os que investiram em nosso mal.
+_____
+
+28-02-2022
+__
+
+Escrevendo pouquíssimas coisas no Facebook, mas aqui a todo vapor, pois aqui os registros ficam comigo sem o risco, ou com risco reduzido, de serem deletados.
+
+Escrevendo, evoluo.
+_____
+
+28-02-2022
+__
+
+Na dúvida, é preferível optar por não se julgar capaz de assumir um compromisso; dizer não pode ser melhor que decepcionar.
+_____
+
+28-02-2022
+__
+
+Tudo quase perfeito, está faltando um detalhe: o copo de café aqui do lado. =)
+_____
+
+28-02-2022
+__
+
+Aprender a deixar a justiça para a espiritualidade proporciona muita paz. No entanto é preciso adquirir este hábito, o que pode demorar um pouco.
+_____
+
+28-02-2022
+__
+
+Sinais físicos da idade aparecendo, mas tranquilo, pois minha felicidade está fundamentada em qualidades cognitivas / espirituais.
+_____
+
+28-02-2022
+__
+
+Iria escrever que muita sociabilidade não é desejável em alguns contextos, mas pensei melhor, e digo que sociabilidade, quanto mais, melhor; em especial para ter público para meus escritos.
+_____
+
+28-02-2022
+__
+
+Com amor fica bem feito...
+_____
+
+28-02-2022
+__
+
+Sim, diariamente procuro estudar também um pouco da Matemática do Fundamental, mas não sou tão exigente quando a isto, pois se tratam de coisas muito fáceis.
+_____
+
+28-02-2022
+__
+
+Escrevendo muitas variações de pensamentos.
+
+Se posso escrever, se tenho a liberdade de escrever, estou usufruindo sabendo que é um grande privilégio.
+_____
+
+28-02-2022
+__
+
+Bastante satisfação também em, além de escrever Matemática, escrever pensamentos pessoais, mantendo os registros preservados.
+_____
+
+28-02-2022
+__
+
+Realizado em Matemática por, além de estudar, escrever; escrevendo ao menos enquanto posso.
+_____
+
+28-02-2022
+__
+
+Procurando exercícios de Matemática para resolver e publicar em meu blog na internet também. Às vezes é até mais prático.
+_____
+
+27-02-2022
+__
+
+Cientistas tem o Universo físico para contemplas e se inspirarem, eu, como pretendente a Matemático, contemplo e inspiro-me nos escritos matemáticos.
+_____
+
+27-02-2022
+__
+
+Aqui com a Matemática está bastante confortável, pouco me interessa o que está lá fora.
+_____
+
+27-02-2022
+__
+
+Se o download de uma mídia é permitido e não há marca d'água, faço, no entanto com moderação.
+
+Às vezes pego para mim, outras vezes para por em meus sites.
+_____
+
+27-02-2022
+__
+
+Mesmo sem muita audiência, é bastante saudável ter um blog e a liberdade que ele proporciona, liberdade tanto quanto a pensamentos, quanto programação.
+_____
+
+27-02-2022
+__
+
+Feliz por hoje, em um dia em que não dormi bem, também incluindo outros problemas, estou levando bem conforme o planejado.
+
+Planejei ocupar-me com Matemática, o que estou fazendo, mas também me sinto bem nos intervalos ao ponto de meditar como de costume em tempos perfeitos.
+_____
+
+27-02-2022
+__
+
+Escrever Matemática está sendo para mim como jogar um game RPG, com a diferença de que estou construindo algo muito mais útil que um save.
+_____
+
+27-02-2022
+__
+
+Observando as crianças, aprendi também que o mais importante de tudo é ter um coração saudável, não importam as dificuldades.
+
+Desejo ter um coração assim, cheio de amor, amor à Matemática, para me sentir imune a tudo.
+_____
+
+27-02-2022
+__
+
+Hoje recebi visitas em casa, e eles trouxeram comidas gostosas; comi muito, lembrando de fazer exercícios físicos mais intensos para evitar acúmulo de gordura.
+_____
+
+27-02-2022
+__
+
+Amando cada vez mais a Matemática, menos com mania de limpeza estou.
+_____
+
+27-02-2022
+__
+
+Estudar e escrever Matemática também como anestésicos para as dores da vida...
+
+Que tudo na vida tenha problemas, mas, eu estando bem com a Matemática, estou bem.
+_____
+
+27-02-2022
+__
+
+Felicidade alicerçada na minha organização com a Matemática, e evitando fundamentar em outras coisas, como em confortos físicos que, evoluindo cada vez mais, menos significam para mim.
+_____
+
+27-02-2022
+__
+
+Às vezes o dia é muito conturbado, mas me sinto organizado realizando os estudos do dia.
+_____
+
+26-02-2022
+__
+
+Escolhendo a Matemática como minha salvadora, eu tinha que passar por estes muitos estresses até concluir a suite de softwares que todo nobre matemático, hoje, deve possuir para ter esta honra.
+
+Depois de anos de tensões, é um pouco estranho desfrutar desta paz de agora; uma sensação muito boa e que aprendi a valorizar. Sensação resultado também do progresso na própria M.
+
+Os progressos morais / espirituais também contribuem para a tranquilidade.
+_____
+
+26-02-2022
+__
+
+Uma coisa é trabalhar, outra é cobrar dinheiro. Desta última não gosto.
+_____
+
+26-02-2022
+__
+
+Não tenho muita sabedoria para fugir dos males, mas sei que evito muitos não sendo materialista...
+_____
+
+26-02-2022
+__
+
+Decidi adicionar no meu Facebook contatos com os quais tinha antipatia. Pretendo evoluir espiritualmente mais. E, por outro lado, acho que é ruim ser solitário...
+_____
+
+26-02-2022
+__
+
+Salvo pela Matemática...
+_____
+
+26-02-2022
+__
+
+Agora não preciso ter pressa, já tendo estudado a Matemática do dia, já me sinto satisfeito.
+
+Além de ser ferramenta de trabalho, é um apoio emocional.
+_____
+
+26-02-2022
+__
+
+Se experimentar doutras coisas me enfada, deixo para lá; levo a sério unicamente a Matemática.
+_____
+
+26-02-2022
+__
+
+Sendo observador e cuidadoso também com os resultados em sites de busca quando a entrada é meu nome.
+_____
+
+26-02-2022
+__
+
+Em computadores, gosto de ficar em redes sociais, sinto-me conectado com o mundo.
+
+Aproveito e adiciono ao meu feed principal outras coisas como notícias e games.
+_____
+
+26-02-2022
+__
+
+Descansar / repousar só é possível depois de deixar tudo em ordem...
+
+Em meu caso, inclui também todos os softwares necessários à identidade de Matemático, funcionando perfeitamente.
+
+Sinto-me em paz e feliz tal como se tivesse ganhado em uma loteria...
+_____
+
+26-02-2022
+__
+
+Eternamente brincando com Matemática, e isto me satisfaz plenamente...
+_____
+
+26-02-2022
+__
+
+Recuperando as energias neste profundo descanso...
+_____
+
+26-02-2022
+__
+
+Descanso muito merecido.
+_____
+
+26-02-2022
+__
+
+Criei outra conta no Facebook com um outro e-mail; assim posso ficar acompanhando as páginas e grupos que gosto, e também ficando mais próximo dos contatos que gosto.
+
+Desta vez não pretendo investir muito em meu perfil lá.
+_____
+
+26-02-2022
+__
+
+Sei que estou evoluindo moralmente quando percebo que sinto mais paz interior...
+_____
+
+26-02-2022
+__
+
+Nem escrevo Matemática para o imediato reconhecimento social, mas para ter como registros biográficos, o que também é social, mas tendo em vista o longo prazo.
+_____
+
+26-02-2022
+__
+
+Apegado à Matemática ao ponto de criar uma instituição própria, no entanto não materialista ao ponto de ter um recinto físico; tenho na internet.
+_____
+
+25-02-2022
+__
+
+Viver para estudar Matemática e escrever Matemática...
+_____
+
+25-02-2022
+__
+
+Perfeitamente ciente de que, tendo a Matemática como vocação, ora vou ter meios de registrar Matemática, ora não.
+
+De uma forma ou de outra, procurar ocupar bem o tempo com o que for mais conveniente.
+_____
+
+25-02-2022
+__
+
+Prontinho, já implementei em software todas as ideias que tinha; agora preciso criar outras...
+_____
+
+25-02-2022
+__
+
+Aprendi muita Matemática nas escolas e universidades, mas não para utilizar em trabalhos remunerados, mas, por enquanto, quase totalmente em meu blog.
+_____
+
+25-02-2022
+__
+
+A realização pessoal é muito, muito saborosa; talvez o mais sublime dos prazeres...
+_____
+
+25-02-2022
+__
+
+Mais realização pessoal, mais paz e, consequentemente, mais felicidade.
+_____
+
+25-02-2022
+__
+
+Não trabalhar por dinheiro, mas por realização pessoal.
+_____
+
+25-02-2022
+__
+
+Não me sentiria tão realizado sem dominar mais ou menos bem o desenvolvimento de softwares e em ter uma boa coletânea deles.
+_____
+
+25-02-2022
+__
+
+Ultimamente desfrutando mais dos games porque estou mais realizado com a Matemática, com os softwares desenvolvidos, com meus escritos pessoais, e com meu estado espiritual.
+_____
+
+25-02-2022
+__
+
+Deixando para ir comer mais tarde para que a comida fique mais saborosa.
+
+É bom pensar assim quando não se tem muita comida disponível...
+_____
+
+25-02-2022
+__
+
+Às vezes programar para dar uma elevadinha na autoestima e, assim, sentir-me melhor...
+_____
+
+25-02-2022
+__
+
+Dormi muito bem, no entanto, quando acordei, a situação aqui em casa estava bastante agitada.
+
+Agora, com tudo tranquilizado, não estou fazendo nada, organizando minha mente depois das agitações.
+_____
+
+24-02-2022
+__
+
+Muitas publicidades sobre trabalhar como programados, mas, se não estou precisando muito de dinheiro, vou continuar programando para mim, em meus próprios projetos.
+
+Trabalhando para mim, trabalho com todo amor...
+_____
+
+24-02-2022
+__
+
+Devo ter medo é de perder o ânimo...
+_____
+
+24-02-2022
+__
+
+Para não ter meus desejos frustrados, nunca torcer e nem investir na infelicidade de alguém, pois a tendência de todos é o progresso.
+
+Se é amargurante alguém torcer contra mim, também devo ter o cuidado de não provar do mesmo...
+_____
+
+24-02-2022
+__
+
+Matemática sem muita pressa para apreciar e contemplar os detalhes...
+_____
+
+24-02-2022
+__
+
+Um pouco de pressa em fazer backups no Yandex.Disk porque, devido a questões bélicas, o acesso a ele aqui da América pode ser interrompido.
+_____
+
+24-02-2022
+__
+
+Acho que os que nos odeiam desejam é que estejamos parados, derrotados, sem ânimo e sem evoluir; no entanto tenho bastante vontade de crescer, trabalho parai sto, e pretendo manter-me sempre assim, eternamente...
+_____
+
+24-02-2022
+__
+
+Em geral, gosto do comportamento dos cães, cheios de amor e atenção; tenho vontade de ser como eles, se já não sou...
+_____
+
+24-02-2022
+__
+
+Alguns dias sem Facebook, hoje vejo que tomava muito tempo e energias de mim; energias que agora emprego em outras coisas, como em estudar ou programar mais.
+_____
+
+24-02-2022
+__
+
+Afim de manter-me mais perfeccionista quanto a softwares, revisei todos, inclusive os scripts Scilab, para poder dizer: todos os meus softwares estão perfeitos.
+_____
+
+24-02-2022
+__
+
+Sinto-me até mais ligado aos games e aos softwares em geral tendo os meus próprios continuados em perfeito funcionamento, alguns sublimes.
+_____
+
+24-02-2022
+__
+
+Devo valorizar estes momentos de ausência de bugs, pois, quando há bugs conhecidos a resolver, eu fico muito ansioso para logo os corrigir.
+
+Por outro lado, às vezes há uma quase irresistível vontade de programar mais.
+_____
+
+24-02-2022
+__
+
+Posso ainda não ter implementado algumas calculadoras que já tenho planejadas, mas o trabalho já está adiantado em simplesmente ter as ideias sobre o que fazer.
+_____
+
+24-02-2022
+__
+
+Em um de meus softwares, em um simulador de uma partícula em um recipiente, tive que implementar a conservação de energia, um conceito da Física.
+
+Matemática, LaTeX, programação e Física...
+
+Também já fiz softwares para a língua portuguesa, para a Química e para a Biologia.
+_____
+
+24-02-2022
+__
+
+Por muitas vezes urgentemente precisei fortalecer-me espiritualmente, mas acho que, agora, não preciso mais de tanta prassa, já evoluí bastante neste sentido, posso dar mais atenção a outras coisas.
+_____
+
+24-02-2022
+__
+
+Ainda tenho mais softwares em mente a fazer, mas posso me dar um descanço por hoje; os softwares mais importantes já fiz.
+_____
+
+23-02-2022
+__
+
+Profundamente realizado com minhas conquistas, em especial ter desenvolvido alguns softwares que tinha em mente. Isto proporciona uma grande paz...
+_____
+
+23-02-2022
+__
+
+Participando ativamente de um fórum de Matemática internacional...
+_____
+
+23-02-2022
+__
+
+Utilizando os medos também como ingredientes para a evolução espiritual, acredito que fazem-me mais corajoso, além de trabalhar em mim o autocontrole e também ir me preparando psicologicamente para as posibilidades. Assim podem ser bons.
+_____
+
+23-02-2022
+__
+
+Às vezes dou a mim a meta de produzir alguns softwares por dia, e ideias para novos não cessam, a programação pode ser um hábito.
+_____
+
+22-02-2022
+__
+
+Mesmo com muitas barreiras, mantendo o ânimo acesso porque é uma das qualidades mais valiosas.
+_____
+
+22-02-2022
+__
+
+Adianto-me e trabalho por amor, e não por dinheiro, a não ser que, já estando trabalhando gratuitamente, vejo-me forçado a pedir algo em troca.
+
+Agindo assim, tenho bênçãos espirituais.
+_____
+
+22-02-2022
+__
+
+No momento estou gostando de participar ativamente de um fórum de Matemática na internet ("https://mathforums.com").
+
+Se eu não tiver muitas restrições de liberdade, como já tive em outros fóruns, posso, com a finalidade de socialização e outras, substituir dar aulas particulares de Matemática por participar dele.
+_____
+
+22-02-2022
+__
+
+Respirando Matemática...
+_____
+
+21-02-2022
+__
+
+Acho que, qualquer que seja a profissão, fazer softwares relacionados a ela é o que há de mais realizador. Na minha opinião, nada exige mais da inteligência que programação.
+_____
+
+21-02-2022
+__
+
+Um alívio mesmo não me sentir mais pressionado a evoluir em todas as direções, isto acontece naturalmente; posso continuar tranquilo em minha evolução matemática evoluindo eventualmente em outras coisas.
+_____
+
+21-02-2022
+__
+
+A falta de liberdade talvez seja o principal motivo de eu ter escolhido e me adaptado à solidão.
+
+Solidão absoluta não, porque ainda interajo pela internet, mas em redes sociais de poucas pessoas como fóruns de Matemática.
+_____
+
+21-02-2022
+__
+
+Sem pressa para fazer o software que tenho em mente, hoja já fiz dois, e também já provei a mim mesmo que sou capaz de grandes feitos.
+_____
+
+21-02-2022
+__
+
+Basta ter uma psicologia suficiente para viver em paz e feliz, psicologia não é minha vocação escolhida.
+_____
+
+21-02-2022
+__
+
+Aqui de boa, realizado, não quero ir a lugar nenhum, quero apenas cumprir minhas rotinas de todos os dias, em especial a rotina de estudar e escrever; assim já evoluo bastante.
+_____
+
+21-02-2022
+__
+
+Tranquilidade em não somente ter o software funcionando perfeitamente, mas em compreender cada passo da escrita.
+_____
+
+21-02-2022
+__
+
+Gostoso trabalhar com a intrapessoalidade resolvida.
+_____
+
+21-02-2022
+__
+
+Ontem, de noite, já deitado para dormir, planejei alguns softwares, e já fiz um, e estou aqui de boa, não tive dificuldades.
+
+Desfrutando de uma leve elevação da autoestima.
+_____
+
+20-02-2022
+__
+
+Crescer em amor e se organizar. -> Ter paz. -> Ser feliz...
+_____
+
+20-02-2022
+__
+
+Ultimamente estou gostando bastante do Yandex.Jogo. É semelhante a ter uma assinatura Xbox Live Gold, mas com games mais simples e para desktop.
+_____
+
+20-02-2022
+__
+
+Poderia cometer mais erros nesta vida, mas acho que evitei por, talvez, já ter tido experiências em encarnações passadas.
+_____
+
+20-02-2022
+__
+
+Conquistar a paz e a felicidade sendo inteligente e sensível é muito, muito difícil, os requisitos são maiores...
+_____
+
+20-02-2022
+__
+
+Às vezes digo não quando muitas informações estão disponíveis a mim, reconhecendo minhas limitações e reservando energias para o toque / conversa no Eu.
+_____
+
+20-02-2022
+__
+
+Mesmo sem redes sociais, continuando a valorizar o privilégio de ter computador com internet para fazer, dentre outras coisas, jogar e escrever.
+_____
+
+20-02-2022
+__
+
+Ultimamente, algo diferente em mim que estou gostando, é eu me sentir feliz; antes eu tinha certa felicidade, mas hoje faz-me ter picos de êxtase...
+
+Muito de minha felicidade atribuo a ter construído muitas coisas, dentre elas um bom estado espiritual, registros, e conhecimentos matemáticos.
+_____
+
+20-02-2022
+__
+
+Algumas pessoas são patriotas, mas acho que o patriotismo é um mal, uma extensão do materialismo, tal como formar uma família física.
+_____
+
+20-02-2022
+__
+
+Retomando a naturalidade de escrever tal como tinha quando usava redes sociais, estou retomando também o perfeccionismo quanto aos meus registros na internet sob os quais ainda tenho controle, como deixar meu Scribd mais organizado.
+_____
+
+20-02-2022
+__
+
+Escrevo com pressa porque imagino que a qualquer momento ou minha encarnação aqui cesse, ou porque eu posso ser impedido de usar computadores.
+
+Aproveitando esta natureza de pensamento, dizer que minha passagem pelo Facebook foi cessada, no entanto me considero bem-aventurado, pois usufruí bastante em prol do meu desenvolvimento.
+_____
+
+20-02-2022
+__
+
+Sem muito planejamento mandei imprimir uma versão de meu livro em folhas grandes tipo A4, e com letras de tamanho normal para computadores, mas grandes para um livro, mas isto pode ser bom, pode induzir um maior efeito psicológico em um leitor, com os pensamentos ganhando mais significância.
+_____
+
+20-02-2022
+__
+
+Às vezes pessoas desconhecidas ficam me olhando com um ar de admiração que me fazem pensar que meu futuro espiritual será muito nobre.
+_____
+
+20-02-2022
+__
+
+Nunca considerar alguém inimigo, ter sempre em mente manter uma amizade, em nome do próprio bem-estar...
+_____
+
+20-02-2022
+__
+
+Ultimamente dias difíceis, mas de consequente rapidíssima evolução.
+_____
+
+20-02-2022
+__
+
+Às vezes é preciso puramente ocupar-se com algo para manter a saúde emocional.
+_____
+
+20-02-2022
+__
+
+Gostava do padre Fábio de Melo, mas parece que ele fez uma cirurgia estética, e isto me decepcionou um pouco. Um dos grandes princípios da espiritualidade é o ser natural...
+_____
+
+20-02-2022
+__
+
+Lamento não ter adquirido o hábito de escrever pensamentos antes de ter tido a grande crise de estresse, poderia ter evitado com mais autoconhecimento.
+_____
+
+20-02-2022
+__
+
+Continuando a escrever, mesmo que distante do social, sabendo que meus dados podem sim serem lidos por pessoas como aqueles tipos de jornalistas que pesquisam a fundo.
+_____
+
+20-02-2022
+__
+
+Não importa muito o que está em volta, mas sim como estou me sentindo.
+_____
+
+20-02-2022
+__
+
+Espiritualmente, toda arma que portamos causa dor e vergonha a nós mesmos; não quero ter nenhuma.
+_____
+
+20-02-2022
+__
+
+Ciente dos eventuais momentos de desapego da Matemática para dar atenção a outras coisas como um meio de desenvolver-me globalmente, vivo melhor estas ocasiões, inclusive entregando-me mais.
+_____
+
+20-02-2022
+__
+
+Realmente deve ser bastante difícil ser um presidiário aqui no Brasil, onde, em geral, as celas são pequenas e com muitos detentos; isto é ruim, mas acho que o pior deve ser os estados espirituais deles, onde muitos não tem como se expressar para a sociedade, privando-se, dependendo de seus níveis, de evoluir; em decorrência disto, muitos devem sofrer do horível mal da ansiedade sem perspectivas próximas de cura...
+_____
+
+20-02-2022
+__
+
+Mesmo que muitos invisíveis aos olhos físicos, muitos progressos, lucros e aquisições através das terapias.
+_____
+
+20-02-2022
+__
+
+Continuando a terapia, no sentido de harmonizar-me mais, escrevendo aqui.
+_____
+
+20-02-2022
+__
+
+Espiritualizando-me e desmaterializando-me desapegando-me da formosura física.
+
+Posso até ter beleza, mas não devo me apegar a isto.
+_____
+
+20-02-2022
+__
+
+Ao que me parece, faculdades particulares tem como foco os lucros financeiros; as públicas, a construção da Ciência; e os autodidatas o crescimento pessoal.
+_____
+
+20-02-2022
+__
+
+Posso até dominar virtuosamente a programação, o desenvolvimento de softwares, mas, até lá, ser humilde.
+_____
+
+20-02-2022
+__
+
+Acho que posso ficar despreocupado quanto ao cumprir o destino enunciado pelo espiritismo ao dizer que, futuramente, teremos amplos conhecimentos sobre tudo; despreocupado por um simples fato: para nos sentir-mos espiritualmente bem, precisamos ocupar o tempo de forma construtiva.
+
+Assim, posso me construir muito como Matemático, tendo eventuais ocasiões de desenvolvimento geral.
+_____
+
+20-02-2022
+__
+
+É, de um modo geral, sem utilizar redes sociais, já não me sinto mais tão estimulado a escrever, sejam pensamentos pessoais ou Matemática.
+
+O lado bom é que estou mais independente de computadores.
+_____
+
+20-02-2022
+__
+
+Acabei descendo o software simulador de partículas, ficava apresentando falhas.
+
+Como meu blog estava perfeito, decidi o manter perfeito contendo somente postagens de alta qualidade.
+
+Experiência, como programador, em descer projetos. Experiência também por desenvolver mais a paciência e a inteligência, mesmo não tendo o sucesso esperado.
+
+Quanto ao reconciliar-me comigo e com Deus após erros cometidos, posso fazer o sacrifício de estudar / acertar uma questão de Matemática Superior.
+
+Relembrando que minha vocação escolhida é Matemática, não programação; e por eu achar programadores mais inteligentes que Matemáticos, resguardo-me na humildade.
+_____
+
+19-02-2022
+__
+
+Algumas profissões / vocações exigem certo materialismo, algumas mais, outras menos, e a Matemática é uma profissão / vocação. Exige um mínimo de amor a registros.
+
+Acho que vou continuar escrevendo.
+_____
+
+19-02-2022
+__
+
+Sem redes sociais, programar está sendo o mais divertido no computador.
+_____
+
+19-02-2022
+__
+
+É um pouco estranho mesmo estar na solidão mas não me sentir incomodado, resultado de muitos esforços psicológicos.
+_____
+
+19-02-2022
+__
+
+Posso até usufruir de sociabilidades com seus benefícios, mas devo estar plenamente adaptado a viver unicamente no metaverso da Matemática.
+_____
+
+19-02-2022
+__
+
+Se preciso de um lar para viver, vou viver no metaverso da Matemática.
+_____
+
+19-02-2022
+__
+
+Melhor ter um software computacionalmente exigente, que com falhas.
+_____
+
+19-02-2022
+__
+
+Em meu software simulador de partículas, às vezes ocorrem momentos de descontinuidade nos movimentos porque há dois tipos de colisões a considerar: entre as partículas, e entre as partículas e as paredes do compartimento.
+
+Talvez com um pouco mais de desenvolvimento de lógica, os movimentos podem ficar suaves.
+
+Devido a estes saltos, pus uma contagem de tempo. Assim, o que vale não é o tempo cronológico, mas o indicado no frame.
+_____
+
+19-02-2022
+__
+
+A ordem / conselho: "ore", pode ser substituída por "comunique-se", o que faço bastante, não tendo contato direto com pessoas, mas escrevendo.
+_____
+
+19-02-2022
+__
+
+Feliz com o software simulador de partículas de uma mistura de gases perfeitos. Ficou bem feito, e era algo que há muito tempo tinha em mente.
+_____
+
+19-02-2022
+__
+
+Não preciso muito de games, tenho a Matemática para me ocupar e me divertir. Algo, acho, bem mais proveitoso.
+
+No entanto não condeno games, podem desenvolver, e muito, a inteligência.
+_____
+
+19-02-2022
+__
+
+Algo que acho muito grave nestes programas policiais de TV, ao menos atualmente, é o incitarem ao ódio...
+_____
+
+19-02-2022
+__
+
+Escrever é uma excelente forma de organizar a vida. Acho que é algo semelhante a frequentar um(a) psicólogo(a).
+_____
+
+19-02-2022
+__
+
+Posso até sofrer, mas tendo ciência de que a vida está organizada, passo melhor pelas dificuldades.
+_____
+
+19-02-2022
+__
+
+Ora tenho foco na espiritualidade, ora no relacionamento com a Matemática; em decorrência há conclusões semelhantes, a M e a espiritualidade são próximas.
+_____
+
+19-02-2022
+__
+
+Às vezes acho alguns fardos da vida pesados, mas, aqui no bairro mesmo, vejo equinos seguindo em frente sob flagelos, e penso: se Deus permite isto com seres, acho que inocentes, deve ser algo bem natural, e me resigno.
+_____
+
+19-02-2022
+__
+
+Um alívio deixar um software perfeito, sem falhas. Posso, agora, me concentrar em outras coisas, como em mim, no meu eu.
+_____
+
+19-02-2022
+__
+
+Olhando por outro lado, não dormir bem com às consequências aos confortos, pode ser bom no sentido de desenvolver a força espiritual por uma espécie de jejum, jejum de conforto. Assim, há, sob este ponde de vista, um bom emprego do tempo.
+
+Devo me habituar a observas as coisas no sentido espiritual.
+_____
+
+19-02-2022
+__
+
+Um problema que nos ocupa, que nos estimula à melhora, pode também ser uma boa companhia.
+_____
+
+19-02-2022
+__
+
+Programar e escrever Matemática, mas o que mais pesa na sensaçao de organização é o estudar M do dia.
+_____
+
+19-02-2022
+__
+
+Talvez os pássaros gostem de ficar nos fios elétricos entre os postes devido ao efeito Joule, de dissipação do calor produzido pela passagem das correntes elétricas.
+_____
+
+19-02-2022
+__
+
+Como outro recurso para ser humilde e, consequentemente, ter mais paz por ser menos exigente consigo mesmo, o simples amar as pessoas.
+_____
+
+19-02-2022
+__
+
+Preocupado com softwares, ontem demorei para dormir, mas, hoje, praticamente nem sinto os desconfortos, pois, acredito, por eu estar feliz e me sentir organizado.
+_____
+
+18-02-2022
+__
+
+Demorei bastante tempo em um software, mas foi um tempo bem empregado; precisava tirar dúvidas se algumas coisas funcionavam ou não, houve algumas melhoras, e, claro, ganhei um pouco mais de inteligência e paciência.
+_____
+
+18-02-2022
+__
+
+Viver pode ser se socializar, mas se socializar pode assumir, acho, que infinitas formas; eu me socializo através da Matemática.
+
+Viver pode ser se socializar porque, acho, que tudo o que fazemos é para ser visto, é informação.
+_____
+
+18-02-2022
+__
+
+Bastante conveniente continuar escrevendo após ser privado do Facebook, pus em ordem minha mente diante da nova realidade.
+_____
+
+18-02-2022
+__
+
+Considerando o mínimo possível de sociabilidade mantendo a Matemática como vocação, mentalizando o objetivo principal de enriquecer uma biblioteca com meus escritos.
+_____
+
+18-02-2022
+__
+
+O mínimo possível de sociabilidade tendo como vocação a Matemática pode ser escrever artigos e os deixar em uma biblioteca.
+
+Vou me tranquilizando provando a mim mesmo que sou capaz de chegar neste nível.
+_____
+
+18-02-2022
+__
+
+Nova resoluções de vida, mas, agora, estou aproveitando o restante da noite, pois, hoje, já passei bastante tempo programando. Posso programar ou escrever mais amanhã.
+_____
+
+18-02-2022
+__
+
+Sociabilidade também por meio da escrita de softwares.
+_____
+
+18-02-2022
+__
+
+Ou talvez seja melhor continuar a sociabilidade por meio da Matemática como já faço ao escrever no meu blog.
+
+Também continuar a sociabilidade, agora no aspecto pessoal, igualmente como já estou fazendo neste exato momento.
+
+Pode ser melhor depender de computadores que de pessoas. E, escrevendo, o que pratico fica registrado, o que é importante.
+
+Sociabilidade desta forma reque uma certa independência da mesma, aspecto no qual já evoluí bastante.
+_____
+
+18-02-2022
+__
+
+Com a sociabilidade drasticamente reduzida por não ter mais Facebook, acho que chegou a hora de fazer o que já tinha previsto: voltar a ser professor, de Matemática, com o triplo fim de ajudar (caridade), sentir-me mais estimulado a aprender M, e o da socialização; cada um dos fins com os benefícios espirituais.
+_____
+
+18-02-2022
+__
+
+No momento sem o Facebook, meditei pensando no que investir as energias que antes eram direcionadas à sociabilidade, e cheguei à conclusão de que estudar Matemática passou a ser mais importante, para manter a autoestima elevada, vejo que muitos sofrem neste aspecto, e não ter boas autoestimas.
+_____
+
+18-02-2022
+__
+
+Em meu software simulador de partículas, deu um trabalhinho implementar colisões perfeitamente elásticas considerando raio, massa, velocidade, e em se tratar de partículas esféricas.
+_____
+
+18-02-2022
+__
+
+Ontem não estudei Matemática, mas muito justificável, pois estava bastante ocupado no desenvolvimento de um software muito interessante.
+
+Hoje já estudei, estou aqui tranquilo de boa.
+_____
+
+18-02-2022
+__
+
+O Sergio Moro, por parecer inteligente e sensível, deve estar ou vai sofrer horores pelo que fez. Dores morais, dentre outras possíveis coisas...
+_____
+
+18-02-2022
+__
+
+Não me sentiria pleno e sossegado se não implementasse alguns softwares que tenho na cabeça. Hoje fiz um simulador de partículas de um gás perfeito.
+_____
+
+17-02-2022
+__
+
+Experiência em também ser banido de alguns serviços de internet. No entanto mantando cópias dos dados mais importantes comigo, offline.
+_____
+
+17-02-2022
+__
+
+Por algo que não sei, o Facebook suspendeu minha conta, e diz que, em 30 dias, se minhas recorrências não forem convicentes, meus dados serão permanentemente excluídos...
+
+No entanto estou tranquilo, utilizei o Facebook mais com a finalidade de evoluir pessoalmente, o que fiz muito...
+
+Posso continuar a evolução através de escritos por aqui mesmo em meus arquivos, sem muito engajamento social. Já adquiri bastante independência do social.
+_____
+
+16-02-2022
+__
+
+Sonho alto demais para me contentar com pouco...
+_____
+
+16-02-2022
+__
+
+Programação e alegria...
+_____
+
+16-02-2022
+__
+
+Pode dar preguiça começar um novo software que é grande, mas se começa aos poucos, com rudimentos, e devemos ser pacientes.
+_____
+
+16-02-2022
+__
+
+Acho que o Game Pass da Microsoft força os assinantes a jogarem compulsivamente, pois, além de estarem pagando, os jogos podem sair da lista.
+_____
+
+16-02-2022
+__
+
+Orgulhoso, mas não 100% orgulhoso, somente até onde a Matemática permitir.
+_____
+
+16-02-2022
+__
+
+Vencer na vida é estar bem emocionalmente.
+_____
+
+16-02-2022
+__
+
+Às vezes dá uma vontade de criar alguns softwares sem muito relacionamento com a Matemática. Estou pensando onde os colocar...
+_____
+
+16-02-2022
+__
+
+Estresse e ansiedade com café para ficar psiquicamente mais forte.
+_____
+
+16-02-2022
+__
+
+Organizado com a Matemática e também com meus pensamentos intrapessoais, quando outra coisa me ocupa quase inteiramente, penso: tudo bem, o que é importante já está em boa ordem.
+_____
+
+16-02-2022
+__
+
+Amor também aos meus escritos pessoais; estão bem completos.
+_____
+
+16-02-2022
+__
+
+A Matemática me faz pensar alto, ela está no alto...
+_____
+
+16-02-2022
+__
+
+Sou um ser pensante, tenho que escrever...
+_____
+
+16-02-2022
+__
+
+Foi gostoso e bastante produtivo aventurar-me com outras coisas, acho que vou mais.
+_____
+
+16-02-2022
+__
+
+Em um materialismo mais acentuado, alguns, com interesse em acumular dinheiro, é que se desenvolvem através das atividades remuneradas.
+_____
+
+16-02-2022
+__
+
+Depois de, com o fim de me tornar mais completo, um Matemático mais completo, experimentar outras coisas, voltando para a M, meu lar.
+_____
+
+16-02-2022
+__
+
+Afim do desenvolvimento próprio, investindo em registros, mas não 100%, pois são coisas semimateriais, sujeitos à destruição, para que, se forem destruídos, eu não me sentir muito incomodado. Devo manter o foco de lucro espiritual.
+_____
+
+16-02-2022
+__
+
+Lidando com games de forma semelhante como lido com os estudos, dando pequenos intervalos de tempo entre uma partida e outra afim de recuperar energias e lucrar com ganhos psíquicos.
+_____
+
+16-02-2022
+__
+
+Às vezes lidar com certos contextos sociais também é algo psiquicamente exigente ao ponto de ser comparável ao lidar com os estudos ou com o jogar games; o lado bom é que podemos os utilizar para, da mesma forma, evoluirmos desenvolvendo a paciência e a inteligência.
+_____
+
+16-02-2022
+__
+
+Trocar programação ou Matemática por games, o lidar com estresse também continua. O que há é o desenvolvimento da paciência e da inteligência em uma direção diferente.
+_____
+
+16-02-2022
+__
+
+Progredindo em Matemática, sendo cada vez mais detalhista, o detalhismo também me induz a ser também mais detalhista quanto aos pensamentos pessoais, desenvolvendo, dentre outras coisas, a sensibilidade.
+_____
+
+16-02-2022
+__
+
+Acho que as pessoas que mais podem nos fazer mal são aquelas que nos provocam, pois tentam nos induzir ao erro por falta de paciência, o que é algo grave...
+_____
+
+16-02-2022
+__
+
+Ter amplos conhecimentos, mas não tão amplos tendo a Matemática como especialização.
+_____
+
+16-02-2022
+__
+
+Matemática, programação, games, e muita terapia...
+_____
+
+16-02-2022
+__
+
+A prioridade agora não é estudar e nem escrever Matemática, nem programar, mas experimentar outras coisas afim de enriquecer a experiência de vida.
+_____
+
+16-02-2022
+__
+
+Escrevo tudo, tudo mesmo; só que os temas potencialmente polêmicos ponho em meus arquivos privados criptografados.
+_____
+
+16-02-2022
+__
+
+Ter um objeto bem definido para amar, e assim crescer em amor...
+_____
+
+16-02-2022
+__
+
+Talvez o que mais tira a liberdade das pessoas é o medo de perder o emprego.
+_____
+
+16-02-2022
+__
+
+Experimentar um pouco de outras coisas para abrir mais a mente.
+_____
+
+16-02-2022
+__
+
+Que os estudos diários de Matemática sejam poucos para não causarem a pressão e impressão de que é preciso fazer muitos esforços para manter o hábito; que seja um hábito leve e sustentável, constante.
+_____
+
+16-02-2022
+__
+
+No momento não programando e nem escrevendo Matemática, mas escrevendo pensamentos pessoais, o que também é evolução e construção.
+_____
+
+16-02-2022
+__
+
+Socializar-se somente depois de não ter mais espinhos...
+_____
+
+16-02-2022
+__
+
+Acho que, para ser humilde, é preciso estar satisfeito...
+_____
+
+16-02-2022
+__
+
+Depois de muito programar, repensando: minha vocação não é programador, mas Matemático.
+_____
+
+16-02-2022
+__
+
+Cuidando do corpo, mas não mais ao ponto de passar fome. Já não sou tão exigente quanto ao físico.
+_____
+
+16-02-2022
+__
+
+Minha paz é resultante de muitos estudos e de muitas coisas que construí.
+_____
+
+16-02-2022
+__
+
+Há mais a aprender com o espiritismo, mas, por enquanto, estou satisfeito com tudo o que já estudei.
+_____
+
+16-02-2022
+__
+
+Hoje não pretendo programar, quero saborear a paz...
+_____
+
+16-02-2022
+__
+
+Já estudei o de hoje, agora passar o restante do dia em harmonia...
+_____
+
+16-02-2022
+__
+
+Deixando para depois escrever um artigo de Matemática como uma "carta na manga" para me redimir se cometer um pecado ao longo do dia.
+_____
+
+15-02-2022
+__
+
+Se está sobrevivendo, não está vivendo...
+_____
+
+15-02-2022
+__
+
+Penso no quanto o Universo é grande e nós pequenos observando o Sol, que libera tanta energia e tem bilhões de anos de vida.
+_____
+
+15-02-2022
+__
+
+Programo com vontade porque estou programando para mim; acho que não teria a mesma paixão se fizess a outros por troca de finanças.
+_____
+
+15-02-2022
+__
+
+O contato consigo mesmo é uma terapia...
+_____
+
+15-02-2022
+__
+
+Descansando e me recuperando do estresse acumulado. Neste descanso acredito que há ganhos de inteligência.
+_____
+
+15-02-2022
+__
+
+Comece a programar, e vai ter muitos problemas para resolver afim de ter paz...
+_____
+
+15-02-2022
+__
+
+Surpreso com o quanto evoluímos em contato com computadores.
+_____
+
+15-02-2022
+__
+
+Espíritos matemáticos, podem me utilizar inspirando em mim novas ideias. Uma forma de justificar, mais talvez, o fato de eu ainda estar encarnado.
+_____
+
+15-02-2022
+__
+
+Já com novas ideias para programar, mas acho que vou fazer só amanhã, estou curtindo, sem problemas a resolver, o contato comigo mesmo.
+_____
+
+15-02-2022
+__
+
+Poupando-me para a Matemática de amanhã.
+_____
+
+15-02-2022
+__
+
+Resolver os problemas para ficar despreocupado com eles e assim estar livre para o contato consigo mesmo.
+_____
+
+15-02-2022
+__
+
+Pelo aspecto facial da presidente do Palmeiras, acho que ela teve de ser agressiva para manter o posto; sendo mulher, acho que é difícil.
+_____
+
+15-02-2022
+__
+
+Em geral, acho que é mais difícil para as mulheres lidar com agressividade, pois são mais sensíveis, as dores morais são mais intensas...
+_____
+
+15-02-2022
+__
+
+Sorrindo à toa por ter escrito e programado Matemática.
+_____
+
+15-02-2022
+__
+
+Lembro de já ter lido um trecho em um livro espírita que os orgulhosos, mesmo detendo as artes, não são chamados.
+_____
+
+15-02-2022
+__
+
+Programação é vida...
+_____
+
+15-02-2022
+__
+
+Saber programar é um grande diferencial...
+_____
+
+15-02-2022
+__
+
+Troquei muitas horas de videogame por programação.
+_____
+
+15-02-2022
+__
+
+Se o software é grande, fazer aos poucos...
+_____
+
+15-02-2022
+__
+
+Se pisco, já estou programando novamente...
+_____
+
+15-02-2022
+__
+
+Já não tenho tanta pressa em programar mais, já provei a mim mesmo que sou capaz de muito.
+_____
+
+15-02-2022
+__
+
+Ontem já deitado para dormir, esperando o sono chegar, vi que cometi um erro em um software. Levantei-me e fui corrigir. Depois voltei para dormir.
+_____
+
+15-02-2022
+__
+
+Poderia fazer mais alguns softwares que venho pensando, mas hoje quero tempo para mim. Já programei muito.
+_____
+
+15-02-2022
+__
+
+A paz dos estudos...
+_____
+
+14-02-2022
+__
+
+Sem problemas para resolver é que tenho tempo para mim.
+_____
+
+14-02-2022
+__
+
+Super feliz por ter conseguido implementar bem alguns programas que vinha pensando.
+_____
+
+14-02-2022
+__
+
+Tira da mente e põe no papel.
+_____
+
+14-02-2022
+__
+
+A mente é mais importante, mas dou bom exemplo com o meu corpo em forma.
+_____
+
+14-02-2022
+__
+
+Novas linguagens surgem, o poder do programador é a inteligência.
+_____
+
+14-02-2022
+__
+
+Tudo bem reescrever pensamentos, usando combinações diferentes de palavras.
+
+Assim também os reforço em minha mente.
+_____
+
+14-02-2022
+__
+
+Se desocupado, procurar mais problemas para resolver, e assim fazer bom uso do tempo evoluindo.
+_____
+
+14-02-2022
+__
+
+É trabalhando para mim que trabalho com todo amor, dedicação e zelo.
+_____
+
+14-02-2022
+__
+
+Preparando uma nova release com suporte a uma nova demanda.
+_____
+
+14-02-2022
+__
+
+Meus pensamentos e minhas emoções me sustentam...
+_____
+
+14-02-2022
+__
+
+Posso até namorar, mas não vou investir muito, pois não podemos e nem devemos controlar as pessoas...
+_____
+
+14-02-2022
+__
+
+Desocupado, uma ótima forma de ocupar o tempo é programar mais; há um grande ganho de inteligência com a prática, além de ter os programas no portfolio.
+_____
+
+14-02-2022
+__
+
+Não teria a tranquilidade se não fizesse logo tudo o que tinha em mente.
+_____
+
+14-02-2022
+__
+
+Se publico uma foto de um artigo ou calculadora meus, se faço pequenas alterações no artigo ou software sem muita relevância, deixo a foto lá.
+_____
+
+13-02-2022
+__
+
+A Matemática é minha "torre de Babel" para chegar aos céus...
+_____
+
+13-02-2022
+__
+
+Outro segredo da paz interior é fazer de todo momento um momento de alguma forma produtivo.
+_____
+
+13-02-2022
+__
+
+Evitando empregos que envolvam computadores e mantendo o foco de, se for realizar uma atividade remunerada, ser o que já fui: professor particular de Matemática. Computadores envolvem materialismo em um grau desconfortável.
+_____
+
+13-02-2022
+__
+
+Alguns vão ao BBB, outros os palcos; eu tenho meu Facebook para sentir-me comunicando-me com o mundo...
+_____
+
+13-02-2022
+__
+
+Futuramente, tudo bem se, mesmo tendo o privilégio de ter disponível, não utilizar muito computadores o quanto faço atualmente; pois devo me desmaterializar, em nome de minha saúde espiritual.
+_____
+
+13-02-2022
+__
+
+Outro detalhe que discordo do espiritismo: que para adquirir a independência de algo, a solução proposta por ele - espiritismo - é a privação; já eu penso que é o usar bastante, até exaurir as vontades.
+_____
+
+13-02-2022
+__
+
+Para adquirir mais independência emocional de computadores, mentalizar mais frequentemente os livros.
+
+O amor aos computadores é o que mais me faz materialista.
+
+Já tenho um bom progresso neste sentido, mas seria bom ter mais.
+_____
+
+13-02-2022
+__
+
+Se desejar, posso reunir todos os meus PDFs de Matemática e compor um livro de Matemática, mas bastante aleatório.
+
+Futuramente, quando estiver mais maduro, talvez eu escreva um livro didático, organizado.
+_____
+
+13-02-2022
+__
+
+Ao menos enquanto posso usar computador com internet, está me fazendo muito bem, no sentido de aprender Matemática, o exigir de mim escrever praticamente diariamente.
+_____
+
+13-02-2022
+__
+
+Ter a vida organizada, incluindo estar em dia com os estudos, contribui grandemente para meu bom humor.
+_____
+
+13-02-2022
+__
+
+Acho que já está na hora de trocar os lençóis e fronhas do colchão de dormir.
+_____
+
+13-02-2022
+__
+
+A morte é a desistência...
+
+A morte também é abandonar o perfeccionismo...
+_____
+
+13-02-2022
+__
+
+Estudando Matemática Superior, mas sem a mesma pressão de antes, por já tanto evoluí bastante nela, quanto também já escrevi muito sobre ela.
+_____
+
+13-02-2022
+__
+
+Semelhantemente como aprendo melhor Matemática escrevendo Matemática, também desenvolvo-me intrapessoalmente melhor em escrever pensamentos de natureza pessoal, reforçando-os.
+_____
+
+13-02-2022
+__
+
+Tenho muitos, muitos pensamentos escritos, tanto que acho que poderia ser criado um software que simulasse eu, que alguém, ao trocar palavras com tal software, sentisse que está conversando comigo.
+_____
+
+13-02-2022
+__
+
+Escrevendo sobre os momentos difíceis também com o fim de, caso não tenha acesso a computadores, já ter em mente que já registrei as filosofias.
+_____
+
+13-02-2022
+__
+
+Após atingir os limites da paciência, com a recuperação, crescemos mais em paciência.
+_____
+
+13-02-2022
+__
+
+De bem com a Matemática, tendo um relacionamento perfeito com ela, ficando livre para, agora, cuidar de problemas morais, evoluir moralmente mais, que, acho, que é a principal razão de aqui estar encarnado.
+_____
+
+13-02-2022
+__
+
+Experiência profissional inclui também ter a paciência desenvolvida.
+_____
+
+13-02-2022
+__
+
+Recuperar-se da primeira queda é difícil. Depois, se cair novamente, fica mais fácil se levantar. Experiência.
+_____
+
+13-02-2022
+__
+
+Assim como podemos estar em lugares fisicamente muito sujos, também há o lodaçal espiritual...
+_____
+
+12-02-2022
+__
+
+Comprar um carro para ir trabalhar de carro para manter os gastos com o carro; casar para resolver os problemas do próprio casamento, etc.
+
+No meu caso, trabalhar com Matemática para manter os estudos e poder continuar escrevendo e armazenando.
+_____
+
+12-02-2022
+__
+
+Aproveitando o deslize de hoje para extrair o máximo de lições. É difícil eu errar...
+_____
+
+12-02-2022
+__
+
+Se preciso me recuperar emocionalmente, ou vou meditar, ou estudar / escrever Matemática.
+_____
+
+12-02-2022
+__
+
+Bom que hoje conheci meu atual limite de paciência. Elevar infinitamente talvez seja impossível, mas seria bom elevar mais.
+_____
+
+12-02-2022
+__
+
+Pelo que parece, o Facebook ameaçou deixar de funcionar em alguns países devido a exigências. Aqui no Brasil acho que não teremos problemas, mas, desde o início, já me preocupo com isto, mantendo cópias de quase tudo que publico comigo, pensamentos, PDFs e imagens.
+_____
+
+12-02-2022
+__
+
+É, eu achando que não poderia mais evoluir significativamente moralmente aqui encarnado, surgiu algo que me atingiu, mas foi algo bastante intenso para que pudesse me tocar, e já estou superando.
+_____
+
+12-02-2022
+__
+
+Nos momentos difíceis a Matemática me faz manter a caminhada, mantendo em mim o sentimento de organização.
+_____
+
+12-02-2022
+__
+
+De conhecimentos e virtudes, tendo muito mais que o suficiente, pois é uma necessidade sempre progredir.
+_____
+
+12-02-2022
+__
+
+Bom ter diversas experiências enquanto posso as escrever aqui na internet. Assim meus registros ficam mais completos.
+_____
+
+12-02-2022
+__
+
+Normal ter problemas de consciência juntamente com estudos matemáticos, a moralidade é uma constante na vida.
+
+Devo continuar com Matemática. As resoluções morais dar-se-ão paralelamente.
+_____
+
+12-02-2022
+__
+
+Como conhecimento / ciência extra para ser um bom matemático, estar preparado para ser subjugado por não ter habilidades ou conhecimentos, mantendo-se firme no progresso, tendo o verdadeiro saber do que se é.
+_____
+
+12-02-2022
+__
+
+Não é bom se orgulhar de não sofrer, pois não temos controle sobre isto, e o sofrimento é parte inseparável da evolução...
+_____
+
+12-02-2022
+__
+
+Curando-me da dor do arrependimento, mas lembrando que tenho outros tipos de dores, como as das tensões por constantemente estudar.
+_____
+
+12-02-2022
+__
+
+Mesmo eu não tendo um passado perfeito, aconselho a pesquisar os históricos daqueles com quem vamos nos envolver, namorados(as), funcionários, colegas de trabalho, patrões, etc.
+_____
+
+12-02-2022
+__
+
+Se errar, optar logo pelo reconhecimento da culpa, arrepender-se e reparar; todos erram; assim logo ficamos livres para continuar nossos projetos.
+_____
+
+12-02-2022
+__
+
+A experiência nos mostra o que verdadeiramente importa...
+_____
+
+12-02-2022
+__
+
+Não com 100% de ânimo, mas, quanto mais melhor.
+_____
+
+12-02-2022
+__
+
+Se existe fé no ato de orar, fé também no ato de escrever, pois é uma espécie de oração.
+_____
+
+12-02-2022
+__
+
+Matemática, parte por orgulho, o que me permite repousar sobre a autoestima, e parte por amor, o que me permite repousar no amor...
+_____
+
+12-02-2022
+__
+
+Às vezes visito um site só para ver como ele foi construído e talvez pegar ideias para mim.
+_____
+
+12-02-2022
+__
+
+Problemas em relacionamentos nos trabalhos devem ser algo bem natural...
+_____
+
+12-02-2022
+__
+
+Não estou 100% animado, mas tudo bem, é uma consequência de ter resolvido praticamente todos os problemas. Devo me sentir grato / privilegiado por não ter urgências a resolver.
+_____
+
+12-02-2022
+__
+
+Todos os dias, ou em quase todos, tenho que me estressar um pouquinho com os estudos para me sentir em paz nos momentos restantes.
+_____
+
+12-02-2022
+__
+
+Trabalhar com o relógio.
+_____
+
+12-02-2022
+__
+
+Valorizando o estar em paz...
+_____
+
+12-02-2022
+__
+
+Matemática mais como fonte de amor, e não tanto de orgulho.
+
+Estudando pela manhã para passar o restante do dia tranquilo.
+_____
+
+12-02-2022
+__
+
+Sem pressa, preocupado quase unicamente com Matemática, estou ficando mais humilde.
+_____
+
+12-02-2022
+__
+
+Alguns cultuam personalidades, eu cultuo a Matemática pura.
+_____
+
+11-02-2022
+__
+
+O paciente é forte.
+_____
+
+11-02-2022
+__
+
+Uso ferramentas de terceiros em meu blog, e fico atento àquele cadeado ao lado do endereço, se mostra que o site é seguro. Certa vez adicionei um destes trabalhos de outros e mostrou falha de segurança, o que foi corrigido em simplesmente substituir um "http:" por um "https:".
+_____
+
+11-02-2022
+__
+
+Vejo alguns formados em Matemática mas que são fãs de outras coisas. Acho estranho, pois há poucas coisas, talvez nenhuma, mais nobres que a M.
+_____
+
+11-02-2022
+__
+
+Ter um corpo forte é bom, mas o que salva mesmo é ter uma mente forte...
+_____
+
+11-02-2022
+__
+
+Mesmo sem mais desejar por já me julgar ter o suficiente, desafios morais ainda vem, então faço o que devo: aproveitar para evoluir mais.
+_____
+
+11-02-2022
+__
+
+Gostoso ser fã de Matemática que de outras coisas, há uma aliança entre amor e utilidade.
+_____
+
+11-02-2022
+__
+
+Crescer em amor para crescer em paz...
+_____
+
+11-02-2022
+__
+
+Parte de minhas realizações de vida é composta de coisas simples, como conseguir fazer barras.
+_____
+
+11-02-2022
+__
+
+Interiormente mais calmo, em redes sociais estou abrindo mais links para ver os conteúdos publicados, não somente lendo o que está no feed.
+_____
+
+11-02-2022
+__
+
+Quando encontro um problema de carater emocional / psicológico, também me dá tranquilidade pensar: é apenas psicológico.
+_____
+
+11-02-2022
+__
+
+Também, em momentos de turbulência, dá-me tranquilidade o pensar: hoje já estudei.
+_____
+
+11-02-2022
+__
+
+Faço o bem, e fico despreocupado com as consequências, confiando nos engenhos da Natureza.
+_____
+
+11-02-2022
+__
+
+Eu sem passar por muitas necessidades, se alguém pede ajuda, e vejo que não me custará muito, ajudo pensando naqueles que imploram por emprego...
+_____
+
+11-02-2022
+__
+
+Se por um momento me sinto inferior, penso no quanto sou grande em Matemática.
+_____
+
+11-02-2022
+__
+
+Usando o Dropbox para armazenar meus escritos, por falta de espaço movo os arquivos sem muita importância para outros serviços.
+_____
+
+11-02-2022
+__
+
+No momento, sem mais pressa com nada, já realizei meus sonhos.
+_____
+
+11-02-2022
+__
+
+Socialista e com liberdade.
+_____
+
+10-02-2022
+__
+
+Depois de alguns dias sem fazer burpees, apenas agachamentos e barras por falta de alimentação boa devido a dificuldades financeiras, hoje fiz por haver bastante comida disponível.
+_____
+
+10-02-2022
+__
+
+Em um passado distante, quando eu trabalhava por dinheiro, às vezes quem me pagava ficava preocupado com no que gastaria. Não sei o porquê.
+_____
+
+10-02-2022
+__
+
+Sendo organizado em, inclusive, cuidar da boa aparência do Windows que estou usando.
+_____
+
+10-02-2022
+__
+
+Quando eu estava aa UFPE, um professor, explicando a resolução de um problema, aplicou uma fórmula de geometria, e disse: se não souber desta fórmula, é melhor voltar para o sétimo ano do fundamental.
+_____
+
+10-02-2022
+__
+
+O quanto der para viver sem cobrar dinheiro, vou levando.
+_____
+
+10-02-2022
+__
+
+Talvez eu também seja um "influencer", não pelos sucessos financeiros ou materiais, mas pelo sucesso espiritual.
+_____
+
+09-02-2022
+__
+
+Aprendo muito também de outras coisas fazendo exatamente o que faço agora: escrever pensamentos aleatórios.
+
+Caso sem mais computadores, posso substituir por conversas informais com pessoas de cabeça.
+_____
+
+09-02-2022
+__
+
+Se eu não tiver mais computadores com internet para escrever Matemática, terei obrigatoriamente voltar a ser professor porque, ensinando, aprendo melhor.
+_____
+
+09-02-2022
+__
+
+Evitando me apegar a coisas que não estão sob meu controle para evitar decepções, orgulho ferido, e golpes no coração.
+_____
+
+09-02-2022
+__
+
+Algo bom de ser inteligente e sensível é que aprendemos com pequenos erros.
+_____
+
+09-02-2022
+__
+
+Quando se fala em fé, fala-se em esperança, e se aplica principalmente quanto a recuperar a saúde emocional.
+_____
+
+09-02-2022
+__
+
+Um dos segredos da paz é a neutralidade.
+_____
+
+09-02-2022
+__
+
+Ainda não tenho nenhuma tatuagem porque sou quase todo peludo, e também tenho medo de me arrepender, pois uma vez quis fazer uma, não fiz, e depois vi que não seria uma boa ideia.
+_____
+
+09-02-2022
+__
+
+Hoje foi um dia de bugs resolvidos e refinamentos de códigos. Tenho pressa em deixar tudo o máximo possível resolvido, pois posso desencarnar a qualquer momento, e, deixando coisas desorganizadas aqui, acho que serei um espírito inquieto.
+_____
+
+09-02-2022
+__
+
+Também quanto a games e outras coisas, às vezes digo a mim mesmo: não preciso ir muito à fundo, já tenho a Matemática para levar a sério.
+_____
+
+09-02-2022
+__
+
+Em MathematicalRamblings.js o "e" era convertido para o número de Euler; tive que substituir o "e" por "euler" para não haver problemas de compatibilidade com notações científicas, como, por exemplo, "3.2e+2".
+_____
+
+09-02-2022
+__
+
+Já há brinquedos suficientes para uma encarnação estudando até Cálculo III e pré-requisitos.
+_____
+
+09-02-2022
+__
+
+Experiência matemática também em ir dormir com problemas não solucionados para resolver no outro dia.
+_____
+
+08-02-2022
+__
+
+Poderia ir mais a fundo em programação, mas, assim como um físico para com a Matemática, não é tão necessário, o foco é M.
+_____
+
+08-02-2022
+__
+
+Repousar na autoestima...
+_____
+
+08-02-2022
+__
+
+Sem ter experimentado a baixa autoestima e nem o ódio, acho que não teria tanta motivação para progredir e nem razões para me sentir, hoje, feliz por não ter mais os desconfortos.
+_____
+
+08-02-2022
+__
+
+Uma das melhores coisas em Matemática é que, devido à sua utilidade, é bem vida em praticamente todos os lugares, o que abre muitas portas para mim.
+_____
+
+08-02-2022
+__
+
+Bendita a maratona de estudos que fiz para aprender Cálculo. Dentre outras coisas, eleva bastante a autoestima.
+_____
+
+08-02-2022
+__
+
+Festa depois de atingir os objetivos.
+_____
+
+08-02-2022
+__
+
+Meu trabalho ao fazer gráficos 2D ou 3D é jogar os dados raw corretos dentro de uma matriz, a renderização fica por conta do Plotly.
+_____
+
+08-02-2022
+__
+
+Escrevendo um blog de Matemática, estou aprendendo Matemática, programação, HTML, CSS, JavaScript, utilizar algumas bibliotecas, básicos de CEO, edição de imagens e vídeos, melhorando meu currículo, e deixando tudo lá facilmente disponível para a leitura e apreciação.
+_____
+
+08-02-2022
+__
+
+Um alívio ter aprendido a deduzir as equações de superfícies de revolução. Estava me sentindo inferior, e isto me incomodava...
+_____
+
+08-02-2022
+__
+
+Já não fico ansioso para logo resolver um problema de M quando me deparo com ele, já evoluí bastante em M, posso deixar a questão para mais tarde.
+_____
+
+08-02-2022
+__
+
+À semelhança de musculação e meditação, também ser paciente para ter progressos em Matemática. É preciso ganhar intimidade com os conceitos e ferramentas.
+_____
+
+08-02-2022
+__
+
+Tudo bem acordar, ir logo para a Matemática, e ficar nela até o fim do dia, para dormir novamente; já meditei muito.
+_____
+
+07-02-2022
+__
+
+Experiência matemática também ao lidar com erros, remoções de publicações e correções.
+_____
+
+07-02-2022
+__
+
+Sonhos / desejos materialistas estão altamente sujeitos a frustrações. E, se conseguir, provavelmente ao preço da alma...
+_____
+
+07-02-2022
+__
+
+Imediatamente antes de publicar, fazer uma rápida revisão. Erros podem ser encontrados.
+_____
+
+07-02-2022
+__
+
+Sou deficiente em Geometria Analítica Espacial, preciso de um livro.
+_____
+
+05-02-2022
+__
+
+Em livros espíritas há várias citações que dizem a morte é um livramento de uma prisão, que a verdadeira vida é a espiritual, e, imagino eu, lá, lugar onde terei instrumentos melhores de evolução pessoal. Então, observando o quanto já evoluí aqui e a minha auto-imagem, não perfeita, mas de uma boa pessoa, talvez meu momento de desencarnar esteja breve. Às vezes pergunto-me porque ainda estou aqui...
+_____
+
+05-02-2022
+__
+
+Vida na dor...
+_____
+
+05-02-2022
+__
+
+Poderia aceitar um convite de ajudar virtualmente um centro espírita que fica em uma cidade aqui perto, mas acho que já faço muito bem em estudar e escrever conclusões ou hipóteses, além de contribuir para o crescimento de mim mesmo.
+_____
+
+05-02-2022
+__
+
+Para ter ainda mais moral, além de ser resistente, produtivo.
+_____
+
+05-02-2022
+__
+
+Outra razão para não ter posses materiais: não ter que dizer "não", o que quase sempre é um incômodo.
+_____
+
+05-02-2022
+__
+
+Ainda sem tempo para filmes e séries; talvez depois de resolver melhor as coisas aqui, posso fazer maratonas.
+_____
+
+05-02-2022
+__
+
+Poderia ir caminhar agora no final da tarde, mas acho que é melhor ficar aqui mesmo, onde estou sentindo as dores da alma de modo relativamente intenso, e com isto estou crescendo; mais lucrativo.
+_____
+
+05-02-2022
+__
+
+Vasculhando qualquer dor no interior da alma que seja afim de continuar a empregar bem o tempo, evoluindo.
+
+Muitas vezes, quando sem dores, desejo as ter por esta razão, de empregar bem o tempo.
+_____
+
+05-02-2022
+__
+
+Fazendo o dia lucrativo também com os progressos emocionais. São progressos lentos, mas muito importantes...
+_____
+
+05-02-2022
+__
+
+Tendo um prefácio sobre todos os meus dados na internet, posso reconciliar-me com o perfeccionismo quanto aos meus dados fazendo considerações sobre o que falta.
+_____
+
+05-02-2022
+__
+
+O sexo é prazeroso, mas, mais prazeroso ainda, são as emoções celestes resultantes de meditações e boas escolhas.
+_____
+
+05-02-2022
+__
+
+Com tudo o que está fora organizado, toco melhor nas dores de minha alma, sentindo-as, tanto para me curar, quanto para mais me fortalecer.
+_____
+
+05-02-2022
+__
+
+Oportunidade para trabalhar como programador, mas prefiro ser professor de Matemática; para mim, a paixão é melhor que os lucros.
+_____
+
+05-02-2022
+__
+
+Às vezes a prioridade não é escrever, programar ou estudar, mas cuidar do emocional.
+_____
+
+05-02-2022
+__
+
+Às vezes vou fazer upgrades e descubro bugs que não havia ainda percebido.
+_____
+
+05-02-2022
+__
+
+Hoje foi um dia que começou tranquilo, mas tranquilo demais para evoluir, então decidi fazer alguns upgrades nos softwares.
+_____
+
+04-02-2022
+__
+
+Evitando cometer erros também para não me sentir responsável pelos reparos.
+
+Imagino que, enquanto ainda sentindo-nos devedores, não teremos paz.
+_____
+
+04-02-2022
+__
+
+Geralmente os que não tem paz interior provocam intrigas.
+_____
+
+04-02-2022
+__
+
+Muitos trabalhos na cabeça, mas sempre fazendo os exercícios físicos de todos os dias.
+_____
+
+04-02-2022
+__
+
+Para evitar problemas com dinheiro, não aprender a lidar com dinheiro, e sim não ter...
+_____
+
+04-02-2022
+__
+
+Escrever muito também para sair dos labirintos dos pensamentos...
+_____
+
+04-02-2022
+__
+
+Para os que sofrem, o tempo demora a passar; para os felizes, o tempo é veloz.
+_____
+
+04-02-2022
+__
+
+Há um trecho interessante da letra de uma música: "... Mas tem gente que não pode ver ninguém feliz que sofre...".
+_____
+
+04-02-2022
+__
+
+Poderia adicionar novamente pessoas com as quais tive antipatias, mas acho melhor deixar assim, no Facebook há um limite para o número de contatos, então quero ter aqueles que mais gosto.
+_____
+
+04-02-2022
+__
+
+Na comunidade do Reddit, mostro uma vulnerabilidade, e sou xingado...
+_____
+
+04-02-2022
+__
+
+Se tenho uma relação estável com a Matemática, extremamente lucrativa e que sobreviveu a tantas tempestades, vou continuar.
+_____
+
+04-02-2022
+__
+
+Poderia não por alguns pensamentos em público, no entanto continuo seguindo o mesmo padrão de transparência.
+_____
+
+04-02-2022
+__
+
+Em mulheres, gosto de volume...
+_____
+
+04-02-2022
+__
+
+Hoje fui bem com Matemática, tanto que até experimentei mais profundamente outras coisas, quando, segundo meus objetivos, não é necessário, no entanto foi bom.
+_____
+
+04-02-2022
+__
+
+Acho que, sem o desejo de crescer não dá para viver. Pois os problemas vem, e só superamos eles tendo fito o objetivo de ganho.
+_____
+
+04-02-2022
+__
+
+Uma macro complexa ora funciona, ora não, mas acho que o problema é que meu atual computador não é tão veloz, problema que talvez não mais existirá quando eu tiver outro melhor.
+_____
+
+04-02-2022
+__
+
+Toda ansiedade também como lucrativa, fazem-me psiquicamente mais forte e resistente.
+_____
+
+04-02-2022
+__
+
+AutoHotkey developer. =)
+_____
+
+04-02-2022
+__
+
+A Microsoft tem seus pecados, mas estou apaixonado pelo VSCode.
+_____
+
+04-02-2022
+__
+
+Algo que às vezes vem à minha mente: uma passagem de um livro espírita que diz que lá, no mundo espiritual, o que não é alegria é tristeza...
+_____
+
+04-02-2022
+__
+
+Hora me poupando de Matemática nas horas vagas, ora envolvendo-me sem me preocupar com limites. Às vezes é bom manter-se ocupado, e ainda melhor com algo produtivo e que ama.
+_____
+
+04-02-2022
+__
+
+É bom, logo pela manhã, ter contato com o sagrado para passar o restante do dia tranquilo.
+_____
+
+04-02-2022
+__
+
+Aprender com os próprios erros, e também com os erros dos outros...
+_____
+
+03-02-2022
+__
+
+Posso estar exagerando no uso do computador, mas eu estou, tanto valorizando o tempo, quanto valorizando o privilégio de ter um computador.
+
+Caso no futuro não tenha mais, estarei tranquilo, dizendo a mim mesmo: usei bastante...
+_____
+
+03-02-2022
+__
+
+Não está tudo perfeitamente organizado, mas está muito organizado, satisfatoriamente.
+_____
+
+03-02-2022
+__
+
+Talvez privatizar empresas não seja tão ruim o quanto aparenta; os futuros donos podem dar sangue para cuidar do que então são suas.
+_____
+
+03-02-2022
+__
+
+Acho que os resultados são melhores quando há trabalho por amor que por dinheiro.
+_____
+
+03-02-2022
+__
+
+Organizando a vida em organizar as emoções, os pensamentos e as rotinas.
+_____
+
+03-02-2022
+__
+
+Quem ataca está sempre atrás, o alvo está sempre à frente...
+_____
+
+03-02-2022
+__
+
+Há games que abordam violência, mas há também os que não.
+_____
+
+03-02-2022
+__
+
+Games são resultados de programação, então sinto-me ainda mais ligado a eles tendo também meus próprios softwares.
+_____
+
+03-02-2022
+__
+
+Estudar Matemática é o momento sagrado do dia. Nas horas vagas, se com computador, games; se sem computador, espiritismo.
+_____
+
+02-02-2022
+__
+
+Não quero o título de "bom", pois, por um simples deslize, deixo de ser bom. Quero ser reconhecido pelos meus conhecimentos em Matemática.
+_____
+
+02-02-2022
+__
+
+No momento estou escrevendo offline para, quando tiver novamente acesso à internet, fazer os uploads.
+
+Escrevendo, evoluo.
+_____
+
+02-02-2022
+__
+
+Sofri muitas humilhações ao decorrer da vida, mas sigo de pé com o orgulho (ou devo chamar de amor ou identidade) de saber Matemática, a ciência deste saber alegra bastante minha vida, além de me dar também ânimo.
+_____
+
+02-02-2022
+__
+
+Hoje a internet caiu por um bom tempo do dia. Aproveitei e experimentei como é ficar com a Matemática e offline.
+
+Algumas vezes passou por minha mente estudar mais, porém eu disse a mim mesmo: se desejo levar a Matemática a sério, devo ter horário para começar e para terminar. Sendo organizado com a Matemática, sinto minha vida organizada... Então ocupei o tempo com outras coisas, como com games.
+_____
+
+01-02-2022
+__
+
+Ainda não tenho tudo o que quero, mas tenho muito.
+_____
+
+01-02-2022
+__
+
+Não cheguei a concluir o ensino superior, mas a frustração na época foi um enorme estímulo para continuar os estudos afim de me sentir mais preparado para a universidade.
+
+O tempo foi passando, eu sempre estudando, e percebi que o diploma não era tão importante o quanto eu pensava.
+
+No entanto, não vejo nada demais ter o certificado; se as condições estiverem favoráveis, com eu, autodidaticamente, já tendo dominado muito da Matemática Superior, posso me aventurar novamente.
+_____
+
+01-02-2022
+__
+
+Se eu não desejar mais, morro espiritualmente; não tenho escolha...
+_____
+
+01-02-2022
+__
+
+Depois de já ter feito muita coisa por aqui, acho que seria interessante voltar a dar aulas particulares só para ter ainda mais experiência com Matemática.
+_____
+
+01-02-2022
+__
+
+Faço muitas outras coisas, mas em simplesmente escrever um blog de Matemática já torna a existência satisfatória.
+_____
+
+01-02-2022
+__
+
+Sempre com foco na Matemática para que toda experiência seja uma experiência com M.
+_____
+
+01-02-2022
+__
+
+Ao criar um software tenho que fazer as validações de todas as possíveis entradas, testadores verificam os limites e estressam o máximo que puderem.
+_____
+
+01-02-2022
+__
+
+Há algumas mulheres trans que realmente são muito atraentes, tanto que, quando penso em me aproximar, e às vezes me aproximo, não tenho êxito pensando eu que a razão é que eu estou em um nível inferior de beleza.
+_____
+
+01-02-2022
+__
+
+Já experimentei dores espirituais, mas, pelo que leio, há desconfortos bem mais intensos que alguns espíritos dizem ser indescritíveis... Então procuro ser prudente e ter medo das consequências de maus comportamentos.
+_____
+
+01-02-2022
+__
+
+Mesmo não contendo tudo, deixar os backups do Mathematical Ramblings sem bugs e sem erros nos artigos.
+_____
+
+01-02-2022
+__
+
+Relacionamentos conjugais também são supervalorizados, o amor que satisfaz é o interior.
+_____
+
+01-02-2022
+__
+
+Para deixar o angustiante perfeccionismo quanto a coisas materiais, passar a ser perfeccionista quanto a coisas espirituais.
+_____
+
+01-02-2022
+__
+
+Também, desmaterializando-me e espiritualizando-me, continuando a cuidar da casa, mas sem o rigor de antes.
+_____
+
+01-02-2022
+__
+
+Continuando a cuidar do corpo, mas sem o mesmo rigor de antes; estou me desmaterializando.
+_____
+
+01-02-2022
+__
+
+Acho que eu não descansaria bem no mundo espiritual deixando bugs em meus softwares aqui. Então corrijo com pressa todos os que encontro.
+_____
+
+01-02-2022
+__
+
+É bom ser oportuno e escrever Matemática sobre o que está sendo publicado em redes sociais ou a pedido de alunos; assim, além de enriquecer meu portfolio, estarei melhor contribuindo.
+_____
+
+31-01-2022
+__
+
+Chegar ao fim do dia sem bugs a resolver também é um privilégio, dá paz.
+_____
+
+31-01-2022
+__
+
+Mesmo sozinho aqui com Matemática, livros e computadores, estou aprendendo a trabalhar sob pressão. É algo bom para ter maturidade e experiência.
+_____
+
+31-01-2022
+__
+
+Joguinhos também para ser um Matemático mais completo, mais inteligente.
+_____
+
+31-01-2022
+__
+
+Experiência matemática também quanto a não compreender, não conseguir visualizar um resultado que foi obtido por meios logicamente corretos.
+_____
+
+31-01-2022
+__
+
+Como acho que já disse, com outras palavras, anteriormente, deixando redes sociais um pouco mais de lado, sobram muito mais energias para outras coisas.
+
+É bom desenvolver a sociabilidade, mas não é meu foco; satisfaço-me em ter o suficiente e talvez um pouco mais.
+
+Como mencionei, sociabilidade não sendo um foco meu, sinto-me também mais organizado estando mais ou menos distante dela. E, com mais organização, mais paz interior.
+_____
+
+31-01-2022
+__
+
+Posso não ter um Xbox ou um Playstation, mas, ao menos no momento, tenho acesso a um PC com internet, e, consequentemente, também acesso a alguns jogos.
+
+Se desejo manter também a identidade de gamer, devo apreciar estes jogos também.
+_____
+
+31-01-2022
+__
+
+Posso usar unicamente ou quase unicamente a Matemática para me socializar, assim como já faço no Instagram.
+
+Sinto-me tranquilo em redes sociais usar unicamente a M porque já tenho estes arquivos de anotações pessoais, e já me socializei muito...
+_____
+
+31-01-2022
+__
+
+Feliz por estar gradativamente libertando-me mais do social, escrevendo mais diretamente em meus arquivos pessoais que no Facebook.
+
+Escrevi "libertando-me" porque a sociabilidade pode aprisionar...
+_____
+
+31-01-2022
+__
+
+Joguinhos bons para desenvolver mais a inteligência.
+_____
+
+31-01-2022
+__
+
+Por mais propício que seja o dia, pode ser pouco tempo para fazer o que se tem em mente. É bom não criar muitas expectativas.
+_____
+
+31-01-2022
+__
+
+Fazer a Matemática mais palpável e concreta, com mais substância, tendo mais quantidade dela em minha mente.
+_____
+
+31-01-2022
+__
+
+Se quero me sentir bem exercitando outras coisas, que, assim como fiz pela Matemática, trabalhe-me para também as amar.
+_____
+
+31-01-2022
+__
+
+Precisando recuperar o emocional, exercitando Matemática; está tudo bem, continuar com Matemática.
+_____
+
+31-01-2022
+__
+
+Precisei recuperar o foco em Matemática para voltar a me sentir emocionalmente bem.
+_____
+
+31-01-2022
+__
+
+Permitindo-me, apesar de menos intensamente, amar também a outras coisas além de Matemática, é enriquecedor e também prazeroso.
+_____
+
+31-01-2022
+__
+
+O amor à Matemática faz-me feliz...
+_____
+
+31-01-2022
+__
+
+Não trabalhar com amor faz mal...
+_____
+
+31-01-2022
+__
+
+Acho que era orgulhoso porque, no fundo, sentia-me inferior.
+
+Resolvido o problema da sensação de inferioridade através dos estudos, estou procurando, agora, ser humilde para evitar futuros problemas.
+_____
+
+31-01-2022
+__
+
+Quando era mais jovem, pressentia algumas coisas que, de fato, ocorreram depois.
+
+Como exemplo: via o KoF95 nas locadoras de games, sem ter dinheiro para jogar, mas uma voz interior dizia que teria disponível futuramente em casa, como hoje é realidade.
+_____
+
+31-01-2022
+__
+
+Aprendendo também a não reclamar; focar-me em mim e em minha harmonia.
+_____
+
+31-01-2022
+__
+
+Aparentar estar bem, e de fato estar bem, pois, segundo o espiritismo, não podemos esconder nada.
+_____
+
+31-01-2022
+__
+
+Imagino que, se desejo saber como será o futuro estado de meu espírito desencarnado, basta olhar como me sinto emocionalmente agora.
+
+Se ajo mal, sinto-me emocionalmente mal; se ajo bem, sinto-me bem.
+_____
+
+31-01-2022
+__
+
+Relaxado, porém não esquecendo de caminhar para frente com a disciplina de estudar ao menos um pouco todos os dias.
+_____
+
+31-01-2022
+__
+
+Aprendendo como é navegar neste oceano de águas tranquilas...
+_____
+
+31-01-2022
+__
+
+Não se preocupar com as ações dos outros, e sim com as próprias...
+_____
+
+31-01-2022
+__
+
+Estou aprendendo a ser humilde, pois os livros espíritas dizem que o orgulho pode trazer muitos males, e acho prudente acatar os conselhos.
+_____
+
+31-01-2022
+__
+
+Já não peço tanto aos meus mentores para me ajudarem a evoluir rápido, já estou bastante satisfeito com meu atual estado, não há mais problemas urgentes a resolver; eles podem empregar maior parcela de suas energias em outras pessoas que precisam mais que eu.
+_____
+
+31-01-2022
+__
+
+Não somente evitando más memórias, mas também colecionando boas...
+_____
+
+31-01-2022
+__
+
+Uma amizade com interesse é desculpável quando se deseja ter um amigo para jogar online um game que quase ninguém mais joga. =)
+_____
+
+31-01-2022
+__
+
+Tendo em vista a utilidade com relação aos meus objetivos, compensar qualquer pecado simplesmente em estudar mais Matemática.
+_____
+
+30-01-2022
+__
+
+Ser cuidadoso com o que desejar para não ser um frustrado. Conhecer os próprios limites e os preços a pagar para ter certas coisas.
+_____
+
+30-01-2022
+__
+
+Duas coisas que não são minha vocação, mas que sempre é bom investir um pouco mais: espiritualidade e inteligência.
+_____
+
+30-01-2022
+__
+
+Reconheço; programadores podem ser mais inteligentes que matemáticos, e estou tranquilo quanto a isto; desejo muito, porém não tudo.
+_____
+
+30-01-2022
+__
+
+Na jornada matemática há muito estresse, mas também muita evolução. Devemos ser movidos pelo desejo de ter grandes recompensas.
+_____
+
+30-01-2022
+__
+
+Se cometo um erro em programação, tudo bem compensar o pecado escrevendo um simples artigo. Matemática é mais sobre escrever dissertações que programar.
+_____
+
+30-01-2022
+__
+
+Fé no que de Matemática está demonstrado porém ainda não compreendo.
+_____
+
+30-01-2022
+__
+
+Tudo bem também não compreender alguns pensamentos matemáticos, sou estudante, e, cedo ou tarde, aprenderei.
+_____
+
+30-01-2022
+__
+
+Tenho mais algumas ideias de Matemática a escrever, mas estou sem pressa, já criei e escrevi bastantes coisas.
+_____
+
+30-01-2022
+__
+
+Implementei rotações distintas para os eixos $Ox$ e $Oy$ em duas calculadoras geradoras de gráficos. Ficou interessante.
+_____
+
+30-01-2022
+__
+
+Investindo em Matemática, fico despreocupado quanto a muitas coisas, como sofrer acidentes físicos ou não ter recursos financeiros, poderei continuar estudando e escrevendo.
+_____
+
+30-01-2022
+__
+
+Cheio de feridas, porém cicatrizadas e que me fazem um Ser mais forte e rico de histórias e experiências.
+_____
+
+30-01-2022
+__
+
+Mais importante que estar informado com jornais é ter harmonia espiritual, mesmo desinformado com as atualidades.
+_____
+
+30-01-2022
+__
+
+Já não faço tanta questão de estudar todos os dias, pois já me sinto bastante avançado; há dias em que opto por me concentrar em outras coisas, como na elevação emocional. Era um comportamento meio compulsivo, típico de quem ainda não encontrou paz interior suficiente.
+_____
+
+30-01-2022
+__
+
+Repousar no amor a algo...
+_____
+
+29-01-2022
+__
+
+O ócio é bom para resolver problemas, mas, na maioria das vezes, a solução é estar ocupado construindo algo.
+_____
+
+29-01-2022
+__
+
+Meditar após momentos difíceis também para recuperar a harmonia. Assim há também um ganho evolutivo.
+_____
+
+29-01-2022
+__
+
+Infelizmente programação de computadores exige materialismo, é preciso renegar um pouco de Deus para a ter como vocação, se insistir em desejar balanceando os prós e os contras.
+_____
+
+29-01-2022
+__
+
+Evitando namorar também para evitar preocupações materiais, o materialismo bate de frente com o espiritualismo...
+_____
+
+29-01-2022
+__
+
+A consciência tranquila é um bem muito precioso, sem ela não se vive...
+_____
+
+29-01-2022
+__
+
+Poupando minhas memórias e minha alma de máculas e más lembranças evitando o comércio, onde quase sempre há agressividades.
+_____
+
+29-01-2022
+__
+
+Contemplar as obras e os progressos para ter mais combustível para progredir mais.
+_____
+
+29-01-2022
+__
+
+Não tenho muito do que me orgulhar, então ponho quase todas as fichas nos conhecimentos matemáticos, com eles sim desejo me sentir superior, desenvolvendo-me profundamente.
+_____
+
+29-01-2022
+__
+
+Podemos pensar diferente de todos, o importante é agir segundo a própria consciência.
+_____
+
+29-01-2022
+__
+
+Tranquilizando-me mais por ter corrigido postagens antigas no blog, imprecisões que achava irrelevantes, deixando-o perfeito.
+_____
+
+29-01-2022
+__
+
+O ponto fraco dos maus é o amor ao dinheiro. Podemos os identificar por isto.
+_____
+
+29-01-2022
+__
+
+Algo bom: mais relaxado; efeito colateral: menos produtivo.
+_____
+
+28-01-2022
+__
+
+A alegria mais celeste é a proporcionada pela sensação de organização...
+_____
+
+28-01-2022
+__
+
+Já não é mais urgente, mas sempre oportuno meditar mais um pouco, especialmente quando vivenciando adversidades.
+_____
+
+28-01-2022
+__
+
+Percebi melhor as riquezas espirituais que tinha quando passei a escrever. Há um imenso universo oculto no abstrato...
+_____
+
+27-01-2022
+__
+
+Maturidade matemática também em, cometido um erro nela, deixar para acertar em outro evento em outra hora.
+_____
+
+27-01-2022
+__
+
+Não sentiria as mesmas paz e satisfação apenas estudando Matemática; escrevo.
+_____
+
+27-01-2022
+__
+
+Não precisa estar muito avançado em Matemática para escrever Matemática, de assuntos simples podemos publicar exercícios e demonstrações.
+
+Escrever é muito recomendado para o aprendizado.
+_____
+
+27-01-2022
+__
+
+Qualidade, mas escrever Matemática em quantidade também.
+_____
+
+27-01-2022
+__
+
+O artista gosta de publicar fotos do que produz, o amante da musculação fotos do corpo; eu, como estudante apaixonado, gosto de publicar os escritos de Matemática.
+_____
+
+27-01-2022
+__
+
+Acho que meu cérebro produz ocitocina ao ver Matemática escrita.
+_____
+
+27-01-2022
+__
+
+Às vezes ajudo pessoas não porque quero, nem porque elas merecem, mas porque precisam.
+_____
+
+27-01-2022
+__
+
+Espiritualmente / emocionalmente satisfeito, melhor me dedico aos estudos.
+_____
+
+27-01-2022
+__
+
+Investir na infelicidade de um esperançoso deve ser bastante doloroso...
+_____
+
+27-01-2022
+__
+
+A segurança está em ter o coração protegido...
+_____
+
+27-01-2022
+__
+
+Estou com tempo livre, mas tudo bem se não tivesse, pois já estudei hoje.
+_____
+
+27-01-2022
+__
+
+Independente do que exerce, todo profissional precisa dedicar um tempo de sua vida à meditação.
+_____
+
+27-01-2022
+__
+
+Ocupar-se um pouco com algo útil também faz parte da terapia.
+_____
+
+27-01-2022
+__
+
+Descansando bastante, sentindo o ócio, para, quando trabalhos surgirem, trabalhar com mais vigor.
+
+Posso descansar porque tudo já está organizado.
+_____
+
+26-01-2022
+__
+
+Relaxando aqui e pensando qual será meu próximo software.
+_____
+
+26-01-2022
+__
+
+A prisão é querer fazer algo e não ter permissão...
+_____
+
+26-01-2022
+__
+
+Deliciosa é a paz para os que não a tiveram...
+_____
+
+26-01-2022
+__
+
+Atacar faz muito mal à espiritualidade; defender-se também faz mal; fugir ou resistir são as melhores opções.
+_____
+
+26-01-2022
+__
+
+Cães parecem olhar mais para fora, e gatos olhar mais para dentro.
+_____
+
+26-01-2022
+__
+
+Andando pelos mesmos lugares, só que espiritualmente bastante diferente...
+_____
+
+26-01-2022
+__
+
+No início da musculação, o que mais gostava de trabalhar era ombros e trapézio, hoje é dorsal.
+_____
+
+26-01-2022
+__
+
+Alguém que olhou meus softwares mandou-me um e-mail chamando-me de engenheiro; fiquei um pouco orgulhoso. =)
+_____
+
+26-01-2022
+__
+
+Se algo me causa ansiedade, abraço com força afim de ficar mais imune. Imune no sentido de, se ocorrer, manter-me harmonizado, não sendo necessária a defesa.
+_____
+
+26-01-2022
+__
+
+Treinando também o parry do Ryo.
+_____
+
+26-01-2022
+__
+
+Por profissionais ou "fofoqueiros", notícias se espalham; o que podemos fazer é sermos fontes de boas notícias.
+_____
+
+25-01-2022
+__
+
+Ultimamente estou tendo sonhos conscientes; sei que estou dormindo, e tomo decisões sobre o que fazer, inclusive de acordar.
+_____
+
+25-01-2022
+__
+
+Sou destro; estou treinando meu chute com a perna esquerda.
+_____
+
+25-01-2022
+__
+
+Antes de tomar decisões, consultar a consciência...
+_____
+
+25-01-2022
+__
+
+Na meditação focalizo muito minha hipófise; fisicamente, parece ser nela que sinto as energias.
+_____
+
+25-01-2022
+__
+
+Talvez o estresse possa reduzir o tempo de vida, mas com estresse evoluímos muito, então acho que Deus perdoa.
+_____
+
+25-01-2022
+__
+
+Feliz por, pela primeira vez, ter acertado um golpe secreto no SVC Chaos. Estava desejando isto há muito tempo e, só agora, mais livre de problemas, tive tempo.
+_____
+
+25-01-2022
+__
+
+Uma foto minha, na qual não estou tão bonito, está na Wikipédia, e não consigo tirar, não consigo fazer login com minha conta...
+
+Ao menos pode ficar lá como um registro histórico. Outros personagens também não tinham fotos de si tão belas... =)
+_____
+
+25-01-2022
+__
+
+Os fortes são os que tem um firme motivo para caminhar...
+_____
+
+24-01-2022
+__
+
+Evoluir socialmente também consiste de acertos e erros, como talvez ser necessário apagar uma postagem em rede social.
+_____
+
+24-01-2022
+__
+
+Já joguei um futebolzinho na varanda, tomei um banho, e estou aqui escutando músicas.
+_____
+
+24-01-2022
+__
+
+Por um tempo minha maior preocupação era estudar, depois deixar registros, hoje é refinar meu estado emocional.
+
+Talvez futuramente a prioridade seja outra.
+_____
+
+24-01-2022
+__
+
+Chegando no Céu, mas me esforçando para entrar com a identidade de Matemático, para tanto tenho que suar um pouquinho.
+_____
+
+24-01-2022
+__
+
+A bicicleta quebrou, e aproveitei a oportunidade para caminhar, algo que há muito tempo não fazia, e foi bom, relembrei de tempos passados...
+_____
+
+24-01-2022
+__
+
+É preciso ter algo para "morder com força" quando os tempos ficarem difíceis...
+_____
+
+24-01-2022
+__
+
+Dias propícios à meditação, então vou continuar, pois é necessário ter uma condição difícil a se chegar, é preciso resolver todos os problemas...
+_____
+
+24-01-2022
+__
+
+Recompensas emocionais também são uma espécie de salário.
+_____
+
+23-01-2022
+__
+
+Há anos atrás comecei a fazer a reforma íntima como definida no espiritismo, e, hoje, ainda não consigo ver uma data para terminar...
+_____
+
+23-01-2022
+__
+
+A vida não está lá fora, está aqui dentro...
+_____
+
+23-01-2022
+__
+
+Quando se tem paixão por algo, até os estresses são bem vindos, encarados como parte integrante.
+_____
+
+23-01-2022
+__
+
+Fiz os exercícios físicos do dia, e voltei a dizer a mim mesmo: acho que sim, posso continuar sem camisa no dia a dia, estou corporalmente elegante, apenas por um breve momento relaxei.
+_____
+
+23-01-2022
+__
+
+Que a dor interior seja mais intensa que os prazeres proporcionados pelos vícios para, assim, libertar-se dos vícios transformando a dor interior em prazer...
+_____
+
+23-01-2022
+__
+
+Dependente de meditação...
+_____
+
+23-01-2022
+__
+
+Se já não dou tanta importância ao físico, acho prudente passar a adar mais com camisa.
+_____
+
+23-01-2022
+__
+
+Acho que o emocional vou levar sim comigo no além-túmulo, então, com pressa, procuro elevar o máximo que posso minhas vibrações.
+_____
+
+23-01-2022
+__
+
+Ao invés de passar de uma fase, ou elevar o XP, ou ganhar um achievement em games, escrever um PDF ou postagem de blog de Matemática. Acho mais prazeroso.
+_____
+
+23-01-2022
+__
+
+O homem inteligente deve trabalhar muito para o seu bem-estar emocional...
+_____
+
+23-01-2022
+__
+
+A demasiada preocupação com a forma física estava atrapalhando meu progresso espiritual.
+_____
+
+23-01-2022
+__
+
+A paz de pensar: "Só Matemática", para com as outras coisas, não preciso de tanto rigor.
+_____
+
+23-01-2022
+__
+
+Não vendo minha alma para ter algo material...
+_____
+
+23-01-2022
+__
+
+Geralmente pulo o café da manhã, fazendo jejum até o almoço; mas, se vejo que a fome está me tirando a concentração nos estudos, como um pouco.
+_____
+
+23-01-2022
+__
+
+Mais espiritualizado, menos rigor para com a forma física. Fazendo exercícios, mas com menor perfeccionismo.
+
+Mais perfeccionismo quanto à espiritualidade e aos estudos.
+_____
+
+22-01-2022
+__
+
+Propósito também no descanso.
+_____
+
+22-01-2022
+__
+
+Diferentes caminhos, um mesmo fim...
+_____
+
+21-01-2022
+__
+
+Eu gosto do que me estressa...
+_____
+
+20-01-2022
+__
+
+Evoluindo, deixando de gostar tanto de algumas coisas, e passando a gostar mais de outras...
+_____
+
+20-01-2022
+__
+
+Se penso na possibilidade da continuação da vida espiritual após o desencarne, tenho muito mais variáveis para lidar...
+_____
+
+20-01-2022
+__
+
+Procuro apenas estar de boa, o resto é consequência...
+_____
+
+20-01-2022
+__
+
+Preocupo-me também com o bom Português no que de M escrevo.
+_____
+
+19-01-2022
+__
+
+Queria muito mexer com Eletrônica, mas teria que mexer com dinheiro também...
+_____
+
+19-01-2022
+__
+
+Estou me transformando no que estou mentalizando...
+_____
+
+19-01-2022
+__
+
+Parabéns para mim que precisei de um único commit na atualização.
+_____
+
+19-01-2022
+__
+
+Sinto que estou com vibrações muito boas, e podem melhorar; talvez possa ser útil em um centro espírita.
+_____
+
+19-01-2022
+__
+
+As boas intenções estão em cuidar de si, ajudar os outros, e preservar os objetos; nesta ordem.
+_____
+
+19-01-2022
+__
+
+Fazer exercícios com os pesados para se sair bem na vida com pesos leves.
+_____
+
+19-01-2022
+__
+
+O silêncio também é música...
+_____
+
+19-01-2022
+__
+
+Não seja normal, seja autêntico.
+_____
+
+19-01-2022
+__
+
+No momento estou usando um bom computador, mas nele ainda não há como usar Unreal Engine e nem CryEngine. Futuramente pretendo brincar um pouquinho.
+_____
+
+19-01-2022
+__
+
+Estudar é um momento sagrado, é bom esperar até que o ambiente esteja apropriado.
+_____
+
+19-01-2022
+__
+
+Para quem tem foco tudo é lucro.
+_____
+
+19-01-2022
+__
+
+O estresse de programar é um estresse saudável, faz-nos mais inteligentes e também mais psiquicamente fortes.
+_____
+
+19-01-2022
+__
+
+Implementei a distinção entre matriz escalonada, e escalonada reduzida por linhas.
+_____
+
+18-01-2022
+__
+
+Não estou aqui para descansar, estou para evoluir.
+_____
+
+18-01-2022
+__
+
+Instagram com mais de 3000 publicações, e praticamente todas transmitem pensamentos, não são publicações vazias.
+_____
+
+18-01-2022
+__
+
+Quando se cresce em amor, também se cresce em paz interior...
+_____
+
+18-01-2022
+__
+
+Dia vitorioso, porque não dormi bem e, no entanto, senti-me muito bem e produtivo, muito provavelmente por resultados das meditações.
+_____
+
+18-01-2022
+__
+
+Minha genética dá-me a aparência de ser um pouco gordinho, mas estou tranquilo, pois sou natural, um gordinho com muita massa muscular, bom condicionamento e a ciência de que o mais importante é o que está na cabeça.
+_____
+
+18-01-2022
+__
+
+Acho que realizei o desejo de enviar parte dos meus registros para onde não terei mais controle sobre ela, alguém talvez me obrigue a fazer alterações que não desejo aqui onde estou.
+_____
+
+18-01-2022
+__
+
+Talvez seja necessário amar a algo mais que a si próprio.
+_____
+
+18-01-2022
+__
+
+Entrando com cautela em novos territórios espirituais...
+_____
+
+18-01-2022
+__
+
+Interiormente mais calmo, presto mais atenção aos detalhes...
+_____
+
+18-01-2022
+__
+
+Às vezes tenho medo de abrir um livro de Matemática Superior. Se eu começar a resolver um problema, só sossego depois de terminar.
+_____
+
+18-01-2022
+__
+
+Uma vez perguntei a um advogado experiente: "Qual a situação mais tensa? Questão trabalhista ou divórcio?", ele respondeu: "Divórcio.".
+_____
+
+18-01-2022
+__
+
+Um pouco estranho não ter problemas a resolver, acho que devo me sentir grato e me administrar para manter.
+
+Este é meu novo ambiente espiritual...
+_____
+
+18-01-2022
+__
+
+Quando mais jovem, li em alguns livros que é bom evitar participar de sociedades secretas. O porquê não sei, mas acho melhor acatar os conselhos...
+_____
+
+18-01-2022
+__
+
+Para quem ama, ser fiel é um prazer. A fidelidade faz-nos crescer em amor, e amor é necessário para viver...
+_____
+
+17-01-2022
+__
+
+Um mínimo suficiente de autoconhecimento.
+_____
+
+17-01-2022
+__
+
+Meditando, talvez eu nunca me sinta plenamente preparado para tudo, no entanto, quanto mais, melhor.
+_____
+
+17-01-2022
+__
+
+Muitas informações aleatórias no Facebook, vou logo nos perfis das pessoas, páginas e grupos que gosto.
+_____
+
+17-01-2022
+__
+
+Conversar mais consigo mesmo é uma medida preventiva para nos sairmos bem em futuros momentos difíceis...
+_____
+
+17-01-2022
+__
+
+É preciso ser sábio para ser dono de si...
+_____
+
+17-01-2022
+__
+
+Ter toda a parte de programação do blog já bem construída para me preocupar unicamente em escrever Matemática.
+
+De vez em quando é que acho melhor fazer alguma alteração estrutural.
+_____
+
+17-01-2022
+__
+
+Se excluí alguém com quem não simpatizava, foi para evitar conflitos; conflitos sempre tem maus desfechos...
+_____
+
+17-01-2022
+__
+
+Melhor que estar namorando é se sentir amado, é o que verdadeiramente importa...
+_____
+
+17-01-2022
+__
+
+Não tenho vergonha de escrever também coisas simples de Matemática, é Matemática e o público é variado.
+_____
+
+17-01-2022
+__
+
+Acho melhor ser professor particular que de uma escola, pois, se o aluno procura um professor particular, está com real interesse em aprender.
+
+E com poucos dá para ter uma boa renda.
+_____
+
+17-01-2022
+__
+
+Demora um pouquinho escrever artigos de Matemática, mas acho que vale a pena porque eles ficam lá, disponíveis para consultas, diferente se eu simplesmente os mencionasse em uma sala de aula.
+_____
+
+16-01-2022
+__
+
+Não sabia que, em geral, administradores de grupos / comunidades rejeitassem tanto publicações de outros ambientes. Descobri depois que comecei a divulgar meus escritos.
+_____
+
+16-01-2022
+__
+
+Talvez algumas pessoas tem medo de mim porque sou livre...
+_____
+
+16-01-2022
+__
+
+Comunicando-me pela internet, fico tranquilo em casa...
+_____
+
+16-01-2022
+__
+
+Hoje, domingo, poderia ir a uma igreja, mas já estou fazendo o que de melhor elas podem oferecer: meditar e crescer...
+_____
+
+16-01-2022
+__
+
+Com frequência pensar nos possíveis piores resultados, assim estaremos mais preparados se eles chegarem...
+_____
+
+16-01-2022
+__
+
+Solteiro porque já tenho o amor próprio como fonte de prazer, um delicioso prazer...
+_____
+
+16-01-2022
+__
+
+Os espiritualmente evoluídos não são os primeiros a pegar comida da mesa, ficam com as sobras...
+_____
+
+16-01-2022
+__
+
+A beleza de algumas coisas que escrevo só pode ser vista por quem entende um pouco de Matemática.
+_____
+
+16-01-2022
+__
+
+Hoje foi tranquilo programar, já estou condicionado. No início é que é carregar uma pedra pesada morro acima.
+_____
+
+16-01-2022
+__
+
+Se o cálculo é longo e muito complexo, faço um software / calculadora para facilitar a vida.
+_____
+
+16-01-2022
+__
+
+Antes de um banho, fazer mais uma barrinha.
+_____
+
+16-01-2022
+__
+
+Tranquilidade por já ter escrito muitos pensamentos pessoais, e de Matemática também, artigos e softwares.
+
+Sinto a vida mais resolvida.
+_____
+
+16-01-2022
+__
+
+Talvez os primeiros a verem as fotos do telescópio James Webb sejam membros dos construtores e financiadores: NASA, ESA, CSA, Northrop Grumman e Ball Aerospace; depois das análises feitas é que serão abertas ao público.
+_____
+
+16-01-2022
+__
+
+Desta vez os exercícios me deixaram com os antebraços bastante doloridos.
+_____
+
+16-01-2022
+__
+
+A paz é saborosa como um suco de laranja com limão e açúcar demerara.
+_____
+
+16-01-2022
+__
+
+Mesmo não dormindo perfeitamente bem, ainda dá para saborear a paz proporcionada pela organização.
+_____
+
+16-01-2022
+__
+
+Dias bons passam rápidos...
+_____
+
+16-01-2022
+__
+
+Geralmente o foco de um atleta não é o intelecto, então alguns fazem bem em dizer: estou aqui para fazer, não para falar...
+_____
+
+16-01-2022
+__
+
+No momento esperando um pouco antes de publicar um artigo já construído, esperando a melhor hora.
+_____
+
+16-01-2022
+__
+
+Já hoje, como não dormi perfeitamente bem, não é bom dedicar o dia a meditações, mas a estudos. O tempo continua a ser muito bem aproveitado e já meditei bastante.
+_____
+
+15-01-2022
+__
+
+Acho que redes sociais ajudaram o Brasil a, pelo menos por enquanto, não entrar em uma guerra civil, mostrando às pessoas o que melhor escolher...
+_____
+
+15-01-2022
+__
+
+Hoje acho que entendo perfeitamente o sentido dos holocaustos judeus.
+
+Pecam, sentem-se distantes do perfeccionismo, então oferecem algo valioso como sacrifício ao que julgam como Deus.
+
+Eu faço algo semelhante, escrevendo Matemática para me sentir reconciliado.
+_____
+
+15-01-2022
+__
+
+O medo de errar existe, mas, sem ação, sem evolução...
+_____
+
+15-01-2022
+__
+
+O apóstolo Paulo, antes de ser apóstolo, fazia maldades com as pessoas, mas, diante de Deus, talvez não foi tão culpado se agiu com boas intenções. A intenção é o que vale no tribunal divino...
+_____
+
+15-01-2022
+__
+
+Os resultados das meditações demoram a aparecer, mas é o melhor caminho a seguir para as curas interiores.
+_____
+
+15-01-2022
+__
+
+Hoje mexi um pouquinho com programação, e funcionou mais como um gatilho para despertar estresses e, assim, ter razões para elevar as vibrações, evoluir emocionalmente.
+_____
+
+15-01-2022
+__
+
+Mesmo sem ser por dinheiro, sinto-me no dever de produzir ao menos um pouco de Matemática, como se tivesse que dar satisfações ao Universo.
+_____
+
+15-01-2022
+__
+
+Já não quero tanto, mas o tempo tem que ser bem empregado.
+_____
+
+15-01-2022
+__
+
+Conquistar o respeito sendo resistente...
+_____
+
+15-01-2022
+__
+
+Algo bom de hospedagens como o Dropbox é que, após publicar um artigo, e perceber que há erros, basta atualizar o documento, o link de compartilhamento é mantido.
+_____
+
+15-01-2022
+__
+
+É bom se sentir um cliente que não conversa; chega, paga, recebe o serviço, diz obrigado, e vai embora.
+
+Assim, toda vez que chego no estabelecimento, o profissional já sabe o que esperar e fazer.
+_____
+
+14-01-2022
+__
+
+Chamam-me muito para ser programador, mas não é meu objetivo. Aprendi o básico de programação somente para implementar as ideias matemáticas.
+_____
+
+14-01-2022
+__
+
+Sempre estudando também para manter o espírito sempre jovem...
+_____
+
+14-01-2022
+__
+
+Em alguns sites, talvez eu seja conhecido por ser banido de tantos grupos / comunidades...
+_____
+
+14-01-2022
+__
+
+Bom quando a vida fica no "automático", com os problemas fundamentais já resolvidos.
+_____
+
+14-01-2022
+__
+
+Às vezes a vida fica repleta de problemas, mas tenho que seguir em frente...
+_____
+
+14-01-2022
+__
+
+O silêncio é bom, mas às vezes é bom debater para treinar a argumentação e o controle emocional.
+_____
+
+14-01-2022
+__
+
+Para melhor fixar o que aprendi, ou ser professor, ou escrevendo Matemática. Ambas as opções põem em prática.
+_____
+
+14-01-2022
+__
+
+Sem objetivos, estamos mortos...
+_____
+
+14-01-2022
+__
+
+A Matemática, além de comunicativa - o que satisfaz o desejo de se expressar -, é uma excelente ferramenta de elevação da autoestima.
+_____
+
+13-01-2022
+__
+
+Acho que o egoísmo pode ser bom quando pensamos: não quero julgar ninguém, quero seguir minha vida tranquilo, focado em meus objetivos...
+_____
+
+13-01-2022
+__
+
+Jogar os games que tem vontade até que não tenha mais vontades, ficando mais livre.
+_____
+
+13-01-2022
+__
+
+Tranquilidade não somente através da meditação, mas também em deixar a vida a mais organizada possível.
+_____
+
+13-01-2022
+__
+
+Já não sinto tanta necessidade de meditar ao ponto de fazer intensivos, já me sinto preparado para muitas coisas... No entanto, como sei que só tenho a ganhar, faço quando tenho oportunidades.
+_____
+
+13-01-2022
+__
+
+É preciso sempre alimentar a autoestima...
+_____
+
+13-01-2022
+__
+
+Tenho problemas psicológicos é se ficar muito tempo sem estudar ou escrever Matemática.
+_____
+
+13-01-2022
+__
+
+Alimentar sem medida os hábitos de estudar e escrever Matemática, não há contraindicações.
+_____
+
+13-01-2022
+__
+
+Tudo perfeito, hoje é um excelente dia para dedicar a mais meditações, elevar as vibrações...
+_____
+
+13-01-2022
+__
+
+Eu até gostava dela, mas fez foto com arminha na mão. Decepcionante...
+_____
+
+12-01-2022
+__
+
+Pensei em usar um pano nas minhas mãos, mas preferi fazer exercícios sem nada, pensando: gosto dos calos e das dores nas mãos; sim, é uma dor gostosa.
+_____
+
+12-01-2022
+__
+
+Tenho uma roupa que uso tanto que já é parte de minha história. =)
+
+É leve, confortável, e fácil de lavar.
+_____
+
+12-01-2022
+__
+
+Livro enviado para impressão. Acho que já posso ficar tranquilo quanto a deixar minha marquinha aqui na Terra.
+_____
+
+12-01-2022
+__
+
+Se formos fazer algo para alguém, acho que sempre vamos nos decepcionar; devemos fazer para nos sentirmos bem conosco mesmo...
+_____
+
+12-01-2022
+__
+
+Às vezes falo palavras duras, mas tenho que dizer para não me afogar com elas...
+_____
+
+12-01-2022
+__
+
+Faço o dia lucrativo para ficar tranquilo ao fim.
+_____
+
+12-01-2022
+__
+
+Como muitos problemas pessoais, os de caráter íntimo e os relacionados à Matemática, já foram resolvidos, no momento estou levando games mais a sério, evoluindo neles.
+
+Uma prática é construir bons arquivos de saves, anexando-os aos arquivos pessoais.
+_____
+
+11-01-2022
+__
+
+Antes de mandar para a impressão, é bom esperar um pouco; podem surgir mais pensamentos importantes...
+_____
+
+11-01-2022
+__
+
+Meu livro de anotações pessoais: 3581 páginas...
+_____

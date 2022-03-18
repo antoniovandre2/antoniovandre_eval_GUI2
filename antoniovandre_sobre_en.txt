@@ -1,0 +1,211 @@
+                                        
+      .':clllc;'.   ..;clll:,.          
+    .col;'..,cxxl,,ldo:'.,lxxl.         
+  .:dc.      .lkkxxl:.  .cdxkx:         
+ .cd:.       .lkkko.    ;xkkkd'         
+ ,o:.        ,dkkx:     .;cc;.   .......
+  .         .ckkko.         ....''''''''
+            ,dkkx;       ...''''''''''''
+           .ckkko.    ..''''''''''''''''
+           'dkkx:. ..'''''',;,''''''''''
+ .:cc;.   .ckkkd,.'''''''';odc''''''''''
+;dkkkx,   ;xkkkl,'''''''';oxl,''''''''''
+ckkxd:.  ,dxxkxo,'''''',cddc,'''''''''''
+'okdc'.,coc':dxxo::::clddl;'''''''''''''
+ .,:clcc;.  .;clooooool:;'''''''''''''''
+           .''''',,,''''''''''''''''''''
+          .'''''''''''''''''''''''''''''
+          .'''''''''''''''''''''''''''''
+         .''''''''''''''''''''''''''''''
+         .''''''''''''''''''''''''''''''
+
+Mathematical Ramblings Project (bit.ly/mathematicalramblings_github).
+____________________
+
+Operators available for "antoniovandre_eval":
+
+"+": sum.
+
+"-": subtraction.
+
+"*": multiplication.
+
+"/": division.
+
+"^": exponentiation.
+
+"%": rest of division
+
+"@": arrangements (Combinatory Analysis).
+
+"#": combinations (Combinatory Analysis).
+
+"$": rounding to the order of magnitude.
+
+">": maximum.
+
+"<": minimum.
+
+":": base logarithm.
+
+"~": returns "1" if it is an approximate value, and "0" if not.
+_____
+
+Parentheses can be used in "antoniovandre_eval".
+_____
+
+Constants available for "antoniovandre_eval":
+
+"PI": ratio between the length and diameter of a circumference.
+
+"T": double pi.
+
+"E": base of natural logarithms.
+
+"C": speed of light in vacuum, in IS.
+
+"G": constant of Universal Gravitation, in IS.
+
+"QE": elementary charge, in IS.
+
+"H": Planck's constant, on SI.
+
+"HH": Planck's reduced constant, in IS.
+
+"K": Boltzmann's constant, in IS.
+
+"ME": electron mass, in IS.
+
+"MP": proton mass, in IS.
+
+"MN": neutron mass, in SI.
+
+"AM": Avogadro's constant, times 10^(-23), in mol^(-1).
+
+"KE": Coulomb's constant, electrostatic constant, in IS.
+
+"R": universal constant of perfect gases, in IS.
+
+"SB": Stefan-Boltzmann's constant, in IS.
+
+"PM": magnetic permeability constant in vacuum, in IS.
+
+"PE": electric permeability constant in vacuum, in SI.
+
+"P": golden ratio.
+
+"CC": Catalan's constant.
+
+"EM": Euler-Mascheroni's constant.
+
+"FA": Feigenbaum's alpha constant.
+
+"FS": Feigenbaum's sigma constant.
+
+"AP": Apéry's constant.
+
+"CO": Conway's constant.
+
+"KH": Khinchin's constant.
+
+"GK": Glaisher-Kinkelin's constant.
+_____
+
+Functions available for "antoniovandre_eval":
+
+"sen": sin function.
+
+"cos": cosine function.
+
+"tg": tangent function.
+
+"cotg": cotangent function.
+
+"sec": secant function.
+
+"cossec": cossecant function.
+
+"arcsen": arc sine function.
+
+"arccos": arc cosine function.
+
+"arctg": arc tangent function.
+
+"arccotg": arc cotangent function.
+
+"arcsec": arc secant function.
+
+"arccossec": arc cossecant function.
+
+"ln": natural logarithm function.
+
+"logdez": base 10 logarithm function.
+
+"logdois": base 2 logarithm function.
+
+"senh": hyperbolic sine function.
+
+"cosh": hyperbolic cosine function.
+
+"tgh": hyperbolic tangent function.
+
+"cotgh": hyperbolic cotangent function.
+
+"sech": hyperbolic secant function.
+
+"cossech": hyperbolic cossecant function.
+
+"arcsenh": hyperbolic arc sine function.
+
+"arccosh": hyperbolic arc cosine function.
+
+"arctgh": hyperbolic arc tangent function.
+
+"arccotgh": hyperbolic arc cotangent function.
+
+"arcsech": hyperbolic arc secant function.
+
+"arccossech": hyperbolic arc cossecant function.
+
+"fatorial": factorial function.
+
+"modulo": module function.
+
+"piso": floor function;
+
+"teto": ceiling function;
+
+"radparagrau": function to convert radians to degrees.
+
+"radparagrado": function to convert radians to grads.
+
+"graupararad": function to convert degrees to radians.
+
+"grauparagrado": function to convert degrees to grads.
+
+"gradopararad": function to convert grads to radians.
+
+"gradoparagrau": function to convert grads to degrees.
+
+"kelvinparacelsius": function to convert temperature in Kelvin to Celsius.
+
+"kelvinparafahrenheit": function to convert temperature in Kelvin to Fahrenheit.
+
+"celsiusparakelvin": function to convert temperature in Celsius to Kelvin.
+
+"celsiusparafahrenheit": function to convert temperature in Celsius to Fahrenheit.
+
+"fahrenheitparakelvin": function to convert temperature in Fahrenheit to Kelvin.
+
+"fahrenheitparacelsius": function to convert temperature in Fahrenheit to Celsius.
+_____
+
+Calculation example in "antoniovandre_eval":
+
+Input: "(2 + ln (5 - 2 ^ (8 - 6))) * 3";
+
+Output: "6". 
+____________________
+
+Suggestions or reporting errors: "a.vandre.g@gmail.com".
+____________________

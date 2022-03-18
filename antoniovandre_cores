@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_legadoontologico).
+
+# Script de códigos de escape para cores no terminal.
+
+# Licença: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
+
+# Última atualização: 07-04-2020.
+
+export AVCORES="1"
+
+export AV_VERDE="\033[0;32m"
+export AV_VERMELHO="\033[0;31m"
+export AV_PRETO="\033[0;30m"
+export AV_LARANJA="\033[0;33m"
+export AV_AZUL="\033[0;34m"
+export AV_ROXO="\033[0;35m"
+export AV_CIANO="\033[0;36m"
+export AV_CINZACLARO="\033[0;37m"
+export AV_CINZA="\033[1;30m"
+export AV_VERMELHOCLARO="\033[1;31m"
+export AV_VERDECLARO="\033[1;32m"
+export AV_AMARELO="\033[1;33m"
+export AV_ROXOCLARO="\033[1;35m"
+export AV_CIANOCLARO="\033[1;36m"
+export AV_BRANCO="\033[1;37m"
+
+export AV_SEMCOR="\033[0m"
+

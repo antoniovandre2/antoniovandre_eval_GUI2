@@ -1,0 +1,448 @@
+#!/bin/bash
+
+# Projeto Mathematical Ramblings (mathematicalramblings.blogspot.com).
+
+# Script para compilar e instalar antoniovandre_eval_gui, versão de distribuição.
+
+# Licença: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
+
+# Última atualização: 07-12-2020.
+
+SOURCEDIR="Math/"
+DESTDIR="/usr/bin/"
+DESTDIRSHARE="/usr/share/"
+
+TRADUCOESARQUIVO="antoniovandre_traducoes.txt"
+MD5SUMTRADUCOESARQUIVO="ea4c7b95b5992d5f3adb3506a6479dec"
+
+TIMEOUTMENSAGEM="6"
+
+if [ "${1}" == "instalar" ]; then if ! ls "${TRADUCOESARQUIVO}" &>> /dev/null || ! ls index.html &>> /dev/null || ! ls index_en.html &>> /dev/null || ! ls index_cn.html &>> /dev/null || ! ls index_es.html &>> /dev/null || ! ls index_in.html &>> /dev/null || ! ls index_ar.html &>> /dev/null || ! ls index_ru.html &>> /dev/null || ! ls README.txt &>> /dev/null || ! ls README_en.txt &>> /dev/null || ! ls README_cn.txt &>> /dev/null || ! ls README_es.txt &>> /dev/null || ! ls README_in.txt &>> /dev/null || ! ls README_ar.txt &>> /dev/null || ! ls README_ru.txt &>> /dev/null || ! ls README.md &>> /dev/null || ! ls antoniovandre.c &>> /dev/null || ! ls antoniovandre_constantes.c &>> /dev/null || ! ls antoniovandre_eval_gui.pytemp &>> /dev/null || ! ls antoniovandre_cores &>> /dev/null || ! ls antoniovandre_sobre.txt &>> /dev/null || ! ls antoniovandre_sobre_en.txt &>> /dev/null || ! ls antoniovandre_sobre_cn.txt &>> /dev/null || ! ls antoniovandre_sobre_es.txt &>> /dev/null || ! ls antoniovandre_sobre_in.txt &>> /dev/null || ! ls antoniovandre_sobre_ar.txt &>> /dev/null || ! ls antoniovandre_sobre_ru.txt &>> /dev/null || ! ls antoniovandre_precisao_real.txt &>> /dev/null || ! ls Math/antoniovandre_eval.c &>> /dev/null || ! ls antoniovandre_eval_gui_bgimage.png &>> /dev/null || ! ls antoniovandre_eval_gui_logo.png &>> /dev/null || ! ls antoniovandre_eval_gui_logo_200p.png &>> /dev/null || ! ls "Bandeira do Brasil - 320p.png" &>> /dev/null || ! ls "Bandeira do Reino Unido - 510p.png" &>> /dev/null || ! ls "Bandeira da China - 320p.png" &>> /dev/null || ! ls "Bandeira da Espanha - 320p.png" &>> /dev/null || ! ls "Bandeira da Índia - 320p.png" &>> /dev/null || ! ls "Bandeira da Arábia Saudita - 320p.png" &>> /dev/null || ! ls "Bandeira da Rússia - 320p.png" &>> /dev/null || ! ls DropBox-Icon.png &>> /dev/null || ! ls "GitHub logo.png" &>> /dev/null || ! ls "Mathematical Ramblings - Smartphone wallpaper 3 - Indexada.png" &>> /dev/null || ! ls by-nc-sa.jpg &>> /dev/null || [ "$(md5sum ${TRADUCOESARQUIVO} 2>> /dev/null | cut -d ' ' -f 1)" != "${MD5SUMTRADUCOESARQUIVO}" ] || [ "$(md5sum index.html 2>> /dev/null | cut -d ' ' -f 1)" != "4b1cdacf953be3691b6906ae7c2f7181" ] || [ "$(md5sum index_en.html 2>> /dev/null | cut -d ' ' -f 1)" != "535e934acc0e91fcd7a56de1aecf6e4a" ] || [ "$(md5sum index_cn.html 2>> /dev/null | cut -d ' ' -f 1)" != "7db4835bb0ffd779e6d66f1035f5b435" ] || [ "$(md5sum index_es.html 2>> /dev/null | cut -d ' ' -f 1)" != "6de3fe83fed1fd26e7b89a58acbb930f" ] || [ "$(md5sum index_in.html 2>> /dev/null | cut -d ' ' -f 1)" != "9c26f4fc8ee1b6196fac1470de7c91cb" ] || [ "$(md5sum index_ar.html 2>> /dev/null | cut -d ' ' -f 1)" != "877b5fd8383601395ef8e59d0fd83f4f" ] || [ "$(md5sum index_ru.html 2>> /dev/null | cut -d ' ' -f 1)" != "7927db83cef67380d497e1f551dd4659" ] || [ "$(md5sum README.txt 2>> /dev/null | cut -d ' ' -f 1)" != "acb5cc14722fbff3e80d68efa22651f8" ] || [ "$(md5sum README_en.txt 2>> /dev/null | cut -d ' ' -f 1)" != "f1efe2b91644847cbd76af2bf28f8c52" ] || [ "$(md5sum README_cn.txt 2>> /dev/null | cut -d ' ' -f 1)" != "d85feccba7ce132ac3e22b92ad52999b" ] || [ "$(md5sum README_es.txt 2>> /dev/null | cut -d ' ' -f 1)" != "9621cbeae88cdd6942f51fc688d86801" ] || [ "$(md5sum README_in.txt 2>> /dev/null | cut -d ' ' -f 1)" != "a0000f604bed0f996c7e26f846410c3e" ] || [ "$(md5sum README_ar.txt 2>> /dev/null | cut -d ' ' -f 1)" != "c23292c1a7d9cfba9ebf6099a575d046" ] || [ "$(md5sum README_ru.txt 2>> /dev/null | cut -d ' ' -f 1)" != "a521da8f26a6191f479c1db1cf323648" ] || [ "$(md5sum README.md 2>> /dev/null | cut -d ' ' -f 1)" != "15a27429a7b9f2dfba4c7bfcfd2f19b1" ] || [ "$(md5sum antoniovandre.c 2>> /dev/null | cut -d ' ' -f 1)" != "77c53034b3a6ec30928aa7a9e1405379" ] || [ "$(md5sum antoniovandre_constantes.c 2>> /dev/null | cut -d ' ' -f 1)" != "38c989b6aeb167d53201107a0360a119" ] || [ "$(md5sum antoniovandre_eval_gui.pytemp 2>> /dev/null | cut -d ' ' -f 1)" != "0f7149f58822bfa0f1ecb6ce9055b829" ] || [ "$(md5sum antoniovandre_cores 2>> /dev/null | cut -d ' ' -f 1)" != "d4f1a5742145b4d790698eed8eaf7d50" ] || [ "$(md5sum antoniovandre_sobre.txt 2>> /dev/null | cut -d ' ' -f 1)" != "923729533d89732da5bf1e14f674bb1b" ] || [ "$(md5sum antoniovandre_sobre_en.txt 2>> /dev/null | cut -d ' ' -f 1)" != "2aced2cc4098874d60f4e2bf9435dd04" ] || [ "$(md5sum antoniovandre_sobre_cn.txt 2>> /dev/null | cut -d ' ' -f 1)" != "e3d79344111ef58abd093b4f2ac762ab" ] || [ "$(md5sum antoniovandre_sobre_es.txt 2>> /dev/null | cut -d ' ' -f 1)" != "eaddde754fe4310c1156efae3d53bd7f" ] || [ "$(md5sum antoniovandre_sobre_in.txt 2>> /dev/null | cut -d ' ' -f 1)" != "6159ad6c5600e6754d3bc3c4d3d5ae0c" ] || [ "$(md5sum antoniovandre_sobre_ar.txt 2>> /dev/null | cut -d ' ' -f 1)" != "0c47ef23b315ddc491d4cb94fe8c4a47" ] || [ "$(md5sum antoniovandre_sobre_ru.txt 2>> /dev/null | cut -d ' ' -f 1)" != "524beed66e26e8c7ac4bc44c2c0664d5" ] || [ "$(md5sum antoniovandre_precisao_real.txt 2>> /dev/null | cut -d ' ' -f 1)" != "b7e7cb558e4f35d14cc311a04af6eb1c" ] || [ "$(md5sum Math/antoniovandre_eval.c 2>> /dev/null | cut -d ' ' -f 1)" != "c44c02132e0b983beee9bc0350202048" ] || [ "$(md5sum antoniovandre_eval_gui_bgimage.png 2>> /dev/null | cut -d ' ' -f 1)" != "89cb7026063ee5e52291ede3d75d730d" ] || [ "$(md5sum antoniovandre_eval_gui_logo.png 2>> /dev/null | cut -d ' ' -f 1)" != "a7fcaccb1a993d65a644d781b4fa8d59" ] || [ "$(md5sum antoniovandre_eval_gui_logo_200p.png 2>> /dev/null | cut -d ' ' -f 1)" != "77d3ec93b5775b1029c6099ed6421b20" ] || [ "$(md5sum 'Bandeira do Brasil - 320p.png' 2>> /dev/null | cut -d ' ' -f 1)" != "386b8d48330e3a2d38f4b746499a54e4" ] || [ "$(md5sum 'Bandeira do Reino Unido - 510p.png' 2>> /dev/null | cut -d ' ' -f 1)" != "d037587453fb413f1b8b0d7ac4f32861" ] || [ "$(md5sum 'Bandeira da China - 320p.png' 2>> /dev/null | cut -d ' ' -f 1)" != "367062c215b6050b1aa453e02cc44532" ] || [ "$(md5sum 'Bandeira da Espanha - 320p.png' 2>> /dev/null | cut -d ' ' -f 1)" != "b4acbd3849804d8799195ce621c96380" ] || [ "$(md5sum 'Bandeira da Índia - 320p.png' 2>> /dev/null | cut -d ' ' -f 1)" != "11543ddc6c7e1721aed4a3cf67c25267" ] || [ "$(md5sum 'Bandeira da Arábia Saudita - 320p.png' 2>> /dev/null | cut -d ' ' -f 1)" != "e460801eac7ce12c1eb996dab41ee4df" ] || [ "$(md5sum 'Bandeira da Rússia - 320p.png' 2>> /dev/null | cut -d ' ' -f 1)" != "58f050aef6773d8037164f2a28e3fb8b" ] || [ "$(md5sum DropBox-Icon.png 2>> /dev/null | cut -d ' ' -f 1)" != "96a57837a41cd9250459104b46d2f64e" ] || [ "$(md5sum 'GitHub logo.png' 2>> /dev/null | cut -d ' ' -f 1)" != "482dce8fe2ffc91fd287d8118f3488c2" ] || [ "$(md5sum "Mathematical Ramblings - Smartphone wallpaper 3 - Indexada.png" 2>> /dev/null | cut -d ' ' -f 1)" != "09e1440f8222651114f6f60d16889360" ] || [ "$(md5sum by-nc-sa.jpg 2>> /dev/null | cut -d ' ' -f 1)" != "e1746d3e902bc8e309335b983cd0bc00" ]; then echo -e "Diretório corrompido / Corrupted directory / 目錄損壞 / Directorio corrupto / Поврежденный каталог."; exit 1; fi; fi
+
+if [ -n "${2}" ]; then ARGUMENTOLINGUISTICO="${2}"; else ARGUMENTOLINGUISTICO="nulo"; fi
+
+case "${ARGUMENTOLINGUISTICO}" in
+	"nulo")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+	;;
+	"pt")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+	;;
+	"br")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+	;;
+	"en")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+	;;
+	"us")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+	;;
+	"cn")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+	;;
+	"es")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+	;;
+	"in")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+	;;
+	"ar")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+	;;
+	"ru")
+		CARREGANDOCORES=$(eval echo "$(sed -n '1p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+	;;
+	*)
+		echo -e "Língua não reconhecida / Unrecognized langage / 無法識別的語言 / Lenguaje no reconocido / अपरिचित भाषा / لغة غير معروفة / Нераспознанный язык."; exit 1
+	;;
+esac
+
+if ! [ -n "$AVCORES" ]; then echo -ne "${CARREGANDOCORES}"; if ! source "antoniovandre_cores" &>> /dev/null; then echo -e "Ocorreu um erro.\n"; else echo -e "${AV_VERDE}Ok${AV_SEMCOR}.\n"; fi; fi
+
+case "${ARGUMENTOLINGUISTICO}" in
+	"nulo")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+	;;
+	"br")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+	;;
+	"pt")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 1)")
+	;;
+	"en")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+	;;
+	"us")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 2)")
+	;;
+	"cn")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 3)")
+	;;
+	"es")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 4)")
+	;;
+	"in")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 5)")
+	;;
+	"ar")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 6)")
+	;;
+	"ru")
+		ENTRECOMOSARGUMENTOS=$(eval echo "$(sed -n '2p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		JAINSTALADO=$(eval echo "$(sed -n '3p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		CONFLITO=$(eval echo "$(sed -n '4p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		JADESINSTALADO=$(eval echo "$(sed -n '5p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		BASHNAOENCONTRADO=$(eval echo "$(sed -n '6p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		GCCNAOENCONTRADO=$(eval echo "$(sed -n '7p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		MD5SUMNAOENCONTRADO=$(eval echo "$(sed -n '8p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		PYTHONNAOENCONTRADO=$(eval echo "$(sed -n '9p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		TCLTKNAOENCONTRADO=$(eval echo "$(sed -n '10p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		INSTALEDODIRETORIO=$(eval echo "$(sed -n '11p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		INSTALARINTRODUCAO=$(eval echo "$(sed -n '12p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		TRABALHANDOEM=$(eval echo "$(sed -n '13p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		SUCESSO=$(eval echo "$(sed -n '14p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		OCORREUFALHA=$(eval echo "$(sed -n '15p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		TRABALHANDOPYTHON=$(eval echo "$(sed -n '16p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		TRABALHANDOSOBRE=$(eval echo "$(sed -n '17p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		TRABALHANDOPRECISAOREAL=$(eval echo "$(sed -n '18p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		TRABALHANDOBGIMAGE=$(eval echo "$(sed -n '19p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		TRABALHANDOEXECUTAVEL=$(eval echo "$(sed -n '20p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		TRABALHANDOESTATISTICAS=$(eval echo "$(sed -n '21p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		SUCESSODESINSTALAR=$(eval echo "$(sed -n '22p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		SUCESSOINSTALAR=$(eval echo "$(sed -n '23p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		ENTREEXPRESSAO=$(eval echo "$(sed -n '24p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		RESULTADO=$(eval echo "$(sed -n '25p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		ENTREEXPRESSAOCLIQUE=$(eval echo "$(sed -n '26p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		ARQUIVOSOBRE=$(eval echo "$(sed -n '27p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		AJUDA=$(eval echo "$(sed -n '28p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		CALCULAR=$(eval echo "$(sed -n '29p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		MAJUDA=$(eval echo "$(sed -n '30p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		SAIR=$(eval echo "$(sed -n '31p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+		DESINSTALARINTRODUCAO=$(eval echo "$(sed -n '32p' < ${TRADUCOESARQUIVO} | cut -d '%' -f 7)")
+	;;
+	*)
+		echo -e "${AV_VERMELHO}Língua não reconhecida / Unrecognized langage / 無法識別的語言 / Lenguaje no reconocido / अपरिचित भाषा / لغة غير معروفة / Нераспознанный язык${AV_SEMCOR}."; exit 1
+	;;
+esac
+
+if [ "${1}" != "desinstalar" ] && [ "${1}" != "instalar" ]; then echo -e "${AV_VERMELHO}${ENTRECOMOSARGUMENTOS}${AV_SEMCOR}."; exit 1; fi
+
+if [ "${1}" == "instalar" ] && hash antoniovandre_eval_gui &>> /dev/null; then echo -e "${AV_VERMELHO}${JAINSTALADO}${AV_SEMCOR}."; exit 1; fi
+
+if [ "${1}" == "instalar" ] && hash antoniovandre_eval echo &>> /dev/null; then echo -e "${AV_VERMELHO}${CONFLITO}${AV_SEMCOR}."; exit 1; fi
+
+if [ "${1}" == "desinstalar" ] && ! hash antoniovandre_eval_gui &>> /dev/null; then echo -e "${AV_VERMELHO}${JADESINSTALADO}${AV_SEMCOR}."; exit 1; fi
+
+if ! hash bash &>> /dev/null; then echo -e "${AV_VERMELHO}${BASHNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
+
+if [ "${1}" == "instalar" ] && ! hash gcc &>> /dev/null; then echo -e "${AV_VERMELHO}${GCCNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
+
+if [ "${1}" == "instalar" ] && ! hash md5sum &>> /dev/null; then echo -e "${AV_VERMELHO}${MD5SUMNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
+
+if [ "${1}" == "instalar" ] && ! hash python3 &>> /dev/null; then echo -e "${AV_VERMELHO}${PYTHONNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
+
+if [ "${1}" == "instalar" ] && ! hash tclsh &>> /dev/null; then echo -e "${AV_VERMELHO}${TCLTKNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
+
+if [ "${1}" == "instalar" ] && ! ls INSTALAR &>> /dev/null; then echo -e "${AV_VERMELHO}${INSTALEDODIRETORIO}${AV_SEMCOR}."; exit 1; fi
+
+if [ "${1}" == "instalar" ]; then if wget -T $TIMEOUTMENSAGEM -qO- https://bit.ly/antoniovandreevalguimensagemdl 2>> /dev/null; then echo -e ""; fi; echo -e "${INSTALARINTRODUCAO}"; read; echo -e "#define ARQUIVO_MATH_ESTATISTICAS \"${HOME}/antoniovandre_math_estatisticas.txt\"\n" > antoniovandre_extra.c; else echo -e "${DESINSTALARINTRODUCAO}"; read; fi
+
+DIR="${PWD}"
+cd "${SOURCEDIR}"
+
+OLDIFS="${IFS}"
+IFS=$'\n'
+
+for FILE in `ls -1 *.c`; do echo -ne "${TRABALHANDOEM} \"${FILE}\"... "; if [ "${1}" == "desinstalar" ]; then if rm "${DESTDIR}${FILE%%.*}" &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; exit 1; fi; else if gcc "${FILE}" -o "${FILE%%.*}" -lm &>> /dev/null; then if mv "${FILE%%.*}" "${DESTDIR}" &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; rm antoniovandre_extra.c &>> /dev/null; exit 1; fi; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; rm antoniovandre_extra.c &>> /dev/null; exit 1; fi; fi; done
+
+IFS="${OLDIFS}"
+
+cd .. &>> /dev/null
+
+rm antoniovandre_extra.c &>> /dev/null
+
+echo -n "${TRABALHANDOPYTHON} "; if [ "${1}" == "desinstalar" ]; then if rm "${DESTDIR}antoniovandre_eval_gui.py" &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; exit 1; fi; else if cp antoniovandre_eval_gui.pytemp antoniovandre_eval_gui.pytempt && sed -i -e "s#HOME#${HOME}#g" antoniovandre_eval_gui.pytempt && sed -i -e "s/ENTREEXPRESSAOCLIQUE/${ENTREEXPRESSAOCLIQUE}/g" antoniovandre_eval_gui.pytempt && sed -i -e "s/RESULTADO/${RESULTADO}/g" antoniovandre_eval_gui.pytempt && sed -i -e "s/ENTREEXPRESSAO/${ENTREEXPRESSAO}/g" antoniovandre_eval_gui.pytempt && sed -i -e "s/MAJUDA/${MAJUDA}/g" antoniovandre_eval_gui.pytempt && sed -i -e "s/CALCULAR/${CALCULAR}/g" antoniovandre_eval_gui.pytempt && sed -i -e "s/AJUDA/${AJUDA}/g" antoniovandre_eval_gui.pytempt && sed -i -e "s/SAIR/${SAIR}/g" antoniovandre_eval_gui.pytempt && sed -i -e "s/TIMEOUTMENSAGEM/${TIMEOUTMENSAGEM}/g" antoniovandre_eval_gui.pytempt && mv antoniovandre_eval_gui.pytempt "${DESTDIR}antoniovandre_eval_gui.py" &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; rm antoniovandre_eval_gui.pytempt &>> /dev/null; exit 1; fi; fi
+
+echo -n "${TRABALHANDOSOBRE} "; if [ "${1}" == "desinstalar" ]; then if rm "${DESTDIRSHARE}antoniovandre_sobre.txt" &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; exit 1; fi; else if cp "${ARQUIVOSOBRE}" "${DESTDIRSHARE}antoniovandre_sobre.txt" &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; exit 1; fi; fi
+
+echo -n "${TRABALHANDOPRECISAOREAL} "; if [ "${1}" == "desinstalar" ]; then if rm "${DESTDIRSHARE}antoniovandre_precisao_real.txt" &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; exit 1; fi; else if cp antoniovandre_precisao_real.txt ${DESTDIRSHARE} &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; exit 1; fi; fi
+
+echo -n "${TRABALHANDOBGIMAGE} "; if [ "${1}" == "desinstalar" ]; then if rm "${DESTDIRSHARE}antoniovandre_eval_gui_bgimage.png" &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; exit 1; fi; else if cp antoniovandre_eval_gui_bgimage.png ${DESTDIRSHARE} &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; exit 1; fi; fi
+
+echo -n "${TRABALHANDOEXECUTAVEL} "; if [ "${1}" == "desinstalar" ]; then if rm "${DESTDIR}antoniovandre_eval_gui" &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; exit 1; fi; else if echo -e "#!/bin/bash\nDIR=\$PWD\ncd \"${HOME}\"\npython3 ${DESTDIR}antoniovandre_eval_gui.py\ncd \"\${DIR}\"\n" > antoniovandre_eval_gui && chmod a+x antoniovandre_eval_gui &>> /dev/null && mv antoniovandre_eval_gui ${DESTDIR} &>> /dev/null; then echo -e "${AV_VERDE}${SUCESSO}${AV_SEMCOR}."; else echo -e "${AV_VERMELHO}${OCORREUFALHA}${AV_SEMCOR}."; rm antoniovandre_eval_gui &>> /dev/null; exit 1; fi; fi
+
+if [ "${1}" == "desinstalar" ]; then echo -n "${TRABALHANDOESTATISTICAS} "; rm "${HOME}/antoniovandre_math_estatisticas.txt" &>> /dev/null; echo -e "${AV_VERDE}Ok${AV_SEMCOR}."; fi
+
+if [ "${1}" == "desinstalar" ]; then echo -e "\n${SUCESSODESINSTALAR}."; else echo -e "\n${SUCESSOINSTALAR}."; fi
+
+cd "${DIR}"

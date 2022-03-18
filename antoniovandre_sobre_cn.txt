@@ -1,0 +1,214 @@
+                                        
+      .':clllc;'.   ..;clll:,.          
+    .col;'..,cxxl,,ldo:'.,lxxl.         
+  .:dc.      .lkkxxl:.  .cdxkx:         
+ .cd:.       .lkkko.    ;xkkkd'         
+ ,o:.        ,dkkx:     .;cc;.   .......
+  .         .ckkko.         ....''''''''
+            ,dkkx;       ...''''''''''''
+           .ckkko.    ..''''''''''''''''
+           'dkkx:. ..'''''',;,''''''''''
+ .:cc;.   .ckkkd,.'''''''';odc''''''''''
+;dkkkx,   ;xkkkl,'''''''';oxl,''''''''''
+ckkxd:.  ,dxxkxo,'''''',cddc,'''''''''''
+'okdc'.,coc':dxxo::::clddl;'''''''''''''
+ .,:clcc;.  .;clooooool:;'''''''''''''''
+           .''''',,,''''''''''''''''''''
+          .'''''''''''''''''''''''''''''
+          .'''''''''''''''''''''''''''''
+         .''''''''''''''''''''''''''''''
+         .''''''''''''''''''''''''''''''
+
+項目 Mathematical Ramblings (bit.ly/mathematicalramblings_github).
+____________________
+
+可用於"antoniovandre_eval"的運算符：
+
+"+"：總和。
+
+“-"：減法。
+
+"*"：乘法。
+
+"/"：除法。
+
+"^"：求冪。
+
+"%": 其餘部門。
+
+"@": 安排（組合分析）。
+
+"#": 組合（組合分析）。
+
+"$": 四捨五入到數量級。
+
+">": 最大值。
+
+"<": 最低要求。
+
+":": 基本對數。
+
+"~": 如果為近似值，則返回“ 1”，否則為“ 0”。
+_____
+
+括號可以在"antoniovandre_eval"中使用。
+_____
+
+可用於"antoniovandre_eval"的常量：
+
+"PI"：圓周的長度和直徑之比。
+
+"T": 雙pi。
+
+"E"：自然對數的底數。
+
+"C"：在IS上真空中的光速。
+
+"G"：萬有引力的常數，在IS上。
+
+"QE"：基本費用，在IS上。
+
+"H"：普朗克常數，在SI上。
+
+"HH"：普朗克在IS上的簡化常數。
+
+"K"：玻爾茲曼常數，在IS上。
+
+"ME"：IS上的電子質量。
+
+"MP"：質子質量，在IS上。
+
+"MN": IS中的中子質量。
+
+"AM"：阿伏加德羅常數，乘以10^（-23），以mol^（-1）為單位。
+
+"KE"：庫侖常數，靜電常數，在IS上。
+
+"R": 理想氣體的通用常數。
+
+"SB": Stefan-Boltzmann在國際單位制中的常數。
+
+"PM": 在國際單位制中，真空中磁導率的常數。
+
+"PE": IS中真空的電導率常數。
+
+"B": 在IS中，維也納的位移常數。
+
+"P"：黃金比例。
+
+"CC"：加泰羅尼亞語的常數。
+
+"EM"：Euler-Mascheroni常數。
+
+"FA": Feigenbaum alpha常數。
+
+"FS": 費根鮑姆的常數sigma。
+
+"AP": Apéry常數。
+
+"CO": 康威的常數。
+
+"KH": Khinchin常數。
+
+"GK": Glaisher-Kinkelin常數。
+
+_____
+
+可用於"antoniovandre_eval"的函數：
+
+"sen"：sin函數。
+
+"cos"：餘弦函數。
+
+"tg"：切線函數。
+
+"cotg"：餘切函數。
+
+"sec"：割線功能。
+
+"cossec"：餘割函數。
+
+"arcsen"：反正弦函數。
+
+"arccos"：反餘弦函數。
+
+"arctg"：反正切函數。
+
+"arccotg"：弧切線函數。
+
+"arcsec"：反正割函數。
+
+"arccossec"：反餘割函數。
+
+"ln"：自然對數函數。
+
+"logdez"：以10為底的對數函數。
+
+"logdois"：以2為底的對數函數。
+
+"senh"：雙曲正弦函數。
+
+"cosh"：雙曲餘弦函數。
+
+"tgh"：雙曲正切函數。
+
+"cotgh"：雙曲餘切函數。
+
+"sech"：雙曲正割函數。
+
+"cossech"：雙曲餘割函數。
+
+"arcsenh"：雙曲反正弦函數。
+
+"arccosh"：雙曲反餘弦函數。
+
+"arctgh"：雙曲反正切函數。
+
+"arccotgh"：雙曲弧餘切函數。
+
+"arcsech"：雙曲弧割線函數。
+
+"arccossech"：雙曲弧餘割函數。
+
+"fatorial"：階乘函數。
+
+"modulo"：模塊功能。
+
+"piso": 樓層功能。
+
+"teto": 天花板功能。
+
+"radparagrau"：將弧度轉換為度的功能。
+
+"radparagrado"：將弧度轉換為漸變的功能。
+
+"graupararad"：將度數轉換為弧度的功能。
+
+"grauparagrado"：將度數轉換為等級的函數。
+
+"gradopararad"：用於將漸變轉換為弧度的函數。
+
+"gradoparagrau"：將等級轉換為度的功能。
+
+"kelvinparacelsius"：用於將開氏溫度轉換為攝氏度的功能。
+
+"kelvinparafahrenheit"：用於將開氏溫度轉換為華氏溫度的功能。
+
+"celsiusparakelvin"：用於將攝氏溫度轉換為開氏溫度的功能。
+
+"celsiusparafahrenheit"：用於將攝氏溫度轉換為華氏溫度的功能。
+
+"fahrenheitparakelvin"：用於將華氏溫度轉換為開氏溫度的功能。
+
+"fahrenheitparacelsius"：用於將華氏溫度轉換為攝氏溫度的功能。
+_____
+
+"antoniovandre_eval"中的計算示例：
+
+輸入：“（2 + ln（5-2 ^（8-6）））* 3"；
+
+輸出："6"。
+____________________
+
+建議或報告錯誤："a.vandre.g@gmail.com"。
+____________________
