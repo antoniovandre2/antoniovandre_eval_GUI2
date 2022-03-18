@@ -1,5 +1,5 @@
 # antoniovandre_eval_GUI
-![antoniovandre_eval GUI logo](https://antoniovandre2.github.io/antoniovandre_eval_GUI/antoniovandre_eval_gui_logo_200p.png)
+![antoniovandre_eval GUI logo](https://antoniovandre2.github.io/antoniovandre_eval_GUI2/antoniovandre_eval_gui_logo_200p.png)
 ____________________
 
 Projeto Mathematical Ramblings ([https://mathematicalramblings.blogspot.com](https://mathematicalramblings.blogspot.com)).
