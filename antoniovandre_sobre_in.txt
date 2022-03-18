@@ -19,7 +19,7 @@ ckkxd:.  ,dxxkxo,'''''',cddc,'''''''''''
          .''''''''''''''''''''''''''''''
          .''''''''''''''''''''''''''''''
 
-परियोजना Mathematical Ramblings (bit.ly/mathematicalramblings_github)।
+परियोजना Mathematical Ramblings (mathematicalramblings.blogspot.com)।
 ____________________
 
 ऑपरेटरों के लिए उपलब्ध है "antoniovandre_eval":

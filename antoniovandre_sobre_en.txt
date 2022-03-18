@@ -19,7 +19,7 @@ ckkxd:.  ,dxxkxo,'''''',cddc,'''''''''''
          .''''''''''''''''''''''''''''''
          .''''''''''''''''''''''''''''''
 
-Mathematical Ramblings Project (bit.ly/mathematicalramblings_github).
+Mathematical Ramblings Project (mathematicalramblings.blogspot.com).
 ____________________
 
 Operators available for "antoniovandre_eval":

@@ -19,7 +19,7 @@ ckkxd:.  ,dxxkxo,'''''',cddc,'''''''''''
          .''''''''''''''''''''''''''''''
          .''''''''''''''''''''''''''''''
 
-項目 Mathematical Ramblings (bit.ly/mathematicalramblings_github).
+項目 Mathematical Ramblings (mathematicalramblings.blogspot.com).
 ____________________
 
 可用於"antoniovandre_eval"的運算符：
