@@ -3,6 +3,176 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+19-03-2022
+__
+
+Meus escritos são muitos, depois continuo com o processo de correção; não sou muito exigente quanto às normas cultas.
+
+O importante para mim é me expressar e me desenvolver mediante isto.
+_____
+
+19-03-2022
+__
+
+Fui utilizar o LibreOffice para corrigir erros de Português em meus escritos e surgiram bastantes; mas estou tranquilo quanto a isto, sei que as línguas são dinâmicas, e que fuga de normas são normais.
+_____
+
+19-03-2022
+__
+
+Muito úteis estes joguinhos simples na internet para ocupar o tempo; é uma forma de ganhar um pouco mais de inteligência, e inteligência é bastante importante para meus propósitos.
+_____
+
+19-03-2022
+__
+
+Se jornais publicam artigos sem muita importância, também, em meu blog, publico questões simples; e eu gosto de números de quantidades.
+_____
+
+19-03-2022
+__
+
+Também pensando no crescimento, voltei a fazer algo que há muito tempo não fazia: acompanhar notícias por RSS.
+
+Deixei o Mathematical Ramblings perfeitamente organizado e preciso continuar ocupado.
+_____
+
+19-03-2022
+__
+
+Em geral, quanto mais resolvido em Matemática, incluindo as obras relacionadas, melhor minha capacidade de concentração nas demais coisas.
+_____
+
+19-03-2022
+__
+
+Pensando no crescimento, cliquei na playlist "Mix de Lançamentos" no YouTube Music.
+_____
+
+19-03-2022
+__
+
+Meditar com foco no crescimento.
+
+Pensar em crescimento a todo instante...
+_____
+
+19-03-2022
+__
+
+Já li uma crítica ao Paul Erdös dizendo que ele "publicava sobre tudo", mas eu compreendo bem o porquê, é uma necessidade.
+_____
+
+19-03-2022
+__
+
+Estando os objetivos principais já atingidos, ocupar o tempo evoluindo em algo qualquer...
+_____
+
+19-03-2022
+__
+
+Evoluir por ambição, e por necessidade de ocupar o tempo também...
+_____
+
+19-03-2022
+__
+
+Se há o desejo de evoluir em games, games devem ser levados a sério; o mesmo quanto a filmes e demais coisas.
+_____
+
+19-03-2022
+__
+
+Às vezes a melhor terapia é meditar em ócio; em outras horas é se ocupar construindo algo.
+_____
+
+19-03-2022
+__
+
+Desenvolver a inteligência, ok; agora cuidar da saúde mental...
+_____
+
+19-03-2022
+__
+
+Acho que o proprietário de um projeto-empresa nunca tira férias, está sempre ligado a ele, vigilante...
+_____
+
+19-03-2022
+__
+
+Não há nada mais sincero que um rabinho de um cachorro balançando ao nos ver.
+_____
+
+18-03-2022
+__
+
+Se a principal ferramenta de um programador é a inteligência, não é bom subestimar...
+_____
+
+18-03-2022
+__
+
+Praticamente tudo organizado, vim escrever mais, pois é sempre proveitoso para a mente.
+_____
+
+18-03-2022
+__
+
+Desapegar-se do materialismo pode ser uma boa bússola para vida...
+_____
+
+18-03-2022
+__
+
+Hoje resolvi muitos problemas. Foi um dia bastante proveitoso.
+_____
+
+18-03-2022
+__
+
+Errei ao atribuir endereços customizados para os bitlinks; a solução que encontrei foi por nos finais "_linkv<número>", onde "<número>" é a versão do link.
+_____
+
+18-03-2022
+__
+
+Ócio para "cair a ficha" sobre tudo o que já fiz.
+
+Passei muito tempo correndo construindo.
+_____
+
+18-03-2022
+__
+
+Aproveitando os links já construídos no Bitly direcionando para as novas versões graças ao recurso do Dropbox que permite renomear, ou até mesmo mudar de diretório, sem a perda do link compartilhado.
+_____
+
+18-03-2022
+__
+
+Algo em Matemática que é muito, muito usado na M e em outros campos é matrizes.
+_____
+
+18-03-2022
+__
+
+Agora, se fico ansioso, minha mente diz para mim: pode relaxar, está tudo organizado...
+_____
+
+18-03-2022
+__
+
+Matemática + programação + ansiedade + café...
+_____
+
+18-03-2022
+__
+
+Na deletação do meu primeiro perfil no GitHub, tudo bem meus escritos serem retirados do Code Vault; se é para eternizar, que sejam sem bugs.
+_____
+
 18-03-2022
 __
 
@@ -66,7 +236,7 @@ _____
 17-03-2022
 __
 
-Sempre bem intencionado, não temendo os males que vem; e, se vierem, serão por outras razões.
+Sempre bem-intencionado, não temendo os males que vem; e, se vierem, serão por outras razões.
 _____
 
 17-03-2022
@@ -110,7 +280,7 @@ _____
 17-03-2022
 __
 
-Vejo agora que me preocupei demais, um pouco inutilmente, quanto à existência do repositório defazado do MathematicalRamblings.js; pus avisos anexos em vários lugares quanto à sua condição, tendo um novo atualizado.
+Vejo agora que me preocupei demais, um pouco inutilmente, quanto à existência do repositório defasado do MathematicalRamblings.js; pus avisos anexos em vários lugares quanto à sua condição, tendo um novo atualizado.
 
 Posso considerar o MR praticamente perfeito.
 _____
@@ -212,7 +382,7 @@ _____
 17-03-2022
 __
 
-Às vezes comparo esta impossibilidade de deletação do meu respositório defasado a um erro / pecado que cometa e que não há como apagar da biografia... Algo com o qual temos de conviver...
+Às vezes comparo esta impossibilidade de deletação do meu repositório defasado a um erro / pecado que cometa e que não há como apagar da biografia... Algo com o qual temos de conviver...
 _____
 
 17-03-2022
@@ -276,9 +446,9 @@ _____
 17-03-2022
 __
 
-Ajuda-me a descansar / repousar ter resolvido um grande conjunto de problemas que estavam pendentes, assim desligo-me deles; dar atenção exige esforço e estressa.
+Ajuda-me a descansar / repousar ter resolvido um grande conjunto de problemas que estavam pendentes, assim me desligo deles; dar atenção exige esforço e estressa.
 
-Procuro um misto de progresso e descanso danto atenção quase unicamente à Matemática.
+Procuro um misto de progresso e descanso dando atenção quase unicamente à Matemática.
 _____
 
 17-03-2022
@@ -589,7 +759,7 @@ _____
 14-03-2022
 __
 
-Em "MR - Artes cartesianas", pondo no início das plotagens os gifs animados afim de causar uma boa impressão nos novos visitantes.
+Em "MR - Artes cartesianas", pondo no início das plotagens os gifs animados a fim de causar uma boa impressão nos novos visitantes.
 _____
 
 14-03-2022
@@ -673,7 +843,7 @@ _____
 14-03-2022
 __
 
-Como o blog Mathematical Ramblings funciona perfeitamente somente, de acordo com o que observei até o momento, voltei a o utilizar por padrão. No entanto o Opera GX me deixou "mal acoscumado" com suas funcionalidades interessantes.
+Como o blog Mathematical Ramblings funciona perfeitamente somente, de acordo com o que observei até o momento, voltei a o utilizar por padrão. No entanto, o Opera GX me deixou "mal-acostumado" com suas funcionalidades interessantes.
 _____
 
 14-03-2022
@@ -693,7 +863,7 @@ _____
 12-03-2022
 __
 
-Agora permitindo-me caminhar devagar; tinha que, para meus objetivos, construir algumas coisas, e, logo cedo terminando, desfruto de mais paz e sossego.
+Agora me permitindo caminhar devagar; tinha que, para meus objetivos, construir algumas coisas, e, logo cedo terminando, desfruto de mais paz e sossego.
 _____
 
 12-03-2022
@@ -769,7 +939,7 @@ _____
 12-03-2022
 __
 
-Matemática exige um certo conhecimento de programação, mas acho que já aprendi e implementei o bastante para quem não tem desenolvimento de softwares como foco. Meu foco é Matemática.
+Matemática exige um certo conhecimento de programação, mas acho que já aprendi e implementei o bastante para quem não tem desenvolvimento de softwares como foco. Meu foco é Matemática.
 
 Agora, ignorando mais de programação assim como faço com outras coisas, como quanto a jornais e outros campos do conhecimento.
 _____
