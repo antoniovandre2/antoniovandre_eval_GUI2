@@ -3,6 +3,122 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+26-03-2022
+__
+
+Gostei bastante da biblioteca HackTimer.js. Com ela, meus softwares continuam a rodar, mesmo em background.
+_____
+
+26-03-2022
+__
+
+Tudo bem em alguns de meus softwares JavaScript haver freezings para certos procedimentos, o MR foi desenhado para computadores rápidos, se houver freezings, nos computadores alvos, serão breves.
+_____
+
+26-03-2022
+__
+
+Para estudar, eu saio um pouco de mim afim de coletar mais riquezas.
+_____
+
+26-03-2022
+__
+
+Duas coisas a serem evitadas, para o próprio bem: materialismo e agressividade...
+_____
+
+26-03-2022
+__
+
+Sonhei com programação...
+_____
+
+26-03-2022
+__
+
+Problemas resolvidos, volta da felicidade...
+_____
+
+26-03-2022
+__
+
+Apaixonadíssimo por meu blog MR, cada vez mais perfeito.
+_____
+
+26-03-2022
+__
+
+Problemas resolvidos, de volta com a mente livre para os pensamentos...
+_____
+
+26-03-2022
+__
+
+Ontem tomei a terceira dose da vacina contra a COVID-19.
+
+Bom cuidar da saúde, pois é o oposto do suicídio...
+_____
+
+26-03-2022
+__
+
+Como ainda é de manhã, deixando para fazer os backups dos escritos para mais tardes, mais escritos podem surgir.
+_____
+
+26-03-2022
+__
+
+Ainda é de manhã e já concluí algumas tarefas domésticas, sinto-me bem, com a sensação de que fui útil e que organizei algumas coisas. Após, posso sentar tranquilamente aqui na poltrona do computador.
+_____
+
+26-03-2022
+__
+
+De vez em quando é bom fazer maratonas de programação, o intelecto e a força psíquica evoluem bastante.
+_____
+
+26-03-2022
+__
+
+Indo ver o que mais posso organizar por aqui, fisicamente na casa.
+_____
+
+26-03-2022
+__
+
+Agora, terminado de refinar alguns softwares, feliz porque tenho ainda muito tempo restante do dia livre para me ocupar com diversões, tais como games.
+_____
+
+26-03-2022
+__
+
+Terminando de organizar os softwares, voltando a ser perfeccionista quanto aos estudos e aos escritos.
+_____
+
+24-03-2022
+__
+
+Programando, para ter a certeza de que copiei um arquivo, costumo ver se a hora de última modificação coincide.
+_____
+
+24-03-2022
+__
+
+Em minhas calculadoras geradoras de gráficos, os gráficos ficam mais visualmente agradáveis pondo o atributo "size: 1" para scatter. Assim, quando muito próximos, não há merges feios.
+_____
+
+24-03-2022
+__
+
+Perdoo-me por, em um software, exigir mais dependências que o necessário; pecado mesmo seria deixar de exigir algo que é realmente necessário.
+_____
+
+24-03-2022
+__
+
+Valorizar as pequenas conquistas, como, por exemplos, mais um pequeno conhecimento adquirido, ou implementações em softwares.
+_____
+
 23-03-2022
 __
 
