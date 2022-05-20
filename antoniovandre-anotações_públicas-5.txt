@@ -3,6 +3,132 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+20-05-2022
+__
+
+Ao invés de se vingar, cuide-se, o que também é uma vingança...
+_____
+
+20-05-2022
+__
+
+Se tem um trabalho, é rico; e se trabalha voluntariamente, é mais rico ainda...
+_____
+
+19-05-2022
+__
+
+Já tive que substituir uma função e um operador nativos do JavaScript porque, matematicamente, eram falhos. Criei minhas próprias versões.
+_____
+
+19-05-2022
+__
+
+O único detalhe que me preocupa nos demais softwares, nos não JavaScripts, é o presente em minha calculadora escrita em C onde, dependendo dos processadores e dos compiladores, há imprecisões nas conversões de float para string e vice-versa; no entanto este detalhe já está mencionado no readme anexado.
+_____
+
+19-05-2022
+__
+
+Progresso não tão rápido na Matemática porque tenho que resolver os problemas da vida também...
+_____
+
+19-05-2022
+__
+
+Sou mais perfeccionista quando aos softwares JavaScript do meu blog, pois estão mais próximos do público.
+
+Sei que devo aprimorar os escritos em C, mas não tenho pressa, já estão, apesar de não perfeitos, bem desenvolvidos.
+
+Também tenho softwares em outras linguagens em estados semelhantes aos dos escritos em C: não perfeitos, mas bem desenvolvidos.
+_____
+
+19-05-2022
+__
+
+Muito do meu emocional depende dos meus softwares...
+_____
+
+19-05-2022
+__
+
+Os sonhos também fazem parte de minha vida...
+_____
+
+19-05-2022
+__
+
+Seria interessante voltar a usar Linux para aprimorar mais alguns softwares em C que tenho; ainda não estão perfeitos ou quase perfeitos.
+_____
+
+19-05-2022
+__
+
+Verdadeiramente repousando e relaxando com os software prontos e a vida organizada...
+_____
+
+19-05-2022
+__
+
+Não seja mentiroso e não seja agressivo...
+_____
+
+19-05-2022
+__
+
+Não ser materialista para não ser mau...
+_____
+
+19-05-2022
+__
+
+Repousando sobre os deveres cumpridos e softwares concluídos e sem bugs conhecidos, no "nada para fazer".
+
+Desfrutando desta sensação enquanto a tenho, novos trabalhos podem futuramente surgir.
+_____
+
+19-05-2022
+__
+
+Gosto de códigos legíveis e bem organizados porque programo também como fazendo arte...
+_____
+
+19-05-2022
+__
+
+Às vezes saio para passear de bicicleta, e gosto de ir devagar e apreciando o momento e as paisagens, mas há vias públicas em que temos de ver velozes para não atrapalhar os outros.
+_____
+
+19-05-2022
+__
+
+Gostei dela, mas ela é brava, agressiva...
+_____
+
+19-05-2022
+__
+
+Todos os dias progressos emocionais mediante aflições...
+_____
+
+19-05-2022
+__
+
+Não ser agressivo para ter liberdade...
+_____
+
+19-05-2022
+__
+
+Escrever o máximo do que tenho em mente - pensamentos, artigos e softwares -  para me sentir mais realizado afim de desfrutar de mais paz e felicidade...
+_____
+
+19-05-2022
+__
+
+Hoje, fazendo upgrades nos softwares, encontrei algo um pouco desafiador, e fiquei feliz com isto, algo para me ocupar e desenvolver mais a inteligência.
+_____
+
 18-05-2022
 __
 
