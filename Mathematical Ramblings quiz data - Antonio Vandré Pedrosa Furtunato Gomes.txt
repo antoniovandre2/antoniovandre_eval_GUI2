@@ -1,4 +1,4 @@
-Número de acertos: 1558. Número de erros: 6. MD5sum: da8463fddcec15efc200bc373fe99a4d.
+Número de acertos: 1573. Número de erros: 6. MD5sum: 57ec729ca6e1b32c5ae315a843e217e2.
 Quanto é 26 + 28? Resposta: 54. Acertou. Em 17/10/2021 @ 19:45:22.
 Quanto é 39 - 66? Resposta: -27. Acertou. Em 17/10/2021 @ 19:45:36.
 Quanto é 44 - 11? Resposta: 33. Acertou. Em 17/10/2021 @ 21:44:6.
@@ -1563,3 +1563,18 @@ Quanto é 9 x 12? Resposta: 108. Acertou. Em 14/9/2022 @ 21:59:25.
 Quanto é 3 x 5? Resposta: 15. Acertou. Em 14/9/2022 @ 21:59:30.
 Quanto é 170 / 10? Resposta: 17. Acertou. Em 14/9/2022 @ 21:59:35.
 Quanto é 55 - 33? Resposta: 22. Acertou. Em 14/9/2022 @ 21:59:41.
+Quanto é 3^4? Resposta: 81. Acertou. Em 15/9/2022 @ 8:36:2.
+Quanto é 4^4? Resposta: 256. Acertou. Em 15/9/2022 @ 8:36:11.
+Quanto é 32 - 41? Resposta: -9. Acertou. Em 15/9/2022 @ 8:36:25.
+Quanto é 95 + 11? Resposta: 106. Acertou. Em 15/9/2022 @ 8:36:39.
+Quanto é 5 x 11? Resposta: 55. Acertou. Em 15/9/2022 @ 8:36:44.
+Quanto é 57 / 19? Resposta: 3. Acertou. Em 15/9/2022 @ 8:37:3.
+Quanto é 0^7? Resposta: 0. Acertou. Em 15/9/2022 @ 8:37:10.
+Quanto é 46 - 75? Resposta: -29. Acertou. Em 15/9/2022 @ 8:37:40.
+Quanto é 9 - 24? Resposta: -15. Acertou. Em 15/9/2022 @ 9:7:48.
+Quanto é 1 x 14? Resposta: 14. Acertou. Em 15/9/2022 @ 9:7:52.
+Quanto é 198 / 22? Resposta: 9. Acertou. Em 15/9/2022 @ 9:8:9.
+Quanto é 112 / 14? Resposta: 8. Acertou. Em 15/9/2022 @ 9:8:34.
+Quanto é 4^7? Resposta: 16384. Acertou. Em 15/9/2022 @ 9:9:34.
+Quanto é 3 - 13? Resposta: -10. Acertou. Em 15/9/2022 @ 9:9:40.
+Quanto é 14^1? Resposta: 14. Acertou. Em 15/9/2022 @ 9:9:45.
