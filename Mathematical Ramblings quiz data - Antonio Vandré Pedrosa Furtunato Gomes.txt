@@ -1,4 +1,4 @@
-Número de acertos: 1586. Número de erros: 6. MD5sum: 11c403cb40d1c8136fd6f53cf0241a3a.
+Número de acertos: 1592. Número de erros: 6. MD5sum: 9924864ac6a4148930384737d8026b65.
 Quanto é 26 + 28? Resposta: 54. Acertou. Em 17/10/2021 @ 19:45:22.
 Quanto é 39 - 66? Resposta: -27. Acertou. Em 17/10/2021 @ 19:45:36.
 Quanto é 44 - 11? Resposta: 33. Acertou. Em 17/10/2021 @ 21:44:6.
@@ -1591,3 +1591,9 @@ Quanto é 5 x 5? Resposta: 25. Acertou. Em 26/9/2022 @ 15:16:44.
 Quanto é 140 / 1? Resposta: 140. Acertou. Em 26/9/2022 @ 15:16:48.
 Quanto é 9 x 7? Resposta: 63. Acertou. Em 26/9/2022 @ 15:16:59.
 Quanto é 36 + 40? Resposta: 76. Acertou. Em 26/9/2022 @ 15:17:10.
+Quanto é 1 x 1? Resposta: 1. Acertou. Em 27/9/2022 @ 19:35:10.
+Quanto é 32 / 1? Resposta: 32. Acertou. Em 27/9/2022 @ 19:35:15.
+Quanto é 7 x 12? Resposta: 84. Acertou. Em 27/9/2022 @ 19:35:23.
+Quanto é 124 / 4? Resposta: 31. Acertou. Em 27/9/2022 @ 19:35:37.
+Quanto é 171 / 57? Resposta: 3. Acertou. Em 27/9/2022 @ 19:35:50.
+Quanto é 17 - 55? Resposta: -38. Acertou. Em 27/9/2022 @ 19:36:14.
