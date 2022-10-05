@@ -3,6 +3,163 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+04-10-2022
+__
+
+Programação também ajuda a organizar os arquivos pessoais. Um comando que utilizei hoje:
+
+$ c2="1"; c="0"; mkdir "${c2}"; for i in `ls *.jpg`; do c=`expr "${c}" + 1`; if [ "${c}" == "11" ]; then c="0"; c2=`expr "${c2}" + 1`;  mkdir "${c2}"; fi; mv "${i}" "${c2}/"; done
+_____
+
+04-10-2022
+__
+
+Percebo que alguns sentem-se constrangidos quando falam sobre NFTs, pessoas que vivem inutilmente; quanto a mim, não faço uma prioridade, mas procuro ser sempre útil às pessoas e à sociedade.
+_____
+
+04-10-2022
+__
+
+Quando se tem problemas, o sentido da vida é os resolver; quando não há mais problemas, temos nós mesmos que darmos um sentido a ela...
+_____
+
+04-10-2022
+__
+
+Passei tantos anos resolvendo problemas da vida que hoje me parece estranho viver assim, resolvendo apenas os problemas de Matemática. =)
+_____
+
+04-10-2022
+__
+
+Tantas coisas no mundo que tentam me colocar para baixo... Ainda bem que tenho a Matemática e minhas boas obras para me elevar, elevar-me diante dos meus próprios olhos, que é o que importa...
+_____
+
+04-10-2022
+__
+
+PDFs de Matemática muito mais interessantes que filmes.
+_____
+
+04-10-2022
+__
+
+Também acho que já vivi demais o ócio, preciso me ocupar mais novamente.
+
+Acho que vou desejar aprender ainda mais Matemática, a minha identidade e paixão de vida.
+_____
+
+04-10-2022
+__
+
+Para os desavisados, a ansiedade pode chegar e, de tão intensa, incapacitar...
+_____
+
+04-10-2022
+__
+
+Gastando as energias em alguns trabalhos aqui, mas são secundários; já cuidei das coisas mais importantes.
+_____
+
+04-10-2022
+__
+
+Desejo usufruir mais do Netflix, mas minhas energias são limitadas...
+_____
+
+04-10-2022
+__
+
+Descansando e repousando na Matemática, meu lar espiritual...
+_____
+
+04-10-2022
+__
+
+Haver eleições é um progresso moral do mundo, pois antes o poder era tomado pela força e violência...
+_____
+
+04-10-2022
+__
+
+Poupando energias também para tranquilamente realizar as tarefas / deveres domésticos; sem os cumprir não tenho plena paz.
+_____
+
+04-10-2022
+__
+
+Satisfeito com a vida, com os estudos e com a Matemática, evitando me concentrar muito em atividades com o intuito de estar preparado para os imprevistos que sempre vem...
+_____
+
+04-10-2022
+__
+
+Poucos estudos diários já me satisfazem porque já elevei bastante minha autoestima por meio deles ao longo de anos...
+_____
+
+04-10-2022
+__
+
+Se falho em um prova moral, e me arrependo, fico logo desejando outra oportunidade de então sair vitorioso, oportunidade que consiste em passar por uma situação semelhante. O espiritismo diz que Deus generosamente concede aos que desejam, para que fiquemos de bem conosco mesmos.
+_____
+
+03-10-2022
+__
+
+Sempre tenha isto em mente: a guerra real é entre o materialismo e o espiritualismo...
+
+E como Jesus disse, não se pode ter dois senhores; ou há de agradar a um e desagradar ao outro, ou vice-versa...
+_____
+
+03-10-2022
+__
+
+Cheguei aos 100 kg de peso, muita massa muscular.
+
+Feliz também porque continuo com facilidade fazendo barra fixa, tenho muita força.
+_____
+
+03-10-2022
+__
+
+Voltei a ter Netflix, estou pensando em despertar novamente em mim o espírito cinéfilo, maratonando filmes e séries.
+_____
+
+03-10-2022
+__
+
+Estou escrevendo menos e me dedicando mais a outras coisas. Já escrevi muito...
+_____
+
+03-10-2022
+__
+
+Reconheço que errei muito em relacionamentos conjugais, em alguns casos sendo agressivo por me ver dominado... Mas sei que Deus e as pessoas sempre perdoam, então, mesmo feliz comigo mesmo, pretendo ter novas chances.
+
+Facilmente perdoo-me porque sei que estava amadurecendo, e tive pressa em amadurecer.
+...
+
+Primeiro ser feliz comigo mesmo, e, só então, com companhias...
+_____
+
+03-10-2022
+__
+
+Ficam assistindo às novelas do SBT aqui em casa; e escutei algo interessante que um personagem falou: "(...) Não, ainda não está perdido porque não desisti.".
+_____
+
+03-10-2022
+__
+
+Usufruindo o tempo também em simplesmente estar em contato comigo mesmo; quando problemas surgem, eu me separo de mim, e isto é angustiante...
+_____
+
+03-10-2022
+__
+
+Como utilizo muito o computador e minha TV do quarto, devo manter as telas limpinhas para valorizar todos os pixels.
+_____
+
 02-10-2022
 __
 
