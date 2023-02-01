@@ -4,7 +4,7 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 12-07-2020.
+// Última atualização: 01-02-2023.
 
 #include "../antoniovandre.c"
 
@@ -20,9 +20,16 @@ int main (int argc, char *argv [])
 
 	argvb = (char *) malloc (TAMANHO_BUFFER_PHRASE);
 
+	if (argc == 1 || argc > 2)
+		{
+		printf (EVAL_MENSAGEM_USO);
+		printf ("\n");
+		return -1;
+		}
+
 	strcpy (argvb, argv [1]);
 
-	if (argc == 1 || argc > 2 || (argc == 2 && (! strcmp (argv [1], "h") || ! strcmp (argv [1], "help") || ! strcmp (argv [1], "-h") || ! strcmp (argv [1], "--help"))))
+	if ((argc == 2 && (! strcmp (argv [1], "h") || ! strcmp (argv [1], "help") || ! strcmp (argv [1], "-h") || ! strcmp (argv [1], "--help"))))
 		{
 		printf (EVAL_MENSAGEM_USO);
 		printf ("\n");
@@ -34,8 +41,6 @@ int main (int argc, char *argv [])
 		if (! antoniovandre_mathsobre ()) return -1;
 		return 0;
 		}
-
-	strf = (char *) malloc (TAMANHO_BUFFER_PHRASE);
 
 	strf = antoniovandre_eval (argvb);
 
