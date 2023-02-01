@@ -411,8 +411,6 @@ if [ "${1}" == "instalar" ] && ! hash md5sum &>> /dev/null; then echo -e "${AV_V
 
 if [ "${1}" == "instalar" ] && ! hash python3 &>> /dev/null; then echo -e "${AV_VERMELHO}${PYTHONNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
 
-if [ "${1}" == "instalar" ] && ! hash tclsh &>> /dev/null; then echo -e "${AV_VERMELHO}${TCLTKNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
-
 if [ "${1}" == "instalar" ] && ! ls INSTALAR &>> /dev/null; then echo -e "${AV_VERMELHO}${INSTALEDODIRETORIO}${AV_SEMCOR}."; exit 1; fi
 
 if [ "${1}" == "instalar" ]; then if wget -T $TIMEOUTMENSAGEM -qO- https://bit.ly/antoniovandreevalguimensagemdl 2>> /dev/null; then echo -e ""; fi; echo -e "${INSTALARINTRODUCAO}"; read; echo -e "#define ARQUIVO_MATH_ESTATISTICAS \"${HOME}/antoniovandre_math_estatisticas.txt\"\n" > antoniovandre_extra.c; else echo -e "${DESINSTALARINTRODUCAO}"; read; fi
