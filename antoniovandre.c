@@ -363,7 +363,7 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	{
 	int precisao = antoniovandre_precisao_real ();
 	char * strr = (char *) malloc(TAMANHO_BUFFER_WORD);
-	int parteinteira = (int) (log10(abs(numero)) + 1);
+	int parteinteira = (int) (log10(fabs(numero)) + 1);
 
 	if ((numero > VALOR_MAX) || (numero < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
@@ -3920,7 +3920,7 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 	TIPONUMEROREAL yt;
 	int i = NUMEROUM;
 	int flag;
-	int flag2 = NUMEROZERO;
+	int flag2 = NUMEROUM;
 	int flag3;
 	int flag4;
 	char tc;
@@ -4070,6 +4070,7 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 
 				if ((! feof (arquivofuncoes)) && (antoniovandre_funcoes_buffer_char != DELIMITADORSTRING) && (antoniovandre_funcoes_buffer_char != ESPACOBRANCO) && (antoniovandre_funcoes_buffer_char != CARACTEREFIMLINHA))
 					strncat (buffer, & antoniovandre_funcoes_buffer_char, NUMEROUM);
+
 				} while (((! feof (arquivofuncoes))) && (antoniovandre_funcoes_buffer_char != DELIMITADORSTRING) && (antoniovandre_funcoes_buffer_char != CARACTEREFIMLINHA));
 
 			fseek (arquivopontos, NUMEROZERO, SEEK_SET);
@@ -4158,6 +4159,8 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 			antoniovandre_copiarstring (buffertt, temp);
 			free (temp);
 
+			if (! strcmp (buffertt, STRINGSAIDAERRO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
+
 			if (! strcmp (buffertt, STRINGSAIDAERROOVER)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			yt = strtod (buffertt, & err);
@@ -4167,7 +4170,7 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 
 		if (flag2 == NUMEROZERO)
 			{
-			if ((flag4 == NUMEROZERO) && (* err == NUMEROZERO))
+			if (flag4 == NUMEROZERO)
 				{
 				mt += (y - yt);
 				mt2 += fabs (y - yt);
@@ -4499,14 +4502,11 @@ TIPONUMEROREAL antoniovandre_determinante (TIPONUMEROREAL ** matriz)
 
 int antoniovandre_copiarstring (char * dest, char * orig)
 	{
-	unsigned long int tam1 = sizeof (orig);
-	unsigned long int tam2 = sizeof (dest);
+	unsigned long int tam = TAMANHO_BUFFER_PHRASE;
 	unsigned long int i;
 	char buffer;
 
-	if (tam1 > tam2) return -1;
-
-	for (i = 0; i < tam1; i++)
+	for (i = NUMEROZERO; i < tam; i++)
 		{
 		buffer = orig[i];
 		dest[i] = buffer;
