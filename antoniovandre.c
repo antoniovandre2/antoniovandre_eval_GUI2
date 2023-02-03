@@ -76,6 +76,34 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 // #define ARQUIVO_MATH_ESTATISTICAS "antoniovandre_math_estatisticas.txt"
 #define ARQUIVO_PRECISAO_REAL "/usr/share/antoniovandre_precisao_real.txt"
 
+// Array de letras.
+
+const char * antoniovandre_letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+// Array de letras maiúsculas.
+
+const char * antoniovandre_letrasmaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+// Array de letras minúsculas.
+
+const char * antoniovandre_letrasminusculas = "abcdefghijklmnopqrstuvwxyz";
+
+// Array de números.
+
+const char * antoniovandre_numeros = ".-0123456789";
+
+// Array de operadores.
+
+const char * antoniovandre_operadores = "+-*/^%@#$><:~";
+
+// Array de operadores especiais.
+
+const char * antoniovandre_operadoresespeciais = "%@#$><:~";
+
+// Array de operadores prioritários.
+
+const char * antoniovandre_operadoresprioritarios = "^";
+
 // Função de output do sobre/about dos softwares matemáticos.
 
 int antoniovandre_mathsobre ()
@@ -107,8 +135,13 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 	FILE * filemathestatisticas;
 	char antoniovandre_estatisticas_buffer [TAMANHO_BUFFER_WORD];
 	unsigned long int antoniovandre_estatisticas_contador;
+	unsigned long int cursor;
+	unsigned long int tam = 0;
+	int i;
+	char buffer [TAMANHO_BUFFER_PHRASE];
 	int flag = NUMEROZERO;
 	int flag2 = NUMEROZERO;
+	int flag3;
 	char tc;
 	char tc2;
 
@@ -135,30 +168,46 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 
 		if (! strcmp (antoniovandre_estatisticas_buffer, cabecalho))
 			{
-			fscanf (filemathestatisticas, "%s", antoniovandre_estatisticas_buffer);
+			fseek (filemathestatisticas, sizeof (char), SEEK_CUR);
+			cursor = ftell (filemathestatisticas);
+			antoniovandre_copiarstring(antoniovandre_estatisticas_buffer, STRINGVAZIA);
 
+			while (VERDADE)
+				{
+				flag3 = NUMEROZERO;
+
+				fread(& tc, sizeof (char), 1, filemathestatisticas);
+
+				for (i = 0; i < strlen (antoniovandre_numeros); i++)
+					if (antoniovandre_numeros[i] == tc) flag3 = NUMEROUM;
+
+				if (flag3 == NUMEROUM)
+					strncpy (antoniovandre_estatisticas_buffer, & tc, NUMEROUM);
+				else
+					break;
+				}
+			
 			antoniovandre_estatisticas_contador = atoi (antoniovandre_estatisticas_buffer);
 			antoniovandre_estatisticas_contador++;
 
-			fseek (filemathestatisticas, (-1) * strlen (antoniovandre_estatisticas_buffer), SEEK_CUR);
+			fseek (filemathestatisticas, (-1) * (sizeof (char)), SEEK_CUR);
 
-			fprintf (filemathestatisticas, "%lu", antoniovandre_estatisticas_contador);
+			antoniovandre_copiarstring(buffer, STRINGVAZIA);
 
-			if ((int) log10 (antoniovandre_estatisticas_contador - NUMEROUM) != (int) log10(antoniovandre_estatisticas_contador))
+			while (! feof (filemathestatisticas))
 				{
-				tc = fgetc (filemathestatisticas);
-				if (! feof (filemathestatisticas)) fseek (filemathestatisticas, (-1) * sizeof (char), SEEK_CUR);
-				fputc (CARACTEREFIMLINHA, filemathestatisticas);
-
-				if (! feof (filemathestatisticas))
-					do
-						{
-						tc2 = fgetc (filemathestatisticas);
-						if (! feof (filemathestatisticas)) fseek (filemathestatisticas, (-1) * sizeof (char), SEEK_CUR);
-						fputc (tc, filemathestatisticas);
-						tc = tc2;
-						} while (! feof (filemathestatisticas));
+				fread(& tc, sizeof (char), 1, filemathestatisticas);
+				buffer[tam++] = tc;
 				}
+
+			fseek (filemathestatisticas, cursor, SEEK_SET);
+
+			char * temp = (char *) malloc (TAMANHO_BUFFER_WORD);
+			sprintf(temp, "%ld", antoniovandre_estatisticas_contador);
+			fwrite(temp, 1, strlen (temp), filemathestatisticas);
+			free (temp);
+
+			fwrite(buffer , 1, --tam, filemathestatisticas);
 
 			flag = NUMEROUM;
 			}
@@ -214,34 +263,6 @@ int antoniovandre_precisao_real ()
 	else
 		return antoniovandre_precisao_real_valor;
 	}
-
-// Array de letras.
-
-const char * antoniovandre_letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-// Array de letras maiúsculas.
-
-const char * antoniovandre_letrasmaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-// Array de letras minúsculas.
-
-const char * antoniovandre_letrasminusculas = "abcdefghijklmnopqrstuvwxyz";
-
-// Array de números.
-
-const char * antoniovandre_numeros = ".-0123456789";
-
-// Array de operadores.
-
-const char * antoniovandre_operadores = "+-*/^%@#$><:~";
-
-// Array de operadores especiais.
-
-const char * antoniovandre_operadoresespeciais = "%@#$><:~";
-
-// Array de operadores prioritários.
-
-const char * antoniovandre_operadoresprioritarios = "^";
 
 // Remover letras de uma string.
 
@@ -4505,6 +4526,12 @@ int antoniovandre_copiarstring (char * dest, char * orig)
 	unsigned long int tam = TAMANHO_BUFFER_PHRASE;
 	unsigned long int i;
 	char buffer;
+
+	for (i = NUMEROZERO; i < tam; i++)
+		{
+		if (dest[i] == '\0') break;
+		dest[i] = NULL;
+		}
 
 	for (i = NUMEROZERO; i < tam; i++)
 		{
