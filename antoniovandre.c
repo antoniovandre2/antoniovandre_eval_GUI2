@@ -33,6 +33,7 @@
 #define NUMEROMENOSUM -1
 #define OPERADORSUBTRACAO '-'
 #define OPERADORMULTIPLICACAO '*'
+#define CHARUM '1'
 #define STRINGMENOSUM "-1"
 #define VARIAVELPADRAO 'x'
 #define ESPACOBRANCO ' '
@@ -223,7 +224,7 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 		tc = ESPACOBRANCO;
 		strncat(cabecalho_buffer, & tc, NUMEROUM);
 
-		tc = NUMEROUM;
+		tc = CHARUM;
 		strncat(cabecalho_buffer, & tc, NUMEROUM);
 
 		tc = CARACTEREFIMLINHA;
