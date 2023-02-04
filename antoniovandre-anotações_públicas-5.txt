@@ -3,6 +3,308 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+03-02-2023
+__
+
+Quão prazeroso é, mesmo que apenas com livros, estudar Matemática sabendo que é uma continuação do escrever softwares com computadores...
+_____
+
+03-02-2023
+__
+
+Se pecar, pensar quase unicamente em reconciliar-se consigo mesmo, com Deus, e não tanto com as pessoas...
+_____
+
+03-02-2023
+__
+
+Deixando o quarto limpo e organizado para estudar / trabalhar com maior prazer...
+_____
+
+03-02-2023
+__
+
+Lembrando que posso me dar por satisfeito mesmo que a vida não esteja 100% organizada, basta estar o suficiente.
+_____
+
+03-02-2023
+__
+
+A Matemática me ajudou bastante com programação, e a programação me ajudou muito com a Matemática, de tal forma que, estudando M, imagino-me programando.
+_____
+
+03-02-2023
+__
+
+Se eu sou tão perfeccionista quanto aos escritos pessoais, devo também o ser quanto aos softwares; e, se sou tão perfeccionista quanto aos softwares, também devo o ser quanto aos escritos pessoais...
+_____
+
+03-02-2023
+__
+
+Muitos, muitos esforços para escrever os softwares, mas tudo foi válido, visto que contribuiu para a realização e satisfação pessoal.
+_____
+
+03-02-2023
+__
+
+Como amante das linguagens, prezar por dar nomes corretos.
+_____
+
+03-02-2023
+__
+
+Não pretendo começar a trabalhar em outro software porque estou hoje me dando descanso, também preciso viver para mim.
+
+Basta, por enquanto, sentir-me satisfeito com os já escritos.
+_____
+
+03-02-2023
+__
+
+De bem com meus softwares e algoritmos, também sinto-me mais em harmonia com games, pois também são softwares e algoritmos; apreciar games também é apreciar códigos.
+_____
+
+03-02-2023
+__
+
+Consigo repousar porque nos softwares que escrevi deixei tudo perfeito, 0 bugs.
+
+Devo valorizar este repouso, é uma espécie de recompensa por tantos esforços...
+_____
+
+03-02-2023
+__
+
+Os últimos dias foram de intensa programação; pretendo tirar o hoje para repousar e dar mais atenção a mim mesmo, talvez evoluir intrapessoalmente um pouco mais com o ganho de inteligência das atividades anteriores.
+_____
+
+02-02-2023
+__
+
+Posso não estar fazendo outras coisas, mas, se estou programando, já estou aproveitando o tempo de uma forma das mais proveitosas, principalmente pelo desenvolvimento da inteligência.
+_____
+
+02-02-2023
+__
+
+De volta em harmonia com os compiladores C, posso pensar em criar games tão bons quanto os atuais.
+
+O melhor do C é a velocidade com o acesso direto ao hardware.
+_____
+
+01-02-2023
+__
+
+Noite, mas ainda está cedo, vou programar mais um pouco.
+_____
+
+01-02-2023
+__
+
+Eu também preciso da sensação de lucro para ter paz. Ainda bem que tenho aos livros, a cada pouco estudo, mais lucros intelectuais, são importantes para mim.
+_____
+
+01-02-2023
+__
+
+Mais realizado, com mais paz...
+_____
+
+01-02-2023
+__
+
+Agora, após praticamente tudo resolvido, vou curtir um pouco de games.
+_____
+
+01-02-2023
+__
+
+Solucionei um bug em um source C em simplesmente trabalhar corretamente com ponteiros.
+_____
+
+01-02-2023
+__
+
+Observando os raios solares que entram aqui em casa neste período da tarde, lembro das funções tangente e arco-tangente...
+_____
+
+01-02-2023
+__
+
+Além de perfeccionista quato aos softwares em JavaScript, também com os em C.
+_____
+
+01-02-2023
+__
+
+Horas sentado aqui programando, vou levantar um pouco da poltrona para ter uma boa circulação sanguínea, e também para não ficar com as nádegas doloridas.
+_____
+
+01-02-2023
+__
+
+Concentrado nos softwares e livros, praticamente não tenho tempo para filmes e séries. Estou priorizando o que é mais importante.
+_____
+
+01-02-2023
+__
+
+Encontrei muitos novos trabalhos em refatorar softwares antigos.
+_____
+
+01-02-2023
+__
+
+Às vezes o trabalho do programador é quase unicamente mecânico, reeditar passagens repetidas.
+_____
+
+01-02-2023
+__
+
+Programando em C, sinto-me mais livre; posso acessar diretamente o hardware.
+_____
+
+01-02-2023
+__
+
+Mais tranquilamente me concentro nas atividades porque estou com a vida pessoal mais resolvida.
+
+Percebi isto fazendo uma refatoração.
+_____
+
+01-02-2023
+__
+
+É na busca da perfeição que há os mais sublimes ânimos...
+_____
+
+01-02-2023
+__
+
+Pensando no que agora me dedicar, pensei em criar um game, e tive uma boa ideia; mas pretendo falar somente depois que for lançada a primeira versão.
+_____
+
+01-02-2023
+__
+
+Os computadores de hoje vem com muita memória, mas continuo dando free após alguns malloc's. Perfeccionismo.
+_____
+
+31-01-2023
+__
+
+Hoje programar é quase unicamente diversão, mas no início foi muito, muito estresse...
+
+Se eu não tivesse certa força psíquica, teria desistido ou contraído alguns vícios...
+_____
+
+31-01-2023
+__
+
+Mais organizado com a linguagem C, estou mais profundamente realizado; tenho um afeto por ela...
+_____
+
+31-01-2023
+__
+
+Finalmente, depois de muitas tentativas, hoje, com a mente livre para resolver problemas quaisquer, persisti em conseguir compilar um source C no Windows, com sucesso.
+_____
+
+31-01-2023
+__
+
+Muitas vezes também resolvendo problemas emocionais... Podem ser pequenos, mas incomodam...
+_____
+
+31-01-2023
+__
+
+Prontinho, agora com tudo em ordem, estou com a mente totalmente livre para novas criações...
+_____
+
+31-01-2023
+__
+
+Já programei muito, criando e corrigindo; renovei os backups e depois continuo, há mais edições pela frente.
+_____
+
+31-01-2023
+__
+
+Já vivi tantos momentos tensos e traumáticos que uma eventual morte seria apenas mais um...
+_____
+
+31-01-2023
+__
+
+Mais espiritualizado, tenho menos manias de limpeza.
+
+É bom ser limpo, mas, com manias, já é doença...
+_____
+
+31-01-2023
+__
+
+Sinto-me digno em consumir livros porque também, assim como os autores, já escrevi muito; falo principalmente sobre Matemática.
+_____
+
+30-01-2023
+__
+
+Mais apegado ao que está em minha mente e menos no que está fora, acho que já não tenho muito o que evoluir quanto ao desapego material...
+_____
+
+30-01-2023
+__
+
+Soluciono um problema, elimino uma preocupação, e surge outro problema para resolver; não exatamente que surge, mas que já estava lá e só percebi depois...
+_____
+
+30-01-2023
+__
+
+Ninguém pode tirar de mim os conhecimentos que com tanto amor adquiro, talvez Deus, e nem tenho certeza disto...
+_____
+
+30-01-2023
+__
+
+Feliz com a Matemática dentro de mim. A cada pouco estudo, ficando mais rico dela...
+_____
+
+30-01-2023
+__
+
+Os muitos sofrimentos, de certa forma, também fazem-me espiritualmente mais rico...
+_____
+
+30-01-2023
+__
+
+Não temo muito os sofrimentos porque já sofri horrores, isto, de certa forma, deixa-me mais tranquilo...
+
+O que verdadeiramente é ruim é intencionalmente causar sofrimentos aos outros...
+_____
+
+30-01-2023
+__
+
+Após más experiências, eu tenho que recorrer à Matemática sim, ela me revigora e reanima...
+_____
+
+30-01-2023
+__
+
+Tenho outras opções, mas uma boa forma de ocupar o tempo entre as sessões de estudos é envolver -se com outras atividades que não exijam muita concentração, e que não nos cobremos muito em as absorver.
+_____
+
+30-01-2023
+__
+
+Colecionar Matemática dentro de mim...
+_____
+
 30-01-2023
 __
 
