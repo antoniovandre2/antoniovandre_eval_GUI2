@@ -6,7 +6,7 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 02-02-2023. Não considerando alterações em variáveis globais.
+// Última atualização: 04-02-2023. Não considerando alterações em variáveis globais.
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -30,6 +30,7 @@
 #define TAMANHO_MAX_ARQUIVO 1000000000000 // Afim de evitar erros de saída.
 #define NUMEROZERO 0
 #define NUMEROUM 1
+#define NUMEROMENOSUM -1
 #define OPERADORSUBTRACAO '-'
 #define OPERADORMULTIPLICACAO '*'
 #define STRINGMENOSUM "-1"
@@ -136,7 +137,7 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 	char antoniovandre_estatisticas_buffer [TAMANHO_BUFFER_WORD];
 	unsigned long int antoniovandre_estatisticas_contador;
 	unsigned long int cursor;
-	unsigned long int tam = 0;
+	unsigned long int tam = NUMEROZERO;
 	int i;
 	char buffer [TAMANHO_BUFFER_PHRASE];
 	int flag = NUMEROZERO;
@@ -178,7 +179,7 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 
 				fread(& tc, sizeof (char), 1, filemathestatisticas);
 
-				for (i = 0; i < strlen (antoniovandre_numeros); i++)
+				for (i = NUMEROZERO; i < strlen (antoniovandre_numeros); i++)
 					if (antoniovandre_numeros[i] == tc) flag3 = NUMEROUM;
 
 				if (flag3 == NUMEROUM)
@@ -190,7 +191,7 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 			antoniovandre_estatisticas_contador = atoi (antoniovandre_estatisticas_buffer);
 			antoniovandre_estatisticas_contador++;
 
-			fseek (filemathestatisticas, (-1) * (sizeof (char)), SEEK_CUR);
+			fseek (filemathestatisticas, (NUMEROMENOSUM) * (sizeof (char)), SEEK_CUR);
 
 			antoniovandre_copiarstring(buffer, STRINGVAZIA);
 
@@ -218,7 +219,15 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 		char cabecalho_buffer [strlen (cabecalho)];
 
 		antoniovandre_copiarstring (cabecalho_buffer, cabecalho);
-		strcat (cabecalho_buffer, " 1\n");
+
+		tc = ESPACOBRANCO;
+		strncat(cabecalho_buffer, & tc, NUMEROUM);
+
+		tc = NUMEROUM;
+		strncat(cabecalho_buffer, & tc, NUMEROUM);
+
+		tc = CARACTEREFIMLINHA;
+		strncat(cabecalho_buffer, & tc, NUMEROUM);
 
 		fprintf (filemathestatisticas, "%s", cabecalho_buffer);
 		}
@@ -384,9 +393,9 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	{
 	int precisao = antoniovandre_precisao_real ();
 	char * strr = (char *) malloc(TAMANHO_BUFFER_WORD);
-	int parteinteira = (int) (log10(fabs(numero)) + 1);
+	int parteinteira = (int) (log10(fabs(numero)) + NUMEROUM);
 
-	if ((numero > VALOR_MAX) || (numero < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+	if ((numero > VALOR_MAX) || (numero < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 	if (numero == 0)
 		sprintf(strr, "%*lf", precisao, 0);
@@ -398,7 +407,7 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 			sprintf(strr, "%.*lf", precisao, numero);
 		}
 
-/*	int potencia_min = (-1) * precisao;
+/*	int potencia_min = (NUMEROMENOSUM) * precisao;
 	int potencia_max = log10 (VALOR_MAX);
 	TIPONUMEROREAL fator = powl (10, potencia_max);
 	int algarismo;
@@ -411,18 +420,18 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	if (numero < NUMEROZERO)
 		{
 		numero *= -1;
-		strcat (strr, "-");
+		antoniovandre_concatenarstring (strr, "-");
 		}
 
-	if ((numero > VALOR_MAX) || (numero < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+	if ((numero > VALOR_MAX) || (numero < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 	for (i = potencia_max; i >= potencia_min; i--)
 		{
 		if (i == -1)
 			{
-			if (numero < NUMEROUM) strcat (strr, "0");
+			if (numero < NUMEROUM) antoniovandre_concatenarstring (strr, "0");
 
-			strcat (strr, ".");
+			antoniovandre_concatenarstring (strr, ".");
 			}
 
 		algarismo = (int) fmod (((TIPONUMEROREAL) numero / (TIPONUMEROREAL) fator), 10);
@@ -438,37 +447,37 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 			switch (algarismo)
 				{
 				case NUMEROZERO:
-					strcat (strr, "0");
+					antoniovandre_concatenarstring (strr, "0");
 					break;
 				case NUMEROUM:
-					strcat (strr, "1");
+					antoniovandre_concatenarstring (strr, "1");
 					break;
 				case 2:
-					strcat (strr, "2");
+					antoniovandre_concatenarstring (strr, "2");
 					break;
 				case 3:
-					strcat (strr, "3");
+					antoniovandre_concatenarstring (strr, "3");
 					break;
 				case 4:
-					strcat (strr, "4");
+					antoniovandre_concatenarstring (strr, "4");
 					break;
 				case 5:
-					strcat (strr, "5");
+					antoniovandre_concatenarstring (strr, "5");
 					break;
 				case 6:
-					strcat (strr, "6");
+					antoniovandre_concatenarstring (strr, "6");
 					break;
 				case 7:
-					strcat (strr, "7");
+					antoniovandre_concatenarstring (strr, "7");
 					break;
 				case 8:
-					strcat (strr, "8");
+					antoniovandre_concatenarstring (strr, "8");
 					break;
 				case 9:
-					strcat (strr, "9");
+					antoniovandre_concatenarstring (strr, "9");
 					break;
 				default:
-					strcat (strr, "0");
+					antoniovandre_concatenarstring (strr, "0");
 				}
 			}
 		}
@@ -633,8 +642,9 @@ char * antoniovandre_reduzirtermossemelhantes (char * args)
 				free (temp);
 				}
 			else
-				strcat (strf, strt);
-			strcat (strf, strlit [i]);
+				antoniovandre_concatenarstring (strf, strt);
+
+			antoniovandre_concatenarstring (strf, strlit [i]);
 			if (i < contador - NUMEROUM) strf [strlen (strf)] = ESPACOBRANCO;
 
 			flag = NUMEROUM;
@@ -718,7 +728,7 @@ char * antoniovandre_valornumericopolinomio (char * args)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((fator > VALOR_MAX) || (fator < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((fator > VALOR_MAX) || (fator < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			for (j = NUMEROZERO; j < indice_inicio; j++)
 				{
@@ -738,7 +748,7 @@ char * antoniovandre_valornumericopolinomio (char * args)
 
 				coef = antoniovandre_partenumericamonomio (str);
 
-				if ((coef > VALOR_MAX) || (coef < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+				if ((coef > VALOR_MAX) || (coef < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 				antoniovandre_copiarstring (str2, antoniovandre_parteliteralmonomio (str));
 
@@ -750,12 +760,16 @@ char * antoniovandre_valornumericopolinomio (char * args)
 					else
 						strncat (str3, & str2 [k], NUMEROUM);
 
-				if ((coef > VALOR_MAX) || (coef < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+				if ((coef > VALOR_MAX) || (coef < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+
+				char temps [TAMANHO_BUFFER_WORD];
 
 				char * temp = antoniovandre_numeroparastring (coef);
-				strcat (str4, temp);
+				antoniovandre_copiarstring(temps, temp);
 				free (temp);
-				strcat (str4, str3);
+
+				antoniovandre_concatenarstring (str4, temps);
+				antoniovandre_concatenarstring (str4, str3);
 				strncat (str4, &c, NUMEROUM);
 				}
 
@@ -1132,7 +1146,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1169,7 +1183,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1181,7 +1195,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			if (argumento <= NUMEROZERO)
 				resultado = (long int) argumento;
@@ -1223,7 +1237,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1235,7 +1249,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			if (argumento >= NUMEROZERO)
 				resultado = (long int) argumento;
@@ -1277,7 +1291,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1289,7 +1303,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) (5 * (argumento - 32) / 9));
 			}
@@ -1321,7 +1335,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1333,7 +1347,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((5 * (argumento - 32) / 9) + 273.15));
 			}
@@ -1365,7 +1379,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1377,7 +1391,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((9 * argumento / 5) + 32));
 			}
@@ -1409,7 +1423,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1421,7 +1435,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) (argumento - 273.15));
 			}
@@ -1453,7 +1467,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1465,7 +1479,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((9 * (argumento - 273.15) / 5) + 32));
 			}
@@ -1497,7 +1511,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1509,7 +1523,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) (argumento + 273.15));
 			}
@@ -1541,7 +1555,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1553,7 +1567,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) argumento * 9 / 10);
 			}
@@ -1585,7 +1599,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1597,7 +1611,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) argumento * M_PI / 200);
 			}
@@ -1629,7 +1643,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1641,7 +1655,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) argumento * 10 / 9);
 			}
@@ -1673,7 +1687,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1685,7 +1699,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) argumento * M_PI / 180);
 			}
@@ -1717,7 +1731,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1729,7 +1743,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) argumento * 200 / M_PI);
 			}
@@ -1761,7 +1775,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1773,7 +1787,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) argumento * 180 / M_PI);
 			}
@@ -1805,7 +1819,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1817,7 +1831,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) fabs (argumento));
 			}
@@ -1849,7 +1863,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1861,7 +1875,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || ((argumento != (long int) argumento) || argumento < NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) antoniovandre_fatorial ((unsigned long int) argumento));
 			}
@@ -1893,7 +1907,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1905,9 +1919,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento == NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((TIPONUMEROREAL) (logl ((TIPONUMEROREAL) (1 + (TIPONUMEROREAL) powl (1 + (TIPONUMEROREAL) powl ((TIPONUMEROREAL) argumento, 2), 0.5)) / ((TIPONUMEROREAL) argumento))))));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((TIPONUMEROREAL) (logl ((TIPONUMEROREAL) (NUMEROUM + (TIPONUMEROREAL) powl (NUMEROUM + (TIPONUMEROREAL) powl ((TIPONUMEROREAL) argumento, 2), 0.5)) / ((TIPONUMEROREAL) argumento))))));
 			}
 
 		free (temp);
@@ -1937,7 +1951,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1949,9 +1963,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || ((argumento <= NUMEROZERO) || (argumento > NUMEROUM))) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((TIPONUMEROREAL) (logl ((TIPONUMEROREAL) (1 + (TIPONUMEROREAL) powl (1 - (TIPONUMEROREAL) powl ((TIPONUMEROREAL) argumento, 2), 0.5)) / ((TIPONUMEROREAL) argumento))))));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((TIPONUMEROREAL) (logl ((TIPONUMEROREAL) (NUMEROUM + (TIPONUMEROREAL) powl (1 - (TIPONUMEROREAL) powl ((TIPONUMEROREAL) argumento, 2), 0.5)) / ((TIPONUMEROREAL) argumento))))));
 			}
 
 		free (temp);
@@ -1981,7 +1995,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -1993,7 +2007,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || ((argumento >= -1) && (argumento <= NUMEROUM))) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((TIPONUMEROREAL) ((logl ((TIPONUMEROREAL) ((TIPONUMEROREAL) argumento + NUMEROUM) / ((TIPONUMEROREAL) argumento - NUMEROUM))) / 2))));
 			}
@@ -2025,7 +2039,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2037,9 +2051,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || ((argumento <= -1) || (argumento >= NUMEROUM))) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((TIPONUMEROREAL) ((logl ((TIPONUMEROREAL) (1 + (TIPONUMEROREAL) argumento) / (1 - (TIPONUMEROREAL) argumento))) / 2))));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((TIPONUMEROREAL) ((logl ((TIPONUMEROREAL) (NUMEROUM + (TIPONUMEROREAL) argumento) / (1 - (TIPONUMEROREAL) argumento))) / 2))));
 			}
 
 		free (temp);
@@ -2069,7 +2083,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2081,7 +2095,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento < NUMEROUM)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((TIPONUMEROREAL) logl ((TIPONUMEROREAL) (argumento + powl ((TIPONUMEROREAL) (powl ((TIPONUMEROREAL) argumento, 2) - NUMEROUM), 0.5))))));
 			}
@@ -2113,7 +2127,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2125,7 +2139,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((TIPONUMEROREAL) logl ((TIPONUMEROREAL) (argumento + powl ((TIPONUMEROREAL) (powl ((TIPONUMEROREAL) argumento, 2) + NUMEROUM), 0.5))))));
 			}
@@ -2157,7 +2171,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2169,9 +2183,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento == NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) (2 / (powl (M_E, (TIPONUMEROREAL) argumento) - powl (M_E, ((-1) * (TIPONUMEROREAL) argumento))))));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) (2 / (powl (M_E, (TIPONUMEROREAL) argumento) - powl (M_E, ((NUMEROMENOSUM) * (TIPONUMEROREAL) argumento))))));
 			}
 
 		free (temp);
@@ -2201,7 +2215,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2213,9 +2227,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) (2 / (powl (M_E, (TIPONUMEROREAL) argumento) + powl (M_E, ((-1) * (TIPONUMEROREAL) argumento))))));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) (2 / (powl (M_E, (TIPONUMEROREAL) argumento) + powl (M_E, ((NUMEROMENOSUM) * (TIPONUMEROREAL) argumento))))));
 			}
 
 		free (temp);
@@ -2245,7 +2259,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2257,9 +2271,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento == NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((powl (M_E, (TIPONUMEROREAL) argumento) + powl (M_E, ((-1) * (TIPONUMEROREAL) argumento))) / (powl (M_E, (TIPONUMEROREAL) argumento) - powl (M_E, ((-1) * (TIPONUMEROREAL) argumento))))));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((powl (M_E, (TIPONUMEROREAL) argumento) + powl (M_E, ((NUMEROMENOSUM) * (TIPONUMEROREAL) argumento))) / (powl (M_E, (TIPONUMEROREAL) argumento) - powl (M_E, ((NUMEROMENOSUM) * (TIPONUMEROREAL) argumento))))));
 			}
 
 		free (temp);
@@ -2289,7 +2303,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2301,9 +2315,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((powl (M_E, (TIPONUMEROREAL) argumento) - powl (M_E, ((-1) * (TIPONUMEROREAL) argumento))) / (powl (M_E, (TIPONUMEROREAL) argumento) + powl (M_E, ((-1) * (TIPONUMEROREAL) argumento))))));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((powl (M_E, (TIPONUMEROREAL) argumento) - powl (M_E, ((NUMEROMENOSUM) * (TIPONUMEROREAL) argumento))) / (powl (M_E, (TIPONUMEROREAL) argumento) + powl (M_E, ((NUMEROMENOSUM) * (TIPONUMEROREAL) argumento))))));
 			}
 
 		free (temp);
@@ -2333,7 +2347,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2345,9 +2359,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento == NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((powl (M_E, (TIPONUMEROREAL) argumento) - powl (M_E, ((-1) * (TIPONUMEROREAL) argumento))) / 2)));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((powl (M_E, (TIPONUMEROREAL) argumento) - powl (M_E, ((NUMEROMENOSUM) * (TIPONUMEROREAL) argumento))) / 2)));
 			}
 
 		free (temp);
@@ -2377,7 +2391,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2389,9 +2403,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento == NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((powl (M_E, (TIPONUMEROREAL) argumento) + powl (M_E, ((-1) * (TIPONUMEROREAL) argumento))) / 2)));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) ((powl (M_E, (TIPONUMEROREAL) argumento) + powl (M_E, ((NUMEROMENOSUM) * (TIPONUMEROREAL) argumento))) / 2)));
 			}
 
 		free (temp);
@@ -2421,7 +2435,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2433,7 +2447,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || ((argumento > -1) && (argumento < NUMEROUM))) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * asin (1 / (TIPONUMEROREAL) argumento)));
 			}
@@ -2465,7 +2479,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2477,7 +2491,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || ((argumento > -1) && (argumento < NUMEROUM))) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * acos (1 / (TIPONUMEROREAL) argumento)));
 			}
@@ -2509,7 +2523,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2521,7 +2535,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			if (argumento == NUMEROZERO) resultado = (TIPONUMEROREAL) coeficiente * M_PI_2; else if (argumento < NUMEROZERO) resultado = (TIPONUMEROREAL) coeficiente * (atan (1 / (TIPONUMEROREAL) argumento) + M_PI); else resultado = (TIPONUMEROREAL) coeficiente * atan (1 / (TIPONUMEROREAL) argumento);
 
@@ -2555,7 +2569,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2567,7 +2581,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * atan ((TIPONUMEROREAL) argumento)));
 			}
@@ -2599,7 +2613,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2611,7 +2625,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento < -1) || (argumento > NUMEROUM)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * acos ((TIPONUMEROREAL) argumento)));
 			}
@@ -2643,7 +2657,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2655,7 +2669,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento < -1) || (argumento > NUMEROUM)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * asin ((TIPONUMEROREAL) argumento)));
 			}
@@ -2687,7 +2701,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2699,7 +2713,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (fmod (argumento, M_PI) == NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente / sin ((TIPONUMEROREAL) argumento)));
 			}
@@ -2731,7 +2745,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2745,7 +2759,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 			if ((* err != NUMEROZERO) || (fmod (argumento, M_PI) == strtod (temp, & err2))) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 			free (temp);
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente / cos ((TIPONUMEROREAL) argumento)));
 			}
@@ -2777,7 +2791,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2789,7 +2803,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * sin ((TIPONUMEROREAL) argumento)));
 			}
@@ -2821,7 +2835,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2833,7 +2847,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * cos ((TIPONUMEROREAL) argumento)));
 			}
@@ -2865,7 +2879,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2877,7 +2891,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (fmod (argumento, M_PI) == NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente / tan ((TIPONUMEROREAL) argumento)));
 			}
@@ -2909,7 +2923,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2923,7 +2937,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 			if ((* err != NUMEROZERO) || (fmod (argumento, M_PI) == strtod (temp, & err2))) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 			free (temp);
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * tan ((TIPONUMEROREAL) argumento)));
 			}
@@ -2955,7 +2969,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -2967,7 +2981,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento <= NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * logl ((TIPONUMEROREAL) argumento) / M_LN2));
 			}
@@ -2999,7 +3013,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -3011,7 +3025,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento <= NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * logl ((TIPONUMEROREAL) argumento) / M_LN10));
 			}
@@ -3043,7 +3057,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 					{
 					coeficiente = strtod (buffer, & err);
 					if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((coeficiente > VALOR_MAX) || (coeficiente < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((coeficiente > VALOR_MAX) || (coeficiente < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					}
 				}
 
@@ -3055,7 +3069,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if ((* err != NUMEROZERO) || (argumento <= NUMEROZERO)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
-			if ((argumento > VALOR_MAX) || (argumento < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((argumento > VALOR_MAX) || (argumento < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			return antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) coeficiente * logl ((TIPONUMEROREAL) argumento)));
 			}
@@ -3316,19 +3330,19 @@ char * antoniovandre_evalcelula (char * str)
 						if (fmod (fabs (valort2), 2) == NUMEROZERO)
 							valor = powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
 						else if (fmod (fabs (valort2), 2) == NUMEROUM)
-							valor = (-1) * powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
+							valor = (NUMEROMENOSUM) * powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
 						else
 							{
 							contador2 = NUMEROUM; flag5 = NUMEROZERO;
 
 							do
 								{
-								if ((fmod ((contador2 / fabs (valort2)), 2) > 1 + (-1) * APROXIMACAO2) && (fmod ((contador2 / fabs (valort2)), 2) < 1 + APROXIMACAO2))
+								if ((fmod ((contador2 / fabs (valort2)), 2) > NUMEROUM + (NUMEROMENOSUM) * APROXIMACAO2) && (fmod ((contador2 / fabs (valort2)), 2) < NUMEROUM + APROXIMACAO2))
 									{
 									if (fmod (contador2, 2) == NUMEROZERO)
 										valor = powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
 									else
-										valor = (-1) * powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
+										valor = (NUMEROMENOSUM) * powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
 
 									flag5 = NUMEROUM;
 									}
@@ -3343,14 +3357,14 @@ char * antoniovandre_evalcelula (char * str)
 						valor = powl ((TIPONUMEROREAL) valort, (TIPONUMEROREAL) valort2);
 
 					if (isnan (valor) || isinf (valor)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
 				if ((strt [posicoes_operadores [i]] == OPERADORMULTIPLICACAO) && (flag2 == NUMEROZERO))
 					{
 					valor = (TIPONUMEROREAL) valort * (TIPONUMEROREAL) valort2;
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
@@ -3359,28 +3373,28 @@ char * antoniovandre_evalcelula (char * str)
 					if (valort2 == NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
 					valor = (TIPONUMEROREAL) valort / (TIPONUMEROREAL) valort2;
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
 				if ((strt [posicoes_operadores [i]] == '+') && (flag == NUMEROZERO) && (flag2 == NUMEROZERO))
 					{
 					valor = (TIPONUMEROREAL) valort + (TIPONUMEROREAL) valort2;
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
 				if ((strt [posicoes_operadores [i]] == OPERADORSUBTRACAO) && (flag == NUMEROZERO) && (flag2 == NUMEROZERO))
 					{
 					valor = (TIPONUMEROREAL) valort - (TIPONUMEROREAL) valort2;
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
 				if ((strt [posicoes_operadores [i]] == '%') && (flag == NUMEROZERO) && (flag2 == NUMEROZERO))
 					{
 					valor = fmod ((TIPONUMEROREAL) valort, (TIPONUMEROREAL) valort2);
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
@@ -3388,7 +3402,7 @@ char * antoniovandre_evalcelula (char * str)
 					{
 					if ((valort != (long int) valort) || (valort < NUMEROZERO) || (valort2 != (long int) valort2) || (valort2 < NUMEROZERO) || (valort < valort2)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 					valor = (TIPONUMEROREAL) antoniovandre_fatorial ((unsigned long int) valort) / antoniovandre_fatorial ((unsigned long int) (valort - valort2));
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
@@ -3396,7 +3410,7 @@ char * antoniovandre_evalcelula (char * str)
 					{
 					if ((valort != (long int) valort) || (valort < NUMEROZERO) || (valort2 != (long int) valort2) || (valort2 < NUMEROZERO) || (valort < valort2)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 					valor = (TIPONUMEROREAL) antoniovandre_fatorial ((unsigned long int) valort) / (antoniovandre_fatorial ((unsigned long int) (valort - valort2)) * antoniovandre_fatorial ((unsigned long int) (valort2)));
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
@@ -3404,28 +3418,28 @@ char * antoniovandre_evalcelula (char * str)
 					{
 					if (valort2 != (int) valort2) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 					valor = roundl ((TIPONUMEROREAL) valort / powl (10, valort2)) * powl (10, valort2);
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
 				if ((strt [posicoes_operadores [i]] == '>') && (flag == NUMEROZERO) && (flag2 == NUMEROZERO))
 					{
 					(valort > valort2) ? (valor = valort) : (valor = valort2);
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
 				if ((strt [posicoes_operadores [i]] == '<') && (flag == NUMEROZERO) && (flag2 == NUMEROZERO))
 					{
 					(valort < valort2) ? (valor = valort) : (valor = valort2);
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
 				if ((strt [posicoes_operadores [i]] == ':') && (flag == NUMEROZERO) && (flag2 == NUMEROZERO))
 					{
 					valor = logl (valort) / logl (valort2);
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 
@@ -3436,7 +3450,7 @@ char * antoniovandre_evalcelula (char * str)
 					else
 						valor = NUMEROZERO;
 
-					if ((valor > VALOR_MAX) || (valor < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+					if ((valor > VALOR_MAX) || (valor < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 					break;
 					}
 				}
@@ -3446,11 +3460,13 @@ char * antoniovandre_evalcelula (char * str)
 		for (i = NUMEROZERO; i < ponteiroinicio; i++)
 			strncat (strt4, & strt [i], NUMEROUM);
 
+		char temps [TAMANHO_BUFFER_WORD];
+
 		char * temp = antoniovandre_numeroparastring (valor);
-
-		strcat (strt4, temp);
-
+		antoniovandre_copiarstring(temps, temp);
 		free (temp);
+
+		antoniovandre_concatenarstring (strt4, temps);
 
 		for (i = ponteirofim; i < strlen (strt); i++)
 			strncat (strt4, & strt [i], NUMEROUM);
@@ -3584,7 +3600,7 @@ char * antoniovandre_eval (char * str)
 					tc = TOKENINICIOEVAL;
 					strncat (str2t, & tc, NUMEROUM);
 
-					strcat (str2t, STRINGMENOSUM);
+					antoniovandre_concatenarstring (str2t, STRINGMENOSUM);
 
 					tc = TOKENFIMEVAL;
 					strncat (str2t, & tc, NUMEROUM);
@@ -3609,7 +3625,7 @@ char * antoniovandre_eval (char * str)
 					tc = TOKENINICIOEVAL;
 					strncat (str2t, & tc, NUMEROUM);
 
-					strcat (str2t, STRINGMENOSUM);
+					antoniovandre_concatenarstring (str2t, STRINGMENOSUM);
 
 					tc = TOKENFIMEVAL;
 					strncat (str2t, & tc, NUMEROUM);
@@ -3726,8 +3742,8 @@ char * antoniovandre_eval (char * str)
 
 			if (strcmp (str6, STRINGVAZIA))
 				{
-				strcat (str3, str6);
-				if (tc != OPERADORSUBTRACAO) strcat (str3, "*");
+				antoniovandre_concatenarstring (str3, str6);
+				if (tc != OPERADORSUBTRACAO) antoniovandre_concatenarstring (str3, "*");
 				}
 
 			if (!strcmp (str3, "-")) antoniovandre_copiarstring (str3, "-1*");
@@ -3800,22 +3816,22 @@ char * antoniovandre_derivada (char * str, TIPONUMEROREAL ponto)
 	char tc;
 	char * err;
 
-	if ((ponto > VALOR_MAX) || (ponto < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+	if ((ponto > VALOR_MAX) || (ponto < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 	antoniovandre_copiarstring (str2, STRINGVAZIA);
 
 	for (i = NUMEROZERO; i < strlen (str); i++)
 		if (str [i] == VARIAVELDESUBSTITUICAO)
 			{
-			tc = TOKENINICIOEVAL;
-			strncat (str2, & tc, NUMEROUM);
+			char temps [TAMANHO_BUFFER_WORD];
 
 			char * temp = antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) ponto + (TIPONUMEROREAL) EPSILON));
-
-			strcat (str2, temp);
-
+			antoniovandre_copiarstring(temps, temp);
 			free (temp);
 
+			tc = TOKENINICIOEVAL;
+			strncat (str2, & tc, NUMEROUM);
+			antoniovandre_concatenarstring (str2, temps);
 			tc = TOKENFIMEVAL;
 			strncat (str2, & tc, NUMEROUM);
 			}
@@ -3833,15 +3849,15 @@ char * antoniovandre_derivada (char * str, TIPONUMEROREAL ponto)
 	for (i = NUMEROZERO; i < strlen (str); i++)
 		if (str [i] == VARIAVELDESUBSTITUICAO)
 			{
-			tc = TOKENINICIOEVAL;
-			strncat (str3, & tc, NUMEROUM);
+			char temps [TAMANHO_BUFFER_WORD];
 
 			char * temp = antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) ponto - (TIPONUMEROREAL) EPSILON));
-
-			strcat (str3, temp);
-
+			antoniovandre_copiarstring (temps, temp);
 			free (temp);
 
+			tc = TOKENINICIOEVAL;
+			strncat (str3, & tc, NUMEROUM);
+			antoniovandre_concatenarstring (str3, temps);
 			tc = TOKENFIMEVAL;
 			strncat (str3, & tc, NUMEROUM);
 			}
@@ -3880,15 +3896,15 @@ char * antoniovandre_integraldefinida (char * str, TIPONUMEROREAL a, TIPONUMEROR
 		for (i = NUMEROZERO; i < strlen (str); i++)
 			if (str [i] == VARIAVELDESUBSTITUICAO)
 				{
-				tc = TOKENINICIOEVAL;
-				strncat (str2, & tc, NUMEROUM);
+				char temps [TAMANHO_BUFFER_WORD];
 
 				char * temp = antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) a + (TIPONUMEROREAL) j * (TIPONUMEROREAL) norma + (TIPONUMEROREAL) ((TIPONUMEROREAL) norma / 2)));
-
-				strcat (str2, temp);
-
+				antoniovandre_copiarstring (temps, temp);
 				free (temp);
 
+				tc = TOKENINICIOEVAL;
+				strncat (str2, & tc, NUMEROUM);
+				antoniovandre_concatenarstring (str2, temps);
 				tc = TOKENFIMEVAL;
 				strncat (str2, & tc, NUMEROUM);
 				}
@@ -3907,7 +3923,7 @@ char * antoniovandre_integraldefinida (char * str, TIPONUMEROREAL a, TIPONUMEROR
 
 		integral += (TIPONUMEROREAL) parcela;
 
-		if ((integral > VALOR_MAX) || (integral < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+		if ((integral > VALOR_MAX) || (integral < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 		}
 
 	return antoniovandre_numeroparastring (integral);
@@ -4145,11 +4161,11 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 			x = strtod (buffer1, & err);
 
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
-			if ((x > VALOR_MAX) || (x < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((x > VALOR_MAX) || (x < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 			y = strtod (buffer2, & err);
 
-			if ((y > VALOR_MAX) || (y < (-1) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+			if ((y > VALOR_MAX) || (y < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 			if (* err != NUMEROZERO) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
 			antoniovandre_copiarstring (buffert, STRINGVAZIA);
@@ -4160,15 +4176,15 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 
 				if (tc == VARIAVELPADRAO)
 					{
-					tc2 = TOKENINICIOEVAL;
-					strncat (buffert, & tc2, NUMEROUM);
+					char temps [TAMANHO_BUFFER_WORD];
 
 					char * temp = antoniovandre_numeroparastring ((TIPONUMEROREAL) x);
-
-					strcat (buffert, temp);
-
+					antoniovandre_copiarstring(temps, temp);
 					free (temp);
 
+					tc2 = TOKENINICIOEVAL;
+					strncat (buffert, & tc2, NUMEROUM);
+					antoniovandre_concatenarstring (buffert, temps);
 					tc2 = TOKENFIMEVAL;
 					strncat (buffert, & tc2, NUMEROUM);
 					}
@@ -4297,11 +4313,15 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 			{
 			if (funcao [i] == VARIAVELPADRAO)
 				{
+				char temps [TAMANHO_BUFFER_WORD];
+
+				char * temp = antoniovandre_numeroparastring (x);
+				antoniovandre_copiarstring(temps, temp);
+				free (temp);
+
 				tc = TOKENINICIOEVAL;
 				strncat (str, & tc, NUMEROUM);
-				char * temp = antoniovandre_numeroparastring (x);
-				strcat (str, temp);
-				free (temp);
+				antoniovandre_concatenarstring (str, temps);
 				tc = TOKENFIMEVAL;
 				strncat (str, & tc, NUMEROUM);
 				flag = NUMEROUM;
@@ -4360,11 +4380,15 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 							}
 						else
 							{
+							char temps [TAMANHO_BUFFER_WORD];
+
+							char * temp = antoniovandre_numeroparastring (xr);
+							antoniovandre_copiarstring(temps, temp);
+							free (temp);
+
 							tc = DELIMITADORSTRING;
 							strncat (strr, & tc, NUMEROUM);
-							char * temp = antoniovandre_numeroparastring (xr);
-							strcat (strr, temp);
-							free (temp);
+							antoniovandre_concatenarstring (strr, temps);
 							}
 
 						contador3++;
@@ -4515,11 +4539,13 @@ TIPONUMEROREAL antoniovandre_determinante (TIPONUMEROREAL ** matriz)
 
 			free (matrizt);
 
-			if ((det > VALOR_MAX) || (det < (-1) * VALOR_MAX)) return INFINITY;
+			if ((det > VALOR_MAX) || (det < (NUMEROMENOSUM) * VALOR_MAX)) return INFINITY;
 			}
 
 	return det;
 	}
+
+// Copiando strings de forma segura.
 
 int antoniovandre_copiarstring (char * dest, char * orig)
 	{
@@ -4541,5 +4567,31 @@ int antoniovandre_copiarstring (char * dest, char * orig)
 		if (buffer == '\0') break;
 		}
 
-	return 0;
+	return NUMEROZERO;
+	}
+
+// Concatenando strings de forma segura.
+
+int antoniovandre_concatenarstring (char * dest, char * orig)
+	{
+	unsigned long int tam = TAMANHO_BUFFER_PHRASE;
+	unsigned long int inicio = NUMEROZERO;
+	unsigned long int i;
+	char buffer;
+
+	for (i = NUMEROZERO; i < tam; i++)
+		{
+		if (dest[i] == '\0') break;
+		inicio++;
+		}
+
+	for (i = NUMEROZERO; i < tam; i++)
+		{
+		buffer = orig[i];
+		dest[inicio + i] = buffer;
+
+		if (buffer == '\0') break;
+		}
+
+	return NUMEROZERO;
 	}
