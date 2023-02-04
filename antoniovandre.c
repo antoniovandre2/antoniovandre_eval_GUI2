@@ -19,7 +19,7 @@
 
 #include "antoniovandre_extra.c"
 
-#define VERSION 20230202
+#define VERSION 20230204
 #define TAMANHO_BUFFER_SMALL 75 // Para pequenos buffers.
 #define TAMANHO_BUFFER_WORD 8192 // Para strings pequenas.
 #define TAMANHO_BUFFER_PHRASE 81920 // Para strings grandes.
@@ -66,7 +66,7 @@
 #define MINPRECISAO 8 // Afim de garantir retornos corretos de algumas funções.
 #define MAXPRECISAO 19 // Afim de evitar erros de saída.
 
-typedef long double TIPONUMEROREAL;
+typedef double TIPONUMEROREAL;
 
 typedef struct {char token [TAMANHO_BUFFER_WORD]; TIPONUMEROREAL valor; char comentario [TAMANHO_BUFFER_PHRASE];} tokenfuncaoconstante; // Estrutura para funções e constantes.
 
@@ -4248,7 +4248,7 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 	char maxs2 [TAMANHO_BUFFER_WORD];
 	char str [TAMANHO_BUFFER_PHRASE];
 	char strt [TAMANHO_BUFFER_PHRASE];
-	char strr [TAMANHO_BUFFER_PHRASE];
+	char * strr = (char *) malloc (TAMANHO_BUFFER_PHRASE);
 	int i;
 	int flag;
 	int flag2;
