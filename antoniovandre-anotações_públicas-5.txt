@@ -3,6 +3,398 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+09-02-2023
+__
+
+O amor sustenta...
+_____
+
+09-02-2023
+__
+
+Após viver outras experiências desejadas afim de se saturar, em fidelidade à Matemática, acho que sempre vai restar um pouquinho de vontade de apreciar um pouco mais delas, devo relevar e manter a fidelidade, para, dentre outros fins, manter-me emocionalmente bem.
+_____
+
+09-02-2023
+__
+
+Felicidade também na fidelidade à Matemática, e, nos meus games até então, a temática é sempre ela, assim posso jogar tranquilo.
+_____
+
+09-02-2023
+__
+
+Por ser de universal aplicação e um pouco intelectualmente desafiadora, acho que os que não são bons em Matemática muito provavelmente sofrem de baixa autoestima...
+_____
+
+09-02-2023
+__
+
+Ponho, mas costumo deixar contagens de tempo desabilitadas por default em meus games, pois desejo que os usuários sintam-se relaxados.
+_____
+
+09-02-2023
+__
+
+Às vezes não é preciso realizar, basta saber que é capaz.
+_____
+
+09-02-2023
+__
+
+Após criar meus próprios games, aprecio melhor os de outros, mesmo sem muita qualidade.
+_____
+
+09-02-2023
+__
+
+Geralmente programadores donotam versões por "1.2", "3.2.4", etc; eu costumo por a data e a hora da última atualização, por exemplo "09-02-2023 11:27".
+_____
+
+09-02-2023
+__
+
+Mais uma vez passei em mais um autoteste de estresse, passando dias consecutivos concentrado em atividades psiquicamente exigentes e me mantendo sob controle.
+_____
+
+09-02-2023
+__
+
+Liberdade é principalmente amar o que está sempre disponível...
+_____
+
+09-02-2023
+__
+
+Muito da prazerosa sensação de organização é devida aos próprios softwares escritos, perfeitos.
+_____
+
+09-02-2023
+__
+
+Ficar pensando em como aprimorar um software ou como criar um realmente tira o sono quando deitado para dormir...
+
+Não tenho muitos débitos morais, mas acho que, semelhantemente, quando se peca gravemente, também não conseguimos dormir com a consciência nos cobrando...
+_____
+
+09-02-2023
+__
+
+Assim como com games, avançar um pouco mais na Matemática quando disposto a desafios psíquicos, e rever o que já se sabe quando desejando relaxar.
+_____
+
+09-02-2023
+__
+
+Prazer na organização, e computadores são praticamente fundamentais nisto, pois trabalham com informações; organizar as informações sobre si...
+_____
+
+09-02-2023
+__
+
+É bom desenvolver games complexos, que exijam esforços psíquicos, e também games leves, feitos para relaxar.
+_____
+
+09-02-2023
+__
+
+Vida organizada com os estudos organizados.
+_____
+
+09-02-2023
+__
+
+Tenho muitos softwares já escritos e pouco utilizados; acho que devo desfrutar mais deles antes de escrever mais.
+_____
+
+09-02-2023
+__
+
+Mesmo que eu ainda não escreva os softwares que mentalmente elaboro, o pensar em como os desenvolver já são progressos; primeiro o pensar, depois o escrever.
+_____
+
+09-02-2023
+__
+
+Acordei com uma nova ideia de software, mas como há indicadores de que o desktop aqui será dividido hoje, prefiro não iniciar para não, iniciando, ficar inquieto por concluir sem ter acesso ao computador.
+_____
+
+08-02-2023
+__
+
+Foi um dia de muitos esforços, mas é necessário que seja assim, preciso de algo a me dedicar para me sentir vivo...
+
+Vou dormir pensando no que vou fazer amanhã...
+_____
+
+08-02-2023
+__
+
+Além de auto-update, autosave também.
+_____
+
+08-02-2023
+__
+
+Poucos sabem, mas o segredo da vida é a auto-realização; ao invés de a buscar por meios muito trabalhosos e que não dependem exclusivamente de nós, como, por exemplo, adquirir liderança social, facilmente a conseguimos em simplesmente estudar; escrevendo softwares também é outro meio bastante eficiente.
+_____
+
+08-02-2023
+__
+
+Acho que todo software com auto-update não pode ser inicializado de si mesmo, mas através de um launcher.
+_____
+
+08-02-2023
+__
+
+Ao invés de simplesmente dizer que há uma nova versão disponível, já implementei a atualização automática, tudo de acordo com o conteúdo de um arquivo exclusivo para hashs de versões.
+_____
+
+08-02-2023
+__
+
+O que pode ser ruim no Java é muito código para realizar poucas coisas, e também há falta de liberdade para o programador, pois a linguagem zela pela segurança.
+_____
+
+08-02-2023
+__
+
+Concluí os softwares por hoje, agora redespertando meu lado filosófico... =)
+_____
+
+08-02-2023
+__
+
+Mesmo que sejamos usados ou abusados por outras pessoas, mais vale ser paciente para preservar a paz interior, a paz não tem preço...
+_____
+
+08-02-2023
+__
+
+Não quero me gabar, mas ganhei 2 estrelas meu joguinho no GitHub. =)
+_____
+
+08-02-2023
+__
+
+Se não preciso compreender os mecanismos internos dos compiladores e frameworks, tudo bem não compreender alguns códigos copiados e colados que auxiliam. =)
+_____
+
+08-02-2023
+__
+
+Viver é continuamente organizar-se mais...
+_____
+
+08-02-2023
+__
+
+Pratiquei um pouco de clean code. =)
+_____
+
+08-02-2023
+__
+
+Vou jogando meus próprios games e encontrando melhorias a realizar.
+_____
+
+08-02-2023
+__
+
+Experiência como programador também em demorar a pegar no sono pensando nas implementações a serem realizadas no dia seguinte.
+_____
+
+07-02-2023
+__
+
+Muitos odeiam, mas eu acabei amando o Java.
+_____
+
+07-02-2023
+__
+
+Ultimamente estou escrevendo um software por dia, e, consequentemente, a inteligência crescendo vertiginosamente. Não só inteligência, mas também outros atributos como paciência.
+_____
+
+07-02-2023
+__
+
+Faz parte do ser programador o quase sempre ter pressa, pois muitas vezes estará corrigindo ou aprimorando softwares já publicados, e deseja ter uma boa reputação.
+_____
+
+07-02-2023
+__
+
+O game pode ser o desenvolver o game...
+_____
+
+07-02-2023
+__
+
+Acho que deve ser um dilema para os programadores, escreverem um bom software, desejar que as pessoas apreciem, mas estipular um preço...
+
+Ainda bem que não coloco preço em nada.
+_____
+
+06-02-2023
+__
+
+Mais realizações pessoais concretizadas, preciso abraçar mais projetos afim de continuar crescendo...
+_____
+
+06-02-2023
+__
+
+Naturalmente a vontade de programar mais vem, é gostoso trabalhar com inteligência, compreendo, dentre outros, os que trabalham na Ubisoft, incansavelmente lançando mais games...
+_____
+
+06-02-2023
+__
+
+Realmente dá um trabalhinho criar um frontend em Java, mas consegui.
+_____
+
+06-02-2023
+__
+
+Por algumas e outras razões, poderia ficar triste e deprimido, no entanto, como hoje mais uma vez estou estudando e programando, recuso-me e vou ficar é feliz, estou lucrando.
+_____
+
+06-02-2023
+__
+
+Hoje comecei a criar um novo game, mas sem pressas, alguns indies demoram anos para concluir os seus.
+_____
+
+05-02-2023
+__
+
+Consegui compilar um software que usa inteligência artificial para restaurar fotos antigas. Poderia anunciar como um trabalho, mas hoje consiste apenas em dar um comando no computador, zero trabalho...
+_____
+
+05-02-2023
+__
+
+Melhor ser humilde e surpreender que chegar por cima e decepcionar...
+_____
+
+05-02-2023
+__
+
+Sendo um Matemático, eu devo habitar mesmo aqui neste mundinho pequeno e solitário do desenvolvimento de softwares em computadores.
+
+Em um mundinho pequeno e solitário, porém satisfeito.
+_____
+
+05-02-2023
+__
+
+Estou tentando compilar um software de edição de imagens que utiliza inteligência artificial, e são milhões de dependências que tenho que instalar com o pip.
+_____
+
+05-02-2023
+__
+
+Tudo bem recuperar o ego / orgulho após os estudos depois de um tempo com ele abatido.
+
+Para o ego ficar abatido, nem são necessárias experiências ruins, basta ficar em ócio.
+_____
+
+05-02-2023
+__
+
+A Matemática também com a utilíssima finalidade de alimentar o ego e, assim, proporcionar paz...
+_____
+
+05-02-2023
+__
+
+Às vezes dá preguiça de pegar um papel, lápis e borracha para resolver mais uma questão de Matemática a fim de me sentir bem, mas penso: ficar depressivo é pior... Então vou pegar.
+_____
+
+05-02-2023
+__
+
+Para Português há a interpretação de textos, e, para a Matemática, semelhantemente, a interpretação das lógicas.
+
+Compreender passagens pode satisfazer tão quanto resolver questões.
+_____
+
+05-02-2023
+__
+
+Matemática não é somente sobre resolver problemas, também há o lado literário, em que cabe a nós apreciarmos, por exemplo, resoluções de questões.
+_____
+
+05-02-2023
+__
+
+Desejar mais paz?... Posso ter mais?... Acho que já posso me dar por satisfeito.
+_____
+
+05-02-2023
+__
+
+Mentalmente, dá para elaborar uma questão de Matemática e eu mesmo, mentalmente, resolver; isto também é estudar, sem nada, apenas pensando.
+_____
+
+05-02-2023
+__
+
+Um Matemático é um desenvolvedor backend.
+_____
+
+04-02-2023
+__
+
+Estudar Matemática pensando em aprimorar e criar mais softwares.
+_____
+
+04-02-2023
+__
+
+Especialista nos mecanismos básicos de softwares.
+_____
+
+04-02-2023
+__
+
+Não preciso me preocupar em fazer grandes softwares, a Matemática trabalha apenas nos mecanismos básicos.
+_____
+
+04-02-2023
+__
+
+Apaixonado por computadores, mas principalmente sobre escrever códigos, é o que me liga à Matemática.
+_____
+
+04-02-2023
+__
+
+Deixa os outros falarem mau, Deus castiga...
+_____
+
+04-02-2023
+__
+
+Fazendo da Matemática uma extensão dos computadores, posso fazer dos computadores meu universo...
+
+Ainda estarei neste universo mesmo apenas com livros.
+_____
+
+04-02-2023
+__
+
+Ainda bem que adquiri intimidade com desenvolvimento de softwares, assim fico bem mais íntimo da Matemática; poderia até dizer que programação é necessária para ser um Matemático...
+_____
+
+03-02-2023
+__
+
+Sou patriota e nacionalista apenas com meu quarto, onde tão prazerosamente estudo. =)
+_____
+
 03-02-2023
 __
 
