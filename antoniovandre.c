@@ -20,7 +20,7 @@
 #include "antoniovandre_extra.c"
 
 #define VERSION 20230227
-#define MENSAGEMNAOCOMPILADOR "Software não compilado em razão do compilador não ser compatível.\n"
+#define MENSAGEMNAOCOMPILADOR "Software não compilado em razão do compilador não ser compatível."
 #define TAMANHO_BUFFER_SMALL 75 // Para pequenos buffers.
 #define TAMANHO_BUFFER_WORD 8192 // Para strings pequenas.
 #define TAMANHO_BUFFER_PHRASE 81920 // Para strings grandes.
@@ -101,9 +101,57 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 
 #define DECLARACAO_buffer char * buffer = (char *) malloc (TAMANHO_BUFFER_PHRASE);
 
-#define ALOCACAO_funcoesconstantestoken funcoesconstantes [i].token = (char *) malloc(TAMANHO_BUFFER_WORD);
+#define DECLARACAO_funcoesconstantes tokenfuncaoconstante * funcoesconstantes = (tokenfuncaoconstante *) malloc (sizeof (tokenfuncaoconstante) * TAMANHO_BUFFER_SMALL);
 
-#define ALOCACAO_funcoesconstantescomentario funcoesconstantes [i].comentario = (char *) malloc(TAMANHO_BUFFER_PHRASE);
+#define ALOCACAO_funcoesconstantestoken funcoesconstantes [i].token = (char *) malloc (TAMANHO_BUFFER_WORD);
+
+#define ALOCACAO_funcoesconstantescomentario funcoesconstantes [i].comentario = (char *) malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_evalcelulafuncao_buffer char * buffer = malloc (TAMANHO_BUFFER_WORD);
+
+#define DECLARACAO_antoniovandre_evalcelulafuncao_str2 char * str2 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_evalcelula_strt char * strt = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_evalcelula_strt2 char * strt2 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_evalcelula_strt3 char * strt3 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_evalcelula_strtv1 char * strtv1 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_evalcelula_strtv2 char * strtv2 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_evalcelula_strt4 char * strt4 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_eval_str2 char * str2 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_eval_str2t char * str2t = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_eval_str3 char * str3 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_eval_str4 char * str4 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_eval_str4t char * str4t = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_eval_str5 char * str5 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_eval_str6 char * str6 = malloc (TAMANHO_BUFFER_WORD);
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffer char * buffer = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffert char * buffert = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffertt char * buffertt = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_bufferr2 char * bufferr2 = malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffer1 char * buffer1 = malloc (TAMANHO_BUFFER_WORD);
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffer2 char * buffer2 = malloc (TAMANHO_BUFFER_WORD);
+
+#define DECLARACAO_strf_antoniovandre_removerletras char * strf = (char *) malloc (TAMANHO_BUFFER_PHRASE);
+
+#define DECLARACAO_strf_antoniovandre_removernumeros char * strf = (char *) malloc (TAMANHO_BUFFER_PHRASE);
 
 #else
 
@@ -118,9 +166,57 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 
 #define DECLARACAO_buffer char buffer [TAMANHO_BUFFER_PHRASE];
 
+#define DECLARACAO_funcoesconstantes tokenfuncaoconstante funcoesconstantes [TAMANHO_BUFFER_SMALL];
+
 #define ALOCACAO_funcoesconstantestoken ;
 
 #define ALOCACAO_funcoesconstantescomentario ;
+
+#define DECLARACAO_antoniovandre_evalcelulafuncao_buffer char buffer [TAMANHO_BUFFER_WORD];
+
+#define DECLARACAO_antoniovandre_evalcelulafuncao_str2 char str2 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_evalcelula_strt char strt [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_evalcelula_strt2 char strt2 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_evalcelula_strt3 char strt3 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_evalcelula_strtv1 char strtv1 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_evalcelula_strtv2 char strtv2 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_evalcelula_strt4 char strt4 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_eval_str2 char str2 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_eval_str2t char str2t [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_eval_str3 char str3 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_eval_str4 char str4 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_eval_str4t char str4t [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_eval_str5 char str5 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_eval_str6 char str6 [TAMANHO_BUFFER_WORD];
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffer char buffer [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffert char buffert [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffertt char buffertt [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_bufferr2 char bufferr2 [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffer1 char buffer1 [TAMANHO_BUFFER_WORD];
+
+#define DECLARACAO_antoniovandre_funcaomaisproxima_buffer2 char buffer2 [TAMANHO_BUFFER_WORD];
+
+#define DECLARACAO_strf_antoniovandre_removerletras char strf [TAMANHO_BUFFER_PHRASE];
+
+#define DECLARACAO_strf_antoniovandre_removernumeros char strf [TAMANHO_BUFFER_PHRASE];
 
 #endif
 
@@ -163,8 +259,8 @@ int antoniovandre_mathsobre ()
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	FILE * filesobre;
@@ -175,13 +271,13 @@ int antoniovandre_mathsobre ()
 	if (filesobre == NULL)
 		{
 		printf ("Erro ao abrir arquivo sobre.\n");
-		return -1;
+		return NUMEROMENOSUM;
 		}
 
 	while (! feof (filesobre))
 		{
 		antoniovandre_sobre_buffer_char = fgetc (filesobre);
-		if (! feof(filesobre)) printf ("%c", antoniovandre_sobre_buffer_char);
+		if (! feof (filesobre)) printf ("%c", antoniovandre_sobre_buffer_char);
 		}
 
 	fclose (filesobre);
@@ -193,8 +289,8 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	if (ESCREVER_ESTATISTICAS)
@@ -227,7 +323,7 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 			if (filemathestatisticas == NULL)
 				{
 				printf ("Erro ao abrir ou criar arquivo de estatísticas.\n");
-				return -1;
+				return NUMEROMENOSUM;
 				}
 
 			flag2 = NUMEROUM;
@@ -241,13 +337,13 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 				{
 				fseek (filemathestatisticas, sizeof (char), SEEK_CUR);
 				cursor = ftell (filemathestatisticas);
-				antoniovandre_copiarstring(antoniovandre_estatisticas_buffer, STRINGVAZIA);
+				antoniovandre_copiarstring (antoniovandre_estatisticas_buffer, STRINGVAZIA);
 
 				while (VERDADE)
 					{
 					flag3 = NUMEROZERO;
 
-					fread(& tc, sizeof (char), 1, filemathestatisticas);
+					fread (& tc, sizeof (char), 1, filemathestatisticas);
 
 					for (i = NUMEROZERO; i < strlen (antoniovandre_numeros); i++)
 						if (antoniovandre_numeros[i] == tc) flag3 = NUMEROUM;
@@ -263,22 +359,22 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 
 				fseek (filemathestatisticas, (NUMEROMENOSUM) * (sizeof (char)), SEEK_CUR);
 
-				antoniovandre_copiarstring(buffer, STRINGVAZIA);
+				antoniovandre_copiarstring (buffer, STRINGVAZIA);
 
 				while (! feof (filemathestatisticas))
 					{
-					fread(& tc, sizeof (char), 1, filemathestatisticas);
+					fread (& tc, sizeof (char), 1, filemathestatisticas);
 					buffer[tam++] = tc;
 					}
 
 				fseek (filemathestatisticas, cursor, SEEK_SET);
 
 				char * temp = (char *) malloc (TAMANHO_BUFFER_WORD);
-				sprintf(temp, "%ld", antoniovandre_estatisticas_contador);
-				fwrite(temp, 1, strlen (temp), filemathestatisticas);
+				sprintf (temp, "%ld", antoniovandre_estatisticas_contador);
+				fwrite (temp, 1, strlen (temp), filemathestatisticas);
 				free (temp);
 
-				fwrite(buffer , 1, --tam, filemathestatisticas);
+				fwrite (buffer , 1, --tam, filemathestatisticas);
 
 				flag = NUMEROUM;
 				}
@@ -291,13 +387,13 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 			antoniovandre_copiarstring (cabecalho_buffer, cabecalho);
 
 			tc = ESPACOBRANCO;
-			strncat(cabecalho_buffer, & tc, NUMEROUM);
+			strncat (cabecalho_buffer, & tc, NUMEROUM);
 
 			tc = CHARUM;
-			strncat(cabecalho_buffer, & tc, NUMEROUM);
+			strncat (cabecalho_buffer, & tc, NUMEROUM);
 
 			tc = CARACTEREFIMLINHA;
-			strncat(cabecalho_buffer, & tc, NUMEROUM);
+			strncat (cabecalho_buffer, & tc, NUMEROUM);
 
 			fprintf (filemathestatisticas, "%s", cabecalho_buffer);
 			}
@@ -320,8 +416,8 @@ int antoniovandre_precisao_real ()
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	FILE * fileprecisaoreal;
@@ -332,12 +428,12 @@ int antoniovandre_precisao_real ()
 
 	antoniovandre_copiarstring (antoniovandre_precisao_real_buffer, STRINGVAZIA);
 
-	fileprecisaoreal = fopen(ARQUIVO_PRECISAO_REAL, "r");
+	fileprecisaoreal = fopen (ARQUIVO_PRECISAO_REAL, "r");
 
 	if (fileprecisaoreal == NULL)
 		{
 		printf ("Erro ao abrir arquivo de precisão real.\n");
-		return -1;
+		return NUMEROMENOSUM;
 		}
 
 	fscanf (fileprecisaoreal, "%s", antoniovandre_precisao_real_buffer);
@@ -347,7 +443,7 @@ int antoniovandre_precisao_real ()
 	if (antoniovandre_precisao_real_valor == NUMEROZERO)
 		{
 		printf ("Erro ao ler arquivo de precisão real.\n");
-		return -1;
+		return NUMEROMENOSUM;
 		}
 
 	if (GNUGT) free (antoniovandre_precisao_real_buffer);
@@ -367,13 +463,15 @@ char * antoniovandre_removerletras (char * str)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	int tam1 = strlen (str);
 	int tam2 = strlen (antoniovandre_letras);
-	char strf [TAMANHO_BUFFER_PHRASE];
+
+	DECLARACAO_strf_antoniovandre_removerletras
+	
 	int i;
 	int j;
 	int flag;
@@ -400,13 +498,15 @@ char * antoniovandre_removernumeros (char * str)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	int tam1 = strlen (str);
 	int tam2 = strlen (antoniovandre_numeros);
-	char strf [TAMANHO_BUFFER_PHRASE];
+
+	DECLARACAO_strf_antoniovandre_removernumeros
+
 	int i;
 	int j;
 	int flag;
@@ -432,8 +532,8 @@ int antoniovandre_monomio (char * str)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	int contador = NUMEROZERO;
@@ -458,10 +558,10 @@ int antoniovandre_monomio (char * str)
 	for (i = NUMEROZERO; i < strlen (str); i++)
 		{if (str [i] == '.') contador++; if (contador == 2) return NUMEROZERO;}
 
-	if (strcmp (antoniovandre_removerletras (antoniovandre_removernumeros (str)), STRINGVAZIA) || (! strcmp (str, "-")))
+	if (antoniovandre_compararstringsfree (antoniovandre_removerletras (antoniovandre_removernumeros (str)), STRINGVAZIA) || (! strcmp (str, "-")))
 		return NUMEROZERO;
 	else
-		return -1;
+		return NUMEROMENOSUM;
 	}
 
 // Parte numérica de um monômio.
@@ -470,18 +570,18 @@ TIPONUMEROREAL antoniovandre_partenumericamonomio (char * str)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	char * err;
 
 	if (antoniovandre_monomio (str))
 		{
-		if (! strcmp (antoniovandre_removerletras (str), STRINGVAZIA))
+		if (! antoniovandre_compararstringsfree (antoniovandre_removerletras (str), STRINGVAZIA))
 			return NUMEROUM;
-		else if (! strcmp (antoniovandre_removerletras (str), "-") && strlen (str) != NUMEROUM)
-			return -1;
+		else if (! antoniovandre_compararstringsfree (antoniovandre_removerletras (str), "-") && strlen (str) != NUMEROUM)
+			return NUMEROMENOSUM;
 		else
 			return (strtod (antoniovandre_removerletras (str), & err));
 		}
@@ -495,8 +595,8 @@ char * antoniovandre_parteliteralmonomio (char * str)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	if (antoniovandre_monomio (str))
@@ -510,19 +610,19 @@ char * antoniovandre_parteliteralmonomio (char * str)
 char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	{
 	int precisao = antoniovandre_precisao_real ();
-	char * strr = (char *) malloc(TAMANHO_BUFFER_WORD);
-	int parteinteira = (int) (log10(fabs(numero)) + NUMEROUM);
+	char * strr = (char *) malloc (TAMANHO_BUFFER_WORD);
+	int parteinteira = (int) (log10 (fabs (numero)) + NUMEROUM);
 
 	if ((numero > VALOR_MAX) || (numero < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 	if (numero == 0)
-		sprintf(strr, "%*lf", precisao, 0);
+		sprintf (strr, "%*lf", precisao, 0);
 	else
 		{
 		if (parteinteira > 0)
-			sprintf(strr, "%.*lf", precisao - parteinteira, numero);
+			sprintf (strr, "%.*lf", precisao - parteinteira, numero);
 		else
-			sprintf(strr, "%.*lf", precisao, numero);
+			sprintf (strr, "%.*lf", precisao, numero);
 		}
 
 /*	int potencia_min = (NUMEROMENOSUM) * precisao;
@@ -609,8 +709,8 @@ int antoniovandre_compararstringssemorden (char * str1, char * str2)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	int tam1 = strlen (str1);
@@ -633,12 +733,47 @@ int antoniovandre_compararstringssemorden (char * str1, char * str2)
 
 		for (j = NUMEROZERO; j < tam2; j++) if (c == str2 [j]) contador2++;
 
-		if (contador1 != contador2) return -1;
+		if (contador1 != contador2) return NUMEROMENOSUM;
 		}
 
-	if (tam1 != tam2) return -1;
+	if (tam1 != tam2) return NUMEROMENOSUM;
 
 	return NUMEROZERO;
+	}
+
+// Comparar strings com free nos argumentos.
+
+int antoniovandre_compararstringsfree (char * str1, char * str2)
+	{
+	if (! (COMPILAR))
+		{
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
+		}
+
+	int tam1 = strlen (str1);
+	int tam2 = strlen (str2);
+	int i;
+	int resultado;
+
+	if (tam1 != tam2) return NUMEROMENOSUM;
+
+	for (i = NUMEROZERO; i < tam1; i++)
+		if (str1[i] != str2 [i])
+			{
+			resultado = FALSIDADE;
+			break;
+			}
+
+	resultado = VERDADE;
+
+	if (GNUGT)
+		{
+		free (str1);
+		free (str2);
+		}
+
+	return resultado;
 	}
 
 // Enésima substring de uma string separada por delimitadores. Inicia-se contando do NUMEROZERO;
@@ -647,8 +782,8 @@ char * antoniovandre_nthsubstr (char * str, int n)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	char * strf = (char *) malloc (TAMANHO_BUFFER_PHRASE);
@@ -695,8 +830,8 @@ unsigned long int antoniovandre_fatorial (unsigned long int n)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	if (n > NUMEROUM) return antoniovandre_fatorial (n - NUMEROUM) * (unsigned long int) n; else return NUMEROUM;
@@ -800,8 +935,8 @@ char * antoniovandre_valornumericopolinomio (char * args)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	int nargs = NUMEROUM;
@@ -907,7 +1042,7 @@ char * antoniovandre_valornumericopolinomio (char * args)
 				char temps [TAMANHO_BUFFER_WORD];
 
 				char * temp = antoniovandre_numeroparastring (coef);
-				antoniovandre_copiarstring(temps, temp);
+				antoniovandre_copiarstring (temps, temp);
 				free (temp);
 
 				antoniovandre_concatenarstring (str4, temps);
@@ -935,8 +1070,8 @@ int antoniovandre_expressao (char * str)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	int flag;
@@ -967,8 +1102,8 @@ char * antoniovandre_substring (char * str, int inicio, int fim)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	char * strt = (char *) malloc (fim - inicio + NUMEROUM);
@@ -976,7 +1111,7 @@ char * antoniovandre_substring (char * str, int inicio, int fim)
 
 	antoniovandre_copiarstring (strt, STRINGVAZIA);
 
-	for (i = inicio; (i <= fim) && (i - inicio < strlen(str)); i++)
+	for (i = inicio; (i <= fim) && (i - inicio < strlen (str)); i++)
 		strncat (strt, & str [i], NUMEROUM);
 
 	return strt;
@@ -988,11 +1123,12 @@ char * antoniovandre_evalcelulafuncao (char * str)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
-	tokenfuncaoconstante funcoesconstantes [TAMANHO_BUFFER_SMALL];
+	DECLARACAO_funcoesconstantes
+
 	int tamanhotokenfuncaoconstante;
 	int tamanhotokenfuncaoconstantemax = NUMEROZERO;
 	int tokenid = -1;
@@ -1000,8 +1136,11 @@ char * antoniovandre_evalcelulafuncao (char * str)
 	TIPONUMEROREAL resultado;
 	TIPONUMEROREAL argumento;
 	TIPONUMEROREAL coeficiente;
-	char buffer [TAMANHO_BUFFER_WORD];
-	char str2 [TAMANHO_BUFFER_PHRASE];
+
+	DECLARACAO_antoniovandre_evalcelulafuncao_buffer
+
+	DECLARACAO_antoniovandre_evalcelulafuncao_str2
+
 	int i;
 	int j;
 	char tc;
@@ -3345,8 +3484,11 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 	if (GNUGT)
 		{
-		free (funcoesconstantes [i].token);
+		free (str2);
+		free (buffer);
 		free (funcoesconstantes [i].comentario);
+		free (funcoesconstantes [i].token);
+		free (funcoesconstantes);
 		}
 
 	if ((* err != NUMEROZERO) || (! strcmp (str, STRINGVAZIA)))
@@ -3361,16 +3503,22 @@ char * antoniovandre_evalcelula (char * str)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
-	char strt [TAMANHO_BUFFER_PHRASE];
-	char strt2 [TAMANHO_BUFFER_PHRASE];
-	char strt3 [TAMANHO_BUFFER_PHRASE];
-	char strtv1 [TAMANHO_BUFFER_PHRASE];
-	char strtv2 [TAMANHO_BUFFER_PHRASE];
-	char strt4 [TAMANHO_BUFFER_PHRASE];
+	DECLARACAO_antoniovandre_evalcelula_strt
+
+	DECLARACAO_antoniovandre_evalcelula_strt2
+
+	DECLARACAO_antoniovandre_evalcelula_strt3
+
+	DECLARACAO_antoniovandre_evalcelula_strtv1
+
+	DECLARACAO_antoniovandre_evalcelula_strtv2
+
+	DECLARACAO_antoniovandre_evalcelula_strt4
+
 	int posicoes_operadores [TAMANHO_BUFFER_PHRASE];
 	TIPONUMEROREAL valor;
 	TIPONUMEROREAL valort;
@@ -3634,7 +3782,7 @@ char * antoniovandre_evalcelula (char * str)
 		char temps [TAMANHO_BUFFER_WORD];
 
 		char * temp = antoniovandre_numeroparastring (valor);
-		antoniovandre_copiarstring(temps, temp);
+		antoniovandre_copiarstring (temps, temp);
 		free (temp);
 
 		antoniovandre_concatenarstring (strt4, temps);
@@ -3643,6 +3791,15 @@ char * antoniovandre_evalcelula (char * str)
 			strncat (strt4, & strt [i], NUMEROUM);
 
 		antoniovandre_copiarstring (strt, strt4);
+		}
+
+	if (GNUGT)
+		{
+		free (strt4);
+		free (strtv2);
+		free (strtv1);
+		free (strt3);
+		free (strt2);
 		}
 
 	return antoniovandre_evalcelulafuncao (strt);
@@ -3654,17 +3811,24 @@ char * antoniovandre_eval (char * str)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
-	char str2 [TAMANHO_BUFFER_PHRASE];
-	char str2t [TAMANHO_BUFFER_PHRASE];
-	char str3 [TAMANHO_BUFFER_PHRASE];
-	char str4 [TAMANHO_BUFFER_PHRASE];
-	char str4t [TAMANHO_BUFFER_PHRASE];
-	char str5 [TAMANHO_BUFFER_PHRASE];
-	char str6 [TAMANHO_BUFFER_WORD];
+	DECLARACAO_antoniovandre_eval_str2
+
+	DECLARACAO_antoniovandre_eval_str2t
+
+	DECLARACAO_antoniovandre_eval_str3
+
+	DECLARACAO_antoniovandre_eval_str4
+
+	DECLARACAO_antoniovandre_eval_str4t
+
+	DECLARACAO_antoniovandre_eval_str5
+
+	DECLARACAO_antoniovandre_eval_str6
+
 	int inicio;
 	int fim;
 	int i;
@@ -3978,6 +4142,16 @@ char * antoniovandre_eval (char * str)
 			{char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 		} while (! ((flag == NUMEROZERO) && (flag2 == NUMEROZERO)));
 
+	if (GNUGT)
+		{
+		free (str6);
+		free (str5);
+		free (str4t);
+		free (str4);
+		free (str3);
+		free (str2t);
+		}
+
 	return antoniovandre_evalcelula (str2);
 	}
 
@@ -3987,8 +4161,8 @@ char * antoniovandre_derivada (char * str, TIPONUMEROREAL ponto)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	char str2 [TAMANHO_BUFFER_PHRASE];
@@ -4009,7 +4183,7 @@ char * antoniovandre_derivada (char * str, TIPONUMEROREAL ponto)
 			char temps [TAMANHO_BUFFER_WORD];
 
 			char * temp = antoniovandre_numeroparastring ((TIPONUMEROREAL) ((TIPONUMEROREAL) ponto + (TIPONUMEROREAL) EPSILON));
-			antoniovandre_copiarstring(temps, temp);
+			antoniovandre_copiarstring (temps, temp);
 			free (temp);
 
 			tc = TOKENINICIOEVAL;
@@ -4062,8 +4236,8 @@ char * antoniovandre_integraldefinida (char * str, TIPONUMEROREAL a, TIPONUMEROR
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	char str2 [TAMANHO_BUFFER_PHRASE];
@@ -4124,19 +4298,27 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	FILE * arquivopontos;
 	FILE * arquivofuncoes;
-	char buffer [TAMANHO_BUFFER_PHRASE];
-	char buffert [TAMANHO_BUFFER_PHRASE];
-	char buffertt [TAMANHO_BUFFER_PHRASE];
-	char * bufferr = (char *) malloc(TAMANHO_BUFFER_PHRASE);
-	char bufferr2 [TAMANHO_BUFFER_PHRASE];
-	char buffer1 [TAMANHO_BUFFER_WORD];
-	char buffer2 [TAMANHO_BUFFER_WORD];
+
+	DECLARACAO_antoniovandre_funcaomaisproxima_buffer
+
+	DECLARACAO_antoniovandre_funcaomaisproxima_buffert
+
+	DECLARACAO_antoniovandre_funcaomaisproxima_buffertt
+
+	char * bufferr = (char *) malloc (TAMANHO_BUFFER_PHRASE);
+
+	DECLARACAO_antoniovandre_funcaomaisproxima_bufferr2
+
+	DECLARACAO_antoniovandre_funcaomaisproxima_buffer1
+
+	DECLARACAO_antoniovandre_funcaomaisproxima_buffer2
+
 	char antoniovandre_funcoes_buffer_char;
 	char antoniovandre_pontos_buffer_char;
 	unsigned long int totalitens = NUMEROZERO;
@@ -4203,7 +4385,7 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 
 	fseek (arquivofuncoes, NUMEROZERO, SEEK_SET);
 
-	if (log == NUMEROUM) printf("Ok.\n");
+	if (log == NUMEROUM) printf ("Ok.\n");
 
 	if (log == NUMEROUM)
 		{
@@ -4283,7 +4465,7 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 
 	totalitens = totalpontos * totalfuncoes;
 
-	if (log == NUMEROUM) printf("\bOk.\n");
+	if (log == NUMEROUM) printf ("\bOk.\n");
 
 	fseek (arquivopontos, NUMEROZERO, SEEK_SET);
 	fseek (arquivofuncoes, NUMEROZERO, SEEK_SET);
@@ -4374,7 +4556,7 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 					char temps [TAMANHO_BUFFER_WORD];
 
 					char * temp = antoniovandre_numeroparastring ((TIPONUMEROREAL) x);
-					antoniovandre_copiarstring(temps, temp);
+					antoniovandre_copiarstring (temps, temp);
 					free (temp);
 
 					tc2 = TOKENINICIOEVAL;
@@ -4440,6 +4622,16 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 	fclose (arquivopontos);
 	fclose (arquivofuncoes);
 
+	if (GNUGT)
+		{
+		free (buffer2);
+		free (buffer1);
+		free (bufferr2);
+		free (buffertt);
+		free (buffert);
+		free (buffer);
+		}
+
 	return bufferr;
 	}
 
@@ -4449,8 +4641,8 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return STRINGVAZIA;
 		}
 
 	TIPONUMEROREAL min;
@@ -4517,7 +4709,7 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 				char temps [TAMANHO_BUFFER_WORD];
 
 				char * temp = antoniovandre_numeroparastring (x);
-				antoniovandre_copiarstring(temps, temp);
+				antoniovandre_copiarstring (temps, temp);
 				free (temp);
 
 				tc = TOKENINICIOEVAL;
@@ -4584,7 +4776,7 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 							char temps [TAMANHO_BUFFER_WORD];
 
 							char * temp = antoniovandre_numeroparastring (xr);
-							antoniovandre_copiarstring(temps, temp);
+							antoniovandre_copiarstring (temps, temp);
 							free (temp);
 
 							tc = DELIMITADORSTRING;
@@ -4630,8 +4822,9 @@ NUMEROCOMPLEXO antoniovandre_produtocomplexo (NUMEROCOMPLEXO * numeroscomplexos,
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		NUMEROCOMPLEXO z; z.real = 0; z.img = 0;
+		return z;
 		}
 
 	NUMEROCOMPLEXO result;
@@ -4662,8 +4855,8 @@ int antoniovandre_dimensoesmatriz (TIPONUMEROREAL ** matriz, int lc)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	int i = NUMEROZERO;
@@ -4691,8 +4884,8 @@ TIPONUMEROREAL ** antoniovandre_removerlinhacoluna (TIPONUMEROREAL ** matriz, in
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	TIPONUMEROREAL ** matrizt;
@@ -4738,8 +4931,8 @@ TIPONUMEROREAL antoniovandre_determinante (TIPONUMEROREAL ** matriz)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	TIPONUMEROREAL det = NUMEROZERO;
@@ -4776,8 +4969,8 @@ int antoniovandre_copiarstring (char * dest, char * orig)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	unsigned long int tam = TAMANHO_BUFFER_PHRASE;
@@ -4807,8 +5000,8 @@ int antoniovandre_concatenarstring (char * dest, char * orig)
 	{
 	if (! (COMPILAR))
 		{
-		printf(MENSAGEMNAOCOMPILADOR);
-		return;
+		puts (MENSAGEMNAOCOMPILADOR);
+		return NUMEROZERO;
 		}
 
 	unsigned long int tam = TAMANHO_BUFFER_PHRASE;
