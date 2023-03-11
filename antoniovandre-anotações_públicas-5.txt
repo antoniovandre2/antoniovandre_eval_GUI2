@@ -3,6 +3,134 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+11-03-2023
+__
+
+Em minha engine 3D, os principais problemas são as distorções para Phi próximo de pi/2 ou -pi/2, mas como há muitos games que poem limites para Phi, acho que posso sim ser orgulhoso quanto à minha engine, orgulhoso porque programação não é o meu foco, entretanto cheguei onde muitos programadores chegaram.
+_____
+
+11-03-2023
+__
+
+Quanto à engine 3D, guardo um orgulho parcial, intermediário, por ter escrito uma, porém não perfeita.
+_____
+
+11-03-2023
+__
+
+Tudo bem não ter uma engine 3D perfeita, perfeição cobro-me quanto à Matemática.
+
+Posso imaginar-me como um Matemático que viveu até os anos 90, em que não precisava desenvolver softwares sofisticados, não me comparando com os atuais.
+
+Também deixo espaços abertos para futuramente me aperfeiçoar quanto à programação gráfica, no processo evolutivo.
+_____
+
+11-03-2023
+__
+
+Para o perfeito funcionamento de minha engine 3D, os objetos tem de ser pequenos, e não estarem muito próximos à tela virtual, ou há distorções e glitches.
+
+Basta isto, e pode-se dar total liberdade aos ângulos e rotações.
+_____
+
+11-03-2023
+__
+
+E tudo bem se não conseguir tudo o que desejei. Há um ditado que diz: mirar a Lua para estar entre as estrelas...
+_____
+
+10-03-2023
+__
+
+Ainda bem que minhas preocupações são quanto a softwares; preocupações sérias mesmo são as morais, as que tocam em nossa dignidade...
+_____
+
+10-03-2023
+__
+
+Quanto aos problemas que ainda não resolvi, já não me incomodo muito, pois já provei a mim mesmo que posso resolver questões difíceis...
+_____
+
+10-03-2023
+__
+
+Se programação está me estressando, é melhor continuar. =)
+
+Desenvolvo mais paciência...
+_____
+
+10-03-2023
+__
+
+Ao criar games, lembrar também de dar bons gráficos e efeitos sonoros, não me preocupar unicamente com os algoritmos.
+_____
+
+10-03-2023
+__
+
+É um alívio retornar ao perfeccionismo... Posso voltar a construir mais sobre bases firmes...
+_____
+
+10-03-2023
+__
+
+Finalmente, depois de muito tentar não por esta restrição, decidi dar um intervalo de variação a Phi em meus games 3D.
+
+Reconheço minhas limitações, mas já são um grande feito.
+
+Pondo os marcos em minha engine, ela passa do estado de "imperfeita" para "perfeita dados limites", o que é melhor.
+
+Ter uma engine 3D, perfeita, é importante para mim, pois sou muito ligado a games.
+_____
+
+10-03-2023
+__
+
+Sim, as ocupações com o intuito de evitar o ócio também podem ser estressantes, mas este estresse, na grande maioria das vezes, é construtivo.
+_____
+
+10-03-2023
+__
+
+Aprendi a ter medo do ócio. Logo estar construindo algo qualquer...
+_____
+
+10-03-2023
+__
+
+Com Matemática e programação, não unicamente ocupando o tempo, o que já é bom, mas também ganhando mais maturidade com Matemática.
+_____
+
+10-03-2023
+__
+
+Com um melhor bem-estar emocional, tudo bem ter poucas horas de sono, sinto-me inteiro, e isto é uma grande felicitação para mim, pois já sofri bastante com isto.
+_____
+
+10-03-2023
+__
+
+Não trabalhar pensando logo em concluir, pois mais trabalhos serão necessários, e a principal razão é para se manter bem emocionalmente...
+_____
+
+10-03-2023
+__
+
+Uma outra opção de repousar a mente é sobre as rotinas, como sobre estudos ou um trabalho que gosta de realizar.
+_____
+
+09-03-2023
+__
+
+Mais perfeccionista quanto ao Eu, já não me cobro tanto ser perfeccionista quanto às demais coisas, inclusive quanto à Matemática, pois o Eu é mais importante...
+_____
+
+09-03-2023
+__
+
+Observando melhor, minha engine 3D possui algumas falhas, mas já houveram grandes progressos, posso aperfeiçoar mais depois.
+_____
+
 09-03-2023
 __
 
