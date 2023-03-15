@@ -3,6 +3,80 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+14-03-2023
+__
+
+Assim como, em Cálculo, há muitas funções das quais não se sabe a primitiva, também em meu algoritmo de renderização 3D há ressalvas, pequenos engenhos que contornam a não perfeição absoluta. Este saber me conforta.
+_____
+
+14-03-2023
+__
+
+Estudando rotações cartesianas aqui, encontrei um meio de tornar meu algoritmo mais simples e eficiente, porém é um tanto trabalhoso implementar. De todo modo, isto me deixa mais tranquilo, pois o que já tenho já é parcialmente satisfatório, e tenho luzes sobre como melhorar.
+_____
+
+14-03-2023
+__
+
+Dizem alguns que, na Matemática, se está simples e fácil, há erro; mas eu digo que, se não está simples, harmônico e belo, aí sim há erro...
+_____
+
+14-03-2023
+__
+
+Com os times grandes perdendo, o Palmeiras vai jogar apreensivo.
+_____
+
+14-03-2023
+__
+
+A fim de evitar problemas, amar mais a algo que a mim mesmo...
+_____
+
+14-03-2023
+__
+
+O algoritmo de minha engine 3D é complexo, não possui uma simplicidade harmoniosa e bela, mas funciona; e, sendo um algoritmo que funciona, eu como apaixonado por Matemática e programação, também devo amar.
+_____
+
+14-03-2023
+__
+
+Poderia estar enfrentando problemas psicológicos, mas estou ocupado jogando...
+_____
+
+14-03-2023
+__
+
+Os demais campos do conhecimento também podem ser considerados "games", onde o "jogar" está em resolver os problemas concernentes.
+_____
+
+14-03-2023
+__
+
+Ser Matemático é uma especialização do ser gamer...
+_____
+
+14-03-2023
+__
+
+Após muito jogar, pode se tornar uma atividade tediosa, mas é o que devo sempre fazer...
+_____
+
+14-03-2023
+__
+
+Preocupando-me quase unicamente com Matemática, tudo bem perder a mania de limpeza, ser um pouco sujo.
+
+O importante é como estamos por dentro...
+_____
+
+14-03-2023
+__
+
+A paz de me preocupar quase unicamente com Matemática...
+_____
+
 13-03-2023
 __
 
