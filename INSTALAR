@@ -411,7 +411,7 @@ if [ "${1}" == "instalar" ] && ! hash md5sum &>> /dev/null; then echo -e "${AV_V
 
 if [ "${1}" == "instalar" ] && ! hash python3 &>> /dev/null; then echo -e "${AV_VERMELHO}${PYTHONNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
 
-if [ $(python3 --version | cut -d "." -f 2) -lt "7" ] && ! hash python3 &>> /dev/null; then echo -e "${AV_VERMELHO}${PYTHONNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
+if [ "${1}" == "instalar" ] && [ $(python3 --version | cut -d "." -f 2) -lt "7" ] && ! hash python3 &>> /dev/null; then echo -e "${AV_VERMELHO}${PYTHONNAOENCONTRADO}${AV_SEMCOR}."; exit 1; fi
 
 if [ "${1}" == "instalar" ] && ! ls INSTALAR &>> /dev/null; then echo -e "${AV_VERMELHO}${INSTALEDODIRETORIO}${AV_SEMCOR}."; exit 1; fi
 
