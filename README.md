@@ -14,7 +14,7 @@ Uma calculadora desenvolvida em C, com interface gráfica em Python.
 
 Versão para Linux.
 
-Última atualização: 27-02-2023.
+Última atualização: 18-04-2023.
 _____
 
 Instale através do script "INSTALAR", com o argumento "instalar", e desinstale através do mesmo script "INSTALAR" com o argumento "desinstalar". Um executável "antoniovandre_eval_gui" será criado e posto no PATH.
@@ -54,7 +54,7 @@ _____
 
 Dependências:
 
-"bash", "gcc", "md5sum", "python3", Tcl/Tk.
+"bash", "gcc", "md5sum", "python3 >= 7".
 ____________________
 
 Por limitações do compilador/hardware, quando são muitos os dígitos significativos, os mais desprezíveis podem ser ignorados.

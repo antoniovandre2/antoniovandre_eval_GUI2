@@ -31,7 +31,7 @@ A calculator developed in C, with graphical interface in Python.
 
 Linux version.
 
-Last updated: 02-27-2023.
+Last updated: 04-18-2023.
 _____
 
 Install using the "INSTALAR" script, with "instalar" as the first argument and "en" as second argument for install english version, and uninstall using the same "INSTALAR" script with the "desinstalar" argument, optionally, not mandatory, "en" as a second argument if you want to see messages in English. An executable "antoniovandre_eval_gui" will be created and placed in PATH.
@@ -41,7 +41,7 @@ _____
 
 Dependencies:
 
-"bash", "gcc", "md5sum", "python3", Tcl/Tk.
+"bash", "gcc", "md5sum", "python3 >= 7".
 ____________________
 
 Due to compiler/hardware limitations, when there are many significant digits, the most negligible digits can be ignored.
