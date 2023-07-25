@@ -1,4 +1,4 @@
-Número de acertos: 2159. Número de erros: 9. MD5sum: 52361589e438f232790040779fa7510d.
+Número de acertos: 2248. Número de erros: 10. MD5sum: 8395b0b3b000e27dd2256c92d96ae7a1.
 Quanto é 26 + 28? Resposta: 54. Acertou. Em 17/10/2021 @ 19:45:22.
 Quanto é 39 - 66? Resposta: -27. Acertou. Em 17/10/2021 @ 19:45:36.
 Quanto é 44 - 11? Resposta: 33. Acertou. Em 17/10/2021 @ 21:44:6.
@@ -2167,3 +2167,93 @@ Quanto é 8 x 14? Resposta: 112. Acertou. Em 25/7/2023 @ 12:22:58.
 Quanto é 60 + 83? Resposta: 143. Acertou. Em 25/7/2023 @ 12:23:6.
 Quanto é 5 x 4? Resposta: 20. Acertou. Em 25/7/2023 @ 12:23:13.
 Quanto é 7 / 7? Resposta: 1. Acertou. Em 25/7/2023 @ 12:23:17.
+Quanto é 21 + 47? Resposta: 68. Acertou. Em 25/7/2023 @ 12:29:20.
+Quanto é 3^2? Resposta: 9. Acertou. Em 25/7/2023 @ 12:29:24.
+Quanto é 2^4? Resposta: 16. Acertou. Em 25/7/2023 @ 12:29:30.
+Quanto é 10 x 12? Resposta: 120. Acertou. Em 25/7/2023 @ 12:29:36.
+Quanto é 14 x 6? Resposta: 84. Acertou. Em 25/7/2023 @ 12:29:46.
+Quanto é 24 + 44? Resposta: 68. Acertou. Em 25/7/2023 @ 12:30:31.
+Quanto é 86 - 34? Resposta: 52. Acertou. Em 25/7/2023 @ 13:4:22.
+Quanto é 48 / 8? Resposta: 6. Acertou. Em 25/7/2023 @ 13:4:29.
+Quanto é 31 - 86? Resposta: -55. Acertou. Em 25/7/2023 @ 13:4:39.
+Quanto é 5^2? Resposta: 25. Acertou. Em 25/7/2023 @ 13:4:44.
+Quanto é 79 - 93? Resposta: -14. Acertou. Em 25/7/2023 @ 13:5:53.
+Quanto é 3^7? Resposta: 2187. Acertou. Em 25/7/2023 @ 13:6:53.
+Quanto é 69 + 10? Resposta: 79. Acertou. Em 25/7/2023 @ 13:7:4.
+Quanto é 69 + 56? Resposta: 125. Acertou. Em 25/7/2023 @ 13:8:7.
+Quanto é 164 / 82? Resposta: 2. Acertou. Em 25/7/2023 @ 13:8:14.
+Quanto é 23 + 72? Resposta: 95. Acertou. Em 25/7/2023 @ 13:45:29.
+Quanto é 2 x 6? Resposta: 12. Acertou. Em 25/7/2023 @ 13:45:35.
+Quanto é 144 / 3? Resposta: 48. Acertou. Em 25/7/2023 @ 13:45:47.
+Quanto é 14 x 7? Resposta: 98. Acertou. Em 25/7/2023 @ 13:45:59.
+Quanto é 91 + 18? Resposta: 109. Acertou. Em 25/7/2023 @ 13:46:8.
+Quanto é 136 / 8? Resposta: 17. Acertou. Em 25/7/2023 @ 13:51:34.
+Quanto é 83 + 7? Resposta: 90. Acertou. Em 25/7/2023 @ 13:57:30.
+Quanto é 30 / 6? Resposta: 5. Acertou. Em 25/7/2023 @ 13:57:34.
+Quanto é 64 + 22? Resposta: 86. Acertou. Em 25/7/2023 @ 13:57:51.
+Quanto é 10 x 11? Resposta: 110. Acertou. Em 25/7/2023 @ 13:57:58.
+Quanto é 6 + 72? Resposta: 78. Acertou. Em 25/7/2023 @ 13:58:4.
+Quanto é 44 + 4? Resposta: 48. Acertou. Em 25/7/2023 @ 14:5:14.
+Quanto é 46 + 56? Resposta: 102. Acertou. Em 25/7/2023 @ 14:5:24.
+Quanto é 50 + 97? Resposta: 147. Acertou. Em 25/7/2023 @ 14:5:34.
+Quanto é 14 x 8? Resposta: 102. Errou. Em 25/7/2023 @ 14:5:45.
+Quanto é 14 x 8? Resposta: 112. Acertou. Em 25/7/2023 @ 14:5:58.
+Quanto é 156 / 78? Resposta: 2. Acertou. Em 25/7/2023 @ 14:6:19.
+Quanto é 66 / 6? Resposta: 11. Acertou. Em 25/7/2023 @ 14:6:25.
+Quanto é 93 / 31? Resposta: 3. Acertou. Em 25/7/2023 @ 14:6:30.
+Quanto é 8 x 6? Resposta: 48. Acertou. Em 25/7/2023 @ 14:6:37.
+Quanto é 40 / 5? Resposta: 8. Acertou. Em 25/7/2023 @ 14:6:43.
+Quanto é 3 x 9? Resposta: 27. Acertou. Em 25/7/2023 @ 14:6:47.
+Quanto é 3 x 3? Resposta: 9. Acertou. Em 25/7/2023 @ 14:6:51.
+Quanto é 184 / 4? Resposta: 46. Acertou. Em 25/7/2023 @ 14:7:20.
+Quanto é 4 x 2? Resposta: 8. Acertou. Em 25/7/2023 @ 14:7:23.
+Quanto é 24 + 60? Resposta: 84. Acertou. Em 25/7/2023 @ 14:7:33.
+Quanto é 8^3? Resposta: 512. Acertou. Em 25/7/2023 @ 14:7:44.
+Quanto é 71 + 38? Resposta: 109. Acertou. Em 25/7/2023 @ 14:7:54.
+Quanto é 5^3? Resposta: 125. Acertou. Em 25/7/2023 @ 14:20:21.
+Quanto é 144 / 9? Resposta: 16. Acertou. Em 25/7/2023 @ 14:20:31.
+Quanto é 40 - 56? Resposta: -16. Acertou. Em 25/7/2023 @ 14:20:38.
+Quanto é 65 - 63? Resposta: 2. Acertou. Em 25/7/2023 @ 14:20:48.
+Quanto é 17 - 45? Resposta: -28. Acertou. Em 25/7/2023 @ 14:21:31.
+Quanto é 3 x 5? Resposta: 15. Acertou. Em 25/7/2023 @ 14:21:36.
+Quanto é 54 + 91? Resposta: 145. Acertou. Em 25/7/2023 @ 14:21:49.
+Quanto é 3 - 66? Resposta: -63. Acertou. Em 25/7/2023 @ 14:21:55.
+Quanto é 64 - 60? Resposta: 4. Acertou. Em 25/7/2023 @ 14:21:59.
+Quanto é 38 - 95? Resposta: -57. Acertou. Em 25/7/2023 @ 14:22:19.
+Quanto é 8 - 56? Resposta: -48. Acertou. Em 25/7/2023 @ 14:22:29.
+Quanto é 14 x 4? Resposta: 56. Acertou. Em 25/7/2023 @ 14:32:43.
+Quanto é 88 / 88? Resposta: 1. Acertou. Em 25/7/2023 @ 14:32:46.
+Quanto é 95 - 92? Resposta: 3. Acertou. Em 25/7/2023 @ 14:32:50.
+Quanto é 2^7? Resposta: 128. Acertou. Em 25/7/2023 @ 14:32:56.
+Quanto é 64 + 33? Resposta: 97. Acertou. Em 25/7/2023 @ 16:23:8.
+Quanto é 16 - 63? Resposta: -47. Acertou. Em 25/7/2023 @ 16:23:21.
+Quanto é 3^3? Resposta: 27. Acertou. Em 25/7/2023 @ 16:23:26.
+Quanto é 42 - 72? Resposta: -30. Acertou. Em 25/7/2023 @ 16:40:12.
+Quanto é 144 / 6? Resposta: 24. Acertou. Em 25/7/2023 @ 16:40:20.
+Quanto é 4^3? Resposta: 64. Acertou. Em 25/7/2023 @ 16:40:25.
+Quanto é 4^8? Resposta: 65536. Acertou. Em 25/7/2023 @ 16:42:53.
+Quanto é 6 x 3? Resposta: 18. Acertou. Em 25/7/2023 @ 16:42:58.
+Quanto é 45 - 68? Resposta: -23. Acertou. Em 25/7/2023 @ 16:43:21.
+Quanto é 3 x 7? Resposta: 21. Acertou. Em 25/7/2023 @ 16:55:14.
+Quanto é 58 - 32? Resposta: 26. Acertou. Em 25/7/2023 @ 16:55:26.
+Quanto é 3^3? Resposta: 27. Acertou. Em 25/7/2023 @ 16:55:31.
+Quanto é 13 x 8? Resposta: 104. Acertou. Em 25/7/2023 @ 16:55:41.
+Quanto é 192 / 3? Resposta: 64. Acertou. Em 25/7/2023 @ 16:56:5.
+Quanto é 72 / 4? Resposta: 18. Acertou. Em 25/7/2023 @ 17:4:28.
+Quanto é 1 - 67? Resposta: -66. Acertou. Em 25/7/2023 @ 17:4:33.
+Quanto é 32 + 57? Resposta: 89. Acertou. Em 25/7/2023 @ 17:4:45.
+Quanto é 160 / 16? Resposta: 10. Acertou. Em 25/7/2023 @ 17:4:54.
+Quanto é 66 + 29? Resposta: 95. Acertou. Em 25/7/2023 @ 17:5:7.
+Quanto é 22 - 84? Resposta: -62. Acertou. Em 25/7/2023 @ 17:5:17.
+Quanto é 180 / 9? Resposta: 20. Acertou. Em 25/7/2023 @ 17:9:55.
+Quanto é 116 / 2? Resposta: 58. Acertou. Em 25/7/2023 @ 17:10:3.
+Quanto é 0 + 49? Resposta: 49. Acertou. Em 25/7/2023 @ 17:10:8.
+Quanto é 126 / 7? Resposta: 18. Acertou. Em 25/7/2023 @ 17:11:4.
+Quanto é 96 + 65? Resposta: 161. Acertou. Em 25/7/2023 @ 17:11:36.
+Quanto é 94 + 49? Resposta: 143. Acertou. Em 25/7/2023 @ 17:33:6.
+Quanto é 9 x 4? Resposta: 36. Acertou. Em 25/7/2023 @ 17:33:10.
+Quanto é 4 x 7? Resposta: 28. Acertou. Em 25/7/2023 @ 17:33:14.
+Quanto é 33 + 26? Resposta: 59. Acertou. Em 25/7/2023 @ 17:33:22.
+Quanto é 8^3? Resposta: 512. Acertou. Em 25/7/2023 @ 17:33:28.
+Quanto é 6 x 6? Resposta: 36. Acertou. Em 25/7/2023 @ 17:33:33.
+Quanto é 67 + 91? Resposta: 158. Acertou. Em 25/7/2023 @ 17:33:42.
