@@ -1,4 +1,4 @@
-Número de acertos: 2248. Número de erros: 10. MD5sum: 8395b0b3b000e27dd2256c92d96ae7a1.
+Número de acertos: 2271. Número de erros: 10. MD5sum: 2f9ec9572f662a39da5824973084709d.
 Quanto é 26 + 28? Resposta: 54. Acertou. Em 17/10/2021 @ 19:45:22.
 Quanto é 39 - 66? Resposta: -27. Acertou. Em 17/10/2021 @ 19:45:36.
 Quanto é 44 - 11? Resposta: 33. Acertou. Em 17/10/2021 @ 21:44:6.
@@ -2257,3 +2257,26 @@ Quanto é 33 + 26? Resposta: 59. Acertou. Em 25/7/2023 @ 17:33:22.
 Quanto é 8^3? Resposta: 512. Acertou. Em 25/7/2023 @ 17:33:28.
 Quanto é 6 x 6? Resposta: 36. Acertou. Em 25/7/2023 @ 17:33:33.
 Quanto é 67 + 91? Resposta: 158. Acertou. Em 25/7/2023 @ 17:33:42.
+Quanto é 3^9? Resposta: 19683. Acertou. Em 2/9/2023 @ 12:36:2.
+Quanto é 5 x 10? Resposta: 50. Acertou. Em 2/9/2023 @ 12:36:9.
+Quanto é 198 / 3? Resposta: 66. Acertou. Em 2/9/2023 @ 12:37:19.
+Quanto é 14 x 10? Resposta: 140. Acertou. Em 2/9/2023 @ 12:37:24.
+Quanto é 4^5? Resposta: 1024. Acertou. Em 2/9/2023 @ 12:37:32.
+Quanto é 95 - 4? Resposta: 91. Acertou. Em 2/9/2023 @ 12:37:39.
+Quanto é 27 + 5? Resposta: 32. Acertou. Em 2/9/2023 @ 12:38:0.
+Quanto é 8^2? Resposta: 64. Acertou. Em 2/9/2023 @ 12:39:28.
+Quanto é 2 x 6? Resposta: 12. Acertou. Em 2/9/2023 @ 12:39:32.
+Quanto é 9 x 5? Resposta: 45. Acertou. Em 2/9/2023 @ 12:39:39.
+Quanto é 7 + 75? Resposta: 82. Acertou. Em 2/9/2023 @ 12:39:47.
+Quanto é 96 + 31? Resposta: 127. Acertou. Em 2/9/2023 @ 12:51:0.
+Quanto é 51 + 55? Resposta: 106. Acertou. Em 2/9/2023 @ 12:51:7.
+Quanto é 9 x 6? Resposta: 54. Acertou. Em 2/9/2023 @ 12:51:13.
+Quanto é 3^7? Resposta: 2187. Acertou. Em 2/9/2023 @ 12:51:55.
+Quanto é 9 x 3? Resposta: 27. Acertou. Em 2/9/2023 @ 12:52:1.
+Quanto é 30 / 5? Resposta: 6. Acertou. Em 2/9/2023 @ 12:52:6.
+Quanto é 143 / 11? Resposta: 13. Acertou. Em 2/9/2023 @ 13:2:49.
+Quanto é 6 x 14? Resposta: 84. Acertou. Em 2/9/2023 @ 13:3:6.
+Quanto é 2 x 7? Resposta: 14. Acertou. Em 2/9/2023 @ 13:3:11.
+Quanto é 3^9? Resposta: 19683. Acertou. Em 2/9/2023 @ 13:6:20.
+Quanto é 12^2? Resposta: 144. Acertou. Em 2/9/2023 @ 13:6:25.
+Quanto é 84 + 73? Resposta: 157. Acertou. Em 2/9/2023 @ 13:6:44.
