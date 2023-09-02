@@ -1,4 +1,4 @@
-Número de acertos: 2271. Número de erros: 10. MD5sum: 2f9ec9572f662a39da5824973084709d.
+Número de acertos: 2367. Número de erros: 11. MD5sum: 258699a96c83a2b0ae32d1eb26c22215.
 Quanto é 26 + 28? Resposta: 54. Acertou. Em 17/10/2021 @ 19:45:22.
 Quanto é 39 - 66? Resposta: -27. Acertou. Em 17/10/2021 @ 19:45:36.
 Quanto é 44 - 11? Resposta: 33. Acertou. Em 17/10/2021 @ 21:44:6.
@@ -2280,3 +2280,100 @@ Quanto é 2 x 7? Resposta: 14. Acertou. Em 2/9/2023 @ 13:3:11.
 Quanto é 3^9? Resposta: 19683. Acertou. Em 2/9/2023 @ 13:6:20.
 Quanto é 12^2? Resposta: 144. Acertou. Em 2/9/2023 @ 13:6:25.
 Quanto é 84 + 73? Resposta: 157. Acertou. Em 2/9/2023 @ 13:6:44.
+Quanto é 92 + 6? Resposta: 98. Acertou. Em 2/9/2023 @ 14:38:34.
+Quanto é 52 / 52? Resposta: 1. Acertou. Em 2/9/2023 @ 14:38:39.
+Quanto é 90 / 5? Resposta: 18. Acertou. Em 2/9/2023 @ 14:38:45.
+Quanto é 4^6? Resposta: 4096. Acertou. Em 2/9/2023 @ 14:39:4.
+Quanto é 5^2? Resposta: 25. Acertou. Em 2/9/2023 @ 14:39:9.
+Quanto é 91 - 98? Resposta: -7. Acertou. Em 2/9/2023 @ 14:39:16.
+Quanto é 11 - 29? Resposta: -18. Acertou. Em 2/9/2023 @ 14:46:35.
+Quanto é 156 / 52? Resposta: 3. Acertou. Em 2/9/2023 @ 14:46:44.
+Quanto é 11 x 5? Resposta: 55. Acertou. Em 2/9/2023 @ 14:46:48.
+Quanto é 3^2? Resposta: 9. Acertou. Em 2/9/2023 @ 14:46:55.
+Quanto é 2 x 4? Resposta: 8. Acertou. Em 2/9/2023 @ 14:46:59.
+Quanto é 3 x 4? Resposta: 12. Acertou. Em 2/9/2023 @ 14:47:22.
+Quanto é 47 - 83? Resposta: -36. Acertou. Em 2/9/2023 @ 14:47:57.
+Quanto é 2^4? Resposta: 16. Acertou. Em 2/9/2023 @ 14:48:3.
+Quanto é 36 / 18? Resposta: 2. Acertou. Em 2/9/2023 @ 14:48:10.
+Quanto é 4 x 2? Resposta: 8. Acertou. Em 2/9/2023 @ 14:48:14.
+Quanto é 20 / 20? Resposta: 1. Acertou. Em 2/9/2023 @ 14:48:17.
+Quanto é 5 + 6? Resposta: 11. Acertou. Em 2/9/2023 @ 14:48:27.
+Quanto é 3 x 12? Resposta: 36. Acertou. Em 2/9/2023 @ 14:48:31.
+Quanto é 4^8? Resposta: 65536. Acertou. Em 2/9/2023 @ 14:50:58.
+Quanto é 33 + 25? Resposta: 58. Acertou. Em 2/9/2023 @ 14:51:26.
+Quanto é 10 x 7? Resposta: 70. Acertou. Em 2/9/2023 @ 14:51:33.
+Quanto é 9^3? Resposta: 729. Acertou. Em 2/9/2023 @ 14:51:50.
+Quanto é 35 - 86? Resposta: -51. Acertou. Em 2/9/2023 @ 14:52:26.
+Quanto é 88 / 8? Resposta: 11. Acertou. Em 2/9/2023 @ 15:3:6.
+Quanto é 0 + 84? Resposta: 84. Acertou. Em 2/9/2023 @ 15:3:12.
+Quanto é 92 / 4? Resposta: 23. Acertou. Em 2/9/2023 @ 15:3:23.
+Quanto é 87 - 94? Resposta: -7. Acertou. Em 2/9/2023 @ 15:3:40.
+Quanto é 3^3? Resposta: 27. Acertou. Em 2/9/2023 @ 15:3:48.
+Quanto é 36 / 9? Resposta: 4. Acertou. Em 2/9/2023 @ 15:3:52.
+Quanto é 180 / 18? Resposta: 10. Acertou. Em 2/9/2023 @ 15:3:58.
+Quanto é 4^9? Resposta: 262144. Acertou. Em 2/9/2023 @ 15:8:40.
+Quanto é 71 - 35? Resposta: 36. Acertou. Em 2/9/2023 @ 15:9:1.
+Quanto é 93 - 90? Resposta: 3. Acertou. Em 2/9/2023 @ 15:9:8.
+Quanto é 2^2? Resposta: 4. Acertou. Em 2/9/2023 @ 15:9:12.
+Quanto é 13 + 67? Resposta: 80. Acertou. Em 2/9/2023 @ 15:9:23.
+Quanto é 49 - 49? Resposta: 0. Acertou. Em 2/9/2023 @ 15:11:45.
+Quanto é 44 + 45? Resposta: 89. Acertou. Em 2/9/2023 @ 15:11:58.
+Quanto é 85 - 24? Resposta: 61. Acertou. Em 2/9/2023 @ 15:12:25.
+Quanto é 145 / 5? Resposta: 29. Acertou. Em 2/9/2023 @ 15:12:46.
+Quanto é 3^2? Resposta: 9. Acertou. Em 2/9/2023 @ 15:12:54.
+Quanto é 13 x 5? Resposta: 65. Acertou. Em 2/9/2023 @ 15:13:6.
+Quanto é 7 x 5? Resposta: 35. Acertou. Em 2/9/2023 @ 15:20:23.
+Quanto é 15 + 61? Resposta: 76. Acertou. Em 2/9/2023 @ 15:20:36.
+Quanto é 99 + 31? Resposta: 130. Acertou. Em 2/9/2023 @ 15:20:43.
+Quanto é 50 - 79? Resposta: -29. Acertou. Em 2/9/2023 @ 15:20:49.
+Quanto é 3 x 5? Resposta: 15. Acertou. Em 2/9/2023 @ 15:20:53.
+Quanto é 78 - 63? Resposta: 15. Acertou. Em 2/9/2023 @ 15:21:6.
+Quanto é 4^2? Resposta: 16. Acertou. Em 2/9/2023 @ 15:21:11.
+Quanto é 4 x 14? Resposta: 56. Acertou. Em 2/9/2023 @ 15:21:20.
+Quanto é 4^5? Resposta: 1024. Acertou. Em 2/9/2023 @ 15:21:29.
+Quanto é 3^9? Resposta: 19683. Acertou. Em 2/9/2023 @ 15:23:12.
+Quanto é 4^9? Resposta: 262144. Acertou. Em 2/9/2023 @ 15:24:42.
+Quanto é 11 x 6? Resposta: 66. Acertou. Em 2/9/2023 @ 15:24:47.
+Quanto é 46 - 73? Resposta: -27. Acertou. Em 2/9/2023 @ 15:25:46.
+Quanto é 5 x 9? Resposta: 45. Acertou. Em 2/9/2023 @ 15:25:52.
+Quanto é 7^3? Resposta: 343. Acertou. Em 2/9/2023 @ 15:26:31.
+Quanto é 79 - 92? Resposta: -13. Acertou. Em 2/9/2023 @ 15:33:0.
+Quanto é 13 x 2? Resposta: 26. Acertou. Em 2/9/2023 @ 15:33:7.
+Quanto é 7 x 5? Resposta: 35. Acertou. Em 2/9/2023 @ 15:33:13.
+Quanto é 33 + 47? Resposta: 80. Acertou. Em 2/9/2023 @ 15:33:42.
+Quanto é 79 + 69? Resposta: 148. Acertou. Em 2/9/2023 @ 15:34:14.
+Quanto é 117 / 9? Resposta: 13. Acertou. Em 2/9/2023 @ 15:34:36.
+Quanto é 8 x 13? Resposta: 104. Acertou. Em 2/9/2023 @ 15:35:10.
+Quanto é 4 x 11? Resposta: 44. Acertou. Em 2/9/2023 @ 15:35:15.
+Quanto é 8 x 9? Resposta: 72. Acertou. Em 2/9/2023 @ 15:35:21.
+Quanto é 3 x 3? Resposta: 9. Acertou. Em 2/9/2023 @ 15:35:25.
+Quanto é 12 x 13? Resposta: 156. Acertou. Em 2/9/2023 @ 15:35:41.
+Quanto é 51 - 61? Resposta: -10. Acertou. Em 2/9/2023 @ 15:35:48.
+Quanto é 80 + 29? Resposta: 109. Acertou. Em 2/9/2023 @ 15:35:57.
+Quanto é 2^3? Resposta: 8. Acertou. Em 2/9/2023 @ 15:36:3.
+Quanto é 57 + 12? Resposta: 69. Acertou. Em 2/9/2023 @ 15:36:15.
+Quanto é 118 / 59? Resposta: 2. Acertou. Em 2/9/2023 @ 15:36:34.
+Quanto é 42 - 63? Resposta: -21. Acertou. Em 2/9/2023 @ 17:15:19.
+Quanto é 14 x 14? Resposta: 196. Acertou. Em 2/9/2023 @ 17:15:25.
+Quanto é 153 / 3? Resposta: 51. Acertou. Em 2/9/2023 @ 17:15:33.
+Quanto é 11 x 14? Resposta: 154. Acertou. Em 2/9/2023 @ 17:15:50.
+Quanto é 11 x 13? Resposta: 143. Acertou. Em 2/9/2023 @ 17:18:28.
+Quanto é 3 + 82? Resposta: 91. Errou. Em 2/9/2023 @ 17:43:40.
+Quanto é 3 + 82? Resposta: 85. Acertou. Em 2/9/2023 @ 17:43:57.
+Quanto é 55 - 46? Resposta: 9. Acertou. Em 2/9/2023 @ 17:44:20.
+Quanto é 3^9? Resposta: 19683. Acertou. Em 2/9/2023 @ 17:45:53.
+Quanto é 87 - 32? Resposta: 55. Acertou. Em 2/9/2023 @ 17:46:8.
+Quanto é 169 / 13? Resposta: 13. Acertou. Em 2/9/2023 @ 17:46:13.
+Quanto é 4 x 6? Resposta: 24. Acertou. Em 2/9/2023 @ 17:46:19.
+Quanto é 2^2? Resposta: 4. Acertou. Em 2/9/2023 @ 17:46:23.
+Quanto é 86 - 49? Resposta: 37. Acertou. Em 2/9/2023 @ 17:46:53.
+Quanto é 6 - 1? Resposta: 5. Acertou. Em 2/9/2023 @ 17:46:57.
+Quanto é 26 / 2? Resposta: 13. Acertou. Em 2/9/2023 @ 17:47:1.
+Quanto é 196 / 14? Resposta: 14. Acertou. Em 2/9/2023 @ 17:47:6.
+Quanto é 95 - 98? Resposta: -3. Acertou. Em 2/9/2023 @ 17:47:12.
+Quanto é 25 + 89? Resposta: 114. Acertou. Em 2/9/2023 @ 17:47:23.
+Quanto é 48 + 16? Resposta: 64. Acertou. Em 2/9/2023 @ 17:59:20.
+Quanto é 2^6? Resposta: 64. Acertou. Em 2/9/2023 @ 17:59:28.
+Quanto é 13 x 5? Resposta: 65. Acertou. Em 2/9/2023 @ 17:59:34.
+Quanto é 19 + 85? Resposta: 104. Acertou. Em 2/9/2023 @ 17:59:46.
+Quanto é 82 - 33? Resposta: 49. Acertou. Em 2/9/2023 @ 17:59:55.
