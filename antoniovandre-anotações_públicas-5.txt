@@ -2,3 +2,269 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 
 Arquivo de anotações públicas #5.
 ____________________
+
+26-09-2023
+__
+
+Para sentir-se realizado e organizado, não é preciso muito, podemos desejar, por exemplo, ser hábeis em um ofício ou eruditos em um campo do conhecimento; pensar assim nos poupa de muitos problemas e preocupações...
+_____
+
+26-09-2023
+__
+
+Não há melhor anestésico que a sensação de organização...
+_____
+
+26-09-2023
+__
+
+Se descubro um bug em um software meu, fico inquieto e perco o bom-humor; só me recobro depois de tudo perfeito.
+_____
+
+26-09-2023
+__
+
+Escrever também é arte, e nisto também acho que posso me considerar um artista...
+_____
+
+26-09-2023
+__
+
+Não preciso sempre por os links dos meus projetos em publicações, os interessados entram em meu perfil e os encontram.
+_____
+
+26-09-2023
+__
+
+Com o hábito de escrever, também me tornei mais íntimo das palavras e dos livros.
+_____
+
+26-09-2023
+__
+
+Tudo bem adicionar contatos um tanto aleatórios em redes sociais, depois posso excluir se me sentir incomodado.
+
+Atualmente tranquilamente isto faço, antes sentia-me mau...
+_____
+
+26-09-2023
+__
+
+Reconhecendo o privilégio de poder utilizar computadores, também escrevendo e jogando games um pouco exaustivamente, mesmo sem muitas vontades.
+_____
+
+26-09-2023
+__
+
+Utilizando o gcc como gerador de databases, deixo o "a.exe" como arquivo temporário, não excluo, é frequentemente utilizado.
+_____
+
+26-09-2023
+__
+
+Se ainda não teve contato com computadores ou ainda não começou a escrever, pode ter paz; mas uma vez iniciado, só terá sossego após organizar tudo, e é muito, muito a organizar...
+_____
+
+26-09-2023
+__
+
+Não descansando e um pouco exaustivamente utilizando computadores porque sei que é um privilégio; utilizo principalmente para o desenvolvimento de minha inteligência.
+_____
+
+26-09-2023
+__
+
+Um programador só tem paz depois que adquire experiência e depois de já ter construído um bom portfolio.
+_____
+
+26-09-2023
+__
+
+Para passar mais tempo do dia sossegado, já agora de manhã fiz a faxina geral em meu quarto. Assim posso desfrutar melhor do restante do dia.
+_____
+
+26-09-2023
+__
+
+Estou me apaixonando por estes reels do AV3DNavigator; publico no Facebook, YouTube, ArtStation, e salvo em minha cloud. Pretendo colecionar muitos.
+_____
+
+26-09-2023
+__
+
+Basta ter como objetivo principal o simples manter-se emocionalmente bem; naturalmente irão surgir problemas que nos farão trabalhar em prol do bem-estar, problemas que nos farão evoluir nos aspectos que realmente precisamos.
+_____
+
+26-09-2023
+__
+
+Se for se refinar e afastar-se um pouco do popular, encontrará a solidão, poucos espectadores.
+_____
+
+26-09-2023
+__
+
+Com muito já feito, estou me poupando um pouco porque hoje pretendo fazer uma limpeza geral em meu quarto.
+_____
+
+26-09-2023
+__
+
+Ao invés de publicar imediatamente após a conclusão, mesmo já pronto, estou programando para os melhores horários.
+_____
+
+25-09-2023
+__
+
+Em essência, programar é lidar com informações; assim qualquer manipulação e organização de informações é programação, não é preciso estar utilizando um computador.
+_____
+
+25-09-2023
+__
+
+Um programador tem que ter o que se chama de "wise dir" onde armazena seus projetos, consiste de um path somente com caracteres ASCII básicos.
+_____
+
+25-09-2023
+__
+
+No início o AV3DNavigator precisava ser iniciado e carregar o espaço por linha de comando, mas não deu muito trabalho implementar todas as funcionalidades em interface gráfica, fica mais amigável para um usuário final.
+_____
+
+25-09-2023
+__
+
+Passo horas em um projeto, mas é um tempo bem empregado, estou, além de outros ganhos, desenvolvendo minha inteligência.
+_____
+
+25-09-2023
+__
+
+Já disse um líder religioso "Nenhum sucesso compensa o fracasso no lar.", eu digo "Nenhum sucesso compensa o fracasso psico-emocional."...
+_____
+
+25-09-2023
+__
+
+Surgiu até a ideia de criar meu próprio formato de vídeo que fácil e de modo simples poderia ser implementado em meu software.
+_____
+
+25-09-2023
+__
+
+Esclarecendo as palavras, podemos associar depressão a desânimo, e felicidade e alegria a ânimo...
+_____
+
+25-09-2023
+__
+
+Até que consegui implementar um screen recorder nativo, mas com muitas e confusas dependências, então optei por ter simples funcionalidades, porém estando o software perfeitamente editado, legível, claro, limpo e elegante.
+_____
+
+25-09-2023
+__
+
+Já passou a hora do almoço, mas só vou comer depois; com mais fome, a comida fica mais saborosa. =)
+_____
+
+25-09-2023
+__
+
+A inquietude dura enquanto dura a insatisfação...
+_____
+
+25-09-2023
+__
+
+Já que o tamanho máximo de uma string em Java é mais de 2 bilhões de caracteres, strings podem ser utilizadas como databases.
+_____
+
+25-09-2023
+__
+
+Decepcionei-me um pouco com a FEB - Federação Espírita Brasileira - por se envolver com política...
+_____
+
+25-09-2023
+__
+
+Duas de minhas melhores decisões na vida: fazer barra fixa todos os dias, e por a inicialização de alguns dos meus softwares através de um launcher, para que haja atualizações automáticas.
+_____
+
+25-09-2023
+__
+
+Viver é isto: cumprir os deveres, suprir as necessidades, e manter o orgulho elevado mediante artes e ofícios...
+_____
+
+25-09-2023
+__
+
+Posso, opcionalmente, viver sem concluir a graduação, satisfazendo-me com os estudos autodidatas; já tenho o hábito e já alimentam consideravelmente o ego diariamente.
+_____
+
+25-09-2023
+__
+
+Toda pessoa que tem o hábito de praticar exercícios físicos tem que ter um remédio para gripe guardado; vez e outra o sistema imunológico fica fraco.
+_____
+
+25-09-2023
+__
+
+Independentemente de ter concluído ou ainda não a graduação, tenho amplos conhecimentos dentro de mim dos quais posso me orgulhar; e todos os dias acrescendo mais um pouquinho.
+_____
+
+25-09-2023
+__
+
+Entretanto terei que esperar um pouco antes de ingressar na Universidade devido a dificuldades financeiras, mas isto não significa que estarei parado, vou estudando, tanto revisando conteúdos para o vestibular, quanto progredindo no curso antes dele começar, para que a caminhada seja mais fácil.
+_____
+
+24-09-2023
+__
+
+Trabalhando na conclusão da graduação, ela também será uma espécie de socialização, a socialização de dizer: eu consegui... Algo aparentemente simples, porém que exige muito, e portanto de grande valor...
+_____
+
+24-09-2023
+__
+
+E após concluir a graduação, terei que traçar novos planos, desejar mais, e depois mais... Porém ainda está longe, o foco agora é a Universidade.
+_____
+
+24-09-2023
+__
+
+Satisfeitos com a vida, não crescemos; acho que, agora, vou pensar mais seriamente em concluir a graduação...
+_____
+
+24-09-2023
+__
+
+No comércio tem que se ter brutalidade, não sei ser bruto...
+_____
+
+24-09-2023
+__
+
+Assim como uma issue concebida, quando penso em criar um meme, só sossego completamente depois de o editar.
+_____
+
+24-09-2023
+__
+
+Alguns programadores metem o asterisco "*" nos imports, mas gosto de por somente os packages específicos que vou usar, para utilizar o mínimo de memória.
+_____
+
+24-09-2023
+__
+
+Tudo em ordem, mente livre para pensar em novas artes a criar, estou animado com o portfolio no ArtStation.
+_____
+
+24-09-2023
+__
+
+Quanto trabalho organizar as informações na internet... Deixei de ir hoje à igreja em razão disto, mas estou satisfeito.
+_____
