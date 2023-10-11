@@ -3,6 +3,124 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+11-10-2023
+__
+
+Vou ficar em minha "casinha matemática", não é a mais bela nem a mais elevada, mas é um lar aconchegante.
+_____
+
+11-10-2023
+__
+
+Só poderia voltar a viver plenamente os livros se deixasse tudo por aqui organizado, dados e softwares.
+_____
+
+11-10-2023
+__
+
+Estudar com livros não alimenta tanto o ego quanto desenvolver softwares, mas é um boa opção.
+
+Podemos comparar o "alimentar o ego" com uma espécie de "salário". O salário de uma atividade é o quanto de satisfação nos proporciona, ganhando dinheiro ou não...
+_____
+
+11-10-2023
+__
+
+Em ócio aqui, vou estudar mais um pouco com livros a fim de elevar meu ego e me livrar da melancolia e da inquietude...
+_____
+
+11-10-2023
+__
+
+Guerras não resolvem problemas, criam mais...
+_____
+
+11-10-2023
+__
+
+Manuseando diretamente o hardware, temos total liberdade; se usamos um framework, já teremos limitações; utilizando um software programado para o framework, teremos menos liberdade; ao utilizar um plugin do software, menos ainda.
+
+É um fenômeno interessante.
+_____
+
+11-10-2023
+__
+
+Com um bom portfolio de softwares, tranquilamente deixo para implementar novas issues depois, quando descansado; não são urgentes para o ego.
+_____
+
+11-10-2023
+__
+
+Usufruir bastante da companhia de mim mesmo porque quando me envolvo em um projeto de programação, geralmente passo o dia inteiro concentrado.
+_____
+
+11-10-2023
+__
+
+Programar é estressante, mas também divertido; às vezes é bom se envolver novamente, quando descansado.
+_____
+
+11-10-2023
+__
+
+Em um dos meus games, renderizo os objetos distantes com uma engine, e os próximos com outra engine, uma específica para objetos distantes, e a outra específica para objetos próximos.
+_____
+
+11-10-2023
+__
+
+Eu tomo medicamentos para dormir; ontem achei que não seria nada demais deixar um pouco mais que a metade de um comprimido, que é minha dosagem, e hoje acordei com muito sono.
+_____
+
+11-10-2023
+__
+
+Quando uma nova versão do gcc é lançada, tenho que verificar se meus softwares em C continuam funcionando bem; às vezes tenho que fazer modificações.
+_____
+
+11-10-2023
+__
+
+Ontem fiz um plugin que utiliza outro plugin, tudo desenvolvido por mim.
+_____
+
+11-10-2023
+__
+
+Com meus portfolios completos e organizados, sinto-me mais livre para então crescer intelectualmente mais com livros.
+_____
+
+11-10-2023
+__
+
+Não escrevendo, caminhando e progredindo em silêncio no contato comigo mesmo.
+_____
+
+10-10-2023
+__
+
+Hoje foi um dia cheio; vou dormir e ver se amanhã vou ter mais tempo para mim.
+_____
+
+10-10-2023
+__
+
+Mesmo com um elevado gasto calórico, prefiro comer pouco para poder comer guloseimas. Não procuro apenas me alimentar, mas também usufruir dos prazeres das comidas.
+_____
+
+10-10-2023
+__
+
+Minha cabeleira está inteira para quem já viveu tantos estresses...
+_____
+
+10-10-2023
+__
+
+O main em Java, e os plugins em C.
+_____
+
 10-10-2023
 __
 
