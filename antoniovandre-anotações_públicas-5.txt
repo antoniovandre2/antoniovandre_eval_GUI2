@@ -3,6 +3,184 @@ Proprietário: Antonio Vandré Pedrosa Furtunato Gomes (bit.ly/antoniovandre_leg
 Arquivo de anotações públicas #5.
 ____________________
 
+17-10-2023
+__
+
+Ao se cobrar dinheiro de alguém, meio que também está se dizendo a ela: dane-se...
+
+Devo deixar claro que não simpatizo com o capitalismo.
+_____
+
+17-10-2023
+__
+
+Já faz alguns dias que, concentrado em softwares, não faço a barba; pensei em deixar para fazer amanhã de manhã, mas pensei: tenho que ficar belo para mim mesmo, então fiz agora.
+_____
+
+17-10-2023
+__
+
+Como escritor, estou utilizando todas as circunstâncias para escrever diferentes pensamentos e ter registros mais completos, tanto dos bons quanto dos maus momentos...
+_____
+
+17-10-2023
+__
+
+Cada um deve ter seu modo de conceber novas ideias, o meu é quando deito para dormir e fico esperando o sono chegar.
+
+Às vezes fico muito animado e perco o sono.
+_____
+
+17-10-2023
+__
+
+Programando em C, não se deve confiar plenamente na "printf ()", deve-se evocá-la com poucos argumentos e, logo após a chamar, por um "fflush (stdout)".
+_____
+
+17-10-2023
+__
+
+No momento não quero me preocupar com nada, quero somente relaxar, estou precisando e mereço.
+_____
+
+17-10-2023
+__
+
+A excelência não está em fazer por dinheiro, está em fazer por amor...
+_____
+
+17-10-2023
+__
+
+A delícia de viver não tendo bugs a corrigir no grande portfolio...
+_____
+
+17-10-2023
+__
+
+Satisfeitíssimo com a vida, relaxando aqui com uma webradio e no YouTube.
+_____
+
+17-10-2023
+__
+
+Os plugins constroem os polígonos e o AV3DNavigator automaticamente e convenientemente dá o z-buffer a cada um.
+_____
+
+17-10-2023
+__
+
+Nem todos os dias serão bons como este, então estou usufruindo para, quando os maus dias chegarem, passar ocupado com tarefas.
+_____
+
+17-10-2023
+__
+
+Eu não teria a mesma vida se não gastasse alguns dias e muitas horas em concentração em alguns softwares, não me sentiria tão realizado.
+_____
+
+17-10-2023
+__
+
+Os artistas também vivem muito, pois tem mais experiências sem preocuparem-se com a utilidade do que fazem...
+_____
+
+17-10-2023
+__
+
+Já fui picado por um escorpião; não é tão mal como alguns pensam; apenas o local ficou um pouco dolorido por algumas horas, e nada mais ocorreu.
+_____
+
+16-10-2023
+__
+
+Já que nem tudo pode estar sempre bem e confortável, fazer de cada momento um momento produtivo para compensar.
+
+Esta é uma postura que devemos assumir por muitas vezes, pois por muitas vezes vivemos dores e sofrimentos; inerentes à existência...
+_____
+
+16-10-2023
+__
+
+Provavelmente nunca tudo estará 100% pefeito, então aprender a ser feliz mesmo não estando tudo em ordem.
+_____
+
+15-10-2023
+__
+
+Procurei e encontrei outro projeto de software para me ocupar, é bom e estimo que levarei uma ou mais semanas para concluir, mas, antes, vou descansar.
+_____
+
+15-10-2023
+__
+
+Com meditações, tocando aonde encontro mais ansiedades dentro de mim, também vou me acalmando, adquirindo um estado de mais paz, formando uma personalidade mais tranquila e serena...
+_____
+
+15-10-2023
+__
+
+Os vencedores da ansiedade são pessoas fortes...
+_____
+
+15-10-2023
+__
+
+Um segredo de uma boa taxa de atualização da tela é trabalhar todas as mudanças nos polígonos e, assim que os processamentos forem finalizados, exibir tudo em um único frame.
+_____
+
+15-10-2023
+__
+
+Quantas vezes não achei que um software meu estava perfeito, e, por curiosidade, fui ver detalhes e encontrei falhas... Ainda bem que corrijo todas.
+_____
+
+15-10-2023
+__
+
+A glória é a satisfação consigo mesmo...
+_____
+
+15-10-2023
+__
+
+Só foi possível a mim viver e estudar com calma após a conclusão de projetos que realizaram-me pessoalmente.
+_____
+
+15-10-2023
+__
+
+Estudar com calma, pois há uma infinidade de materiais para apreciar. Tudo bem deixar esta vida tendo ainda muito a ver...
+_____
+
+15-10-2023
+__
+
+Concentrado em softwares, hoje minha primeira refeição do dia foi às 18:30; antes um copo com água ao acordar, e depois só café.
+_____
+
+15-10-2023
+__
+
+Hoje passei mais um dia inteiro programando, concluí quando a noite chegou, e fiquei desejoso de fazer algo terapêutico, então fui limpar a casa e depois tomar um banho; proporciona uma sensação deliciosa.
+_____
+
+15-10-2023
+__
+
+Se dedico ao menos um mínimo de energias para evoluir em todos os aspectos, não há o porquê de competir com os outros.
+
+A competição é típica dos que ainda são socialmente dependentes, dos que não conseguem viver sozinhos...
+
+Caminhando olhando apenas para mim e para meus passos, tenho mais paz.
+_____
+
+15-10-2023
+__
+
+Com paz e tranquilidade vou vivendo deleitado sobre as conquistas e sobre o saber que posso viver unicamente com livros.
+_____
+
 14-10-2023
 __
 
