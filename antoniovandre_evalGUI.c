@@ -605,7 +605,7 @@ char * antoniovandre_parteliteralmonomio (char * str)
 
 // Número para string.
 
-char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
+const char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	{
 	int precisao = antoniovandre_precisao_real ();
 	char * strr = (char *) malloc (TAMANHO_BUFFER_WORD);
@@ -1096,7 +1096,7 @@ int antoniovandre_expressao (char * str)
 
 // Substring.
 
-char * antoniovandre_substring (char * str, int inicio, int fim)
+const char * antoniovandre_substring (char * str, int inicio, int fim)
 	{
 	if (! (COMPILAR))
 		{
@@ -1119,7 +1119,7 @@ char * antoniovandre_substring (char * str, int inicio, int fim)
 
 // Por falhas dos compiladores substituí as verificações "* err != NUMEROZERO" por "FALSIDADE".
 
-char * antoniovandre_evalcelulafuncao (char * str)
+const char * antoniovandre_evalcelulafuncao (char * str)
 	{
 	if (! (COMPILAR))
 		{
@@ -3487,8 +3487,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 		{
 		free (str2);
 		free (buffer);
-		free (funcoesconstantes [i].comentario);
-		free (funcoesconstantes [i].token);
+
+		for (i = NUMEROZERO; i < sizeof (funcoesconstantes); i++) if (i != 38)
+			{free (funcoesconstantes [i].token); free (funcoesconstantes [i].comentario);}
 		free (funcoesconstantes);
 		}
 
@@ -3500,7 +3501,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 // Função eval célula.
 
-char * antoniovandre_evalcelula (char * str)
+const char * antoniovandre_evalcelula (char * str)
 	{
 	if (! (COMPILAR))
 		{
@@ -3808,7 +3809,7 @@ char * antoniovandre_evalcelula (char * str)
 
 // Função eval.
 
-char * antoniovandre_eval (char * str)
+const char * antoniovandre_eval (char * str)
 	{
 	if (! (COMPILAR))
 		{
