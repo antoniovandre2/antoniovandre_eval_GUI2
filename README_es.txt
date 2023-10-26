@@ -30,8 +30,6 @@ ____________________
 Una calculadora desarrollada en C, con interfaz gráfica en Python.
 
 Versión de Linux.
-
-Última actualización: 18-04-2023.
 _____
 
 Instale usando el script "INSTALAR", con "instalar" como primer argumento y "es" como segundo argumento para instalar la versión en Español, y desinstale usando el mismo script "INSTALAR" con el argumento "desinstalar", opcionalmente, no obligatorio, "es" como segundo argumento si desea ver mensajes en Español. Se creará un archivo ejecutable "antoniovandre_eval_gui" y se colocará en PATH.
