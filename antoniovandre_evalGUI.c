@@ -6,7 +6,7 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 25-10-2023. Não considerando alterações em variáveis globais.
+// Última atualização: 03-06-2024. Não considerando alterações em variáveis globais.
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -18,11 +18,12 @@
 #include "antoniovandre_constantes.c"
 #include "antoniovandre_extra.c"
 
-#define VERSION 20231025
+#define VERSION 20240531
 #define MENSAGEMNAOCOMPILADOR "Software não compilado em razão do compilador não ser compatível."
 #define TAMANHO_BUFFER_SMALL 75 // Para pequenos buffers.
-#define TAMANHO_BUFFER_WORD 8192 // Para strings pequenas.
-#define TAMANHO_BUFFER_PHRASE 81920 // Para strings grandes.
+#define TAMANHO_BUFFER_WORD 1024 // Para strings pequenas.
+#define TAMANHO_BUFFER_PHRASE 8192 // Para strings grandes.
+#define TAMANHO_BUFFER_TEXT 50000000 // Para conteúdos de arquivos.
 #define VALOR_MAX 1000000000 // Afim de evitar erros de saída.
 #define VALOR_MAX_2 10000000 // Valor máximo. Segunda opção.
 #define VALOR_MAX_3 50 // Valor máximo. Terceira opção.
@@ -307,6 +308,86 @@ const char * antoniovandre_operadoresespeciais = "%@#$><:~";
 
 const char * antoniovandre_operadoresprioritarios = "^";
 
+// Copiando strings de forma segura.
+
+int antoniovandre_copiarstring (char * dest, char * orig)
+	{
+	unsigned long int tam = TAMANHO_BUFFER_PHRASE;
+	unsigned long int i;
+	char buffer;
+
+	for (i = NUMEROZERO; i < tam; i++)
+		{
+		if (dest[i] == '\0') break;
+		dest[i] = (char) NULL;
+		}
+
+	for (i = NUMEROZERO; i < tam; i++)
+		{
+		buffer = orig[i];
+		dest[i] = buffer;
+
+		if (buffer == '\0') break;
+		}
+
+	return NUMEROZERO;
+	}
+
+// Comparar strings com free nos argumentos.
+
+int antoniovandre_compararstringsfree (char * str1, char * str2)
+	{
+	int tam1 = strlen (str1);
+	int tam2 = strlen (str2);
+	int i;
+	int resultado;
+
+	if (tam1 != tam2) return NUMEROMENOSUM;
+
+	for (i = NUMEROZERO; i < tam1; i++)
+		if (str1[i] != str2 [i])
+			{
+			resultado = FALSIDADE;
+			break;
+			}
+
+	resultado = VERDADE;
+
+	if (GNUGT)
+		{
+		free (str1);
+		free (str2);
+		}
+
+	return resultado;
+	}
+
+// Concatenando strings de forma segura.
+
+int antoniovandre_concatenarstring (char * dest, char * orig)
+	{
+	unsigned long int tam = TAMANHO_BUFFER_PHRASE;
+	unsigned long int inicio = NUMEROZERO;
+	unsigned long int i;
+	char buffer;
+
+	for (i = NUMEROZERO; i < tam; i++)
+		{
+		if (dest[i] == '\0') break;
+		inicio++;
+		}
+
+	for (i = NUMEROZERO; i < tam; i++)
+		{
+		buffer = orig[i];
+		dest[inicio + i] = buffer;
+
+		if (buffer == '\0') break;
+		}
+
+	return NUMEROZERO;
+	}
+
 // Função de output do sobre/about dos softwares matemáticos.
 
 int antoniovandre_mathsobre ()
@@ -568,18 +649,18 @@ int antoniovandre_monomio (char * str)
 
 		if (flag == NUMEROUM)
 			for (j = NUMEROZERO; j < strlen (antoniovandre_letras); j++)
-				if (str [i - NUMEROUM] == antoniovandre_letras [j]) return NUMEROZERO;
+				if (str [i - NUMEROUM] == antoniovandre_letras [j]) return VERDADE;
 		}
 
-	for (i = NUMEROUM; i < strlen (str); i++) if (str [i] == OPERADORSUBTRACAO) return NUMEROZERO;
+	for (i = NUMEROUM; i < strlen (str); i++) if (str [i] == OPERADORSUBTRACAO) return VERDADE;
 
 	for (i = NUMEROZERO; i < strlen (str); i++)
-		{if (str [i] == '.') contador++; if (contador == 2) return NUMEROZERO;}
+		{if (str [i] == '.') contador++; if (contador == 2) return VERDADE;}
 
-	if (antoniovandre_compararstringsfree (antoniovandre_removerletras (antoniovandre_removernumeros (str)), STRINGVAZIA) || (! strcmp (str, "-")))
-		return NUMEROZERO;
+	if (antoniovandre_compararstringsfree (antoniovandre_removerletras (antoniovandre_removernumeros (str)), STRINGVAZIA))
+		return VERDADE;
 	else
-		return NUMEROMENOSUM;
+		return FALSIDADE;
 	}
 
 // Parte numérica de um monômio.
@@ -739,35 +820,6 @@ int antoniovandre_compararstringssemorden (char * str1, char * str2)
 	if (tam1 != tam2) return NUMEROMENOSUM;
 
 	return NUMEROZERO;
-	}
-
-// Comparar strings com free nos argumentos.
-
-int antoniovandre_compararstringsfree (char * str1, char * str2)
-	{
-	int tam1 = strlen (str1);
-	int tam2 = strlen (str2);
-	int i;
-	int resultado;
-
-	if (tam1 != tam2) return NUMEROMENOSUM;
-
-	for (i = NUMEROZERO; i < tam1; i++)
-		if (str1[i] != str2 [i])
-			{
-			resultado = FALSIDADE;
-			break;
-			}
-
-	resultado = VERDADE;
-
-	if (GNUGT)
-		{
-		free (str1);
-		free (str2);
-		}
-
-	return resultado;
 	}
 
 // Enésima substring de uma string separada por delimitadores. Inicia-se contando do NUMEROZERO;
@@ -4668,9 +4720,9 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 				{
 				if ((flag == NUMEROZERO) || ((TIPONUMEROREAL) contador2 > (0.1 / step)))
 					{
-					if (log == NUMEROUM) {printf ("\r100.00000%% concluído.\nInfinitas raízes encontradas. Trata-se de uma possibilidade:\n"); fflush (stdout);}
+					if (log == NUMEROUM) {printf ("\r100.00000%% concluído.\n\nInfinitas raízes encontradas. Trata-se de uma possibilidade.\n"); fflush (stdout);}
 
-					return "inf";
+					return "";
 					}
 
 				if (flag2 == NUMEROZERO) xi = x; else {flag2 = NUMEROUM; xf = x;}
@@ -4727,7 +4779,7 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 
 	if (log == NUMEROUM)
 		{
-		printf ("\r100.00000%% concluído.\n");
+		printf ("\r100.00000%% concluído.\n\n");
 
 		if (contador3 > NUMEROUM)
 			printf ("Tratam-se de aproximações:\n");
@@ -4862,55 +4914,4 @@ TIPONUMEROREAL antoniovandre_determinante (TIPONUMEROREAL ** matriz)
 			}
 
 	return det;
-	}
-
-// Copiando strings de forma segura.
-
-int antoniovandre_copiarstring (char * dest, char * orig)
-	{
-	unsigned long int tam = TAMANHO_BUFFER_PHRASE;
-	unsigned long int i;
-	char buffer;
-
-	for (i = NUMEROZERO; i < tam; i++)
-		{
-		if (dest[i] == '\0') break;
-		dest[i] = (char) NULL;
-		}
-
-	for (i = NUMEROZERO; i < tam; i++)
-		{
-		buffer = orig[i];
-		dest[i] = buffer;
-
-		if (buffer == '\0') break;
-		}
-
-	return NUMEROZERO;
-	}
-
-// Concatenando strings de forma segura.
-
-int antoniovandre_concatenarstring (char * dest, char * orig)
-	{
-	unsigned long int tam = TAMANHO_BUFFER_PHRASE;
-	unsigned long int inicio = NUMEROZERO;
-	unsigned long int i;
-	char buffer;
-
-	for (i = NUMEROZERO; i < tam; i++)
-		{
-		if (dest[i] == '\0') break;
-		inicio++;
-		}
-
-	for (i = NUMEROZERO; i < tam; i++)
-		{
-		buffer = orig[i];
-		dest[inicio + i] = buffer;
-
-		if (buffer == '\0') break;
-		}
-
-	return NUMEROZERO;
 	}
