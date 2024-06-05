@@ -4,7 +4,7 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 04-02-2023.
+// Última atualização: 04-02-2023. Não considerando alterações em variáveis globais.
 
 #include "../antoniovandre.c"
 
