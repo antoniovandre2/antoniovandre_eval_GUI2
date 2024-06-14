@@ -6,7 +6,7 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 03-06-2024. Não considerando alterações em variáveis globais.
+// Última atualização: 14-06-2024. Não considerando alterações em variáveis globais.
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -18,7 +18,7 @@
 #include "antoniovandre_constantes.c"
 #include "antoniovandre_extra.c"
 
-#define VERSION 20240531
+#define VERSION 20240614
 #define MENSAGEMNAOCOMPILADOR "Software não compilado em razão do compilador não ser compatível."
 #define TAMANHO_BUFFER_SMALL 75 // Para pequenos buffers.
 #define TAMANHO_BUFFER_WORD 1024 // Para strings pequenas.
@@ -50,14 +50,16 @@
 #define TOKENINICIOEVAL '('
 #define TOKENFIMEVAL ')'
 #define EPSILON 0.001 // Para funções de Cálculo Diferencial.
-#define VARIAVELDESUBSTITUICAO VARIAVELPADRAO // Deve ser uma letra não presente nos nomes das funções.
-#define VARIAVELDESUBSTITUICAO2 'y' // Deve ser uma letra não presente nos nomes das funções.
+#define VARIAVELDESUBSTITUICAO VARIAVELPADRAO // Deve ser uma letra não presente nos nomes das funções ou constantes.
+#define VARIAVELDESUBSTITUICAO2 'Y' // Deve ser uma letra não presente nos nomes das funções ou constantes.
+#define VARIAVELDESUBSTITUICAO3 'U' // Deve ser uma letra não presente nos nomes das funções ou constantes.
+#define VARIAVELDESUBSTITUICAO4 'V' // Deve ser uma letra não presente nos nomes das funções ou constantes.
 #define NUMEROPARTICOESSOMARIEMANN 100 // Para Cálculo Integral.
 #define VERDADE NUMEROUM
 #define FALSIDADE NUMEROZERO
 #define INTERVALOPROGRESSO 100 // Para não haver flood quando mostrando progressos de processos.
 #define INTERVALOPROGRESSO2 500000 // Para não haver flood quando mostrando progressos de processos, para processos mais rápidos.
-#define INTERVALOPROGRESSO3 50 // Para não haver flood quando mostrando progressos de processos, para processos mais lentos.
+#define INTERVALOPROGRESSO3 10 // Para não haver flood quando mostrando progressos de processos, para processos mais lentos.
 #define INTERVALOPROGRESSO4 200 // Para não haver flood quando mostrando progressos de processos, quarta opção.
 #define APROXIMACAO 0.0000000001 // Para verificação de aproximação numérica.
 #define APROXIMACAO2 0.000001 // Para verificação de aproximação numérica. Segunda opção.
@@ -80,6 +82,8 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 #define ESCREVER_ESTATISTICAS VERDADE
 
 #define ARQUIVO_PRECISAO_REAL "/usr/share/antoniovandre_precisao_real.txt"
+
+// Definições internas.
 
 // Definições internas.
 
@@ -280,6 +284,7 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 #define DECLARACAO_strf_antoniovandre_removernumeros char * strf = (char *) malloc (TAMANHO_BUFFER_PHRASE);
 
 #endif
+
 // Array de letras.
 
 const char * antoniovandre_letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
