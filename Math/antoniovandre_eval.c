@@ -4,9 +4,9 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 04-02-2023. Não considerando alterações em variáveis globais.
+// Última atualização: 14-06-2024. Não considerando alterações em variáveis globais.
 
-#include "../antoniovandre.c"
+#include "../antoniovandre_evalGUI.c"
 
 #define EVAL_MENSAGEM_USO "Use antoniovandre_eval <EXPRESSÃO VÁLIDA> [LOG]."
 #define CABECALHO_ESTATISTICAS_MATHEVAL "eval"
