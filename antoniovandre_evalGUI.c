@@ -6,7 +6,7 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 14-06-2024. Não considerando alterações em variáveis globais.
+// Última atualização: 16-06-2024. Não considerando alterações em variáveis globais.
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -18,7 +18,7 @@
 #include "antoniovandre_constantes.c"
 #include "antoniovandre_extra.c"
 
-#define VERSION 20240615
+#define VERSION 20240616
 #define MENSAGEMNAOCOMPILADOR "Software não compilado em razão do compilador não ser compatível."
 #define TAMANHO_BUFFER_SMALL 75 // Para pequenos buffers.
 #define TAMANHO_BUFFER_WORD 1024 // Para strings pequenas.
@@ -91,7 +91,7 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 
 #define GNUGT VERDADE
 
-#define ESCREVER_ESTATISTICAS FALSIDADE
+#define ESCREVER_ESTATISTICAS VERDADE
 
 #define DECLARACAO_antoniovandre_precisao_real_buffer char * antoniovandre_precisao_real_buffer = (char *) malloc (TAMANHO_BUFFER_WORD);
 
@@ -155,7 +155,7 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 
 #define GNUGT FALSIDADE
 
-#define ESCREVER_ESTATISTICAS FALSIDADE
+#define ESCREVER_ESTATISTICAS VERDADE
 
 #define DECLARACAO_antoniovandre_precisao_real_buffer char antoniovandre_precisao_real_buffer [TAMANHO_BUFFER_WORD];
 
@@ -1140,7 +1140,7 @@ const char * antoniovandre_substring (char * str, int inicio, int fim)
 
 // Por falhas dos compiladores substituí as verificações "* err != NUMEROZERO" por "FALSIDADE".
 
-const char * antoniovandre_evalcelulafuncao (char * str)
+char * antoniovandre_evalcelulafuncao (char * str)
 	{
 	DECLARACAO_funcoesconstantes
 
@@ -3512,11 +3512,12 @@ const char * antoniovandre_evalcelulafuncao (char * str)
 		{
 		free (str2);
 		free (buffer);
-
-		for (i = NUMEROZERO; i < sizeof (funcoesconstantes); i++) if (i != 38)
-			{free (funcoesconstantes [i].token); free (funcoesconstantes [i].comentario);}
-		free (funcoesconstantes);
 		}
+
+	for (i = NUMEROZERO; i < TAMANHO_BUFFER_SMALL; i++)
+		{free (funcoesconstantes [i].token); free (funcoesconstantes [i].comentario);}
+
+	free (funcoesconstantes);
 
 	if ((* err != NUMEROZERO) || (! strcmp (str, STRINGVAZIA)))
 		{char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
@@ -3526,7 +3527,7 @@ const char * antoniovandre_evalcelulafuncao (char * str)
 
 // Função eval célula.
 
-const char * antoniovandre_evalcelula (char * str)
+char * antoniovandre_evalcelula (char * str)
 	{
 	DECLARACAO_antoniovandre_evalcelula_strt
 
@@ -3828,7 +3829,7 @@ const char * antoniovandre_evalcelula (char * str)
 
 // Função eval.
 
-const char * antoniovandre_eval (char * str)
+char * antoniovandre_eval (char * str)
 	{
 	DECLARACAO_antoniovandre_eval_str2
 
