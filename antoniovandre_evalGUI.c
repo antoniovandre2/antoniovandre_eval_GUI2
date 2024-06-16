@@ -36,7 +36,7 @@
 #define OPERADORMULTIPLICACAO '*'
 #define CHARUM '1'
 #define STRINGMENOSUM "-1"
-#define VARIAVELPADRAO 'x'
+#define VARIAVELPADRAO 'X'
 #define ESPACOBRANCO ' '
 #define STRINGVAZIA ""
 #define DELIMITADORSTRING ',' // Deve ser um char;
