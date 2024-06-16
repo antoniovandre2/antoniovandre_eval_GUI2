@@ -18,7 +18,7 @@
 #include "antoniovandre_constantes.c"
 #include "antoniovandre_extra.c"
 
-#define VERSION 20240614
+#define VERSION 20240615
 #define MENSAGEMNAOCOMPILADOR "Software não compilado em razão do compilador não ser compatível."
 #define TAMANHO_BUFFER_SMALL 75 // Para pequenos buffers.
 #define TAMANHO_BUFFER_WORD 1024 // Para strings pequenas.
@@ -73,17 +73,15 @@
 
 typedef double TIPONUMEROREAL;
 
-typedef struct {char token [TAMANHO_BUFFER_WORD]; TIPONUMEROREAL valor; char comentario [TAMANHO_BUFFER_PHRASE];} tokenfuncaoconstante; // Estrutura para funções e constantes.
+typedef struct {char * token; TIPONUMEROREAL valor; char * comentario;} tokenfuncaoconstante; // Estrutura para funções e constantes.
 
 typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Estrutura número complexo.
 
 #define ARQUIVO_MATHSOBRE "/usr/share/antoniovandre_sobre.txt"
 
-#define ESCREVER_ESTATISTICAS VERDADE
+#define ESCREVER_ESTATISTICAS FALSIDADE
 
 #define ARQUIVO_PRECISAO_REAL "/usr/share/antoniovandre_precisao_real.txt"
-
-// Definições internas.
 
 // Definições internas.
 
@@ -93,7 +91,7 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 
 #define GNUGT VERDADE
 
-#define ESCREVER_ESTATISTICAS VERDADE
+#define ESCREVER_ESTATISTICAS FALSIDADE
 
 #define DECLARACAO_antoniovandre_precisao_real_buffer char * antoniovandre_precisao_real_buffer = (char *) malloc (TAMANHO_BUFFER_WORD);
 
@@ -157,7 +155,7 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 
 #define GNUGT FALSIDADE
 
-#define ESCREVER_ESTATISTICAS VERDADE
+#define ESCREVER_ESTATISTICAS FALSIDADE
 
 #define DECLARACAO_antoniovandre_precisao_real_buffer char antoniovandre_precisao_real_buffer [TAMANHO_BUFFER_WORD];
 
@@ -705,7 +703,7 @@ const char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	char * strr = (char *) malloc (TAMANHO_BUFFER_WORD);
 	int parteinteira = (int) (log10 (fabs (numero)) + NUMEROUM);
 
-	if ((numero > VALOR_MAX) || (numero < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+	if (numero != VERSION) if ((numero > VALOR_MAX) || (numero < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 	if (numero == 0)
 		sprintf (strr, "%*lf", precisao, 0);
@@ -3459,6 +3457,16 @@ const char * antoniovandre_evalcelulafuncao (char * str)
 			else if (! strcmp (str2, "variaveldesubstituicao2"))
 				{
 				tc = VARIAVELDESUBSTITUICAO2;
+				return antoniovandre_numeroparastring ((int) tc);
+				}
+			else if (! strcmp (str2, "variaveldesubstituicao3"))
+				{
+				tc = VARIAVELDESUBSTITUICAO3;
+				return antoniovandre_numeroparastring ((int) tc);
+				}
+			else if (! strcmp (str2, "variaveldesubstituicao4"))
+				{
+				tc = VARIAVELDESUBSTITUICAO4;
 				return antoniovandre_numeroparastring ((int) tc);
 				}
 			else if (! strcmp (str2, "numeroparticoessomariemann"))

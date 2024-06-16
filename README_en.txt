@@ -33,13 +33,11 @@ Linux version.
 _____
 
 Install using the "INSTALAR" script, with "instalar" as the first argument and "en" as second argument for install english version, and uninstall using the same "INSTALAR" script with the "desinstalar" argument, optionally, not mandatory, "en" as a second argument if you want to see messages in English. An executable "antoniovandre_eval_gui" will be created and placed in PATH.
-
-A usage statistics file, "antoniovandre_math_estatisticas.txt" will be located in the HOME directory, if the software is used.
 _____
 
 Dependencies:
 
-"bash", "gcc", "md5sum", "python3 >= 7".
+"bash", "gcc", "md5sum", "python3, tkinter".
 ____________________
 
 Due to compiler/hardware limitations, when there are many significant digits, the most negligible digits can be ignored.

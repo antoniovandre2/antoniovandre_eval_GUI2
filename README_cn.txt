@@ -33,13 +33,11 @@ Linux版本。
 _____
 
 使用"INSTALAR"腳本進行安裝，以"instalar"作為第一個參數，使用"cn"作為第二個參數來安裝中文版本，然後使用相同的"INSTALAR"腳本和"desinstalar"參數進行卸載，（可選，不是強制性的，"cn"作為第二個參數，如果您想查看中文消息。將創建一個可執行文件"antoniovandre_eval_gui"並將其放置在PATH中。
-
-如果使用了該軟件，則使用統計信息文件"antoniovandre_math_estatisticas.txt"將位於HOME目錄中。
 _____
 
 依存關係：
 
-"bash"，"gcc"，"md5sum"，"python3 >= 7"。
+"bash"，"gcc"，"md5sum"，"python3, tkinter"。
 ____________________
 
 由於編譯器/硬件的限制，當有很多有效數字時，最可忽略的數字可以忽略。
