@@ -91,7 +91,7 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 
 #define GNUGT VERDADE
 
-#define ESCREVER_ESTATISTICAS VERDADE
+#define ESCREVER_ESTATISTICAS FALSIDADE
 
 #define DECLARACAO_antoniovandre_precisao_real_buffer char * antoniovandre_precisao_real_buffer = (char *) malloc (TAMANHO_BUFFER_WORD);
 
@@ -155,7 +155,7 @@ typedef struct {TIPONUMEROREAL real; TIPONUMEROREAL img;} NUMEROCOMPLEXO; // Est
 
 #define GNUGT FALSIDADE
 
-#define ESCREVER_ESTATISTICAS VERDADE
+#define ESCREVER_ESTATISTICAS FALSIDADE
 
 #define DECLARACAO_antoniovandre_precisao_real_buffer char antoniovandre_precisao_real_buffer [TAMANHO_BUFFER_WORD];
 
