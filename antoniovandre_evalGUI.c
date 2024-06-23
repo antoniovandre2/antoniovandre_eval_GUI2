@@ -6,7 +6,7 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 22-06-2024. Não considerando alterações em variáveis globais.
+// Última atualização: 23-06-2024. Não considerando alterações em variáveis globais.
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -18,7 +18,7 @@
 #include "antoniovandre_constantes.c"
 #include "antoniovandre_extra.c"
 
-#define VERSION 20240622
+#define VERSION 20240623
 #define MENSAGEMNAOCOMPILADOR "Software não compilado em razão do compilador não ser compatível."
 #define TAMANHO_BUFFER_SMALL 90 // Para pequenos buffers.
 #define TAMANHO_BUFFER_WORD 1024 // Para strings pequenas.
@@ -2201,9 +2201,9 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (contador != 1) {free (temp); char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); if (MACROALOCACAODINAMICA) {free (str2); free (buffer);	for (i = NUMEROZERO; i < TAMANHO_BUFFER_SMALL; i++)	{free (funcoesconstantes [i].token); free (funcoesconstantes [i].comentario);} free (funcoesconstantes); return result;}}
 
-			char * argumentos0 = antoniovandre_evalcelulafuncao (antoniovandre_substring (temp, 0, posicoes [NUMEROZERO] - NUMEROUM));
+			char * argumentos0 = antoniovandre_substring (temp, 0, posicoes [NUMEROZERO] - NUMEROUM);
 
-			char * argumentos1 = antoniovandre_evalcelulafuncao (antoniovandre_substring (temp, posicoes[NUMEROZERO] + NUMEROUM, strlen (temp) - NUMEROUM));
+			char * argumentos1 = antoniovandre_substring (temp, posicoes[NUMEROZERO] + NUMEROUM, strlen (temp) - NUMEROUM);
 
 			TIPONUMEROREAL argumento0 = strtold (argumentos0, & err);
 			TIPONUMEROREAL argumento1 = strtold (argumentos1, & err);
@@ -2273,11 +2273,11 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 			if (contador != 2) {free (temp); char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); if (MACROALOCACAODINAMICA) {free (str2); free (buffer);	for (i = NUMEROZERO; i < TAMANHO_BUFFER_SMALL; i++)	{free (funcoesconstantes [i].token); free (funcoesconstantes [i].comentario);} free (funcoesconstantes); return result;}}
 
-			char * argumentos0 = antoniovandre_evalcelulafuncao (antoniovandre_substring (temp, 0, posicoes [NUMEROZERO] - NUMEROUM));
+			char * argumentos0 = antoniovandre_substring (temp, 0, posicoes [NUMEROZERO] - NUMEROUM);
 
-			char * argumentos1 = antoniovandre_evalcelulafuncao (antoniovandre_substring (temp, posicoes[NUMEROZERO] + NUMEROUM, posicoes[NUMEROUM] - NUMEROUM));
+			char * argumentos1 = antoniovandre_substring (temp, posicoes[NUMEROZERO] + NUMEROUM, posicoes[NUMEROUM] - NUMEROUM);
 
-			char * argumentos2 = antoniovandre_evalcelulafuncao (antoniovandre_substring (temp, posicoes[NUMEROUM] + NUMEROUM, strlen (temp) - NUMEROUM));
+			char * argumentos2 = antoniovandre_substring (temp, posicoes[NUMEROUM] + NUMEROUM, strlen (temp) - NUMEROUM);
 
 			TIPONUMEROREAL argumento0 = strtold (argumentos0, & err);
 			TIPONUMEROREAL argumento1 = strtold (argumentos1, & err);
@@ -5579,8 +5579,6 @@ char * antoniovandre_eval (char * str)
 
 	if (flag == NUMEROUM)
 		{
-		tc = TOKENINICIOEVAL; strncat (str2, & tc, NUMEROUM);
-
 		for (i = NUMEROZERO; i < strlen (str); i++)
 			if (str [i] != ESPACOBRANCO)
 				{
@@ -5589,8 +5587,6 @@ char * antoniovandre_eval (char * str)
 				else
 					strncat (str2, & str [i], NUMEROUM);
 				}
-
-		tc = TOKENFIMEVAL; strncat (str2, & tc, NUMEROUM);
 		}
 	else
 		for (i = NUMEROZERO; i < strlen (str); i++) if (str [i] != ESPACOBRANCO) strncat (str2, & str [i], NUMEROUM);
