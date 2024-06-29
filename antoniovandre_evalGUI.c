@@ -6,7 +6,7 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 23-06-2024. Não considerando alterações em variáveis globais.
+// Última atualização: 26-06-2024. Não considerando alterações em variáveis globais.
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -18,7 +18,7 @@
 #include "antoniovandre_constantes.c"
 #include "antoniovandre_extra.c"
 
-#define VERSION 20240623
+#define VERSION 20240626
 #define MENSAGEMNAOCOMPILADOR "Software não compilado em razão do compilador não ser compatível."
 #define TAMANHO_BUFFER_SMALL 90 // Para pequenos buffers.
 #define TAMANHO_BUFFER_WORD 1024 // Para strings pequenas.
@@ -562,6 +562,7 @@ int antoniovandre_precisao_real ()
 		}
 
 	if (MACROALOCACAODINAMICA) free (antoniovandre_precisao_real_buffer);
+
 	fclose (fileprecisaoreal);
 
 	if (antoniovandre_precisao_real_valor < MINPRECISAO)
@@ -701,7 +702,15 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	if (numero != VERSION) if ((numero > VALOR_MAX) || (numero < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 	if (numero == NUMEROZERO)
-		sprintf (strr, "%*lf", precisao, 0);
+		{
+		int i;
+		char tc = '0';
+
+		antoniovandre_copiarstring (strr, STRINGVAZIA);
+		strcat (strr, "0.");
+
+		for (i = NUMEROUM; i < precisao; i++) strncat (strr, &tc, NUMEROUM);
+		}
 	else
 		{
 		if (parteinteira > NUMEROZERO)
