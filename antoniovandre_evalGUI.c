@@ -6,7 +6,7 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 26-06-2024. Não considerando alterações em variáveis globais.
+// Última atualização: 02-07-2024. Não considerando alterações em variáveis globais.
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -18,7 +18,7 @@
 #include "antoniovandre_constantes.c"
 #include "antoniovandre_extra.c"
 
-#define VERSION 20240626
+#define VERSION 20240702
 #define MENSAGEMNAOCOMPILADOR "Software não compilado em razão do compilador não ser compatível."
 #define TAMANHO_BUFFER_SMALL 90 // Para pequenos buffers.
 #define TAMANHO_BUFFER_WORD 1024 // Para strings pequenas.
@@ -70,7 +70,7 @@
 #define APROXIMACAO6 0.005 // Para verificação de aproximação numérica. Sexta opção.
 #define MAXNUMERADORFRACOES 100000 // Para a conversão de números em frações. Útil para, dentre outras coisas, calcular potências de bases negativas.
 #define MINPRECISAO 8 // A fim de garantir retornos corretos de algumas funções.
-#define MAXPRECISAO 19 // A fim de evitar erros de saída.
+#define MAXPRECISAO 16 // A fim de evitar erros de saída.
 
 typedef double TIPONUMEROREAL;
 
@@ -340,7 +340,7 @@ int antoniovandre_compararstringsfree (char * str1, char * str2)
 	int i;
 	int resultado;
 
-	if (tam1 != tam2) return NUMEROMENOSUM;
+	if (tam1 != tam2) return  NUMEROMENOSUM;
 
 	for (i = NUMEROZERO; i < tam1; i++)
 		if (str1[i] != str2 [i])
@@ -398,7 +398,7 @@ int antoniovandre_mathsobre ()
 	if (filesobre == NULL)
 		{
 		printf ("Erro ao abrir arquivo sobre.\n");
-		return NUMEROMENOSUM;
+		return  NUMEROMENOSUM;
 		}
 
 	while (! feof (filesobre))
@@ -444,7 +444,7 @@ int antoniovandre_salvarmathestatisticas (char * cabecalho)
 			if (filemathestatisticas == NULL)
 				{
 				printf ("Erro ao abrir ou criar arquivo de estatísticas.\n");
-				return NUMEROMENOSUM;
+				return  NUMEROMENOSUM;
 				}
 
 			flag2 = NUMEROUM;
@@ -548,7 +548,7 @@ int antoniovandre_precisao_real ()
 	if (fileprecisaoreal == NULL)
 		{
 		printf ("Erro ao abrir arquivo de precisão real.\n");
-		return NUMEROMENOSUM;
+		return  NUMEROMENOSUM;
 		}
 
 	fscanf (fileprecisaoreal, "%s", antoniovandre_precisao_real_buffer);
@@ -558,7 +558,7 @@ int antoniovandre_precisao_real ()
 	if (antoniovandre_precisao_real_valor == NUMEROZERO)
 		{
 		printf ("Erro ao ler arquivo de precisão real.\n");
-		return NUMEROMENOSUM;
+		return  NUMEROMENOSUM;
 		}
 
 	if (MACROALOCACAODINAMICA) free (antoniovandre_precisao_real_buffer);
@@ -673,7 +673,7 @@ TIPONUMEROREAL antoniovandre_partenumericamonomio (char * str)
 		if (! antoniovandre_compararstringsfree (antoniovandre_removerletras (str), STRINGVAZIA))
 			return NUMEROUM;
 		else if (! antoniovandre_compararstringsfree (antoniovandre_removerletras (str), "-") && strlen (str) != NUMEROUM)
-			return NUMEROMENOSUM;
+			return  NUMEROMENOSUM;
 		else
 			return (strtold (antoniovandre_removerletras (str), & err));
 		}
@@ -697,9 +697,15 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	{
 	int precisao = antoniovandre_precisao_real ();
 	char * strr = (char *) malloc (TAMANHO_BUFFER_WORD);
-	int parteinteira = (int) (log10 (fabs (numero)) + NUMEROUM);
+	int parteinteira = (int) (log10 (fabsl (numero)) + NUMEROUM);
 
 	if (numero != VERSION) if ((numero > VALOR_MAX) || (numero < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+
+	if (precisao > MAXPRECISAO)
+		precisao = MAXPRECISAO;
+
+	if (precisao < MINPRECISAO)
+		precisao = MINPRECISAO;
 
 	if (numero == NUMEROZERO)
 		{
@@ -714,28 +720,36 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	else
 		{
 		if (parteinteira > NUMEROZERO)
-			sprintf (strr, "%.*lf", precisao - parteinteira, numero);
+			sprintf (strr, "%.*Lf", precisao - parteinteira, numero);
 		else
-			sprintf (strr, "%.*lf", precisao, numero);
+			sprintf (strr, "%.*Lf", precisao, numero);
 		}
-
-/*	int potencia_min = (NUMEROMENOSUM) * precisao;
-	int potencia_max = log10 (VALOR_MAX);
+/*
+	int potencia_min;
+	int potencia_max = (int) log10 (VALOR_MAX);
 	TIPONUMEROREAL fator = powl (10, potencia_max);
 	int algarismo;
 	int i;
 	int flag = NUMEROZERO;
 	int contador = NUMEROZERO;
 
+	if (precisao > MAXPRECISAO)
+		precisao = MAXPRECISAO;
+
+	if (precisao < MINPRECISAO)
+		precisao = MINPRECISAO;
+
+	potencia_min = (NUMEROMENOSUM) * precisao;
+
 	antoniovandre_copiarstring (strr, STRINGVAZIA);
 
 	if (numero < NUMEROZERO)
 		{
-		numero *= -1;
+		numero *= NUMEROMENOSUM;
 		antoniovandre_concatenarstring (strr, "-");
 		}
 
-	if ((numero > VALOR_MAX) || (numero < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
+	if (numero != VERSION) if ((numero > VALOR_MAX) || (numero < (NUMEROMENOSUM) * VALOR_MAX)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERROOVER); return result;}
 
 	for (i = potencia_max; i >= potencia_min; i--)
 		{
@@ -797,6 +811,7 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	return strr;
 	}
 
+
 // Comparar strings sem ordem.
 
 int antoniovandre_compararstringssemorden (char * str1, char * str2)
@@ -821,10 +836,10 @@ int antoniovandre_compararstringssemorden (char * str1, char * str2)
 
 		for (j = NUMEROZERO; j < tam2; j++) if (c == str2 [j]) contador2++;
 
-		if (contador1 != contador2) return NUMEROMENOSUM;
+		if (contador1 != contador2) return  NUMEROMENOSUM;
 		}
 
-	if (tam1 != tam2) return NUMEROMENOSUM;
+	if (tam1 != tam2) return  NUMEROMENOSUM;
 
 	return NUMEROZERO;
 	}
@@ -975,7 +990,7 @@ char * antoniovandre_reduzirtermossemelhantes (char * args)
 char * antoniovandre_valornumericopolinomio (char * args)
 	{
 	int nargs = NUMEROUM;
-	int indice_inicio = -1;
+	int indice_inicio = NUMEROMENOSUM;
 	char strt [TAMANHO_BUFFER_WORD];
 	char strt2 [TAMANHO_BUFFER_WORD];
 	char str [TAMANHO_BUFFER_WORD];
@@ -1153,19 +1168,19 @@ char * antoniovandre_formatarreal (char * result)
 
 	for (i = 0; i < precisao; i++)
 		{
-		if (fabs ((floorl (valor * powl (10, i))) - valor * powl(10, i)) < powl (10, -precisao) * powl(10, i))
+		if (fabsl ((floorl (valor * powl (10, i))) - valor * powl(10, i)) < powl (10, -precisao) * powl(10, i))
 			{
 			free (result);
 			return antoniovandre_numeroparastring (floorl (valor * powl (10, i)) / powl (10, i));
 			}
 
-		if (fabs ((floorl (valor * powl (10, i) + 1)) - valor * powl(10, i)) < powl (10, -precisao) * powl(10, i))
+		if (fabsl ((floorl (valor * powl (10, i) + 1)) - valor * powl(10, i)) < powl (10, -precisao) * powl(10, i))
 			{
 			free (result);
 			return antoniovandre_numeroparastring (floorl (valor * powl (10, i) + 1) / powl (10, i));
 			}
 
-		if (fabs ((floorl (valor * powl (10, i) - 1)) - valor * powl(10, i)) < powl (10, -precisao) * powl(10, i))
+		if (fabsl ((floorl (valor * powl (10, i) - 1)) - valor * powl(10, i)) < powl (10, -precisao) * powl(10, i))
 			{
 			free (result);
 			return antoniovandre_numeroparastring (floorl (valor * powl (10, i) - 1) / powl (10, i));
@@ -1185,7 +1200,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 
 	int tamanhotokenfuncaoconstante;
 	int tamanhotokenfuncaoconstantemax = NUMEROZERO;
-	int tokenid = -1;
+	int tokenid = NUMEROMENOSUM;
 	int tokeninicio;
 	TIPONUMEROREAL resultado;
 	TIPONUMEROREAL argumento;
@@ -1530,7 +1545,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -1580,7 +1595,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -1660,7 +1675,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -1740,7 +1755,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -1820,7 +1835,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -1900,7 +1915,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -1980,7 +1995,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2060,7 +2075,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2125,7 +2140,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2190,7 +2205,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2262,7 +2277,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2338,7 +2353,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2403,7 +2418,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2468,7 +2483,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2523,7 +2538,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2578,7 +2593,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2633,7 +2648,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2688,7 +2703,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2743,7 +2758,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2798,7 +2813,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2853,7 +2868,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2908,7 +2923,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -2963,7 +2978,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3018,7 +3033,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3073,7 +3088,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3128,7 +3143,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3158,7 +3173,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (funcoesconstantes);
 				}
 
-			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) fabs (argumento));
+			return antoniovandre_numeroparastring ((TIPONUMEROREAL) coeficiente * (TIPONUMEROREAL) fabsl (argumento));
 			}
 
 		free (temp);
@@ -3183,7 +3198,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3238,7 +3253,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3293,7 +3308,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3348,7 +3363,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3403,7 +3418,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3458,7 +3473,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3513,7 +3528,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3568,7 +3583,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3623,7 +3638,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3678,7 +3693,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3733,7 +3748,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3788,7 +3803,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3843,7 +3858,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3898,7 +3913,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -3953,7 +3968,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4008,7 +4023,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4065,7 +4080,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4120,7 +4135,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4175,7 +4190,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4230,7 +4245,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4285,7 +4300,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4342,7 +4357,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4397,7 +4412,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4452,7 +4467,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4507,7 +4522,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4565,7 +4580,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4620,7 +4635,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -4675,7 +4690,7 @@ char * antoniovandre_evalcelulafuncao (char * str)
 				free (temp);
 
 				if (! strcmp (buffer, "-"))
-					coeficiente = -1;
+					coeficiente = NUMEROMENOSUM;
 				else
 					{
 					coeficiente = strtold (buffer, & err);
@@ -5290,7 +5305,7 @@ char * antoniovandre_evalcelula (char * str)
 
 	while (VERDADE)
 		{
-		for (i = NUMEROZERO; i < TAMANHO_BUFFER_PHRASE; i++) posicoes_operadores [i] = -1;
+		for (i = NUMEROZERO; i < TAMANHO_BUFFER_PHRASE; i++) posicoes_operadores [i] = NUMEROMENOSUM;
 
 		contador = NUMEROZERO; flag4 = NUMEROZERO;
 
@@ -5376,22 +5391,22 @@ char * antoniovandre_evalcelula (char * str)
 					{
 					if (valort < NUMEROZERO)
 						{
-						if (fmodl (fabs (valort2), 2) == NUMEROZERO)
-							valor = powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
-						else if (fmodl (fabs (valort2), 2) == NUMEROUM)
-							valor = (NUMEROMENOSUM) * powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
+						if (fmodl (fabsl (valort2), 2) == NUMEROZERO)
+							valor = powl (fabsl ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
+						else if (fmodl (fabsl (valort2), 2) == NUMEROUM)
+							valor = (NUMEROMENOSUM) * powl (fabsl ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
 						else
 							{
 							contador2 = NUMEROUM; flag5 = NUMEROZERO;
 
 							do
 								{
-								if ((fmodl ((contador2 / fabs (valort2)), 2) > NUMEROUM + (NUMEROMENOSUM) * APROXIMACAO2) && (fmodl ((contador2 / fabs (valort2)), 2) < NUMEROUM + APROXIMACAO2))
+								if ((fmodl ((contador2 / fabsl (valort2)), 2) > NUMEROUM + (NUMEROMENOSUM) * APROXIMACAO2) && (fmodl ((contador2 / fabsl (valort2)), 2) < NUMEROUM + APROXIMACAO2))
 									{
 									if (fmodl (contador2, 2) == NUMEROZERO)
-										valor = powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
+										valor = powl (fabsl ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
 									else
-										valor = (NUMEROMENOSUM) * powl (fabs ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
+										valor = (NUMEROMENOSUM) * powl (fabsl ((TIPONUMEROREAL) valort), (TIPONUMEROREAL) valort2);
 
 									flag5 = NUMEROUM;
 									}
@@ -5495,7 +5510,7 @@ char * antoniovandre_evalcelula (char * str)
 
 				if ((strt [posicoes_operadores [i]] == '~') && (flag == NUMEROZERO) && (flag2 == NUMEROZERO))
 					{
-					if (fabs (logl (valort) - logl (valort2)) < APROXIMACAO)
+					if (fabsl (logl (valort) - logl (valort2)) < APROXIMACAO)
 						valor = NUMEROUM;
 					else
 						valor = NUMEROZERO;
@@ -6359,7 +6374,7 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 			if (flag4 == NUMEROZERO)
 				{
 				mt += (y - yt);
-				mt2 += fabs (y - yt);
+				mt2 += fabsl (y - yt);
 				}
 			else
 				{
@@ -6368,7 +6383,7 @@ char * antoniovandre_funcaomaisproxima (char * arquivopontospath, char * arquivo
 				}
 			}
 
-		if ((flag4 == NUMEROZERO) && (flag2 == NUMEROUM) && (fabs (mt) <= fabs (m)))
+		if ((flag4 == NUMEROZERO) && (flag2 == NUMEROUM) && (fabsl (mt) <= fabsl (m)))
 			{
 			m = mt;
 
@@ -6462,7 +6477,7 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 
 	do
 		{
-		if ((log == NUMEROUM) && (contador % INTERVALOPROGRESSO4 == NUMEROZERO)) {printf ("\r%.5f%% concluído.", (TIPONUMEROREAL) 100 * fabs ((x - min) / (max - min + step))); fflush (stdout);}
+		if ((log == NUMEROUM) && (contador % INTERVALOPROGRESSO4 == NUMEROZERO)) {printf ("\r%.5f%% concluído.", (TIPONUMEROREAL) 100 * fabsl ((x - min) / (max - min + step))); fflush (stdout);}
 
 		if (x > max + step) flag4 = NUMEROUM;
 
@@ -6504,7 +6519,7 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 
 		if (* err == NUMEROZERO)
 			{
-			if ((fabs (y) <= step / 20) && (flag4 == NUMEROZERO))
+			if ((fabsl (y) <= step / 20) && (flag4 == NUMEROZERO))
 				{
 				if ((flag == NUMEROZERO) || ((TIPONUMEROREAL) contador2 > (0.1 / step)))
 					{
@@ -6527,7 +6542,7 @@ char * antoniovandre_raizesfuncao (char * funcao, char * mins, char * maxs, TIPO
 					else
 						xr = (xi + xf) / 2;
 
-					if (fabs (xr - xrt) > step)
+					if (fabsl (xr - xrt) > step)
 						{
 						if (xr > max) xr = max;
 
