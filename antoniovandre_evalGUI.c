@@ -720,9 +720,9 @@ char * antoniovandre_numeroparastring (TIPONUMEROREAL numero)
 	else
 		{
 		if (parteinteira > NUMEROZERO)
-			sprintf (strr, "%.*Lf", precisao - parteinteira, numero);
+			sprintf (strr, "%.*lf", precisao - parteinteira, numero);
 		else
-			sprintf (strr, "%.*Lf", precisao, numero);
+			sprintf (strr, "%.*lf", precisao, numero);
 		}
 /*
 	int potencia_min;
