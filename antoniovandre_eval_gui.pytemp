@@ -4,7 +4,7 @@
 
 # Arquivo meta para o Python GUI para "antoniovandre_eval", versão de distribuição.
 
-# Última atualização: 16-06-2024.
+# Última atualização: 03-07-2024.
 
 import tkinter as tk
 
@@ -63,7 +63,7 @@ def clicked ():
 	
 	"""
 
-	cmd = 'antoniovandre_eval \'' + txt.get() + '\''
+	cmd = 'antoniovandre_eval \'' + txt.get() + '\' 0'
 
 	processo = subprocess.Popen (cmd, shell=True, stdout=subprocess.PIPE)
 
@@ -76,14 +76,13 @@ def clicked2 ():
 	with open ("/usr/share/antoniovandre_sobre.txt", "r") as fa:
 		stringajuda = fa.read ()
 
-	cmd = 'wget -T TIMEOUTMENSAGEM -qO- https://bit.ly/antoniovandreevalguimensagemdl 2>> /dev/null > ' + Path.home().absolute().as_posix() + '/avmtemp'
+	cmd = 'wget -T TIMEOUTMENSAGEM -qO- https://bit.ly/antoniovandreevalguimensagemdl 2>> /dev/null > '
 
-	os.system (cmd)
+	processo = subprocess.Popen (cmd, shell=True, stdout=subprocess.PIPE)
 
-	with open (Path.home().absolute().as_posix() + '/avmtemp') as fb:
-		stringmensagem = fb.read ()
+	processo_return = processo.stdout.read ()
 
-	os.system ('rm ' + Path.home().absolute().as_posix() + '/avmtemp')
+	stringmensagem = processo_return.decode('UTF-8')
 
 	windowajuda = Tk ()
 
