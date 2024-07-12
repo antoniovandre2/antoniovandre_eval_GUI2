@@ -3268,24 +3268,11 @@ char * antoniovandre_evalcelulafuncao (char * str, int precisao)
 				antoniovandre_copiarstring (argumentos, STRINGVAZIA);
 				char * argumentoss = antoniovandre_numeroparastring (k, precisao);
 
-				flag = NUMEROZERO;
-
-				if ((strlen (argumentos0) == NUMEROUM) && (argumentos0 [NUMEROZERO] == VARIAVELPADRAO))
-					flag = NUMEROUM;
-
 				for (j = NUMEROZERO; j < strlen (argumentos0); j++)
 					if (argumentos0 [j] != ESPACOBRANCO)
 						{
 						if (argumentos0 [j] == VARIAVELPADRAO)
-							{
-							if (flag == NUMEROZERO)
-								{tc = TOKENINICIOEVAL; strncat (argumentos, & tc, NUMEROUM);}
-
 							antoniovandre_concatenarstring (argumentos, argumentoss);
-
-							if (flag == NUMEROZERO)
-								{tc = TOKENFIMEVAL; strncat (argumentos, & tc, NUMEROUM);}
-							}
 						else
 							strncat (argumentos, & argumentos0 [j], NUMEROUM);
 						}
@@ -3391,24 +3378,11 @@ char * antoniovandre_evalcelulafuncao (char * str, int precisao)
 				antoniovandre_copiarstring (argumentos, STRINGVAZIA);
 				char * argumentoss = antoniovandre_numeroparastring (k, precisao);
 
-				flag = NUMEROZERO;
-
-				if ((strlen (argumentos0) == NUMEROUM) && (argumentos0 [NUMEROZERO] == VARIAVELPADRAO))
-					flag = NUMEROUM;
-
 				for (j = NUMEROZERO; j < strlen (argumentos0); j++)
 					if (argumentos0 [j] != ESPACOBRANCO)
 						{
 						if (argumentos0 [j] == VARIAVELPADRAO)
-							{
-							if (flag == NUMEROZERO)
-								{tc = TOKENINICIOEVAL; strncat (argumentos, & tc, NUMEROUM);}
-
 							antoniovandre_concatenarstring (argumentos, argumentoss);
-
-							if (flag == NUMEROZERO)
-								{tc = TOKENFIMEVAL; strncat (argumentos, & tc, NUMEROUM);}
-							}
 						else
 							strncat (argumentos, & argumentos0 [j], NUMEROUM);
 						}
@@ -7124,7 +7098,7 @@ char * antoniovandre_eval (char * str, int precisao)
 
 		for (l = i + NUMEROUM; l < strlen (str) + 2; l++)
 			strncat (str3, & str [l], NUMEROUM);
-printf("%s\n", str3);
+
 		antoniovandre_copiarstring (str2, str3);
 		antoniovandre_copiarstring (str3, STRINGVAZIA);
 		}
