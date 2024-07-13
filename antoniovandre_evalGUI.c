@@ -8089,6 +8089,10 @@ char * antoniovandre_eval (char * str, int precisao)
 		for (i = NUMEROZERO; i < strlen (str); i++) if (str [i] != ESPACOBRANCO) strncat (str2, & str [i], NUMEROUM);
 
 	flag = NUMEROZERO;
+	int inicioargumentos = NUMEROMENOSUM;
+	int fimargumentos;
+	int inicioargumentostemp = NUMEROMENOSUM;
+	int fimargumentostemp;
 
 	for (i = NUMEROZERO; i < strlen (str2); i++)
 		if (str2 [i] == DELIMITADORSTRINGARGUMENTOS)
@@ -8096,8 +8100,6 @@ char * antoniovandre_eval (char * str, int precisao)
 
 	if (flag == NUMEROUM)
 		{
-		tc = TOKENINICIOEVAL; strncat (str3, & tc, NUMEROUM);
-
 		for (i = NUMEROZERO; i < strlen (str2); i++)
 			if (str2 [i] != ESPACOBRANCO)
 				{
@@ -8106,14 +8108,71 @@ char * antoniovandre_eval (char * str, int precisao)
 				else
 					strncat (str3, & str2 [i], NUMEROUM);
 				}
-
-		tc = TOKENFIMEVAL; strncat (str3, & tc, NUMEROUM);
 		}
 	else
 		for (i = NUMEROZERO; i < strlen (str2); i++) if (str2 [i] != ESPACOBRANCO) strncat (str3, & str2 [i], NUMEROUM);
 
 	antoniovandre_copiarstring (str2, str3);
 	antoniovandre_copiarstring (str3, STRINGVAZIA);
+
+	if (flag == NUMEROUM)
+		{
+		for (i = NUMEROZERO; i < strlen (str2); i++)
+			if (str2 [i] == DELIMITADORSTRINGARGUMENTOS)
+				{
+				if (inicioargumentostemp == NUMEROMENOSUM) inicioargumentostemp = i;
+
+				fimargumentostemp = i;
+				}
+		}
+
+	if (flag == NUMEROUM) for (i = inicioargumentostemp - NUMEROUM; i >= NUMEROZERO; i--)
+		{
+		if (inicioargumentos != NUMEROMENOSUM) break;
+
+		if (str2 [i] == TOKENINICIOEVAL) contador++;
+		if (str2 [i] == TOKENFIMEVAL) contador--;
+
+		if (contador == NUMEROZERO)
+			{
+			for (j = i - NUMEROUM; j >= NUMEROZERO; j--)
+				{
+				if (inicioargumentos != NUMEROMENOSUM) break;
+
+				flag2 = NUMEROZERO;
+
+				for (k = NUMEROZERO; k < strlen (antoniovandre_letrasminusculas); k++)
+					if (str2 [j] == antoniovandre_letrasminusculas [k]) flag2 = NUMEROUM;
+
+				if (flag2 == NUMEROZERO) {inicioargumentos = j; break;}
+				}
+			}
+		}
+
+	if (flag == NUMEROUM) for (i = fimargumentostemp; i < strlen (str2); i++) if (str2 [i] == TOKENFIMEVAL) {fimargumentos = i;}
+
+	if (flag == NUMEROUM)
+		{
+		flag2 = NUMEROZERO;
+
+		for (i = NUMEROZERO; i < strlen (str2); i++)
+			{
+			if ((flag2 == NUMEROZERO) && (inicioargumentos == NUMEROMENOSUM))
+				{tc = TOKENINICIOEVAL; strncat (str3, & tc, NUMEROUM); strncat (str3, & tc, NUMEROUM); flag2 = NUMEROUM;}
+
+			strncat (str3, & str2 [i], NUMEROUM);
+
+			if (i == inicioargumentos)
+				{tc = TOKENINICIOEVAL; strncat (str3, & tc, NUMEROUM); strncat (str3, & tc, NUMEROUM);}
+
+			if (i == fimargumentos)
+				{tc = TOKENFIMEVAL; strncat (str3, & tc, NUMEROUM); strncat (str3, & tc, NUMEROUM);}
+			}
+		}
+
+	antoniovandre_copiarstring (str2, str3);
+	antoniovandre_copiarstring (str3, STRINGVAZIA);
+	contador = NUMEROZERO;
 
 	if (! strcmp (str2, STRINGVAZIA)) {char * result = (char *) malloc (TAMANHO_BUFFER_PHRASE); antoniovandre_copiarstring (result, STRINGSAIDAERRO); return result;}
 
