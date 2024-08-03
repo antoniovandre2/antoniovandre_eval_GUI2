@@ -52,7 +52,7 @@ lbl_saida = Label (window, bg="black", fg="white", text="ENTREEXPRESSAOCLIQUE.")
 
 lbl_saida.place (anchor='w', rely=.9)
 
-def clicked (self):
+def clicked ():
 
 	"""	Escopo opcional.
 
@@ -77,7 +77,32 @@ def clicked (self):
 
 	lbl_saida.configure (text=processo_return.decode('UTF-8').rstrip("\n"))
 
-def clicked2 (self):
+def clickedkey (self):
+
+	"""	Escopo opcional.
+
+	cmd = 'antoniovandre_eval \'' + txt.get() + '\' 1 ' + os.environ['HOME'] + '/antoniovandre_math_estatisticas.txt' > avevtemp'
+
+	os.system (cmd)
+
+	with open ("avevtemp", "r") as f:
+		string = f.read ()
+
+	lbl_saida.configure (text=string.rstrip("\n"))
+
+	os.system ('rm avevtemp')
+	
+	"""
+
+	cmd = 'antoniovandre_eval \'' + txt.get() + '\' 1 ' + os.environ['HOME'] + '/antoniovandre_math_estatisticas.txt'
+
+	processo = subprocess.Popen (cmd, shell=True, stdout=subprocess.PIPE)
+
+	processo_return = processo.stdout.read ()
+
+	lbl_saida.configure (text=processo_return.decode('UTF-8').rstrip("\n"))
+
+def clicked2 ():
 
 	with open ("/usr/share/antoniovandre_sobre.txt", "r") as fa:
 		stringajuda = fa.read ()
@@ -127,26 +152,80 @@ def clicked2 (self):
 
 	windowajuda.mainloop ()
 
-def clicked3 (self):
+def clicked2key (self):
+
+	with open ("/usr/share/antoniovandre_sobre.txt", "r") as fa:
+		stringajuda = fa.read ()
+
+	""" Escopo opcional.
+
+	cmd = 'wget -T TIMEOUTMENSAGEM -qO- https://bit.ly/antoniovandreevalguimensagemdl 2>> /dev/null > HOME/avmtemp'
+
+	os.system (cmd)
+
+	with open ('HOME/avmtemp') as fb:
+		stringmensagem = fb.read ()
+
+	os.system ('rm HOME/avmtemp')
+
+	"""
+
+	cmd = 'wget -T TIMEOUTMENSAGEM -qO- https://bit.ly/antoniovandreevalguimensagemdl 2>> /dev/null > '
+
+	processo = subprocess.Popen (cmd, shell=True, stdout=subprocess.PIPE)
+
+	processo_return = processo.stdout.read ()
+
+	stringmensagem = processo_return.decode('UTF-8')
+
+	windowajuda = Tk ()
+
+	windowajuda.resizable (False, False)
+
+	windowajuda.title ("antoniovandre_eval GUI AJUDA")
+
+	S = tk.Scrollbar (windowajuda)
+
+	T = tk.Text (windowajuda, height=30, width=100)
+
+	S.pack (side=tk.RIGHT, fill=tk.Y)
+
+	T.pack (side=tk.LEFT, fill=tk.Y)
+
+	S.config (command=T.yview)
+
+	T.config (yscrollcommand=S.set)
+
+	T.insert (tk.INSERT, stringajuda)
+
+	T.insert (tk.INSERT, stringmensagem)
+
+	windowajuda.mainloop ()
+
+def clicked3 ():
 
 	quit ()
 
-btn_calcular = Button (window, text="CALCULAR", bg="black", fg="white", command=clicked)
+def clicked3key (self):
+
+	quit ()
+
+btn_calcular = Button (window, text="CALCULAR", bg="black", fg="white", command = clicked)
 
 btn_calcular.place (anchor='center', relx=.2, rely=.5)
 
-btn_ajuda = Button (window, text="MAJUDA", bg="black", fg="white", command=clicked2)
+btn_ajuda = Button (window, text="MAJUDA", bg="black", fg="white", command = clicked2)
 
 btn_ajuda.place (anchor='center', relx=.5, rely=.5)
 
-btn_exit = Button (window, text="SAIR", bg="black", fg="white", command=clicked3)
+btn_exit = Button (window, text="SAIR", bg="black", fg="white", command = clicked3)
 
 btn_exit.place (anchor='center', relx=.8, rely=.5)
 
 txt.focus ()
 
-window.bind ('<Return>', clicked)
+window.bind ('<Return>', clickedkey)
 
-window.bind ('<Escape>', clicked3)
+window.bind ('<Escape>', clicked3key)
 
 window.mainloop ()
