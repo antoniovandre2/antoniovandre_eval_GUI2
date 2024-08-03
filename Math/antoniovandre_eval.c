@@ -8,7 +8,7 @@
 
 #include "../antoniovandre_evalGUI.c"
 
-#define EVAL_MENSAGEM_USO "Use \"antoniovandre_eval <EXPRESSÃO VÁLIDA> [LOG]\"."
+#define EVAL_MENSAGEM_USO "Use \"antoniovandre_eval <EXPRESSÃO VÁLIDA>\"."
 #define CABECALHO_ESTATISTICAS_MATHEVAL "eval"
 
 int main (int argc, char *argv [])
