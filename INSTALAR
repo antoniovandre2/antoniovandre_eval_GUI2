@@ -19,6 +19,8 @@ TIMEOUTMENSAGEM="6"
 
 # Como programador, você pode retirar a verificação de integridade abaixo, entretanto recomendo manter.
 
+rm antoniovandre_eval_gui_integridade &>> /dev/null
+
 wget -T $TIMEOUTMENSAGEM https://bit.ly/antoniovandre_eval_gui_integridade &>> /dev/null
 
 if ls antoniovandre_eval_gui_integridade &>> /dev/null; then if ! bash antoniovandre_eval_gui_integridade "${TRADUCOESARQUIVO}"; then echo -e "Diretório corrompido / Corrupted directory / 目錄損壞 / Directorio corrupto / Поврежденный каталог."; read; exit 1; fi; fi
