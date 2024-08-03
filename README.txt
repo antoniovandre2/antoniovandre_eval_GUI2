@@ -43,6 +43,8 @@ ____________________
 Por limitações do compilador/hardware, quando são muitos os dígitos significativos, os mais desprezíveis podem ser ignorados.
 
 Também por falhas do compilador/hardware, podem haver resultados errados.
+
+Um arquivo de estatísticas de uso "antoniovandre_math_estatisticas.txt" será criado em seu diretório HOME.
 ____________________
 
 Sugestões ou comunicar erros: "a.vandre.g@gmail.com".

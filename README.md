@@ -44,36 +44,50 @@ ____________________
 Por limitações do compilador/hardware, quando são muitos os dígitos significativos, os mais desprezíveis podem ser ignorados.
 
 Também por falhas do compilador/hardware, podem haver resultados errados.
+
+Um arquivo de estatísticas de uso "antoniovandre_math_estatisticas.txt" será criado em seu diretório HOME.
 ____________________
 
 Due to compiler/hardware limitations, when there are many significant digits, the most negligible digits can be ignored.
 
 Also due to compiler/hardware failures, there may be erroneous results.
+
+A usage statistics file "antoniovandre_math_estatisticas.txt" will be created in your HOME directory.
 ____________________
 
 由於編譯器/硬件的限制，當有很多有效數字時，最可忽略的數字可以忽略。
 
 同樣由於編譯器/硬件故障，可能會有錯誤的結果。
+
+將在您的 HOME 目錄中建立使用統計檔案「antoniovandre_math_estatisticas.txt」。
 ____________________
 
 Debido a las limitaciones del compilador/hardware, cuando hay muchos dígitos significativos, se pueden ignorar los dígitos más insignificantes.
 
 También debido a fallas del compilador/hardware, puede haber resultados erróneos.
+
+Se creará un archivo de estadísticas de uso "antoniovandre_math_estatisticas.txt" en su directorio HOME.
 ____________________
 
 कंपाइलर / हार्डवेयर सीमाओं के कारण, जब कई महत्वपूर्ण अंक होते हैं, तो सबसे नगण्य अंकों को अनदेखा किया जा सकता है।
 
 कंपाइलर / हार्डवेयर विफलताओं के कारण भी गलत परिणाम हो सकते हैं।
+
+आपकी HOME निर्देशिका में एक उपयोग सांख्यिकी फ़ाइल "antoniovandre_math_estatisticas.txt" बनाई जाएगी।
 ____________________
 
 نظرًا لقيود المترجم / الأجهزة ، عندما يكون هناك العديد من الأرقام المهمة ، يمكن تجاهل أكثر الأرقام التي لا تذكر.
 
 أيضا بسبب فشل المترجم / الأجهزة ، قد تكون هناك نتائج خاطئة.
+
+سيتم إنشاء ملف إحصائيات الاستخدام "antoniovandre_math_estatisticas.txt" في دليل HOME الخاص بك.
 ____________________
 
 Из-за ограничений компилятора/аппаратного обеспечения, когда имеется много значащих цифр, самые незначительные цифры можно игнорировать.
 
 Также из-за сбоев компилятора/оборудования могут быть ошибочные результаты.
+
+В вашем каталоге HOME будет создан файл статистики использования «antoniovandre_math_estatisticas.txt».
 ____________________
 
 Sugestões ou comunicar erros: "a.vandre.g@gmail.com".

@@ -137,6 +137,10 @@ Functions available for "antoniovandre_eval":
 
 "arccossec": arc cossecant function.
 
+"cord": chord function.
+
+"arccord": arc chord function.
+
 "ln": natural logarithm function.
 
 "logdez": base 10 logarithm function.
@@ -198,6 +202,78 @@ Functions available for "antoniovandre_eval":
 "fahrenheitparakelvin": function to convert temperature in Fahrenheit to Kelvin.
 
 "fahrenheitparacelsius": function to convert temperature in Fahrenheit to Celsius.
+
+"seigual": equal conditional function; requires four arguments separated by "|", if the first is equal to the second, it returns the third, otherwise the fourth.
+
+"sediferente": not equal conditional function; requires four arguments separated by "|", if the first is different from the second, it returns the third, otherwise the fourth.
+
+"semaiorouigual": greater than or equal conditional function; requires four arguments separated by "|", if the first is greater than or equal to the second, it returns the third, otherwise the fourth.
+
+"semenorouigual": equal conditional function; requires four arguments separated by "|", if the first is less than or equal to the second, it returns the third, otherwise the fourth.
+
+"semaior": greater than conditional function; requires four arguments separated by "|", if the first is greater than the second, it returns the third, otherwise the fourth.
+
+"semenor": less than conditional function; requires four arguments separated by "|", if the first is less than the second, it returns the third, otherwise the fourth.
+
+"pitagoras": pythagoras function, returns the hypotenuse given the legs; requires two arguments separated by "|", the legs.
+
+"diagonalparalelepipedo": returns the diagonal of a parallelepiped; requires three arguments separated by "|", the edges.
+
+"pat": returns the n-th term of an AP; requires three arguments separated by "|", the first term, the ratio, and the position "n".
+
+"par": returns the ratio of an AP; requires three arguments separated by "|", the first term, the last term, and the number of terms.
+
+"pas": returns the sum of the terms of an AP; requires three arguments separated by "|", the first term, the last term, and the number of terms.
+
+"pasr": returns the sum of the terms of an AP; requires three arguments separated by "|", the first term, the ratio, and the number of terms.
+
+"pgt": returns the n-th term of a GP; requires three arguments separated by "|", the first term, the ratio, and the position "n".
+
+"pgr": returns the ratio of a GP; requires three arguments separated by "|", the first term, the last term, and the number of terms.
+
+"pgs": returns the sum of the terms of a GP; requires three arguments separated by "|", the first term, the last term, and the number of terms.
+
+"pgsr": returns the sum of the terms of a GP; requires three arguments separated by "|", the first term, the ratio, and the number of terms.
+
+"mmc": returns the mmc of the arguments, positive integer arguments separated by "|".
+
+"mdc": returns the gcd of the arguments, positive integer arguments separated by "|".
+
+"mediaaritmetica": returns the arithmetic mean of the arguments, arguments separated by "|".
+
+"mediaaritmeticaponderada": returns the weighted arithmetic mean of the arguments, arguments in pairs, first the weights, second the values, separated by "|".
+
+"mediageometrica": returns the geometric mean of the arguments, arguments separated by "|".
+
+"mediaharmonica": returns the arithmetic mean of the arguments, arguments separated by "|".
+
+"sum": returns the sum; arguments separated by "|", first the function in the standard variable, second the first index, and third the second index.
+
+"prod": returns the product; arguments separated by "|", first the function in the standard variable, second the first index, and third the second index.
+
+"composicao": returns the numerical value of the composite function passed as an argument; arguments separated by "|", first the function in the default variable, second the period, and third the number of compositions.
+
+"base": returns the number corresponding to the string passed as the first argument, the string must be between "[" and "]" for its processing to be ignored; the corresponding base is the second argument; arguments separated by "|".
+
+"max": returns the maximum value among the arguments passed; arguments separated by "|".
+
+"min": returns the minimum value among the arguments passed; arguments separated by "|".
+
+"mediana": returns the statistical median of the arguments passed; arguments separated by "|".
+
+"variancia": returns the statistical variance of the arguments passed; arguments separated by "|".
+
+"desviopadrao": returns the standard deviation of the arguments passed; arguments separated by "|".
+
+"tamanhostring": returns the length of the string passed as an argument; it must be between the characters "[" and "]" for its processing to be ignored.
+
+"numeroocorrenciasstring": returns the number of occurrences of a substring in a string passed as arguments; first: the main string; second: the substring; must be between the characters "[" and "]" so that their processing is ignored.
+
+"der": derivative at a point. Requires 4 arguments separated by "|": the function in the standard variable, the point, the order of the derivative, and the natural number precision.
+
+"int": definite integral. Requires 4 arguments separated by "|": the function in the standard variable, the lower limit, the upper limit, and the natural number precision.
+
+"raizes": returns the roots of the function passed as a parameter; requires 5 arguments: the function in the default variable, the lower search point, the upper search point, the root to be found, starting with "0" for the first root found, "1" if a second root is found, "2" if a third root is found, etc., or "-1" to return the number of roots found, and as the last argument the positive integer resolution of the search.
 _____
 
 Calculation example in "antoniovandre_eval":

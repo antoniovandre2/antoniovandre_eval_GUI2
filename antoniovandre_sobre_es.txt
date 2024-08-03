@@ -139,6 +139,10 @@ Funciones disponibles para "antoniovandre_eval":
 
 "arccossec": función arco-cosecante.
 
+"cord": función de cuerda.
+
+"arccord": función de arco de cuerda.
+
 "ln": función de logaritmo natural.
 
 "logdez": función de logaritmo en base 10.
@@ -200,6 +204,78 @@ Funciones disponibles para "antoniovandre_eval":
 "fahrenheitparakelvin": función para convertir la temperatura en Fahrenheit a Kelvin.
 
 "fahrenheitparacelsius": función para convertir la temperatura de Fahrenheit a Celsius.
+
+"seigual": función condicional igual; requiere cuatro argumentos separados por "|", si el primero es igual al segundo, devuelve el tercero, en caso contrario el cuarto.
+
+"sediferente": función condicional diferente; requiere cuatro argumentos separados por "|", si el primero es diferente del segundo, devuelve el tercero, en caso contrario el cuarto.
+
+"semaiorouigual": función condicional mayor o igual; requiere cuatro argumentos separados por "|", si el primero es mayor o igual que el segundo, devuelve el tercero, en caso contrario el cuarto.
+
+"semenorouigual": función condicional igual; requiere cuatro argumentos separados por "|", si el primero es menor o igual que el segundo, devuelve el tercero, en caso contrario el cuarto.
+
+"semaior": función condicional más grande; requiere cuatro argumentos separados por "|", si el primero es mayor que el segundo, devuelve el tercero, en caso contrario el cuarto.
+
+"semenor": función condicional menor; requiere cuatro argumentos separados por "|", si el primero es menor que el segundo, devuelve el tercero, en caso contrario el cuarto.
+
+"pitagoras": La función de Pitágoras, devuelve la hipotenusa dados los catetos; requiere dos argumentos separados por "|", los catetos.
+
+"diagonalparalelepipedo": devuelve la diagonal de un paralelepípedo; requiere tres argumentos separados por "|", los bordes.
+
+"pat": devuelve el enésimo término de un AP; requiere tres argumentos separados por "|", el primer término, la razón y la posición "n".
+
+"par": devuelve la proporción de un PA; requiere tres argumentos separados por "|", el primer término, el último término y el número de términos.
+
+"pas": devuelve la suma de los términos de un PA; requiere tres argumentos separados por "|", el primer término, el último término y el número de términos.
+
+"pasr": devuelve la suma de los términos de un PA; requiere tres argumentos separados por "|", el primer término, la razón y el número de términos.
+
+"pgt": devuelve el enésimo término de un GP; requiere tres argumentos separados por "|", el primer término, la razón y la posición "n".
+
+"pgr": devuelve la proporción de un PG; requiere tres argumentos separados por "|", el primer término, el último término y el número de términos.
+
+"pgs": devuelve la suma de los términos de un GP; requiere tres argumentos separados por "|", el primer término, el último término y el número de términos.
+
+"pgsr": devuelve la suma de los términos de un GP; requiere tres argumentos separados por "|", el primer término, la razón y el número de términos.
+
+"mmc": devuelve el mmc de los argumentos, argumentos enteros positivos separados por "|".
+
+"mdc": devuelve el mcd de los argumentos, argumentos enteros positivos separados por "|".
+
+"mediaaritmetica": devuelve la media aritmética de los argumentos, argumentos separados por "|".
+
+"mediaaritmeticaponderada": devuelve la media aritmética ponderada de los argumentos, argumentos en pares, pesos primero, valores segundo, separados por "|".
+
+"mediageometrica": devuelve la media geométrica de los argumentos, argumentos separados por "|".
+
+"mediaharmonica": devuelve la media aritmética de los argumentos, argumentos separados por "|".
+
+"sum": devuelve la suma; argumentos separados por "|", primero la función en la variable predeterminada, segundo el primer índice y tercero el segundo índice.
+
+"prod": devuelve el producto; argumentos separados por "|", primero la función en la variable predeterminada, segundo el primer índice y tercero el segundo índice.
+
+"composicao": devuelve el valor numérico del compuesto de la función pasada como argumento; argumentos separados por "|", primero la función en la variable estándar, segundo el punto y tercero el número de composiciones.
+
+"base": devuelve el número correspondiente a la cadena pasada como primer argumento, la cadena debe estar entre "[" y "]" para que su procesamiento sea ignorado; la base correspondiente es el segundo argumento; argumentos separados por "|".
+
+"max": devuelve el valor máximo entre los argumentos pasados; argumentos separados por "|".
+
+"min": devuelve el valor mínimo entre los argumentos pasados; argumentos separados por "|".
+
+"mediana": devuelve la mediana estadística de los argumentos pasados; argumentos separados por "|".
+
+"variancia": devuelve la varianza estadística de los argumentos pasados; argumentos separados por "|".
+
+"desviopadrao": devuelve la desviación estándar de los argumentos pasados; argumentos separados por "|".
+
+"tamanhostring": devuelve la longitud de la cadena pasada como argumento; debe estar entre los caracteres "[" y "]" para que se ignore su procesamiento.
+
+"numeroocorrenciasstring": devuelve el número de apariciones de una subcadena en una cadena pasada como argumentos; primero: la cadena principal; segundo: la subcadena; debe estar entre los caracteres "[" y "]" para que se ignore su procesamiento.
+
+"der": derivada en un punto. Requiere 4 argumentos separados por "|": la función sobre la variable estándar, el punto, el orden de la derivada y la precisión de los números naturales.
+
+"int": integral definida. Requiere 4 argumentos separados por "|": la función en la variable predeterminada, el límite inferior, el límite superior y el número de precisión natural.
+
+"raizes": devuelve las raíces de la función pasada como parámetro; requiere 5 argumentos: la función en la variable predeterminada, el punto de búsqueda inferior, el punto de búsqueda superior, la raíz a encontrar, comenzando con "0" para la primera raíz encontrada, "1" si se encuentra una segunda raíz, "2 " si se encuentra una tercera raíz, etc., o "-1" para devolver el número de raíces encontradas, y como último argumento la resolución entera positiva de la búsqueda.
 _____
 
 Ejemplo de cálculo en "antoniovandre_eval":

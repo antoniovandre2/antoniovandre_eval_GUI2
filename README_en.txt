@@ -43,6 +43,8 @@ ____________________
 Due to compiler/hardware limitations, when there are many significant digits, the most negligible digits can be ignored.
 
 Also due to compiler/hardware failures, there may be erroneous results.
+
+A usage statistics file "antoniovandre_math_estatisticas.txt" will be created in your HOME directory.
 ____________________
 
 Suggestions or reporting errors: "a.vandre.g@gmail.com".
