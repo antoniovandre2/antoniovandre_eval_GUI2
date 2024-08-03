@@ -4,11 +4,11 @@
 
 // Licença de uso: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-// Última atualização: 14-07-2024. Não considerando alterações em variáveis globais.
+// Última atualização: 03-08-2024. Não considerando alterações em variáveis globais.
 
 #include "../antoniovandre_evalGUI.c"
 
-#define EVAL_MENSAGEM_USO "Use \"antoniovandre_eval <EXPRESSÃO VÁLIDA> [LOG]\". Ou simplesmente \"antoniovandre_eval\" para entrar no modo interativo; pipes também podem ser utilizados.\n\nNo modo interativo entre com uma string separada por DELIMITADORSTRING, o primeiro campo a substring a avaliar, e o segundo 0 para não gerar log ou qualquer outro valor para gerar log."
+#define EVAL_MENSAGEM_USO "Use \"antoniovandre_eval <EXPRESSÃO VÁLIDA> [LOG]\"."
 #define CABECALHO_ESTATISTICAS_MATHEVAL "eval"
 
 int main (int argc, char *argv [])
@@ -17,6 +17,7 @@ int main (int argc, char *argv [])
 	char * argvb;
 	char * argvb2;
 	char * argvb3;
+	char * arquivo_math_estatisticas;
 	int i;
 	int j = NUMEROZERO;
 	int flag = NUMEROZERO;
@@ -26,14 +27,16 @@ int main (int argc, char *argv [])
 	argvb = (char *) malloc (TAMANHO_BUFFER_PHRASE);
 	argvb2 = (char *) malloc (TAMANHO_BUFFER_PHRASE);
 	argvb3 = (char *) malloc (TAMANHO_BUFFER_PHRASE);
+	arquivo_math_estatisticas = (char *) malloc (TAMANHO_BUFFER_PHRASE);
 
 	antoniovandre_copiarstring (argvb, STRINGVAZIA);
 	antoniovandre_copiarstring (argvb2, STRINGVAZIA);
 	antoniovandre_copiarstring (argvb3, STRINGVAZIA);
+	antoniovandre_copiarstring (arquivo_math_estatisticas, STRINGVAZIA);
 
 	if (argc > NUMEROUM)
 		{
-		if (! ((argc == 2) || (argc == 3)))
+		if (! ((argc == 3) || (argc == 4)))
 			{
 			printf (EVAL_MENSAGEM_USO);
 			printf ("\n");
@@ -95,10 +98,10 @@ int main (int argc, char *argv [])
 		printf ("%s\n", strf);
 
 	if (! strcmp (argvb3, STRINGVAZIA))
-		{if (argc == 3) if (! strcmp (argv [2], "0")) flag = NUMEROUM;}
+		{if (! strcmp (argv [2], "0")) flag = NUMEROUM;}
 	else if (! strcmp (argvb3, "0")) flag = NUMEROUM;
 
-	if (flag == NUMEROZERO) if (! antoniovandre_salvarmathestatisticas (CABECALHO_ESTATISTICAS_MATHEVAL)) return NUMEROMENOSUM;
+	if ((argc == 4) && (flag == NUMEROZERO)) {antoniovandre_copiarstring (arquivo_math_estatisticas, argv [3]); if (! antoniovandre_salvarmathestatisticas (arquivo_math_estatisticas, CABECALHO_ESTATISTICAS_MATHEVAL)) return NUMEROMENOSUM;}
 
 	return NUMEROZERO;
 	}
