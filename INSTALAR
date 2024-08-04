@@ -6,7 +6,7 @@
 
 # Licença: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-# Última atualização: 03-08-2024. Não considerando alterações em variáveis globais.
+# Última atualização: 04-08-2024. Não considerando alterações em variáveis globais.
 
 SOURCEDIR="Math/"
 
@@ -23,7 +23,7 @@ rm antoniovandre_eval_gui_integridade &>> /dev/null
 
 wget -T $TIMEOUTMENSAGEM https://bit.ly/antoniovandre_eval_gui_integridade &>> /dev/null
 
-if ls antoniovandre_eval_gui_integridade &>> /dev/null; then if ! bash antoniovandre_eval_gui_integridade "${TRADUCOESARQUIVO}"; then echo -e "Diretório corrompido / Corrupted directory / 目錄損壞 / Directorio corrupto / Поврежденный каталог."; read; exit 1; fi; fi
+if ls antoniovandre_eval_gui_integridade &>> /dev/null; then chmod a+x antoniovandre_eval_gui_integridade; if ! bash antoniovandre_eval_gui_integridade "${TRADUCOESARQUIVO}"; then echo -e "Diretório corrompido / Corrupted directory / 目錄損壞 / Directorio corrupto / Поврежденный каталог."; read; exit 1; fi; fi
 
 #____________________
 
