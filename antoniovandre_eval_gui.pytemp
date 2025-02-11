@@ -4,7 +4,7 @@
 
 # Arquivo meta para o Python GUI para "antoniovandre_eval", versão de distribuição.
 
-# Última atualização: 03-08-2024.
+# Última atualização: 11-02-2025.
 
 import tkinter as tk
 
@@ -225,6 +225,8 @@ btn_exit.place (anchor='center', relx=.8, rely=.5)
 txt.focus ()
 
 window.bind ('<Return>', clickedkey)
+
+window.bind ('<KP_Enter>', clickedkey)
 
 window.bind ('<Escape>', clicked3key)
 
