@@ -19,10 +19,10 @@ ckkxd:.  ,dxxkxo,'''''',cddc,'''''''''''
          .''''''''''''''''''''''''''''''
          .''''''''''''''''''''''''''''''
 
-проект Ramblings Project (mathematicalramblings.blogspot.com).
+проект Ramblings Project.
 ____________________
 
-Владелец: Antonio Vandré Pedrosa Furtunato Gomes. (bit.ly/antoniovandre_legadoontologico).
+Владелец: Antonio Vandré Pedrosa Furtunato Gomes.
 
 README из "antoniovandre_eval_gui".
 ____________________

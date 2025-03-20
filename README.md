@@ -2,10 +2,10 @@
 ![antoniovandre_eval GUI logo](https://antoniovandre2.github.io/antoniovandre_eval_GUI2/antoniovandre_eval_gui_logo_200p.png)
 ____________________
 
-Projeto Mathematical Ramblings ([https://mathematicalramblings.blogspot.com](https://mathematicalramblings.blogspot.com)).
+Projeto Mathematical Ramblings.
 ____________________
 
-Proprietário: Antonio Vandré Pedrosa Furtunato Gomes ([bit.ly/antoniovandre_legadoontologico](https://bit.ly/antoniovandre_legadoontologico)).
+Proprietário: Antonio Vandré Pedrosa Furtunato Gomes.
 
 README do "antoniovandre_eval_gui".
 ____________________

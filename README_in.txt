@@ -19,10 +19,10 @@ ckkxd:.  ,dxxkxo,'''''',cddc,'''''''''''
          .''''''''''''''''''''''''''''''
          .''''''''''''''''''''''''''''''
 
-परियोजना Mathematical Ramblings (mathematicalramblings.blogspot.com)।
+परियोजना Mathematical Ramblings।
 ____________________
 
-मालिक: Antonio Vandré Pedrosa Furtunato Gomes. (bit.ly/antoniovandre_legadoontologico)।
+मालिक: Antonio Vandré Pedrosa Furtunato Gomes.
 
 "antoniovandre_eval_gui" का README।
 ____________________

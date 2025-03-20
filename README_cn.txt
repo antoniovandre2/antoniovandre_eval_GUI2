@@ -19,10 +19,10 @@ ckkxd:.  ,dxxkxo,'''''',cddc,'''''''''''
          .''''''''''''''''''''''''''''''
          .''''''''''''''''''''''''''''''
 
-項目 Ramblings Project (mathematicalramblings.blogspot.com).
+項目 Ramblings Project.
 ____________________
 
-所有者：安東尼奧·范德雷·佩德羅薩·富圖納托·戈麥斯。 （bit.ly/antoniovandre_legadoontologico）。
+所有者：安東尼奧·范德雷·佩德羅薩·富圖納托·戈麥斯。
 
 "antoniovandre_eval_gui"的自述文件。
 ____________________

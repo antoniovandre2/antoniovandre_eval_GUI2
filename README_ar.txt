@@ -19,11 +19,11 @@ ckkxd:.  ,dxxkxo,'''''',cddc,'''''''''''
          .''''''''''''''''''''''''''''''
          .''''''''''''''''''''''''''''''
 
-Mathematical Ramblings مشروع (mathematicalramblings.blogspot.com).
+Mathematical Ramblings مشروع.
 ____________________
 
 
-المالك: Antonio Vandré Pedrosa Furtunato Gomes. (bit.ly/antoniovandre_legadoontologico).
+المالك: Antonio Vandré Pedrosa Furtunato Gomes.
 
 اقرأ "antoniovandre_eval_gui".
 ____________________
