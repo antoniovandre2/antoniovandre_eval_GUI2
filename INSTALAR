@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Projeto Mathematical Ramblings (mathematicalramblings.blogspot.com).
+# Projeto Mathematical Ramblings.
 
 # Script para compilar e instalar antoniovandre_eval_gui, versão de distribuição.
 
 # Licença: Atribuição-NãoComercial-CompartilhaIgual (CC BY-NC-SA).
 
-# Última atualização: 04-08-2024. Não considerando alterações em variáveis globais.
+# Última atualização: 20-03-2025. Não considerando alterações em variáveis globais.
 
 SOURCEDIR="Math/"
 
@@ -21,7 +21,7 @@ TIMEOUTMENSAGEM="6"
 
 rm antoniovandre_eval_gui_integridade &>> /dev/null
 
-wget -T $TIMEOUTMENSAGEM https://bit.ly/antoniovandre_eval_gui_integridade &>> /dev/null
+wget -T $TIMEOUTMENSAGEM https://github.com/antoniovandre2/antoniovandre_eval_GUI2/raw/refs/heads/main/antoniovandre_eval_gui_integridade &>> /dev/null
 
 if ls antoniovandre_eval_gui_integridade &>> /dev/null; then chmod a+x antoniovandre_eval_gui_integridade; if ! bash antoniovandre_eval_gui_integridade "${TRADUCOESARQUIVO}"; then echo -e "Diretório corrompido / Corrupted directory / 目錄損壞 / Directorio corrupto / Поврежденный каталог."; read; exit 1; fi; fi
 
