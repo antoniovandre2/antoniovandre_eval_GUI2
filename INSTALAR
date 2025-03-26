@@ -417,7 +417,7 @@ if [ "${1}" != "desinstalar" ] && [ "${1}" != "instalar" ]; then echo -e "${AV_V
 
 # Como programador, você pode retirar a verificação de integridade abaixo, entretanto recomendo manter.
 
-if [ "${1}" != "instalar" ]; then
+if [ "${1}" == "instalar" ]; then
 
 rm antoniovandre_eval_gui_integridade &>> /dev/null
 
