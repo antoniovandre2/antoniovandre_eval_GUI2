@@ -17,6 +17,20 @@ TRADUCOESARQUIVO="antoniovandre_traducoes.txt"
 
 TIMEOUTMENSAGEM="6"
 
+# Como programador, você pode retirar a verificação de integridade abaixo, entretanto recomendo manter.
+
+if [ "${1}" == "instalar" ]; then
+
+rm antoniovandre_eval_gui_integridade &>> /dev/null
+
+wget -T $TIMEOUTMENSAGEM https://github.com/antoniovandre2/antoniovandre_eval_GUI2/raw/refs/heads/main/antoniovandre_eval_gui_integridade &>> /dev/null
+
+if ls antoniovandre_eval_gui_integridade &>> /dev/null; then chmod a+x antoniovandre_eval_gui_integridade; if ! bash antoniovandre_eval_gui_integridade "${TRADUCOESARQUIVO}"; then echo -e "Diretório corrompido / Corrupted directory / 目錄損壞 / Directorio corrupto / Поврежденный каталог."; read; exit 1; fi; fi
+
+fi
+
+#____________________
+
 if [ -n "${2}" ]; then ARGUMENTOLINGUISTICO="${2}"; else ARGUMENTOLINGUISTICO="nulo"; fi
 
 case "${ARGUMENTOLINGUISTICO}" in
@@ -414,20 +428,6 @@ case "${ARGUMENTOLINGUISTICO}" in
 esac
 
 if [ "${1}" != "desinstalar" ] && [ "${1}" != "instalar" ]; then echo -e "${AV_VERMELHO}${ENTRECOMOSARGUMENTOS}${AV_SEMCOR}."; read; exit 1; fi
-
-# Como programador, você pode retirar a verificação de integridade abaixo, entretanto recomendo manter.
-
-if [ "${1}" == "instalar" ]; then
-
-rm antoniovandre_eval_gui_integridade &>> /dev/null
-
-wget -T $TIMEOUTMENSAGEM https://github.com/antoniovandre2/antoniovandre_eval_GUI2/raw/refs/heads/main/antoniovandre_eval_gui_integridade &>> /dev/null
-
-if ls antoniovandre_eval_gui_integridade &>> /dev/null; then chmod a+x antoniovandre_eval_gui_integridade; if ! bash antoniovandre_eval_gui_integridade "${TRADUCOESARQUIVO}"; then echo -e "Diretório corrompido / Corrupted directory / 目錄損壞 / Directorio corrupto / Поврежденный каталог."; read; exit 1; fi; fi
-
-fi
-
-#____________________
 
 if [ "${1}" == "instalar" ] && hash antoniovandre_eval_gui &>> /dev/null; then echo -e "${AV_VERMELHO}${JAINSTALADO}${AV_SEMCOR}."; read; exit 1; fi
 
